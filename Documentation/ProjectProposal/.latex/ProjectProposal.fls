@@ -8,6 +8,8 @@ INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/size10.clo
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/size10.clo
+INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/lipsum/lipsum.sty
+INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/lipsum/lipsum.sty
 INPUT /Users/Leafeon/Desktop/g53IDS/Documentation/ProjectProposal/.latex/ProjectProposal.aux
 INPUT /Users/Leafeon/Desktop/g53IDS/Documentation/ProjectProposal/.latex/ProjectProposal.aux
 OUTPUT /Users/Leafeon/Desktop/g53IDS/Documentation/ProjectProposal/.latex/ProjectProposal.aux
