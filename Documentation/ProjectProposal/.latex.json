@@ -1,0 +1,11 @@
+{
+  "projectPath": "/Users/Leafeon/Desktop/g53IDS/Documentation/ProjectProposal",
+  "title": "LaTeX-Plus Project",
+  "root": "ProjectProposal.tex",
+  "program": "pdflatex",
+  "latexmkOptions": "-bibtex -pdf -shell-escape",
+  "output": ".latex",
+  "openOutput": "true",
+  "postAction": "link",
+  "postPath": ""
+}
