@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  7 OCT 2017 10:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  7 OCT 2017 10:12
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -54,7 +54,7 @@ osal.aux) )
 Here is how much of TeX's memory you used:
  224 strings out of 493089
  2935 string characters out of 6134843
- 53199 words of memory out of 5000000
+ 54199 words of memory out of 5000000
  3785 multiletter control sequences out of 15000+600000
  6675 words of font info for 24 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -62,12 +62,13 @@ Here is how much of TeX's memory you used:
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
 12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17
-.pfb>
+.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pf
+b>
 Output written on /Users/Leafeon/Desktop/g53IDS/Documentation/ProjectProposal/.
-latex/ProjectProposal.pdf (1 page, 34879 bytes).
+latex/ProjectProposal.pdf (1 page, 42835 bytes).
 PDF statistics:
- 20 PDF objects out of 1000 (max. 8388607)
- 13 compressed objects within 1 object stream
+ 24 PDF objects out of 1000 (max. 8388607)
+ 16 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
