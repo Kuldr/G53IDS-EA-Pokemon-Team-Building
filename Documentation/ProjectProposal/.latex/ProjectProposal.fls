@@ -74,9 +74,6 @@ INPUT /Users/Leafeon/Desktop/g53IDS/Documentation/ProjectProposal/.latex/Project
 INPUT /Users/Leafeon/Desktop/g53IDS/Documentation/ProjectProposal/.latex/ProjectProposal.bbl
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
-INPUT images/workPlan.png
-INPUT ./images/workPlan.png
-INPUT ./images/workPlan.png
 INPUT /Users/Leafeon/Desktop/g53IDS/Documentation/ProjectProposal/.latex/ProjectProposal.aux
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
