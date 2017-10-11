@@ -22,6 +22,13 @@ Pablo Garc{\'\i}a-S{\'a}nchez, Alberto Tonda, Giovanni Squillero, Antonio Mora,
 \newblock In {\em Computational Intelligence and Games (CIG), 2016 IEEE
   Conference on}, pages 1--8. IEEE, 2016.
 
+\bibitem{worldsOverview}
+Griffin McElroy.
+\newblock Becoming the very best: The pokemon world championships.
+\newblock
+  \url{https://www.polygon.com/2013/7/20/4539528/becoming-the-very-best-the-pokemon-world-championships},
+  July 2013.
+
 \bibitem{alphaGo}
 David Silver, Aja Huang, Chris~J Maddison, Arthur Guez, Laurent Sifre, George
   Van Den~Driessche, Julian Schrittwieser, Ioannis Antonoglou, Veda
