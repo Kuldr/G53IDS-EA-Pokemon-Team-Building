@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  11 OCT 2017 18:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  11 OCT 2017 19:19
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -58,17 +58,17 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 34.
+(Font)              <7> on input line 36.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 34.
+(Font)              <5> on input line 36.
 
-Overfull \hbox (1.02843pt too wide) in paragraph at lines 40--41
+Overfull \hbox (1.02843pt too wide) in paragraph at lines 42--43
 \OT1/cmr/m/n/10 netic Al-go-rithms, Memetic Al-go-rithms & Mul-ti-meme Memetic 
 Al-go-rithms. 
  []
 
 
-Overfull \hbox (8.80118pt too wide) in paragraph at lines 42--43
+Overfull \hbox (8.80118pt too wide) in paragraph at lines 44--45
 []\OT1/cmr/m/n/10 Look into var-i-ous rep-re-sen-ta-tion meth-ods that could
  []
 
@@ -81,40 +81,34 @@ cmtt/m/n/10 https : / / www .
  []
 
 
-Underfull \hbox (badness 2932) in paragraph at lines 19--24
-[]\OT1/cmr/m/n/10 Griffin McEl-roy.  Be-com-ing the very best: The poke-mon wor
-ld
+Underfull \hbox (badness 10000) in paragraph at lines 33--38
+[]\OT1/cmr/m/n/10 Quintin Smith.  Al-go-rithms dis-cover build or-der from
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--24
-\OT1/cmr/m/n/10 cham-pi-onships.  $\OT1/cmtt/m/n/10 https : / / www . polygon .
- com / 2013 / 7 / 20 / 4539528 /
+Underfull \hbox (badness 10000) in paragraph at lines 33--38
+\OT1/cmr/m/n/10 hell.  $\OT1/cmtt/m/n/10 https : / / www . rockpapershotgun . c
+om / 2010 / 11 / 02 /
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 19--24
-\OT1/cmtt/m/n/10 becoming-[]the-[]very-[]best-[]the-[]pokemon-[]world-[]champio
-nships$\OT1/cmr/m/n/10 , July
- []
-
+[3]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [3]
+) [4]
 (/Users/Leafeon/Desktop/g53IDS/Documentation/ProjectProposal/.latex/ProjectProp
 osal.aux) ) 
 Here is how much of TeX's memory you used:
- 514 strings out of 493089
- 6544 string characters out of 6134843
- 157849 words of memory out of 5000000
- 4059 multiletter control sequences out of 15000+600000
+ 517 strings out of 493089
+ 6573 string characters out of 6134843
+ 158849 words of memory out of 5000000
+ 4062 multiletter control sequences out of 15000+600000
  8409 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 23i,6n,19p,704b,254s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 23i,6n,19p,706b,254s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 bx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
@@ -125,10 +119,10 @@ fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
 sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></us
 r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
 Output written on /Users/Leafeon/Desktop/g53IDS/Documentation/ProjectProposal/.
-latex/ProjectProposal.pdf (3 pages, 124994 bytes).
+latex/ProjectProposal.pdf (4 pages, 128848 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
+ 53 PDF objects out of 1000 (max. 8388607)
+ 37 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

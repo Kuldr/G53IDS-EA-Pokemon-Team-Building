@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: .latex/ProjectProposal.aux
 The style file: plain.bst
 Database file #1: ProjectProposal.bib
-You've used 6 entries,
+You've used 7 entries,
             2118 wiz_defined-function locations,
-            538 strings with 5129 characters,
-and the built_in function-call counts, 1817 in all, are:
-= -- 168
-> -- 104
-< -- 0
-+ -- 43
-- -- 36
-* -- 125
-:= -- 317
-add.period$ -- 18
-call.type$ -- 6
-change.case$ -- 35
+            545 strings with 5352 characters,
+and the built_in function-call counts, 2299 in all, are:
+= -- 216
+> -- 132
+< -- 1
++ -- 54
+- -- 46
+* -- 159
+:= -- 393
+add.period$ -- 22
+call.type$ -- 7
+change.case$ -- 43
 chr.to.int$ -- 0
-cite$ -- 6
-duplicate$ -- 50
-empty$ -- 141
-format.name$ -- 36
-if$ -- 367
+cite$ -- 7
+duplicate$ -- 69
+empty$ -- 176
+format.name$ -- 46
+if$ -- 473
 int.to.chr$ -- 0
-int.to.str$ -- 6
-missing$ -- 2
-newline$ -- 33
-num.names$ -- 12
-pop$ -- 47
+int.to.str$ -- 7
+missing$ -- 3
+newline$ -- 38
+num.names$ -- 14
+pop$ -- 58
 preamble$ -- 1
-purify$ -- 29
+purify$ -- 36
 quote$ -- 0
-skip$ -- 43
+skip$ -- 55
 stack$ -- 0
-substring$ -- 75
-swap$ -- 6
-text.length$ -- 0
+substring$ -- 96
+swap$ -- 13
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 24
+type$ -- 28
 warning$ -- 0
-while$ -- 16
-width$ -- 7
-write$ -- 64
+while$ -- 21
+width$ -- 8
+write$ -- 76
