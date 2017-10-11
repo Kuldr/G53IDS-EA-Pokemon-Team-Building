@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  7 OCT 2017 11:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  11 OCT 2017 11:41
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -53,29 +53,36 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 31.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 31.
+
 (/Users/Leafeon/Desktop/g53IDS/Documentation/ProjectProposal/.latex/ProjectProp
 osal.bbl) [2]
 (/Users/Leafeon/Desktop/g53IDS/Documentation/ProjectProposal/.latex/ProjectProp
 osal.aux) ) 
 Here is how much of TeX's memory you used:
- 428 strings out of 493089
- 5490 string characters out of 6134843
+ 432 strings out of 493089
+ 5539 string characters out of 6134843
  157302 words of memory out of 5000000
- 3979 multiletter control sequences out of 15000+600000
- 7626 words of font info for 27 fonts, out of 8000000 for 9000
+ 3982 multiletter control sequences out of 15000+600000
+ 7934 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 23i,6n,17p,142b,186s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 23i,6n,17p,168b,186s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
-2.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.
-pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
-></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+mbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+bx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12
+.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.p
+fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
 Output written on /Users/Leafeon/Desktop/g53IDS/Documentation/ProjectProposal/.
-latex/ProjectProposal.pdf (2 pages, 73377 bytes).
+latex/ProjectProposal.pdf (2 pages, 96030 bytes).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
- 24 compressed objects within 1 object stream
+ 43 PDF objects out of 1000 (max. 8388607)
+ 30 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
