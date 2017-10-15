@@ -1,16 +1,17 @@
 # Fdb version 3
-["bibtex .latex/ProjectProposal"] 1508074021 ".latex/ProjectProposal.aux" ".latex/ProjectProposal.bbl" ".latex/ProjectProposal" 1508074022
-  ".latex/ProjectProposal.aux" 1508074021 752 67760938eec919fd01785056695e1314 ""
+["bibtex .latex/ProjectProposal"] 1508079632 ".latex/ProjectProposal.aux" ".latex/ProjectProposal.bbl" ".latex/ProjectProposal" 1508081180
+  ".latex/ProjectProposal.aux" 1508081179 752 67760938eec919fd01785056695e1314 ""
   ".latex/ProjectProposal.bcf" 0 -1 0 ""
   "/usr/local/texlive/2015/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
   "ProjectProposal.bib" 1507745780 2294 a7e27b70721544c321d1d85d007e056a ""
   (generated)
-  ".latex/ProjectProposal.bbl"
   ".latex/ProjectProposal.blg"
-["pdflatex"] 1508074021 "ProjectProposal.tex" "/Users/Leafeon/Desktop/g53IDS/Documentation/ProjectProposal/.latex/ProjectProposal.pdf" "ProjectProposal" 1508074022
-  ".latex/ProjectProposal.aux" 1508074021 752 67760938eec919fd01785056695e1314 ""
-  ".latex/ProjectProposal.bbl" 1508074021 1857 930cc36fbf09b7d2a8f917039590ffa0 "bibtex .latex/ProjectProposal"
-  "/Users/Leafeon/Desktop/g53IDS/Documentation/ProjectProposal/.latex/ProjectProposal.aux" 1508074021 752 67760938eec919fd01785056695e1314 ""
+  ".latex/ProjectProposal.bbl"
+["pdflatex"] 1508081179 "ProjectProposal.tex" "/Users/Leafeon/Desktop/g53IDS/Documentation/ProjectProposal/.latex/ProjectProposal.pdf" "ProjectProposal" 1508081180
+  "./images/workPlan.png" 1508080945 83507 e51812e740edb6777b64ac183be959e9 ""
+  ".latex/ProjectProposal.aux" 1508081179 752 67760938eec919fd01785056695e1314 ""
+  ".latex/ProjectProposal.bbl" 1508079632 1857 930cc36fbf09b7d2a8f917039590ffa0 "bibtex .latex/ProjectProposal"
+  "/Users/Leafeon/Desktop/g53IDS/Documentation/ProjectProposal/.latex/ProjectProposal.aux" 1508081179 752 67760938eec919fd01785056695e1314 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -65,11 +66,12 @@
   "/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1432479641 1764542 91654ba72bdb667e84ea24f076ae16d8 ""
   "/usr/local/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt" 1457131091 3849858 3071a6fd0446d2f9c3610bb62fcd76cf ""
   "/usr/local/texlive/2015/texmf.cnf" 1432479636 577 0d611272082f3cdb8e80e09a3c69cf07 ""
-  "ProjectProposal.tex" 1508074020 8124 881d2555792f94d3d9124d1704321e36 ""
+  "ProjectProposal.tex" 1508081179 8246 96de0750145dbe5022671bf721e442a3 ""
+  "images/workPlan.png" 1508080945 83507 e51812e740edb6777b64ac183be959e9 ""
   (generated)
-  "/Users/Leafeon/Desktop/g53IDS/Documentation/ProjectProposal/.latex/ProjectProposal.aux"
-  "/Users/Leafeon/Desktop/g53IDS/Documentation/ProjectProposal/.latex/ProjectProposal.log"
-  ".latex/ProjectProposal.aux"
-  ".latex/ProjectProposal.log"
   "/Users/Leafeon/Desktop/g53IDS/Documentation/ProjectProposal/.latex/ProjectProposal.pdf"
+  ".latex/ProjectProposal.aux"
+  "/Users/Leafeon/Desktop/g53IDS/Documentation/ProjectProposal/.latex/ProjectProposal.log"
+  ".latex/ProjectProposal.log"
   ".latex/ProjectProposal.pdf"
+  "/Users/Leafeon/Desktop/g53IDS/Documentation/ProjectProposal/.latex/ProjectProposal.aux"
