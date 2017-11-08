@@ -32,7 +32,7 @@ for x in range(0, constants.NUMBER_OF_GENERATIONS):
 
         #Apply Mutation
         if( random.random() <= constants.MUTATION_RATE ):
-            children[i][random.randrange(2)] *= random.uniform(-3.0, 3.0)
+            children[i][random.randrange(2)] *= random.uniform(-1.5, 1.5)
 
         #Validation
         if( children[i][0] > 10 ):
@@ -48,3 +48,11 @@ for x in range(0, constants.NUMBER_OF_GENERATIONS):
         childrenFitness.append(children[i][0]**2 + children[i][1]**2)
 
     #Population Replacement
+    for i in range(0, len(children)):
+        #Random Replacement
+        indexToChange = random.randrange(constants.POPULATION_SIZE)
+        population[indexToChange] = children[i]
+        fitness[indexToChange] = childrenFitness[i]
+
+print(population)
+print(fitness)
