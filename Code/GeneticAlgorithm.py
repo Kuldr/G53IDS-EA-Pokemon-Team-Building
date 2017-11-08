@@ -25,7 +25,12 @@ for x in range(0, constants.NUMBER_OF_GENERATIONS):
         indexParent2 = random.randrange(constants.POPULATION_SIZE)
 
         #Apply Crossover to generate offspring
+        child = [population[indexParent1][0], population[indexParent2][1]]
 
         #Apply Mutation
+        if( random.random() <= constants.MUTATION_RATE ):
+            child[random.randrange(1)] *= random.uniform(-3.0, 3.0)
+
+        print(child)
 
     #Population Replacement
