@@ -2,15 +2,17 @@
 import random
 
 import constants
+from xSquared import xSquared
 
 #Set up
 random.seed()
+xS = xSquared()
 
 #Initialise and evaluate population
 population = []
 fitness = []
 for i in range(0, constants.POPULATION_SIZE):
-    population.append([random.randrange(-5, 5),random.randrange(-5, 5)])
+    population.append(xS.initialiseIndividual())
     fitness.append(population[i][0]**2 + population[i][1]**2)
 
 #Termination Criteria loop, runs for a set number of generations
@@ -30,7 +32,7 @@ for x in range(0, constants.NUMBER_OF_GENERATIONS):
 
         #Apply Mutation
         if( random.random() <= constants.MUTATION_RATE ):
-            children[i][random.randrange(2)] += random.randrange(-3, 3)
+            children[i][random.randrange(2)] *= random.uniform(-3.0, 3.0)
 
         #Validation
         if( children[i][0] > 10 ):
