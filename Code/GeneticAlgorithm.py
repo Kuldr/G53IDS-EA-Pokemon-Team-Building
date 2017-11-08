@@ -33,4 +33,16 @@ for x in range(0, constants.NUMBER_OF_GENERATIONS):
 
         print(child)
 
+        #Validation
+        if( child[0] > 10 ):
+            child[0] = 10
+        if( child[1] > 10 ):
+            child[1] = 10
+        if( child[0] < -10 ):
+            child[0] = -10
+        if( child[1] < -10 ):
+            child[1] = -10
+
+        print(child)
+
     #Population Replacement
