@@ -18,6 +18,9 @@ print(fitness)
 #Termination Criteria loop, runs for a set number of generations
 for x in range(0, constants.NUMBER_OF_GENERATIONS):
     #Main GA loop
+    #Set Up
+    children = []
+    childrenFitness = []
     for i in range(0, constants.POPULATION_SIZE/2):
         #Selection Criteria for parents
         #Currently just random for simplictity
@@ -25,24 +28,23 @@ for x in range(0, constants.NUMBER_OF_GENERATIONS):
         indexParent2 = random.randrange(constants.POPULATION_SIZE)
 
         #Apply Crossover to generate offspring
-        child = [population[indexParent1][0], population[indexParent2][1]]
+        children.append([population[indexParent1][0], population[indexParent2][1]])
 
         #Apply Mutation
         if( random.random() <= constants.MUTATION_RATE ):
-            child[random.randrange(2)] *= random.uniform(-3.0, 3.0)
-
-        print(child)
+            children[i][random.randrange(2)] *= random.uniform(-3.0, 3.0)
 
         #Validation
-        if( child[0] > 10 ):
-            child[0] = 10
-        if( child[1] > 10 ):
-            child[1] = 10
-        if( child[0] < -10 ):
-            child[0] = -10
-        if( child[1] < -10 ):
-            child[1] = -10
+        if( children[i][0] > 10 ):
+            children[i][0] = 10
+        if( children[i][1] > 10 ):
+            children[i][1] = 10
+        if( children[i][0] < -10 ):
+            children[i][0] = -10
+        if( children[i][1] < -10 ):
+            children[i][1] = -10
 
-        print(child)
+        #Evaluate fitness
+        childrenFitness.append(children[i][0]**2 + children[i][1]**2)
 
     #Population Replacement
