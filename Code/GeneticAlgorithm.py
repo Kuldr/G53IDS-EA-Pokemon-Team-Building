@@ -49,5 +49,4 @@ best = fitness[0]
 for i in range(1, constants.POPULATION_SIZE):
     if( fitness[i] < best ):
         best = fitness[i]
-if( best >= 1 ):
-    print(best)
+print(best)
