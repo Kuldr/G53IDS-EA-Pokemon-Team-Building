@@ -1,3 +1,9 @@
+#TODO: create a class for the individual and for the methods that it needs (getters/setters, objective value, etc)
+#Abstract the various stages and make sure
+#Create classes for each instance of the stages including initalising values such as mutation rate
+#Look into python properties for getters and setters and private variables, that is actually pretty cool :)
+
+
 #IMPORTS
 import random
 

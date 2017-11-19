@@ -1,0 +1,12 @@
+Pikachu (M) @ Light Ball
+Ability: Lightning Rod
+Level: 51
+Shiny: Yes
+Happiness: 249
+EVs: 120 HP / 56 Atk / 148 Def / 88 SpA / 52 SpD / 44 Spe  
+Mild Nature
+IVs: 26 HP / 30 Atk / 27 Def / 23 SpA / 25 SpD / 28 Spe
+- Discharge
+- Extreme Speed
+- Fake Out
+- Hidden Power [Fire]
