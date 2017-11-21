@@ -48,6 +48,7 @@ for x in range(0, constants.NUMBER_OF_GENERATIONS):
     #Population Replacement
     for i in range(0, len(children)):
         population, fitness = problem.populationReplacement(population, fitness, children[i], childrenFitness[i], constants.POPULATION_SIZE)
+    print(population)
 
 
 #print out the best value
