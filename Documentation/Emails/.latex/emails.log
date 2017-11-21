@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  21 NOV 2017 13:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  21 NOV 2017 16:38
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -198,34 +198,42 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 21.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 21.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 21.
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--29
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--34
+
+ []
+
 [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (/Users/Leafeon/Desktop/G53IDS/Documentation/Emails/.latex/emails.aux) ) 
 Here is how much of TeX's memory you used:
- 2225 strings out of 493089
- 31970 string characters out of 6134843
- 194839 words of memory out of 5000000
- 5703 multiletter control sequences out of 15000+600000
- 7280 words of font info for 26 fonts, out of 8000000 for 9000
+ 2205 strings out of 493089
+ 31758 string characters out of 6134843
+ 196839 words of memory out of 5000000
+ 5690 multiletter control sequences out of 15000+600000
+ 4553 words of font info for 17 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,6n,32p,251b,188s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,4n,32p,253b,109s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/l
-ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
-l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/
-texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/loc
+al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
 Output written on /Users/Leafeon/Desktop/G53IDS/Documentation/Emails/.latex/ema
-ils.pdf (1 page, 43031 bytes).
+ils.pdf (1 page, 42645 bytes).
 PDF statistics:
- 24 PDF objects out of 1000 (max. 8388607)
- 16 compressed objects within 1 object stream
+ 20 PDF objects out of 1000 (max. 8388607)
+ 13 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
