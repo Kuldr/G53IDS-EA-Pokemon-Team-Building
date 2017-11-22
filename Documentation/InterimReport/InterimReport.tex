@@ -40,6 +40,19 @@
     \item Discuss the Hearthstone deck building GA
     \item Investigate more works to talk about here (gaming and more general)
 \end{itemize}
+%Describe how many AI games are looking at playing
+%However, previous works dealt with the AI aspects of the game in terms of automatic playing and behaviour design. Being the construction of the deck a very important part of this kind of games, where players may spend hundred of dollars in buying cards, it is quite surprising the lack of works in the literature proposing computational methods for automatic deck generation and analysis of their effectiveness. The only work related with this topic is [5], where the authors evolved decks of the game Dominion in order find methods to balance the game. However, they were limited to select 10 cards for each deck, extracted from a pool of 25, while in HearthStone, each deck requires 30 cards from a collection more than 600.
+\par
+Team building is a form of optimisation problem as you are trying to bring the optimal team to the match so you have the best chance of winning.
+A variety of work has been conducted looking at optimisation via AI techniques, in particular I looked into techniques that tackled having a large, vast search space and where the correctness of a solution was hard to judge.
+Both of these issues were things that I saw as issues that I would have to tackle to solve the team building problem.
+\\ \par
+Garc{\'\i}a-S{\'a}nchez et al.\ approached a very similar problem using a genetic algorithm, the problem in question was deck building\cite{hearthstoneAI}.
+The example they used was a popular collectable card game, Hearthstone, and they tried to create a viable deck through the genetic algorithm.
+This was of particular interest as several parts of their study directly relate to what I am trying to achieve, as well as several short comings that I would have to take into account.
+\par
+A evolutionary algorithm was used as `they commonly produce very effective combinations of elements', which a deck can be described as a combination of cards. This also allowed for competitive decks to be built from scratch with no expert knowledge.
+
 
 \section{Description of the Work}
 \begin{itemize}

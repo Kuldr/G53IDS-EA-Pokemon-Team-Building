@@ -1,5 +1,12 @@
 \begin{thebibliography}{1}
 
+\bibitem{hearthstoneAI}
+Pablo Garc{\'\i}a-S{\'a}nchez, Alberto Tonda, Giovanni Squillero, Antonio Mora,
+  and Juan~J Merelo.
+\newblock Evolutionary deckbuilding in hearthstone.
+\newblock In {\em Computational Intelligence and Games (CIG), 2016 IEEE
+  Conference on}, pages 1--8. IEEE, 2016.
+
 \bibitem{worldsOverview}
 Griffin McElroy.
 \newblock Becoming the very best: The pokemon world championships.
