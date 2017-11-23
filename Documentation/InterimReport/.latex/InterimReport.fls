@@ -74,9 +74,9 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 OUTPUT /Users/Leafeon/Desktop/G53IDS/Documentation/InterimReport/.latex/InterimReport.pdf
 INPUT /usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /Users/Leafeon/Desktop/G53IDS/Documentation/InterimReport/.latex/InterimReport.bbl
 INPUT /Users/Leafeon/Desktop/G53IDS/Documentation/InterimReport/.latex/InterimReport.bbl
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
