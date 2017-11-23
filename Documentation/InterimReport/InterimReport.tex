@@ -64,7 +64,22 @@ This was done by encoding the individuals as a vector of cards, in this case the
 In the deck building process it was possible to have a deck that would violate the rules of the game.
 To discourage the EA from creating decks that violate these rules a correctness metric was taking into account when calculating the fitness of each individual.
 If an individual was incorrect it wasn't evaluated further in the fitness calculation process and given the worse possible score.
+\\ \par
+A large part of the work talks about the fitness evaluation, as with many of these processes it is hard to quantify how well a individual will do.
+Even though human experts will have a strong intrinsic idea to what is better or worse, they will playtest their ideas for several matches, sometimes ranging into the hundreds.
+To give the most realistic simulation a separate AI played each individual against some previously expert designed decks, that have been proven to be successful in the metagame that the AI was evolving in.
+It played several matches with each individual against the decks, with 16 matches versus the 8 chosen opponent decks totalling 128 matches per individual.
 \par
+One of the key upsides of this was that the AI could evolve to combat common decks that it would face if it was to be played in competitive play.
+Knowledge of key opposing threats is something that high level experts take into account, this knowledge was taken from an article evaluating the current meta game written by professional players of the game.
+Another upside was from having a high number of matches being played for the evaluation.
+By playing a large proportion of games they can mitigate any randomness in the matches that aren't down to the deck building, such as the cards in the starting hand.
+To further mitigate randomness and to give a more accurate representation of the individuals fitness, statistical analysis was used to calculate the final fitness score.
+This was done to also as it is important to find `a deck with a fair chance to win against all decks in the metagame' not one that is strong against a particular opponent and weak to all others.
+\par
+
+
+every execution of the algorithm requires several days
 
 \section{Description of the Work}
 \begin{itemize}
