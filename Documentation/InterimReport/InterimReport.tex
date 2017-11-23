@@ -39,10 +39,11 @@
 \pagebreak{}
 
 \section{Related Work}
-\begin{itemize}
-    \item Discuss the Hearthstone deck building GA
-    \item Investigate more works to talk about here (gaming and more general)
-\end{itemize}
+%\begin{itemize}
+
+%\end{itemize}    \item Discuss the Hearthstone deck building GA
+%    \item Investigate more works to talk about here (gaming and more general)
+%\end{itemize}
 \par
 Many AI approaches to games tackle the aspect of playing the matches and the decision making process to choose the best action.
 Lots of research and development has happened in these areas with many effective techniques being discovered.
@@ -83,7 +84,9 @@ This was done to also as it is important to find `a deck with a fair chance to w
 Through this method of fitness evaluation some flaws and potential shortcomings where brought up.
 As the fitness evaluation required a large amount of matches to be played it resulted in `every execution of the algorithm requires several days', even when running on a small population size and number of generations (10 and 50 respectively).
 Although not a specifically a bad thing a longer run time would discourage the use of such tools, more so in games where the meta game changes more rapidly.
-
+The evaluation also required the expert knowledge of the meta decks to be played against, this also means that an established meta has to be in effect where as many experts can theory craft a rough idea before changes take effect.
+The most significant flaw with this style of evaluation is that it relies on the ability of another AI to pilot the deck.
+It was suggested that it may overfit `with regards to the AI capabilities and playing style' even going as far as pointing out that it `can use some decks (and some playing styles) better than others'.
 
 \section{Description of the Work}
 \begin{itemize}
