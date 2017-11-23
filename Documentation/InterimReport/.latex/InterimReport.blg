@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: .latex/InterimReport.aux
 The style file: plain.bst
 Database file #1: InterimReport.bib
-You've used 2 entries,
+You've used 3 entries,
             2118 wiz_defined-function locations,
-            511 strings with 4427 characters,
-and the built_in function-call counts, 706 in all, are:
-= -- 68
-> -- 35
-< -- 1
-+ -- 14
-- -- 12
-* -- 44
-:= -- 124
-add.period$ -- 7
-call.type$ -- 2
-change.case$ -- 12
+            521 strings with 4653 characters,
+and the built_in function-call counts, 1205 in all, are:
+= -- 124
+> -- 53
+< -- 2
++ -- 21
+- -- 18
+* -- 76
+:= -- 196
+add.period$ -- 11
+call.type$ -- 3
+change.case$ -- 18
 chr.to.int$ -- 0
-cite$ -- 2
-duplicate$ -- 29
-empty$ -- 53
-format.name$ -- 12
-if$ -- 148
+cite$ -- 3
+duplicate$ -- 52
+empty$ -- 92
+format.name$ -- 18
+if$ -- 264
 int.to.chr$ -- 0
-int.to.str$ -- 2
-missing$ -- 2
-newline$ -- 13
-num.names$ -- 4
-pop$ -- 15
+int.to.str$ -- 3
+missing$ -- 3
+newline$ -- 18
+num.names$ -- 6
+pop$ -- 21
 preamble$ -- 1
-purify$ -- 10
+purify$ -- 15
 quote$ -- 0
-skip$ -- 19
+skip$ -- 38
 stack$ -- 0
-substring$ -- 26
-swap$ -- 8
-text.length$ -- 1
+substring$ -- 63
+swap$ -- 18
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 8
+type$ -- 12
 warning$ -- 0
-while$ -- 7
-width$ -- 3
-write$ -- 24
+while$ -- 12
+width$ -- 4
+write$ -- 38

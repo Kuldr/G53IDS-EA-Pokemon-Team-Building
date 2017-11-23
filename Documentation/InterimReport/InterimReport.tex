@@ -86,6 +86,19 @@ Although not a specifically a bad thing a longer run time would discourage the u
 The evaluation also required the expert knowledge of the meta decks to be tested against or even that an established meta is in effect where as many experts can theory craft a rough idea before changes to the meta happen.
 The most significant flaw with this style of evaluation is that it relies on the ability of another AI to pilot the deck.
 It was suggested that it may overfit `with regards to the AI capabilities and playing style' even going as far as pointing out that it `can use some decks (and some playing styles) better than others'.
+\\ \par
+Maumita Bhattacharya spoke about differing approaches to the porblem of computationally expensive fitness evaluation\cite{expensiveOptimisation}.
+Several of the techniques described approximated the fitness of each individual while only periodically calculating a more accurate value.
+Some of these techniques achieved this my simulating a simpler model while more specific techniques where discussed too.
+In a population search method like evolutionary algorithms, a technique called Fitness Inheritance could be used.
+As the children individuals will closely resemble the parents you could give a rough approximation to how different they actually are and use that difference to evaluate the children.
+This will greatly reduce the number of computationally expensive evaluations you need to do with potentially as few as only scoring the initial population.
+However it is suggested that you periodically recalculate using the true fitness evaluation as `Using true fitness evaluation along with approximation is thus extremely important to achieve reliable performance'.
+\par
+Fitness Inheritance was first proposed by Smith et al.\cite{fitnessInheritance} where they applied the idea to a simple problem OneMax.
+They investigated two simple methods to inherit fitness.
+Averaged Inheritance simply said `a child is assigned the average fitness of its parents', this is extremely cheap computationally and requires no detailed analysis.
+Another method was Proportional Inheritance where `the average is weighted based on the amount of genetic material taken from each parent', while slightly more expensive it takes into account of none symmetric crossover schemes such as one point crossover where the genetic material is not equal from each parent.
 
 \section{Description of the Work}
 \begin{itemize}

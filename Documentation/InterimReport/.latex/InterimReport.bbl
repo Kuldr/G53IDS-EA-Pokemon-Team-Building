@@ -12,4 +12,10 @@ Pablo Garc{\'\i}a-S{\'a}nchez, Alberto Tonda, Giovanni Squillero, Antonio Mora,
 \newblock In {\em Computational Intelligence and Games (CIG), 2016 IEEE
   Conference on}, pages 1--8. IEEE, 2016.
 
+\bibitem{fitnessInheritance}
+Robert~E. Smith, B.~A. Dike, and S.~A. Stegmann.
+\newblock Fitness inheritance in genetic algorithms.
+\newblock In {\em Proceedings of the 1995 ACM Symposium on Applied Computing},
+  SAC '95, pages 345--350, New York, NY, USA, 1995. ACM.
+
 \end{thebibliography}
