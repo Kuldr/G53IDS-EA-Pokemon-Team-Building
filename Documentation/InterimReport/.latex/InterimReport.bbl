@@ -1,17 +1,15 @@
 \begin{thebibliography}{1}
 
+\bibitem{expensiveOptimisation}
+Maumita Bhattacharya.
+\newblock Evolutionary approaches to expensive optimisation.
+\newblock {\em arXiv preprint arXiv:1303.2745}, 2013.
+
 \bibitem{hearthstoneAI}
 Pablo Garc{\'\i}a-S{\'a}nchez, Alberto Tonda, Giovanni Squillero, Antonio Mora,
   and Juan~J Merelo.
 \newblock Evolutionary deckbuilding in hearthstone.
 \newblock In {\em Computational Intelligence and Games (CIG), 2016 IEEE
   Conference on}, pages 1--8. IEEE, 2016.
-
-\bibitem{worldsOverview}
-Griffin McElroy.
-\newblock Becoming the very best: The pokemon world championships.
-\newblock
-  \url{https://www.polygon.com/2013/7/20/4539528/becoming-the-very-best-the-pokemon-world-championships},
-  July 2013.
 
 \end{thebibliography}
