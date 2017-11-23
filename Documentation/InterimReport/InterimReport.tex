@@ -80,9 +80,10 @@ By playing a large proportion of games they can mitigate any randomness in the m
 To further mitigate randomness and to give a more accurate representation of the individuals fitness, statistical analysis was used to calculate the final fitness score.
 This was done to also as it is important to find `a deck with a fair chance to win against all decks in the metagame' not one that is strong against a particular opponent and weak to all others.
 \par
+Through this method of fitness evaluation some flaws and potential shortcomings where brought up.
+As the fitness evaluation required a large amount of matches to be played it resulted in `every execution of the algorithm requires several days', even when running on a small population size and number of generations (10 and 50 respectively).
+Although not a specifically a bad thing a longer run time would discourage the use of such tools, more so in games where the meta game changes more rapidly.
 
-
-every execution of the algorithm requires several days
 
 \section{Description of the Work}
 \begin{itemize}
