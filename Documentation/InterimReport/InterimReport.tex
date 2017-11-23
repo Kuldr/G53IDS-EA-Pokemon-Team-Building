@@ -40,12 +40,14 @@
     \item Discuss the Hearthstone deck building GA
     \item Investigate more works to talk about here (gaming and more general)
 \end{itemize}
-%Describe how many AI games are looking at playing
-%However, previous works dealt with the AI aspects of the game in terms of automatic playing and behaviour design. Being the construction of the deck a very important part of this kind of games, where players may spend hundred of dollars in buying cards, it is quite surprising the lack of works in the literature proposing computational methods for automatic deck generation and analysis of their effectiveness. The only work related with this topic is [5], where the authors evolved decks of the game Dominion in order find methods to balance the game. However, they were limited to select 10 cards for each deck, extracted from a pool of 25, while in HearthStone, each deck requires 30 cards from a collection more than 600.
 \par
-Many AI approaches to games tackle the aspect of playing the matches and the decision making process to choose the best action. Lots of research and development has happened in these areas with many effective techniques being discovered. One key reason the problem of prematch decision making hasn't been tackled is due to the lack of need for it with classical table top games ranging from Tic-Tac-Toe to Chess to Go requiring no preparation before the match begins.
+Many AI approaches to games tackle the aspect of playing the matches and the decision making process to choose the best action.
+Lots of research and development has happened in these areas with many effective techniques being discovered.
+One key reason the problem of prematch decision making hasn't been tackled is due to the lack of need for it with classical table top games ranging from Tic-Tac-Toe to Chess to Go requiring no preparation before the match begins.
 \par
-As the field of AI game playing moves forward into more complex games these prematch decisions will need to be considered. As currently it would be rather simple to build and train an AI to play turn based strategy games, such as collectable card games or in this case \Pokemon{}, but the deck/team building would require an expert to decide what the AI will be trained to use. This is often problematic as season rotation could add in new elements to the game or make certain elements no longer useable, or shifts in the metagame will mean that the AI is easily countered.
+As the field of AI game playing moves forward into more complex games these prematch decisions will need to be considered.
+As currently it would be rather simple to build and train an AI to play turn based strategy games, such as collectable card games or in this case \Pokemon{}, but the deck/team building would require an expert to decide what the AI will be trained to use.
+This is often problematic as season rotation could add in new elements to the game or make certain elements no longer useable, or shifts in the metagame will mean that the AI is easily countered.
 \par
 Team building is a form of optimisation problem as you are trying to bring the optimal team to the match so you have the best chance of winning.
 A variety of work has been conducted looking at optimisation via AI techniques, in particular I looked into techniques that tackled having a large, vast search space and where the correctness of a solution was hard to judge.
@@ -55,8 +57,14 @@ Garc{\'\i}a-S{\'a}nchez et al.\ approached a very similar problem using a geneti
 The example they used was a popular collectable card game, Hearthstone, and they tried to create a viable deck through the genetic algorithm.
 This is of particular interest as several parts of their study directly relate to what I am trying to achieve, as well as several short comings that I would have to take into account.
 \par
-A evolutionary algorithm was used as `they commonly produce very effective combinations of elements', which a deck can be described as a combination of cards. This also allowed for competitive decks to be built from scratch with no expert knowledge.
-
+An evolutionary algorithm was used as `they commonly produce very effective combinations of elements', which a deck can be described as a combination of cards.
+This also allowed for competitive decks to be built from scratch with no expert knowledge required.
+This was done by encoding the individuals as a vector of cards, in this case the 30 element vector became the deck.
+\par
+In the deck building process it was possible to have a deck that would violate the rules of the game.
+To discourage the EA from creating decks that violate these rules a correctness metric was taking into account when calculating the fitness of each individual.
+If an individual was incorrect it wasn't evaluated further in the fitness calculation process and given the worse possible score.
+\par
 
 \section{Description of the Work}
 \begin{itemize}
