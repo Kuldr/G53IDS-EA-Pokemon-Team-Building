@@ -1,6 +1,6 @@
 import random
 
-class xSquared:
+class sumSquares:
 
     def initialiseIndividual(self):
         return [random.randrange(-5, 5),random.randrange(-5, 5)]

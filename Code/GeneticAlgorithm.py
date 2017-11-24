@@ -8,11 +8,11 @@
 import random
 
 import constants
-from xSquared import xSquared
+from sumSquares import sumSquares
 
 #Set up
 random.seed()
-problem = xSquared()
+problem = sumSquares()
 
 #Initialise and evaluate population
 population = []
