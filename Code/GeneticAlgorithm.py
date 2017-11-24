@@ -2,7 +2,7 @@
 #Abstract the various stages and make sure
 #Create classes for each instance of the stages including initalising values such as mutation rate
 #Look into python properties for getters and setters and private variables, that is actually pretty cool :)
-
+#Look at the difference between str and repr
 
 #IMPORTS
 import random
@@ -52,7 +52,7 @@ for x in range(0, constants.NUMBER_OF_GENERATIONS):
     #Print out the population
     print('\n Generation ' + str(x))
     for i in range(0, len(population)):
-        print(population[i].x, population[i].y)
+        print(population[i])
 
 
 #print out the best value
