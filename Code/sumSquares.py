@@ -1,33 +1,37 @@
 import random
+from sumSquaresIndividual import sumSquaresIndividual
 
 class sumSquares:
 
     def initialiseIndividual(self):
-        return [random.randrange(-5, 5),random.randrange(-5, 5)]
+        return sumSquaresIndividual(random.randrange(-5, 5),random.randrange(-5, 5))
 
     def objectiveValue(self, individual):
-        return individual[0]**2 + individual[1]**2
+        return individual.x**2 + individual.y**2
 
     def selection(self, populationSize):
         return random.randrange(populationSize)
 
     def crossover(self, parent1, parent2):
-        return [parent1[0], parent2[1]]
+        return sumSquaresIndividual(parent1.x, parent2.y)
 
     def mutation(self, child, mutationRate):
         if( random.random() <= mutationRate ):
-            child[random.randrange(2)] *= random.uniform(-3.0, 3.0)
+            if( random.randrange(2) == 0 ):
+                child.x *= random.uniform(-3.0, 3.0)
+            else:
+                child.y *= random.uniform(-3.0, 3.0)
         return child
 
     def validation(self, child):
-        if( child[0] > 10 ):
-            child[0] = 10
-        if( child[1] > 10 ):
-            child[1] = 10
-        if( child[0] < -10 ):
-            child[0] = -10
-        if( child[1] < -10 ):
-            child[1] = -10
+        if( child.x > 10 ):
+            child.x = 10
+        if( child.y > 10 ):
+            child.y = 10
+        if( child.x < -10 ):
+            child.x = -10
+        if( child.y < -10 ):
+            child.y = -10
         return child
 
     def populationReplacement(self, population, fitness, child, childFitness, populationSize):
