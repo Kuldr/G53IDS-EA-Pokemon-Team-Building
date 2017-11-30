@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  28 NOV 2017 13:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  30 NOV 2017 15:00
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -204,26 +204,31 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 20.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 20.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 24.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 25.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
- [1
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 25.
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--34
+
+ []
+
+[1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--77
+Underfull \hbox (badness 10000) in paragraph at lines 92--95
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--95
+Underfull \hbox (badness 10000) in paragraph at lines 107--113
 
  []
 
@@ -254,7 +259,7 @@ b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
 sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
 r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
 Output written on /Users/Leafeon/Desktop/G53IDS/Documentation/InterimReport/.la
-tex/InterimReport.pdf (4 pages, 106004 bytes).
+tex/InterimReport.pdf (4 pages, 107493 bytes).
 PDF statistics:
  45 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream
