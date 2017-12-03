@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  3 DEC 2017 13:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  3 DEC 2017 13:48
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -277,7 +277,7 @@ fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
 /local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
 Output written on /Users/Leafeon/Desktop/G53IDS/Documentation/InterimReport/.la
-tex/InterimReport.pdf (6 pages, 125649 bytes).
+tex/InterimReport.pdf (6 pages, 125844 bytes).
 PDF statistics:
  55 PDF objects out of 1000 (max. 8388607)
  38 compressed objects within 1 object stream
