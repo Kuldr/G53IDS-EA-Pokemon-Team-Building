@@ -13,4 +13,5 @@
 \contentsline {subsection}{\numberline {8.1}Project Management / Contributions and Reflections}{6}
 \contentsline {section}{\numberline {9}Appendix}{7}
 \contentsline {subsection}{\numberline {9.1}Meeting Minutes}{7}
-\contentsline {subsection}{\numberline {9.2}References}{7}
+\contentsline {subsection}{\numberline {9.2}Work Plan}{8}
+\contentsline {subsection}{\numberline {9.3}References}{9}
