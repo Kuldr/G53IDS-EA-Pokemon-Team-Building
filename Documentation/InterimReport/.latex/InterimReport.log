@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  3 DEC 2017 13:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  3 DEC 2017 13:24
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -233,7 +233,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 107--113
  []
 
 [2] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 178--181
+Underfull \hbox (badness 10000) in paragraph at lines 183--186
 
  []
 
@@ -264,7 +264,7 @@ b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
 sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
 r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
 Output written on /Users/Leafeon/Desktop/G53IDS/Documentation/InterimReport/.la
-tex/InterimReport.pdf (4 pages, 108251 bytes).
+tex/InterimReport.pdf (4 pages, 108337 bytes).
 PDF statistics:
  45 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream
