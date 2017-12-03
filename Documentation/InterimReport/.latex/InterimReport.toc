@@ -1,3 +1,4 @@
+\contentsline {section}{References}{2}
 \contentsline {section}{\numberline {1}Introduction}{3}
 \contentsline {section}{\numberline {2}Motivation}{3}
 \contentsline {section}{\numberline {3}Related Work}{4}
@@ -11,3 +12,5 @@
 \contentsline {section}{\numberline {8}Progress}{6}
 \contentsline {subsection}{\numberline {8.1}Project Management / Contributions and Reflections}{6}
 \contentsline {section}{\numberline {9}Appendix}{7}
+\contentsline {subsection}{\numberline {9.1}Meeting Minutes}{7}
+\contentsline {subsection}{\numberline {9.2}References}{7}
