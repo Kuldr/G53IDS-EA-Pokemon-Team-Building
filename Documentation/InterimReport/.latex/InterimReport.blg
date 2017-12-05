@@ -3,44 +3,46 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: .latex/InterimReport.aux
 The style file: plain.bst
 Database file #1: InterimReport.bib
-You've used 3 entries,
+Warning--I didn't find a database entry for "openAI"
+You've used 9 entries,
             2118 wiz_defined-function locations,
-            521 strings with 4653 characters,
-and the built_in function-call counts, 1205 in all, are:
-= -- 124
-> -- 53
+            563 strings with 5733 characters,
+and the built_in function-call counts, 3000 in all, are:
+= -- 292
+> -- 157
 < -- 2
-+ -- 21
-- -- 18
-* -- 76
-:= -- 196
-add.period$ -- 11
-call.type$ -- 3
-change.case$ -- 18
++ -- 63
+- -- 54
+* -- 199
+:= -- 504
+add.period$ -- 29
+call.type$ -- 9
+change.case$ -- 53
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 52
-empty$ -- 92
-format.name$ -- 18
-if$ -- 264
+cite$ -- 9
+duplicate$ -- 102
+empty$ -- 232
+format.name$ -- 54
+if$ -- 630
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 3
-newline$ -- 18
-num.names$ -- 6
-pop$ -- 21
+int.to.str$ -- 9
+missing$ -- 5
+newline$ -- 48
+num.names$ -- 18
+pop$ -- 68
 preamble$ -- 1
-purify$ -- 15
+purify$ -- 44
 quote$ -- 0
-skip$ -- 38
+skip$ -- 81
 stack$ -- 0
-substring$ -- 63
-swap$ -- 18
+substring$ -- 137
+swap$ -- 24
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 12
+type$ -- 36
 warning$ -- 0
-while$ -- 12
-width$ -- 4
-write$ -- 38
+while$ -- 28
+width$ -- 10
+write$ -- 100
+(There was 1 warning)

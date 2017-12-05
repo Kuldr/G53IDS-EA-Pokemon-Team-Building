@@ -87,6 +87,7 @@ INPUT ./images/workPlan.png
 INPUT /Users/Leafeon/Desktop/G53IDS/Documentation/InterimReport/.latex/InterimReport.bbl
 INPUT /Users/Leafeon/Desktop/G53IDS/Documentation/InterimReport/.latex/InterimReport.bbl
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT /Users/Leafeon/Desktop/G53IDS/Documentation/InterimReport/.latex/InterimReport.aux
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
@@ -96,3 +97,4 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
