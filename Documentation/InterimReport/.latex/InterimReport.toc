@@ -2,22 +2,22 @@
 \contentsline {section}{\numberline {2}Related Work}{4}
 \contentsline {section}{\numberline {3}Description of the Work}{5}
 \contentsline {section}{\numberline {4}Methodology}{5}
-\contentsline {subsection}{\numberline {4.1}Object Orientated Design and Python}{5}
-\contentsline {subsection}{\numberline {4.2}Evolutionary Algorithms}{5}
-\contentsline {subsection}{\numberline {4.3}Software Engineering Tools}{5}
+\contentsline {subsection}{\numberline {4.1}Evolutionary Algorithms}{5}
+\contentsline {subsection}{\numberline {4.2}Object Orientated Design and Python}{6}
+\contentsline {subsection}{\numberline {4.3}Software Engineering Tools}{6}
 \contentsline {subparagraph}{Git}{6}
-\contentsline {subparagraph}{LaTeX}{6}
-\contentsline {subparagraph}{Atom}{6}
-\contentsline {section}{\numberline {5}Design}{6}
-\contentsline {section}{\numberline {6}Implementation}{6}
-\contentsline {section}{\numberline {7}Progress}{6}
-\contentsline {subsection}{\numberline {7.1}Project Management / Contributions and Reflections}{6}
-\contentsline {section}{\numberline {8}Appendix}{8}
-\contentsline {subsection}{\numberline {8.1}Meeting Minutes}{8}
-\contentsline {subparagraph}{6th October}{8}
-\contentsline {subparagraph}{26th October}{8}
-\contentsline {subparagraph}{2nd November}{8}
-\contentsline {subparagraph}{21st November}{8}
-\contentsline {subparagraph}{28th November}{8}
-\contentsline {subsection}{\numberline {8.2}Work Plan}{9}
-\contentsline {subsection}{\numberline {8.3}References}{10}
+\contentsline {subparagraph}{LaTeX}{7}
+\contentsline {subparagraph}{Atom}{7}
+\contentsline {section}{\numberline {5}Design}{7}
+\contentsline {section}{\numberline {6}Implementation}{7}
+\contentsline {section}{\numberline {7}Progress}{7}
+\contentsline {subsection}{\numberline {7.1}Project Management / Contributions and Reflections}{7}
+\contentsline {section}{\numberline {8}Appendix}{9}
+\contentsline {subsection}{\numberline {8.1}Meeting Minutes}{9}
+\contentsline {subparagraph}{6th October}{9}
+\contentsline {subparagraph}{26th October}{9}
+\contentsline {subparagraph}{2nd November}{9}
+\contentsline {subparagraph}{21st November}{9}
+\contentsline {subparagraph}{28th November}{9}
+\contentsline {subsection}{\numberline {8.2}Work Plan}{10}
+\contentsline {subsection}{\numberline {8.3}References}{11}
