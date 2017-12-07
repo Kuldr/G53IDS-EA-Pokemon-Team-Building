@@ -153,6 +153,9 @@ Another method was Proportional Inheritance where `the average is weighted based
 \end{itemize}
 
 \section{Methodology}
+\begin{itemize}
+    \item Citations
+\end{itemize}
 \subsection{Evolutionary Algorithms}
 %\begin{itemize}
 %    \item Choice of GA and MA
@@ -205,11 +208,11 @@ Other AI optimisation techniques could be used to solve this problem, such as Lo
 The key draw back of the local search methods is defining a move operators for this problem, as it is such a high dimensionality problem and not all of the dimensions have obvious move operators.
 
 \subsection{Object Orientated Design and Python}
-\begin{itemize}
-    \item Easy adaptation
-    \item Conversation from GA to MA
-    \item Commonly used, lots of APIs
-\end{itemize}
+%\begin{itemize}
+%    \item Easy adaptation
+%    \item Conversation from GA to MA
+%    \item Commonly used, lots of APIs
+%\end{itemize}
 The project will be coded in Python, a powerful Object Orientated programming language.
 Python was chosen due to its strong object orientated design features that will be rather suitable for coding of evolutionary algorithms.
 By following several object orientated design practices the project will be easily adaptable through out development, primarily allowing for the easy adaptation to the MA further in the project by reusing multiple classes.
@@ -219,13 +222,13 @@ This popularity means that there is extensive resources on the language and it g
 Alongside its popularity comes many usable APIs, although the project is going to be mainly created from scratch at some points the use of an API might be relevant, and it should be simple to find one that will suit the needs of the project.
 
 \subsection{Software Engineering Tools}
-\begin{itemize}
+%\begin{itemize}
     %\item Git
     %\item Latex
     %\item Atom
     %\item How these tools work together and help with project management and speed up work
-    \item Citations to show that these are good tools
-\end{itemize}
+    %\item Citations to show that these are good tools
+%\end{itemize}
 \par
 To aid with the large scope of this project, a variety of software engineering tools are being used.
 This section will list some of the larger tools and processes that they provide.
@@ -271,11 +274,38 @@ In the long term this will help with the project management of the project by he
 \end{itemize}
 
 \section{Progress}
-\subsection{Project Management / Contributions and Reflections}
 \begin{itemize}
     \item Current achievements in the project
     \item Personal Reflections
 \end{itemize}
+\subsection{Current Achievements}
+\par
+Currently the project has some code written for it, with the major achievement being the general GA structure being written in an adaptable manner, with it working on a benchmark function successfully.
+There is also a basic outline of the representation being worked upon that will with further developments to come.
+\par
+The code for the general GA structure can be seen in the appendix, and the best solution and objective value for running the benchmark function can be seen in the table.
+The benchmark function is the Sum of Squares, in this the objective value is the sum of the squares of all the elements (2 in this example).
+This objective value is to be minimised giving a global maximum of every element being 0.
+In this case the following hyper parameters were used:
+\begin{equation}
+    range = (-5, 5), generations = 50, populationSize = 10, mutationRate = 0.1
+\end{equation}
+Running it 5 times gave the following results:
+\begin{center}
+    \begin{tabular}{ c c | c }
+        x & y & Objective Value \\
+        \hline
+        1 & 2 & 3 \\
+        2 & 2 & 2 \\
+        2 & 2 & 2 \\
+        2 & 2 & 2 \\
+        2 & 2 & 2 \\
+    \end{tabular}
+\end{center}
+\par
+Although it the reason of this simplistic benchmark function was not to test the capabilities of the GA or any of the methods created it does show that the overall structure works and it can now be easily adapted to the problem with confidence that it is all working.
+
+\subsection{Reflections on Work Plan}
 \par
 Through out project management has been a key consideration, both to allow clear progress to be seen and to get updates on how to move forward.
 To aid with the management of the project, tasks have been reconsidered to make progress easier or to give time to tackle arising problems.
@@ -313,6 +343,7 @@ Other shortcomings have been with other work loads and how they have been balanc
 \par
 A minor change to the work plan is the allocation of time to the creation and finalising of a presentation or demonstration.
 This hasn't been outlined previously as the date for the presentation or demonstration hadn't been set.
+\\ \par
 
 
 \pagebreak
