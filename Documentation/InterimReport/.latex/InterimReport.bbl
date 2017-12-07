@@ -1,5 +1,9 @@
 \begin{thebibliography}{10}
 
+\bibitem{showdown}
+Pokemon showdown.
+\newblock \url{https://pokemonshowdown.com/}, December 2017.
+
 \bibitem{expensiveOptimisation}
 Maumita Bhattacharya.
 \newblock Evolutionary approaches to expensive optimisation.

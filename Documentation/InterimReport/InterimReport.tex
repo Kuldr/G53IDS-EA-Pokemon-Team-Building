@@ -259,14 +259,19 @@ In the long term this will help with the project management of the project by he
 
 \section{Implementation and Design}
 \begin{itemize}
-    \item Genetic Algorithm
-    \item High level Representation Explanation
-    \item Language and Platform choices
     \item Separation of settings
-    \item Low level Representation Explanation
-    \item Validation methods (if made by then)
+    %\item High level Representation Explanation
+    %\item Low level Representation Explanation
     \item Use of the benchmark example
 \end{itemize}
+\subsection{Representation}
+\par
+Currently the representation is not fully developed but it has a general outline and some design choices that will be outlined here.
+The representation is going to be a set of 6 \Pokemon{} in the team with each \Pokemon{} having its own set of variables that are required to accurately describe it for competitive play.
+To allow ease of storage and compatibility with \Pokeapi{} some values will be stored as an id number that corresponds with the relevant data in the API\@.
+Other values will be stored as simple integer values or enumerations as required.
+\par
+This representation will then be presented to the user in a format known to the community as `Showdown Format' as it will be useable with the import feature of an online simulator called \Pokemon{} Showdown\cite{showdown}.
 
 \section{Progress}
 %\begin{itemize}
