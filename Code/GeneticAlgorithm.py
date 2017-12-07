@@ -62,5 +62,6 @@ for i in range(1, constants.POPULATION_SIZE):
     if( fitness[i] < bestFitness ):
         bestIndex = i
         bestFitness = fitness[i]
+print('\n Best Result')        
 print(population[bestIndex])
-print(best)
+print(bestFitness)
