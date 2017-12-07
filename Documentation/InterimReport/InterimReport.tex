@@ -170,7 +170,7 @@ The key advantage of evolutionary algorithms is that they can effectively explor
 For example in a team of \Pokemon{} each team member on a team of 6 can be chosen from the 805 different species of \Pokemon{}.
 This gives the following number of possibilities:
 \begin{equation}
-{805 \choose 6} \approx 3.7 \times 10^{14} %370,964,071,354,800 to be exact
+{species \choose teamSize} = {807 \choose 6} = 3.765 \times 10^{14}\ (4sf) %376,545,899,656,927 to be exact
 \end{equation}
 \par
 Once you begin to factor the the other potential values it becomes a lot larger very quickly, a rough estimate for the number of possibilities is as follows:
@@ -178,8 +178,8 @@ Once you begin to factor the the other potential values it becomes a lot larger 
 {species \times IVs^{stats} \times EVs^{stats} \times levels \times happiness \times abilities \times genders \times items \times {moves \choose move slots} \choose teamSize}
 \end{equation}
 \begin{equation}
-    {805 \times 31^6 \times 256^6 \times 100 \times 256 \times 3 \times 2 \times 354 \times {728 \choose 4} \choose 6} \approx 5.806 \times 10^{261}
-\end{equation} % 5805564250098217566413745759362317859267962644334804551081337525956842691645704427298200516694949053472510683805790475627513784354770944260529478437615507670626953630352539809184118940875130891136454789835621643155286907893148186176782015814134072377291571200000 exactly :P
+    {807 \times 31^6 \times 256^6 \times 100 \times 256 \times 3 \times 2 \times 354 \times {728 \choose 4} \choose 6} = 5.893 \times 10^{261}\ (4sf)
+\end{equation} % 5892646138241710986407793497445852707778105080508958016801817373764061910688657477422986377898950796546392632127158482762259927547606249722743913164896701603448604234412592111287339200538369501817891667466913812521600691151442407389407976543054201078289530880000 exactly :P
 \par
 Although this is an astronomically large search space, a large proportion of these possibilities will be invalid solutions as if any of the team members aren't valid then the whole solution becomes invalid.
 By using a evolutionary algorithm this search space can be quickly explored and iterated upon.
