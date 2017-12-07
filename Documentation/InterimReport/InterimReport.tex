@@ -83,13 +83,14 @@ These results will be then compared to human designed solutions to conclude if t
 
 \section{Related Work}
 \begin{itemize}
+    \item Add sub sections
     \item Talk about other AI game playing and how they approach it
     \item Discuss the Hearthstone deck building GA
     \item Investigate more works to talk about here (gaming and more general)
     \item Starcraft EA\cite{starcraftEA}
     \item GAs, MAs and other EAs
 \end{itemize}
-\par
+\subsection{AI and Game Playing}
 Many AI approaches to games tackle the aspect of playing the matches and the decision making process to choose the best action.
 Lots of research and development has happened in these areas with many effective techniques being discovered.
 One key reason the problem of prematch decision making hasn't been tackled is due to the lack of need for it with classical table top games ranging from Tic-Tac-Toe to Chess to Go requiring no preparation before the match begins.
@@ -99,45 +100,44 @@ With current methods it would be rather simple to build and train an AI to play 
 This is often problematic as season rotation could add in new elements to the game or make certain elements no longer useable, or shifts in the metagame will mean that the AI is easily countered.
 \par
 Team building is a form of optimisation problem as you are trying to bring the optimal team to the match so you have the best chance of winning.
-
-%First Person
-A variety of work has been conducted looking at optimisation via AI techniques, in particular I looked into techniques that tackled having a large, vast search space and where the correctness of a solution was hard to judge.
-
-%First Person
-Both of these issues were things that I saw as issues that I would have to tackle to solve the team building problem.
-\\ \par
+\par
+A variety of work has been conducted looking at optimisation via AI techniques, in this review of previous works a focus has been upon techniques that tackled having a large, vast search space and where the correctness of a solution was hard to judge.
+Both of these issues are problems that will have to be over come in building this project.
+\subsection{Hearthstone Deck Building GA}
+\par
 Garc{\'\i}a-S{\'a}nchez et al.\ tackled a very similar problem using a genetic algorithm to approach deck building\cite{hearthstoneAI}.
 The example they used was a popular collectable card game, Hearthstone, and they tried to create a viable competitive deck through the genetic algorithm.
 
 %First Person
 This is of particular interest as several parts of their study directly relate to what I am trying to achieve, as well as several short comings that I would have to take into account.
 \par
-An evolutionary algorithm was used as `they commonly produce very effective combinations of elements', which a deck can be described as a combination of cards.
+An evolutionary algorithm was used as `they commonly produce very effective combinations of elements'\cite{hearthstoneAI}, which a deck can be described as a combination of cards.
 This also allowed for competitive decks to be built from scratch with no expert knowledge required.
 This was done by encoding the individuals as a vector of cards, in this case the 30 element vector became the deck.
 \par
 In the deck building process it was possible to have a deck that would violate the rules of the game.
 To discourage the EA from creating decks that violate these rules; a correctness metric was taking into account when calculating the fitness of each individual.
-If an individual was incorrect it wasn't evaluated further in the fitness calculation process and given the worse possible score.
+If an individual was incorrect it wasn't evaluated further in the fitness calculation process and given the worse possible score\cite{hearthstoneAI}.
 \\ \par
 A large part of the work talks about the fitness evaluation, as with many of these processes it is hard to quantify how well a individual will do.
 Even though human experts will have a strong intrinsic idea to what is better or worse, they will often playtest their ideas for several matches, sometimes ranging into the hundreds, before applying some analysis to develop their idea further.
 To give the most realistic simulation a separate AI played each individual against some previously expert designed decks, that have been proven to be successful in the metagame that the AI was evolving in.
-It played several matches with each individual against the decks, with 16 matches versus the 8 chosen opponent decks totalling 128 matches per individual.
+It played several matches with each individual against the decks, with 16 matches versus the 8 chosen opponent decks totalling 128 matches per individual\cite{hearthstoneAI}.
 \par
-One of the key upsides of this was that the AI could evolve to combat common decks that it would face if it was to be played in competitive play.
+One of the key upsides of this was that the GA could evolve to combat common decks that it would face if it was to be played in competitive play.
 Knowledge of key opposing threats is something that high level experts take into account, this knowledge was taken from an article evaluating the current meta game written by professional players of the game.
 Another upside was from having a high number of matches being played for the evaluation; by playing a large proportion of games they can mitigate any randomness in the matches that aren't down to the deck building, such as the cards in the starting hand.
 To further mitigate randomness and to give a more accurate representation of the individuals fitness, statistical analysis was used to calculate the final fitness score.
 This was done to also as it is important to find `a deck with a fair chance to win against all decks in the metagame' not one that is strong against a particular opponent and weak to all others.
 \par
 Through this method of fitness evaluation some flaws and potential shortcomings where brought up.
-As the fitness evaluation required a large amount of matches to be played it resulted in `every execution of the algorithm requires several days', even when running on a small population size and number of generations (10 and 50 respectively).
+As the fitness evaluation required a large amount of matches to be played it resulted in `every execution of the algorithm requires several days'\cite{hearthstoneAI}, even when running on a small population size and number of generations (10 and 50 respectively).
 Although not a specifically a bad thing a longer run time would discourage the use of such tools, more so in games where the meta game changes more rapidly.
 The evaluation also required the expert knowledge of the meta decks to be tested against or even that an established meta is in effect where as many experts can theory craft a rough idea before changes to the meta happen.
 The most significant flaw with this style of evaluation is that it relies on the ability of another AI to pilot the deck.
-It was suggested that it may overfit `with regards to the AI capabilities and playing style' even going as far as pointing out that it `can use some decks (and some playing styles) better than others'.
-\\ \par
+It was suggested that it may overfit `with regards to the AI capabilities and playing style' even going as far as pointing out that it `can use some decks (and some playing styles) better than others'\cite{hearthstoneAI}.
+\subsection{NEXT SUBSECTION}
+\par
 Maumita Bhattacharya spoke about differing approaches to the problem of computationally expensive fitness evaluation\cite{expensiveOptimisation}.
 Several of the techniques described approximated the fitness of each individual while only periodically calculating a more accurate value.
 Some of these techniques achieved this my simulating a simpler model while more specific techniques where discussed too.

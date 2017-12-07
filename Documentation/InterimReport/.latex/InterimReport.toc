@@ -3,6 +3,9 @@
 \contentsline {subsection}{\numberline {1.2}Motivation}{3}
 \contentsline {subsection}{\numberline {1.3}Aims and Objectives}{3}
 \contentsline {section}{\numberline {2}Related Work}{4}
+\contentsline {subsection}{\numberline {2.1}AI and Game Playing}{4}
+\contentsline {subsection}{\numberline {2.2}Hearthstone Deck Building GA}{4}
+\contentsline {subsection}{\numberline {2.3}NEXT SUBSECTION}{5}
 \contentsline {section}{\numberline {3}Methodology}{5}
 \contentsline {subsection}{\numberline {3.1}Evolutionary Algorithms}{5}
 \contentsline {subsection}{\numberline {3.2}Object Orientated Design and Python}{6}
@@ -13,8 +16,8 @@
 \contentsline {section}{\numberline {4}Design and Implementation}{7}
 \contentsline {subsection}{\numberline {4.1}Representation}{7}
 \contentsline {subsection}{\numberline {4.2}Genetic Algorithm}{7}
-\contentsline {section}{\numberline {5}Progress}{7}
-\contentsline {subsection}{\numberline {5.1}Current Achievements}{7}
+\contentsline {section}{\numberline {5}Progress}{8}
+\contentsline {subsection}{\numberline {5.1}Current Achievements}{8}
 \contentsline {subsection}{\numberline {5.2}Reflections on Work Plan}{8}
 \contentsline {section}{\numberline {6}Appendix}{10}
 \contentsline {subsection}{\numberline {6.1}Code}{10}
