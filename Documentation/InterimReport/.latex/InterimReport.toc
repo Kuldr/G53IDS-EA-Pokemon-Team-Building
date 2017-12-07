@@ -17,7 +17,7 @@
 \contentsline {subsubsection}{\numberline {7.1.1}GeneticAlgorithm.py}{9}
 \contentsline {subsubsection}{\numberline {7.1.2}constants.py}{10}
 \contentsline {subsubsection}{\numberline {7.1.3}sumSquares.py}{10}
-\contentsline {subsubsection}{\numberline {7.1.4}sumSquaresIndividual.py}{10}
+\contentsline {subsubsection}{\numberline {7.1.4}sumSquaresIndividual.py}{11}
 \contentsline {subsection}{\numberline {7.2}Meeting Minutes}{11}
 \contentsline {subparagraph}{6th October}{11}
 \contentsline {subparagraph}{26th October}{11}
