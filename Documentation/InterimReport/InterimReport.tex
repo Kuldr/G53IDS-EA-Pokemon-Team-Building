@@ -284,22 +284,26 @@ Currently the project has some code written for it, with the major achievement b
 There is also a basic outline of the representation being worked upon that will with further developments to come.
 \par
 The code for the general GA structure can be seen in the appendix, and the best solution and objective value for running the benchmark function can be seen in the table.
-The benchmark function is the Sum of Squares, in this the objective value is the sum of the squares of all the elements (2 in this example).
+The benchmark function is the Sum of Squares, in this the objective value is the sum of the squares of all the elements (2 in this example) where each element can be in the range -5 to 5, as real values.
+The objective function can be calculated using the following equation:
+\begin{equation}
+    where\ n = 2\quad \sum_{i=1}^{n} x_i^2 = x_1^2 + x_2^2
+\end{equation}
 This objective value is to be minimised giving a global maximum of every element being 0.
 In this case the following hyper parameters were used:
 \begin{equation}
-    range = (-5, 5), generations = 50, populationSize = 10, mutationRate = 0.1
+    generations = 50,\ populationSize = 10,\ mutationRate = 0.1
 \end{equation}
-Running it 5 times gave the following results:
+Running it 5 times gave the following results to 3 significant figures:
 \begin{center}
     \begin{tabular}{ c c | c }
-        x & y & Objective Value \\
+        x\textsubscript{1} & x\textsubscript{2} & Objective Value \\
         \hline
-        1 & 2 & 3 \\
-        2 & 2 & 2 \\
-        2 & 2 & 2 \\
-        2 & 2 & 2 \\
-        2 & 2 & 2 \\
+        0 & 0 & 0 \\
+        0.866 & 0.240 & 0.807 \\
+        -0.014 & -0.126 & 0.016 \\
+        0.107 & 0.694 & 0.493 \\
+        0.000 & -0.011 & 0.000 \\
     \end{tabular}
 \end{center}
 \par
