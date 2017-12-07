@@ -257,7 +257,7 @@ It also integrates well with Git showing which files and specific lines have bee
 Together all of these tools help with the software engineering process by both encouraging good practice and streamlining some more complex processes.
 In the long term this will help with the project management of the project by helping keeping it organised and clear.
 
-\section{Implementation and Design}
+\section{Design and Implementation}
 \begin{itemize}
     \item Separation of settings
     %\item High level Representation Explanation
@@ -272,6 +272,20 @@ To allow ease of storage and compatibility with \Pokeapi{} some values will be s
 Other values will be stored as simple integer values or enumerations as required.
 \par
 This representation will then be presented to the user in a format known to the community as `Showdown Format' as it will be useable with the import feature of an online simulator called \Pokemon{} Showdown\cite{showdown}.
+\subsection{Genetic Algorithm}
+\par
+The main core of the GA has been created outlining the key stages in the algorithm and setting a structure for the methods to be called upon.
+To show that it is functioning correctly a simple benchmark function has been created with some simple methods to go alongside it.
+\par
+Some of the key design decisions have been started with this main core of the program, one such decision is the separation of hyper parameters into a settings file to allow for easy access and tuning.
+Another design decision that has impacted upon the implementation is how the problems are accessed.
+Each individual is represented by its own class, this allows for you to instantiate objects of that class as each member of the population.
+Methods for accessing the variables and printing are also contained in this class to bring it in line with python design practices.
+This will be developed further to give getter and setter methods to avoid invalid access to variables in the future.
+\par
+The problem is defined as its own class with all the relevant methods for the stages of the GA contained within it.
+Doing so gives the main core a more simplistic design and gives the ability to have problem specific methods.
+This can be developed further by having some general GA methods such as selection criteria to be defined in a separate general file and imported into the problem.
 
 \section{Progress}
 %\begin{itemize}
