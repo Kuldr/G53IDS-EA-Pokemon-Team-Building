@@ -2,6 +2,8 @@
 \usepackage{lipsum}
 \usepackage{url}
 \usepackage{graphicx}
+\usepackage{listings}
+\lstset{language=Python}
 \usepackage[margin=2cm]{geometry}
 \graphicspath{ {images/} }
 
@@ -258,14 +260,10 @@ It also integrates well with Git showing which files and specific lines have bee
 Together all of these tools help with the software engineering process by both encouraging good practice and streamlining some more complex processes.
 In the long term this will help with the project management of the project by helping keeping it organised and clear.
 
-\section{Design}
+\section{Implementation and Design}
 \begin{itemize}
     \item Genetic Algorithm
     \item High level Representation Explanation
-\end{itemize}
-
-\section{Implementation}
-\begin{itemize}
     \item Language and Platform choices
     \item Separation of settings
     \item Low level Representation Explanation
@@ -352,6 +350,17 @@ This hasn't been outlined previously as the date for the presentation or demonst
 
 \pagebreak
 \section{Appendix}
+\subsection{Code}
+\subsubsection{GeneticAlgorithm.py}
+\lstinputlisting[language=Python, firstline=7]{codeForReport/GeneticAlgorithm.py}
+\subsubsection{constants.py}
+\lstinputlisting[language=Python]{codeForReport/constants.py}
+\subsubsection{sumSquares.py}
+\lstinputlisting[language=Python]{codeForReport/sumSquares.py}
+\subsubsection{sumSquaresIndividual.py}
+\lstinputlisting[language=Python]{codeForReport/sumSquaresIndividual.py}
+
+
 \subsection{Meeting Minutes}
 \subparagraph{6th October}
 Overview and recap of the project idea, including background and information on the topic.\\
