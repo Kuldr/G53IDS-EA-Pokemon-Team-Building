@@ -11,19 +11,47 @@
 \newcommand{\Pokemon}{Pok\'{e}mon}
 \newcommand{\Pokeapi}{Pok\'{e}api}
 
-%Title Information
-\title{
-    Interim Report
-    \\ \large{G53IDS}
-    \\ \large{Project Title: Applying Evolutionary Algorithms to \Pokemon{} Team Building}\vspace{-3ex}}
-\author{4262648 Benjamin Charlton (psybc3)}
-\date{\vspace{-2ex}8\textsuperscript{th} December 2017}
-
 \begin{document}
 
-%Title Page
-\maketitle
-\pagebreak
+\begin{titlepage}
+	\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+	\center{}
+
+    %Headings
+	\LARGE{University of Nottingham}\\[1.5cm]
+	\Large{Computer Science with Artificial Intelligence MSci}\\[0.5cm]
+	\large{G53IDS - Individual Dissertation}\\[0.5cm]
+
+    %Title
+	\HRule{}\\[0.4cm]
+	{\huge\bfseries Applying Evolutionary Algorithms to \Pokemon{} Team Building}\\[0.4cm]
+	\HRule{}\\[1.5cm]
+
+    %Authors
+	\begin{minipage}{0.4\textwidth}
+		\begin{flushleft}
+			\large
+			\textit{Author}\\
+			Benjamin \textsc{Charlton}\\
+            psybc3@nottingham.ac.uk\\
+            4262648
+		\end{flushleft}
+	\end{minipage}
+    \begin{minipage}{0.4\textwidth}
+		\begin{flushright}
+			\large
+			\textit{Supervisor}\\
+			Prof. Bob \textsc{John}\\
+            Robert.John@nottingham.ac.uk
+		\end{flushright}
+	\end{minipage}
+
+    %Date
+	\vfill\vfill\vfill
+	{\large8\textsuperscript{th} December 2017}
+	\vfill
+
+\end{titlepage}
 
 %Contents Page
 \tableofcontents
@@ -83,19 +111,28 @@ These results will be then compared to human designed solutions to conclude if t
 
 \section{Related Work}
 \begin{itemize}
-    \item Add sub sections
-    \item Talk about other AI game playing and how they approach it
-    \item Discuss the Hearthstone deck building GA
     \item Investigate more works to talk about here (gaming and more general)
-    \item Starcraft EA\cite{starcraftEA}
     \item GAs, MAs and other EAs
 \end{itemize}
 \subsection{AI and Game Playing}
 Many AI approaches to games tackle the aspect of playing the matches and the decision making process to choose the best action.
 Lots of research and development has happened in these areas with many effective techniques being discovered.
-One key reason the problem of prematch decision making hasn't been tackled is due to the lack of need for it with classical table top games ranging from Tic-Tac-Toe to Chess to Go requiring no preparation before the match begins.
+One key reason the problem of prematch decision making hasn't been tackled is due to the lack of need for it with classical table top games requiring no preparation before the match begins.
+\\ \par
+Chess was an early and significant example in the history of AI, with the Deep Blue computer from IBM successfully beat the at the time world champion Garry Kasparov\cite{deepBlue}.
+This was significant as creating a winning chess AI was seen to be the next big milestone at the time in AI\@.
+To achieve this Deep Blue used a combination of techniques with the main underlying AI technique being a search method.
+To achieve this at the time custom hardware was created to help speed up the computation with a highly parallel structure that could evaluate nodes on the search tree quickly using hardware implementations.
+This meant that it could effectively search deeper than any other AI at the time.
 \par
-As the field of AI game playing moves forward into more complex games these prematch decisions will need to be considered.
+Go is the most recent milestone game to be beaten with AlphaGo claiming its victory against one of the best Go players, Lee Sedol, in March 2016\cite{alphaGo}.
+To achieve this the team uses Deep Neural Networks combined with Monte Carlo tree search, with a combination of supervised learning from human games and reinforcement learning via self-play.
+\par
+Recently AlphaGo has been beaten by a variation of itself AlphaGoZero, named as it had learnt from zero human knowledge\cite{alphaGoZero}.
+AlphaGoZero learnt entirely from self-play and achieved super human performance.
+This shows that not only can AI techniques successfully solve tasks but it is possible to do so with no expert knowledge.
+\\ \par
+As the field of AI game playing moves forward into more complex games prematch decisions will need to be considered.
 With current methods it would be rather simple to build and train an AI to play turn based strategy games, such as collectable card games or in this case \Pokemon{}, but the deck/team building would require an expert to decide what the AI will be trained to use.
 This is often problematic as season rotation could add in new elements to the game or make certain elements no longer useable, or shifts in the metagame will mean that the AI is easily countered.
 \par
@@ -107,9 +144,7 @@ Both of these issues are problems that will have to be over come in building thi
 \par
 Garc{\'\i}a-S{\'a}nchez et al.\ tackled a very similar problem using a genetic algorithm to approach deck building\cite{hearthstoneAI}.
 The example they used was a popular collectable card game, Hearthstone, and they tried to create a viable competitive deck through the genetic algorithm.
-
-%First Person
-This is of particular interest as several parts of their study directly relate to what I am trying to achieve, as well as several short comings that I would have to take into account.
+This is of particular interest as several parts of their study directly relate to what the project is trying to achieve, as well as several short comings that will have to take into account.
 \par
 An evolutionary algorithm was used as `they commonly produce very effective combinations of elements'\cite{hearthstoneAI}, which a deck can be described as a combination of cards.
 This also allowed for competitive decks to be built from scratch with no expert knowledge required.
@@ -136,7 +171,7 @@ Although not a specifically a bad thing a longer run time would discourage the u
 The evaluation also required the expert knowledge of the meta decks to be tested against or even that an established meta is in effect where as many experts can theory craft a rough idea before changes to the meta happen.
 The most significant flaw with this style of evaluation is that it relies on the ability of another AI to pilot the deck.
 It was suggested that it may overfit `with regards to the AI capabilities and playing style' even going as far as pointing out that it `can use some decks (and some playing styles) better than others'\cite{hearthstoneAI}.
-\subsection{NEXT SUBSECTION}
+\subsection{Genetic Algorithms}
 \par
 Maumita Bhattacharya spoke about differing approaches to the problem of computationally expensive fitness evaluation\cite{expensiveOptimisation}.
 Several of the techniques described approximated the fitness of each individual while only periodically calculating a more accurate value.
@@ -152,9 +187,9 @@ Averaged Inheritance simply said `a child is assigned the average fitness of its
 Another method was Proportional Inheritance where `the average is weighted based on the amount of genetic material taken from each parent', while slightly more expensive it takes into account of none symmetric crossover schemes such as one point crossover where the genetic material is not equal from each parent.
 
 \section{Methodology}
-\begin{itemize}
-    \item Citations
-\end{itemize}
+%\begin{itemize}
+    %\item Citations
+%\end{itemize}
 \subsection{Evolutionary Algorithms}
 %\begin{itemize}
 %    \item Choice of GA and MA

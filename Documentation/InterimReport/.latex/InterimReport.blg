@@ -6,43 +6,43 @@ Database file #1: InterimReport.bib
 Warning--to sort, need author or key in showdown
 You've used 12 entries,
             2118 wiz_defined-function locations,
-            573 strings with 6026 characters,
-and the built_in function-call counts, 3589 in all, are:
-= -- 348
-> -- 172
+            574 strings with 6133 characters,
+and the built_in function-call counts, 3988 in all, are:
+= -- 381
+> -- 223
 < -- 2
-+ -- 71
-- -- 58
-* -- 223
-:= -- 594
++ -- 91
+- -- 78
+* -- 277
+:= -- 668
 add.period$ -- 37
 call.type$ -- 12
-change.case$ -- 64
+change.case$ -- 73
 chr.to.int$ -- 0
 cite$ -- 13
-duplicate$ -- 123
-empty$ -- 299
-format.name$ -- 58
-if$ -- 763
+duplicate$ -- 127
+empty$ -- 304
+format.name$ -- 78
+if$ -- 830
 int.to.chr$ -- 0
 int.to.str$ -- 12
-missing$ -- 5
+missing$ -- 6
 newline$ -- 62
 num.names$ -- 22
-pop$ -- 92
+pop$ -- 95
 preamble$ -- 1
-purify$ -- 52
+purify$ -- 61
 quote$ -- 0
-skip$ -- 101
+skip$ -- 102
 stack$ -- 0
-substring$ -- 153
+substring$ -- 178
 swap$ -- 27
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 48
 warning$ -- 1
-while$ -- 32
+while$ -- 34
 width$ -- 14
-write$ -- 128
+write$ -- 129
 (There was 1 warning)

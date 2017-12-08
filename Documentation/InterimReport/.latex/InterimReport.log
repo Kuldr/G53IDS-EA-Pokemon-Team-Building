@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  7 DEC 2017 10:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  8 DEC 2017 12:24
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -123,18 +123,18 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 .aux)
 \openout1 = `InterimReport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
  (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count100
@@ -229,11 +229,11 @@ e
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 25.
+(Font)              <12> on input line 39.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 25.
+(Font)              <8> on input line 39.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 25.
+(Font)              <6> on input line 39.
 [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
@@ -247,54 +247,65 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write3
 \openout3 = `InterimReport.toc'.
 
- [2]
-Underfull \hbox (badness 10000) in paragraph at lines 65--69
+ [1]
+Underfull \hbox (badness 10000) in paragraph at lines 93--97
 
  []
 
-[3]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 86.
+[2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 114.
+
  (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 86.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 114.
 
 Underfull \hbox (badness 10000) in paragraph at lines 118--121
 
  []
 
-[4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 187--188
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--134
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--193
+Underfull \hbox (badness 10000) in paragraph at lines 153--156
+
+ []
+
+[3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--228
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 287--291
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 252--256
+Underfull \hbox (badness 10000) in paragraph at lines 363--366
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 372--376
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 328--331
+Underfull \hbox (badness 10000) in paragraph at lines 397--399
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 337--341
-
- []
-
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 362--364
-
- []
-
-[9] (./codeForReport/geneticAlgorithm.py
+[8] (./codeForReport/geneticAlgorithm.py
 Overfull \hbox (80.30887pt too wide) in paragraph at lines 37--39
 [][][][][][][][][][][][][][][][][][][][] 
  []
@@ -310,7 +321,7 @@ File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 62.
- [10])
+ [9])
 (./codeForReport/constants.py) (./codeForReport/sumSquares.py
 Overfull \hbox (20.30826pt too wide) in paragraph at lines 8--10
 [][][][][][][][][][][][][][][][][][][] 
@@ -333,35 +344,35 @@ Overfull \hbox (80.30887pt too wide) in paragraph at lines 43--44
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[11]) (./codeForReport/sumSquaresIndividual.py)
-Underfull \hbox (badness 10000) in paragraph at lines 386--391
+[10]) (./codeForReport/sumSquaresIndividual.py)
+Underfull \hbox (badness 10000) in paragraph at lines 421--426
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 392--396
+Underfull \hbox (badness 10000) in paragraph at lines 427--431
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 397--401
+Underfull \hbox (badness 10000) in paragraph at lines 432--436
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--405
+Underfull \hbox (badness 10000) in paragraph at lines 437--440
 
  []
 
-[12] <images/workPlan.png, id=52, 720.6925pt x 1718.42pt>
+[11] <images/workPlan.png, id=54, 720.6925pt x 1718.42pt>
 File: images/workPlan.png Graphic file (type png)
 
 <use images/workPlan.png>
-Package pdftex.def Info: images/workPlan.png used on input line 409.
+Package pdftex.def Info: images/workPlan.png used on input line 444.
 (pdftex.def)             Requested size: 295.9367pt x 705.62843pt.
 
 (/Users/Leafeon/Desktop/G53IDS/Documentation/InterimReport/.latex/InterimReport
-.bbl [13 <./images/workPlan.png>]
+.bbl [12 <./images/workPlan.png>]
 Underfull \hbox (badness 2875) in paragraph at lines 8--11
 []\OT1/cmr/m/n/10 Maumita Bhat-tacharya.  Evo-lu-tion-ary ap-proaches to ex-pen
 -sive op-ti-mi-sa-tion.  \OT1/cmr/m/it/10 arXiv preprint
@@ -379,19 +390,20 @@ Missing character: There is no ™ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-) [14]
+) [13]
 (/Users/Leafeon/Desktop/G53IDS/Documentation/InterimReport/.latex/InterimReport
 .aux) ) 
 Here is how much of TeX's memory you used:
- 3723 strings out of 493089
- 54063 string characters out of 6134843
+ 3730 strings out of 493089
+ 54146 string characters out of 6134843
  257709 words of memory out of 5000000
- 7153 multiletter control sequences out of 15000+600000
- 8409 words of font info for 30 fonts, out of 8000000 for 9000
+ 7158 multiletter control sequences out of 15000+600000
+ 9663 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,10n,40p,333b,1580s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
 0.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12
+.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10
 .pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.
 pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
 fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
@@ -402,12 +414,13 @@ sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
 cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
 /texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
 texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
 Output written on /Users/Leafeon/Desktop/G53IDS/Documentation/InterimReport/.la
-tex/InterimReport.pdf (14 pages, 268327 bytes).
+tex/InterimReport.pdf (14 pages, 289154 bytes).
 PDF statistics:
- 105 PDF objects out of 1000 (max. 8388607)
- 73 compressed objects within 1 object stream
+ 113 PDF objects out of 1000 (max. 8388607)
+ 79 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -45,12 +45,12 @@ David Silver, Aja Huang, Chris~J Maddison, Arthur Guez, Laurent Sifre, George
 \newblock Mastering the game of go with deep neural networks and tree search.
 \newblock {\em Nature}, 529(7587):484--489, 2016.
 
-\bibitem{starcraftEA}
-Quintin Smith.
-\newblock Algorithms discover build order from hell.
-\newblock
-  \url{https://www.rockpapershotgun.com/2010/11/02/genetic-algorithms-find-build-order-from-hell/},
-  November 2010.
+\bibitem{alphaGoZero}
+David Silver, Julian Schrittwieser, Karen Simonyan, Ioannis Antonoglou, Aja
+  Huang, Arthur Guez, Thomas Hubert, Lucas Baker, Matthew Lai, Adrian Bolton,
+  et~al.
+\newblock Mastering the game of go without human knowledge.
+\newblock {\em Nature}, 550(7676):354--359, 2017.
 
 \bibitem{fitnessInheritance}
 Robert~E. Smith, B.~A. Dike, and S.~A. Stegmann.
