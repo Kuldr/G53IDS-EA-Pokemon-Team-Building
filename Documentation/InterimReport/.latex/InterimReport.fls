@@ -91,12 +91,12 @@ INPUT /Users/Leafeon/Desktop/G53IDS/Documentation/InterimReport/.latex/InterimRe
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 OUTPUT /Users/Leafeon/Desktop/G53IDS/Documentation/InterimReport/.latex/InterimReport.toc
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
-INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 INPUT codeForReport/geneticAlgorithm.py
 INPUT codeForReport/geneticAlgorithm.py
 INPUT codeForReport/geneticAlgorithm.py
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/omlcmr.fd
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/omlcmr.fd
 INPUT codeForReport/constants.py

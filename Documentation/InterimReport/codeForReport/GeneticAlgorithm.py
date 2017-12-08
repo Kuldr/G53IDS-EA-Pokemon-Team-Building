@@ -34,7 +34,8 @@ for x in range(0, constants.NUMBER_OF_GENERATIONS):
         indexParent2 = problem.selection(constants.POPULATION_SIZE)
 
         #Apply Crossover to generate offspring
-        children.append(problem.crossover(population[indexParent1], population[indexParent2]))
+        children.append(problem.crossover(population[indexParent1],
+            population[indexParent2]))
 
         #Apply Mutation
         children[i] = problem.mutation(children[i], constants.MUTATION_RATE)
@@ -47,7 +48,8 @@ for x in range(0, constants.NUMBER_OF_GENERATIONS):
 
     #Population Replacement
     for i in range(0, len(children)):
-        population, fitness = problem.populationReplacement(population, fitness, children[i], childrenFitness[i], constants.POPULATION_SIZE)
+        population, fitness = problem.populationReplacement(population,
+            fitness, children[i], childrenFitness[i], constants.POPULATION_SIZE)
 
     #Print out the population
     print('\n Generation ' + str(x))
@@ -62,6 +64,6 @@ for i in range(1, constants.POPULATION_SIZE):
     if( fitness[i] < bestFitness ):
         bestIndex = i
         bestFitness = fitness[i]
-print('\n Best Result')        
+print('\n Best Result')
 print(population[bestIndex])
 print(bestFitness)

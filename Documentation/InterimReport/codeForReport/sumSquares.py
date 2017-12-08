@@ -16,11 +16,14 @@ class sumSquares:
         return random.randrange(populationSize)
 
     def crossover(self, parent1, parent2):
-        #Create a new individual where the first element comes from the first parent and the second from the second parent
+        #Create a new individual where the first element comes from the first parent
+        # and the second from the second parent
         return sumSquaresIndividual(parent1.x, parent2.y)
 
     def mutation(self, child, mutationRate):
-        #Randomly mutate the individual based upon the mutation rate, then randomly mutate either variable by multipling by a real number in the range (-3, 3)
+        #Randomly mutate the individual based upon the mutation rate,
+        # then randomly mutate either variable by multipling by a real
+        # number in the range (-3, 3)
         if( random.random() <= mutationRate ):
             if( random.randrange(2) == 0 ):
                 child.x *= random.uniform(-3.0, 3.0)
@@ -40,7 +43,8 @@ class sumSquares:
             child.y = -5
         return child
 
-    def populationReplacement(self, population, fitness, child, childFitness, populationSize):
+    def populationReplacement(self, population, fitness, child,
+        childFitness, populationSize):
         #Random Replacement but only if child is better than previous member
         indexToChange = random.randrange(populationSize)
         if( fitness[indexToChange] > childFitness ):
