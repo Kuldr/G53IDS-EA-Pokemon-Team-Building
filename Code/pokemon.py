@@ -46,37 +46,78 @@ class pokemon:
     def __str__(self):
         return self.showdownFormat
 
-    def showdownFormat(self):
-        #TODO ADDS IN A LINE ?? BETWEEN HAPPINESS AND EVS WHICH PREVENTS IMPORT
-        s = "" #Start a blank string and then add each part to it individually
-        s = s + str(pb.pokemon(self.formID)) + " "
-        s = s + "(" + self.gender + ")" + " "
-        s = s + "@ " + pb.item(self.item).name + "\n"
-        s = s + "Ability: " + "Lightning Rod" + "\n" #TODO: GET THE ABILITY FROM THE SLOT, MAKE A METHOD FOR THIS PORBABLY
-        s = s + "Level: " + str(self.level) + "\n"
+    def strFormName(self):
+        return str(pb.pokemon(self.formID))
+
+    #TODO: MAKE THIS WORK WITH ENUMS AND GENDERLESS
+    def strGender(self):
+        return self.gender
+
+    def strItem(self):
+        return pb.item(self.item).name
+
+    #TODO: MAKE THIS WORK FROM THE ABILITY SLOT
+    #TODO: MAKE A SUB METHOD THAT GETS THE ABILITY FROM THE SLOT
+    def strAbility(self):
+        return "Lightning Rod"
+
+    def strLevel(self):
+        return str(self.level)
+
+    def strShiny(self):
         if( self.shiny == True ):
-            s = s + "Shiny: Yes\n"
-        s = s + "Happiness: " + str(self.happiness) + "\n"
-        s = s + "EVs: "
+            return "Shiny: Yes\n"
+        else:
+            return ""
+
+    def strHappiness(self):
+        return str(self.happiness)
+
+    def strEvs(self):
+        s = "EVs: "
         s = s + str(self.evHP) + " HP / "
         s = s + str(self.evAtk) + " Atk / "
         s = s + str(self.evDef) + " Def / "
         s = s + str(self.evSpA) + " SpA / "
         s = s + str(self.evSpD) + " SpD / "
         s = s + str(self.evSpe) + " Spe\n"
-        s = s + self.nature + " Nature\n"
-        s = s + "IVs: "
+        return s
+
+    def strNature(self):
+        return self.nature + " Nature\n"
+
+    def strIVs(self):
+        s = "IVs: "
         s = s + str(self.ivHP) + " HP / "
         s = s + str(self.ivAtk) + " Atk / "
         s = s + str(self.ivDef) + " Def / "
         s = s + str(self.ivSpA) + " SpA / "
         s = s + str(self.ivSpD) + " SpD / "
         s = s + str(self.ivSpe) + " Spe\n"
+        return s
+
+    def strMoves(self):
         #TODO: WHAT IF NOT 4 MOVES
-        s = s + "- " + self.move1 + "\n"
+        s = "- " + self.move1 + "\n"
         s = s + "- " + self.move2 + "\n"
         s = s + "- " + self.move3 + "\n"
         s = s + "- " + self.move4
+        return s
+
+    def showdownFormat(self):
+        #TODO DO I MAKE THIS ONLY CALL ALL THE METHODS AND ADD NO EXTRA
+        s = "" #Start a blank string and then add each part to it individually
+        s = s + self.strFormName() + " "
+        s = s + "(" + self.strGender() + ")" + " "
+        s = s + "@ " + self.strItem() + "\n"
+        s = s + "Ability: " + self.strAbility() + "\n"
+        s = s + "Level: " + self.strLevel() + "\n"
+        s = s + self.strShiny()
+        s = s + "Happiness: " + self.strHappiness() + "\n"
+        s = s + self.strEvs()
+        s = s + self.strNature()
+        s = s + self.strIVs()
+        s = s + self.strMoves()
         return s
 
 p = pokemon()
