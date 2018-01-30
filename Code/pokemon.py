@@ -1,4 +1,10 @@
 import pokebase as pb
+from enum import Enum
+
+class GENDER(Enum):
+    MALE = 1
+    FEMALE = 2
+    GENDERLESS = 3
 
 class pokemon:
 
@@ -11,7 +17,7 @@ class pokemon:
 
     #Class Variables
     formID = 25 #Pikachu #Stored as the form id from which other infomation can be derived
-    gender = "M" #Conver to enum #TODO
+    gender = GENDER.GENDERLESS
     item = 213 #Light Ball #Stored as item id
     ability = 3 #Lightning Rod #Stored as the ability slot of that pokemon, to get further information on the ability would need to get all of the pokemons abilities and then iterate over them until the slot number matches
     level = 51 #Stored as an int
@@ -49,9 +55,10 @@ class pokemon:
     def strFormName(self):
         return str(pb.pokemon(self.formID))
 
-    #TODO: MAKE THIS WORK WITH ENUMS AND GENDERLESS
+    #TODO: MAKE THIS WORK WITH GENDERLESS
     def strGender(self):
-        return self.gender
+        dictionary = {GENDER.MALE: "(M) ", GENDER.FEMALE: "(F) ", GENDER.GENDERLESS: ""}
+        return dictionary[self.gender]
 
     def strItem(self):
         return pb.item(self.item).name
@@ -114,7 +121,7 @@ class pokemon:
         #TODO DO I MAKE THIS ONLY CALL ALL THE METHODS AND ADD NO EXTRA
         s = "" #Start a blank string and then add each part to it individually
         s = s + self.strFormName() + " "
-        s = s + "(" + self.strGender() + ")" + " "
+        s = s + self.strGender()
         s = s + "@ " + self.strItem() + "\n"
         s = s + "Ability: " + self.strAbility(self.getAbility()) + "\n"
         s = s + "Level: " + self.strLevel() + "\n"
