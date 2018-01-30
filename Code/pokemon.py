@@ -17,7 +17,7 @@ class pokemon:
 
     #Class Variables
     formID = 25 #Pikachu #Stored as the form id from which other infomation can be derived
-    gender = GENDER.GENDERLESS
+    gender = GENDER.GENDERLESS #Stored as Enum
     item = 213 #Light Ball #Stored as item id
     ability = 3 #Lightning Rod #Stored as the ability slot of that pokemon, to get further information on the ability would need to get all of the pokemons abilities and then iterate over them until the slot number matches
     level = 51 #Stored as an int
@@ -55,7 +55,6 @@ class pokemon:
     def strFormName(self):
         return str(pb.pokemon(self.formID))
 
-    #TODO: MAKE THIS WORK WITH GENDERLESS
     def strGender(self):
         dictionary = {GENDER.MALE: "(M) ", GENDER.FEMALE: "(F) ", GENDER.GENDERLESS: ""}
         return dictionary[self.gender]
@@ -63,8 +62,6 @@ class pokemon:
     def strItem(self):
         return pb.item(self.item).name
 
-    #TODO: MAKE THIS WORK FROM THE ABILITY SLOT
-    #TODO: MAKE A SUB METHOD THAT GETS THE ABILITY FROM THE SLOT
     def strAbility(self, ability):
         return ability.name
 
