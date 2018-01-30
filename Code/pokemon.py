@@ -58,8 +58,14 @@ class pokemon:
 
     #TODO: MAKE THIS WORK FROM THE ABILITY SLOT
     #TODO: MAKE A SUB METHOD THAT GETS THE ABILITY FROM THE SLOT
-    def strAbility(self):
-        return "Lightning Rod"
+    def strAbility(self, ability):
+        return ability.name
+
+    def getAbility(self):
+        abilities = pb.pokemon(self.formID).abilities
+        for i in range(0, len(abilities)):
+            if( abilities[i].slot == self.ability):
+                return abilities[i].ability
 
     def strLevel(self):
         return str(self.level)
@@ -110,7 +116,7 @@ class pokemon:
         s = s + self.strFormName() + " "
         s = s + "(" + self.strGender() + ")" + " "
         s = s + "@ " + self.strItem() + "\n"
-        s = s + "Ability: " + self.strAbility() + "\n"
+        s = s + "Ability: " + self.strAbility(self.getAbility()) + "\n"
         s = s + "Level: " + self.strLevel() + "\n"
         s = s + self.strShiny()
         s = s + "Happiness: " + self.strHappiness() + "\n"
