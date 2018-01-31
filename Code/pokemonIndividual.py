@@ -1,59 +1,46 @@
+#TODO: GET THIS WORKING IN THE INTERPRETER SO I CAN WRITE THE SHOWDOWN FORMAT
+#TODO: ACCESS OF VARIABLES; DO YOU MAKE SURE YOU CAN'T GET THINGS LIKE LEVEL OVER 100 ??
+#TODO: WRITE BETTER COMMENTS
+
 import pokebase as pb
-from enum import Enum
+from Gender import Gender
 
-class GENDER(Enum):
-    MALE = 1
-    FEMALE = 2
-    GENDERLESS = 3
-
-class pokemon:
+class pokemonIndividual:
 
     #TODO: Hardcoded values deal with it
-    genderDictionary = {GENDER.MALE: "(M) ",
-                        GENDER.FEMALE: "(F) ",
-                        GENDER.GENDERLESS: ""}
-    natureDictionary = {}
+    genderDictionary = {Gender.MALE: "(M) ",
+                        Gender.FEMALE: "(F) ",
+                        Gender.GENDERLESS: ""}
 
-    def __init__(self):
-        self.level = 51
-
-    #TODO: GET THIS WORKING IN THE INTERPRETER SO I CAN WRITE THE SHOWDOWN FORMAT
-    #TODO: ACCESS OF VARIABLES; DO YOU MAKE SURE YOU CAN'T GET THINGS LIKE LEVEL OVER 100 ??
-    #TODO: WRITE BETTER COMMENTS
-
-    #Class Variables
-    formID = 25 #Pikachu #Stored as the form id from which other infomation can be derived
-    gender = GENDER.FEMALE #Stored as Enum
-    itemID = 213 #Light Ball #Stored as item id
-    ability = 3 #Lightning Rod #Stored as the ability slot of that pokemon, to get further information on the ability would need to get all of the pokemons abilities and then iterate over them until the slot number matches
-    level = 51 #Stored as an int
-    shiny = True #Do I need #TODO
-    happiness = 249 #Stored as an int
-
-    natureID = 8 #Mild #Stored as pokebase nature id
-
-    #EVs stored as ints for that value
-    evHP = 120
-    evAtk = 56
-    evDef = 148
-    evSpA = 88
-    evSpD = 52
-    evSpe = 44
-
-    #IVs stored as ints for that value
-    ivHP = 26
-    ivAtk = 30
-    ivDef = 27
-    ivSpA = 23
-    ivSpD = 25
-    ivSpe = 28
-
-    #MOVES
-    #TODO: Hidden Power it won't calculate the type :/
-    move1 = 435 #"Discharge" #Convert to ids (None for no move)
-    move2 = 245 #"Extreme Speed"
-    move3 = 252 #"Fake Out"
-    move4 = 237 #"Hidden Power" Actually HP Fire
+    def __init__(self, formID, gender, itemID, ability, level, shiny,
+                    happiness, natureID,
+                    evHP, evAtk, evDef, evSpA, evSpD, evSpe,
+                    ivHP, ivAtk, ivDef, ivSpA, ivSpD, ivSpe,
+                    move1, move2, move3, move4):
+        self.formID = formID
+        self.gender = gender
+        self.itemID = itemID
+        self.ability = ability
+        self.level = level
+        self.shiny = shiny
+        self.happiness = happiness
+        self.natureID = natureID
+        self.evHP = evHP
+        self.evAtk = evAtk
+        self.evDef = evDef
+        self.evSpA = evSpA
+        self.evSpD = evSpD
+        self.evSpe = evSpe
+        self.ivHP = ivHP
+        self.ivAtk = ivAtk
+        self.ivDef = ivDef
+        self.ivSpA = ivSpA
+        self.ivSpD = ivSpD
+        self.ivSpe = ivSpe
+        self.move1 = move1
+        self.move2 = move2
+        self.move3 = move3
+        self.move4 = move4
 
     #Methods
     def __str__(self):
@@ -101,15 +88,12 @@ class pokemon:
             s += "- " + pb.move(self.move4).name + "\n"
         return s
 
-p = pokemon()
-print(p.showdownFormat())
-
 # Previously created strings for the showdownFormat
 #     def strFormName(self):
 #         return str(pb.pokemon(self.formID)) + " "
 #
 #     def strGender(self):
-#         dictionary = {GENDER.MALE: "(M) ", GENDER.FEMALE: "(F) ", GENDER.GENDERLESS: ""}
+#         dictionary = {Gender.MALE: "(M) ", Gender.FEMALE: "(F) ", Gender.GENDERLESS: ""}
 #         return dictionary[self.gender]
 #
 #     def strItem(self):
