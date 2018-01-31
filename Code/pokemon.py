@@ -66,40 +66,39 @@ class pokemon:
                 return abilities[i].ability
 
     def showdownFormat(self):
-        s = "" #Start a blank string and then add each part to it individually
-        s = s + str(pb.pokemon(self.formID)) + " "
-        s = s + self.genderDictionary[self.gender]
-        s = s + "@ " + pb.item(self.itemID).name + "\n" #TODO
-        s = s + "Ability: " + self.getAbility().name + "\n"
-        s = s + "Level: " + str(self.level) + "\n"
+        s = str(pb.pokemon(self.formID)) + " "
+        s += self.genderDictionary[self.gender]
+        s += "@ " + pb.item(self.itemID).name + "\n" #TODO
+        s += "Ability: " + self.getAbility().name + "\n"
+        s += "Level: " + str(self.level) + "\n"
         if( self.shiny == True ):
-            s = s + "Shiny: Yes\n"
-        s = s + "Happiness: " + str(self.happiness) + "\n"
-        s = s + "EVs: "
-        s = s + str(self.evHP) + " HP / "
-        s = s + str(self.evAtk) + " Atk / "
-        s = s + str(self.evDef) + " Def / "
-        s = s + str(self.evSpA) + " SpA / "
-        s = s + str(self.evSpD) + " SpD / "
-        s = s + str(self.evSpe) + " Spe\n"
-        s = s + pb.nature(self.natureID).name.title() + " Nature\n"
+            s += "Shiny: Yes\n"
+        s += "Happiness: " + str(self.happiness) + "\n"
+        s += "EVs: "
+        s += str(self.evHP) + " HP / "
+        s += str(self.evAtk) + " Atk / "
+        s += str(self.evDef) + " Def / "
+        s += str(self.evSpA) + " SpA / "
+        s += str(self.evSpD) + " SpD / "
+        s += str(self.evSpe) + " Spe\n"
+        s += pb.nature(self.natureID).name.title() + " Nature\n"
         #TODO title to make nature capitalised so showdown accepts it
-        s = s + "IVs: "
-        s = s + str(self.ivHP) + " HP / "
-        s = s + str(self.ivAtk) + " Atk / "
-        s = s + str(self.ivDef) + " Def / "
-        s = s + str(self.ivSpA) + " SpA / "
-        s = s + str(self.ivSpD) + " SpD / "
-        s = s + str(self.ivSpe) + " Spe\n"
+        s += "IVs: "
+        s += str(self.ivHP) + " HP / "
+        s += str(self.ivAtk) + " Atk / "
+        s += str(self.ivDef) + " Def / "
+        s += str(self.ivSpA) + " SpA / "
+        s += str(self.ivSpD) + " SpD / "
+        s += str(self.ivSpe) + " Spe\n"
         #MOVES
         if( self.move1 != None ):
-            s = s + "- " + pb.move(self.move1).name + "\n"
+            s += "- " + pb.move(self.move1).name + "\n"
         if( self.move2 != None ):
-            s = s + "- " + pb.move(self.move2).name + "\n"
+            s += "- " + pb.move(self.move2).name + "\n"
         if( self.move3 != None ):
-            s = s + "- " + pb.move(self.move3).name + "\n"
+            s += "- " + pb.move(self.move3).name + "\n"
         if( self.move4 != None ):
-            s = s + "- " + pb.move(self.move4).name + "\n"
+            s += "- " + pb.move(self.move4).name + "\n"
         return s
 
 p = pokemon()
