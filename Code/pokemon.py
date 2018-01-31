@@ -53,7 +53,7 @@ class pokemon:
     move1 = 435 #"Discharge" #Convert to ids (None for no move)
     move2 = 245 #"Extreme Speed"
     move3 = 252 #"Fake Out"
-    move4 = 237 #"Hidden Power [Fire]"
+    move4 = 237 #"Hidden Power" Actually HP Fire
 
     #Methods
     def __str__(self):
