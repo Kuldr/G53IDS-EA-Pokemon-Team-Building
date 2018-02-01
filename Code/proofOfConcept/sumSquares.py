@@ -1,5 +1,5 @@
 import random
-from sumSquaresIndividual import sumSquaresIndividual
+from proofOfConcept.sumSquaresIndividual import sumSquaresIndividual
 
 class sumSquares:
 

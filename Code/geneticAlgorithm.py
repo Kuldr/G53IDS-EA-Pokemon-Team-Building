@@ -8,7 +8,7 @@
 import random
 
 import constants
-from sumSquares import sumSquares
+from proofOfConcept.sumSquares import sumSquares
 
 #Set up
 random.seed()
