@@ -12,7 +12,7 @@ class pokemonTeamIndividual:
         self.pokemon6 = pokemon6
 
     def __str__(self):
-        return self.teamShowdownFormat
+        return self.teamShowdownFormat()
 
     def teamShowdownFormat(self):
         s = str(self.pokemon1) + "\n"
