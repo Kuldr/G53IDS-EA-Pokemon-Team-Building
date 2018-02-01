@@ -1,13 +1,14 @@
 import random
 import pokebase as pb
-from Gender import Gender
+from Gender import Gender #TODO: COULD USE POKEAPI GENDERS ???
 from pokemonTeamIndividual import pokemonTeamIndividual
 from pokemonIndividual import pokemonIndividual
 
 class pokemonTeamProblem:
 
     def initialiseIndividual(self):
-        #Initialises all the Individuals to random integer in the range
+        #TODO: Initialises all the Individuals to random integer in the range
+        #TODO: What if I want it to be None
         pokemon1 = self.initialisePokemonIndividual()
         pokemon2 = self.initialisePokemonIndividual()
         pokemon3 = self.initialisePokemonIndividual()
