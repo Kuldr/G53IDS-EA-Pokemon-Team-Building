@@ -3,4 +3,4 @@ from pokemonTeamIndividual import pokemonTeamIndividual
 
 problem = pokemonTeamProblem()
 t = problem.initialiseIndividual()
-print(t.teamShowdownFormat())
+print(str(t))
