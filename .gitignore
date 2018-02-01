@@ -6,3 +6,5 @@ Code/\.DS_Store
 Documentation/\.DS_Store
 
 Code/proofOfConcept/\.DS_Store
+
+Code/__pycache__/
