@@ -39,4 +39,4 @@ p = pokemonIndividual(formID, gender, itemID, ability, level, shiny,
                 evHP, evAtk, evDef, evSpA, evSpD, evSpe,
                 ivHP, ivAtk, ivDef, ivSpA, ivSpD, ivSpe,
                 move1, move2, move3, move4)
-print(p.showdownFormat())
+#print(p.showdownFormat())

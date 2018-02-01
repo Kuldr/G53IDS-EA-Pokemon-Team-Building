@@ -1,6 +1,7 @@
 #TODO: GET THIS WORKING IN THE INTERPRETER SO I CAN WRITE THE SHOWDOWN FORMAT
 #TODO: ACCESS OF VARIABLES; DO YOU MAKE SURE YOU CAN'T GET THINGS LIKE LEVEL OVER 100 ??
 #TODO: WRITE BETTER COMMENTS
+#TODO: MOVE THE CACHE INTO THE GIT FOLDER BUT GIT IGNORE IT
 
 import pokebase as pb
 from Gender import Gender
@@ -44,7 +45,7 @@ class pokemonIndividual:
 
     #Methods
     def __str__(self):
-        return self.showdownFormat
+        return self.showdownFormat()
 
     def getAbility(self):
         abilities = pb.pokemon(self.formID).abilities
