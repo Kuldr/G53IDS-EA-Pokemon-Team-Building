@@ -1,10 +1,9 @@
 
+
 Documentation/~\$WorkPlan\.xlsx
 
-Code/\.DS_Store
+*.DS_Store
 
-Documentation/\.DS_Store
-
-Code/proofOfConcept/\.DS_Store
+*.pyc
 
 Code/__pycache__/
