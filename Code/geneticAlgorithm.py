@@ -27,7 +27,7 @@ for x in range(0, constants.NUMBER_OF_GENERATIONS):
     #Set Up
     children = []
     childrenFitness = []
-    for i in range(0, constants.POPULATION_SIZE/2):
+    for i in range(0, constants.POPULATION_SIZE//2):
         #Selection Criteria for parents
         #Currently just random for simplictity
         indexParent1 = problem.selection(constants.POPULATION_SIZE)
@@ -62,6 +62,6 @@ for i in range(1, constants.POPULATION_SIZE):
     if( fitness[i] < bestFitness ):
         bestIndex = i
         bestFitness = fitness[i]
-print('\n Best Result')        
+print('\n Best Result')
 print(population[bestIndex])
 print(bestFitness)
