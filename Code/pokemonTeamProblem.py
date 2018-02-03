@@ -8,7 +8,7 @@ class pokemonTeamProblem:
 
     def initialiseIndividual(self):
         #TODO: Initialises all the Individuals to random integer in the range
-        #TODO: What if I want it to be None
+        #TODO: What if all members are none ???
         if( random.random() <= NO_TEAM_MEMBER_RATE ):
             pokemon1 = None
         else:
@@ -147,6 +147,7 @@ class pokemonTeamProblem:
         move4 = p.moves[moveIndex].move.id
 
         # Chance to make the no move
+        # TODO: WHAT IF ALL MOVES ARE MADE NONE
         if( random.random() <= NO_MOVE_RATE ):
             move1 = None
         if( random.random() <= NO_MOVE_RATE ):
@@ -154,7 +155,7 @@ class pokemonTeamProblem:
         if( random.random() <= NO_MOVE_RATE ):
             move3 = None
         if( random.random() <= NO_MOVE_RATE ):
-            move4 = None            
+            move4 = None
 
         #Check Move validity
         if( move1 == move2 or move1 == move3 or move1 == move4 ):
