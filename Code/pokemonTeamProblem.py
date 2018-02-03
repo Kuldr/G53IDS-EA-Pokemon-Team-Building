@@ -63,7 +63,7 @@ class pokemonTeamProblem:
         # Randomly distribute EVs 1 by 1
         #TODO: DOES IT MATTER THAT THIS GIVES OUT ALL OF THE EVs
         #TODO: DOES IT MATTER THAT THE EV SPREAD WILL BE 85 for all stats
-        for i in range(0, 510):
+        for _ in range(0, 510):
             r = random.randrange(0, 6)
             if( r == 0):
                 evHP += 1
