@@ -59,7 +59,7 @@ class pokemonTeamProblem:
         abilityIndex = random.randrange(0, len(p.abilities)) #Gives a random number to index the abilities
         ability = p.abilities[abilityIndex].slot #Gets the slot number for that ability index
 
-        gender = random.choice([Gender.MALE, Gender.FEMALE, Gender.GENDERLESS]) #TODO: FIX THIS SO THAT YOU CAN ONLY GET CORRECT GENDERS BUT AINT TOO BOTHERED FOR NOW
+        gender = random.randrange(0,3)+1 #TODO: FIX THIS SO THAT YOU CAN ONLY GET CORRECT GENDERS BUT AINT TOO BOTHERED FOR NOW
 
         # TODO: THIS CAN TECHNICALLY CREATE THE SAME MOVE TWICE
         moveIndex = random.randrange(0, len(p.moves))

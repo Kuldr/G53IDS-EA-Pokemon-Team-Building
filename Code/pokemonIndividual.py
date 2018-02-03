@@ -4,14 +4,13 @@
 #TODO: MOVE THE CACHE INTO THE GIT FOLDER BUT GIT IGNORE IT
 
 import pokebase as pb
-from Gender import Gender
 
 class pokemonIndividual:
 
     #TODO: Hardcoded values deal with it
-    genderDictionary = {Gender.MALE: "(M) ",
-                        Gender.FEMALE: "(F) ",
-                        Gender.GENDERLESS: ""}
+    genderDictionary = {1: "(F) ",
+                        2: "(M) ",
+                        3: ""}
 
     def __init__(self, formID, gender, itemID, ability, level, shiny,
                     happiness, natureID,
