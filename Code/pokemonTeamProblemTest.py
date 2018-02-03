@@ -11,10 +11,5 @@ problem = pokemonTeamProblem()
 # Test validation
 print("Sucess")
 p = testPokemon.p
-ans = problem.validation(p)
-print(ans)
-
-p.evSpD = -1
-
-ans = problem.validation(p)
+ans = problem.validatePokemonIndividual(p)
 print(ans)
