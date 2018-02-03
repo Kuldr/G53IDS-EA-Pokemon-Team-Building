@@ -201,6 +201,7 @@ class pokemonTeamProblem:
         # TODO: Possibly not the best approach
         # TODO: ADD IN ERROR PRINT OUT FOR WHAT FAILED
         # TODO: SEPERATE ERROR/DEBUG AND INTENTIONAL OUTPUT
+        # TODO: DISREGARDS ILLEGAL LEVELS/SHINY/POKEMON ETC ETC
 
         #Check formID
         if( False ):
@@ -233,7 +234,7 @@ class pokemonTeamProblem:
             return None
 
         #Check shiny
-            #TODO: Can shiny be invalid
+            #Shiny can't be invalid
 
         #Check happiness
         if( pokemonChild.happiness > constants.MAX_HAPPINESS or pokemonChild.happiness < 0 ):
