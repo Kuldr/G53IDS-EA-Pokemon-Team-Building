@@ -191,6 +191,7 @@ class pokemonTeamProblem:
         #         child.y *= random.uniform(-3.0, 3.0)
         # return child
 
+    #TODO: THIS VALIDATES A POKEMON NOT A TEAM
     def validation(self, child):
         #Validate the individuals by making them None if invalid in anyway
         # TODO: Possibly not the best approach
@@ -198,12 +199,23 @@ class pokemonTeamProblem:
         # TODO: SEPERATE ERROR/DEBUG AND INTENTIONAL OUTPUT
 
         #Check formID
+        if( False ):
+            return None
+        p = pb.pokemon(child.formID) #Get the pokemon to reference
+
+
 
         #Check gender
 
         #Check itemID
 
         #Check ability
+        abilityValid = False
+        for i in range(0, len(p.abilities)):
+            if( p.abilities[i].slot == child.ability ):
+                abilityValid = True
+        if( abilityValid == False ):
+            return None
 
         #Check level
         if( child.level > constants.MAX_LEVEL or child.level <= 0 ):
