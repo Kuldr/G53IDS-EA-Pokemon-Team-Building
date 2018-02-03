@@ -23,10 +23,7 @@ class pokemonTeamProblem:
         #TODO Need to make somethings be able to be None - This can be a variable in the constants file
         #TODO Add the limits into constants file
 
-        #Only generates default forms later is used to select other forms
-        formID = random.randrange(0,802)+1
-        # 1-802 but that doesn't get forms
-        # TODO: IF THE POKEMON HAS FORMS SELECT ONE AT RANDOM ??? HOW
+        # Generates the default form and later on checks for other forms
 
         while True:
             # Generate an item Max Item ID is 918
@@ -75,6 +72,7 @@ class pokemonTeamProblem:
         #TODO: DOES IT MATTER THAT THE EV SPREAD WILL BE 85 for all stats
         #TODO: COULD GENERATE 4 AT A TIME AS THAT IS ALL THAT MATTERS (508)
         for _ in range(0, 510):
+        #TODO: NEED TO VALIDATE THAT YOU DON'T HAVE ANY STAT OVER 256
             r = random.randrange(0, 6)
             if( r == 0):
                 evHP += 1
@@ -90,7 +88,10 @@ class pokemonTeamProblem:
                 evSpe += 1
 
         #Pokemon dependant info so references the pokemon to get relevant info
-        formID = formID #Choose a new form if relevant #TODO
+        formVarieties = pb.pokemon(formID).sepcies.varieties
+        formRand = random.randrange(0, len(formVarieties))
+        formID = formVarieties[formRand].pokemon.id # Update the formID into new form
+
         p = pb.pokemon(formID) #Get the pokemon to reference
 
         abilityIndex = random.randrange(0, len(p.abilities)) #Gives a random number to index the abilities
