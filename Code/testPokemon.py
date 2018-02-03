@@ -1,8 +1,7 @@
-from Gender import Gender
 from pokemonIndividual import pokemonIndividual
 
 formID = 25 #Pikachu #Stored as the form id from which other infomation can be derived
-gender = 1 #Female #Stored as gender id 
+gender = 1 #Female #Stored as gender id
 itemID = 213 #Light Ball #Stored as item id
 ability = 3 #Lightning Rod #Stored as the ability slot of that pokemon, to get further information on the ability would need to get all of the pokemons abilities and then iterate over them until the slot number matches
 level = 51 #Stored as an int

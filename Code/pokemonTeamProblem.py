@@ -1,6 +1,5 @@
 import random
 import pokebase as pb
-from Gender import Gender #TODO: COULD USE POKEAPI GENDERS ???
 from pokemonTeamIndividual import pokemonTeamIndividual
 from pokemonIndividual import pokemonIndividual
 
