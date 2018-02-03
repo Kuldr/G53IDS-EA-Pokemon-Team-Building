@@ -57,7 +57,7 @@ class pokemonTeamProblem:
 
         level = random.randrange(0, constants.MAX_LEVEL)+1
         shiny = random.choice([True, False]) #TODO: Shiny rate is way off and is it worth storing this value as it doesn't effect combat ??
-        happiness = random.randrange(0, constants.MAX_HAPPINESS)
+        happiness = random.randrange(0, constants.MAX_HAPPINESS+1)
         natureID = random.randrange(0, constants.MAX_NATUREID)+1
         ivHP = random.randrange(0, constants.MAX_IV)+1
         ivAtk = random.randrange(0, constants.MAX_IV)+1
@@ -192,6 +192,8 @@ class pokemonTeamProblem:
     def validation(self, child):
         #Validate the individuals by making them None if invalid in anyway
         # TODO: Possibly not the best approach
+        # TODO: ADD IN ERROR PRINT OUT FOR WHAT FAILED
+        # TODO: SEPERATE ERROR/DEBUG AND INTENTIONAL OUTPUT
 
         #Check formID
 
@@ -202,21 +204,37 @@ class pokemonTeamProblem:
         #Check ability
 
         #Check level
-        if( level > constants.MAX_LEVEL or level <= 0 ):
+        if( child.level > constants.MAX_LEVEL or child.level <= 0 ):
             return None
 
         #Check shiny
             #TODO: Can shiny be invalid
 
         #Check happiness
-        if( happiness > constants.MAX_HAPPINESS or happiness < 0 ):
+        if( child.happiness > constants.MAX_HAPPINESS or child.happiness < 0 ):
             return None
 
         #Check natureID
-        if( natureID > constants.MAX_NATUREID or natureID <= 0 ):
+        if( child.natureID > constants.MAX_NATUREID or child.natureID <= 0 ):
             return None
 
         #Check EVs
+            #Check total
+        if( child.evHP + child.evAtk + child.evDef + child.evSpA + child.evSpD + child.evSpe > constants.MAX_EV_TOTAL ):
+            return None
+        #TODO: CHECK LOWER BOUND
+        if( child.evHP > constants.MAX_EV or child.evHP < 0 ):
+            return None
+        if( child.evAtk > constants.MAX_EV or child.evAtk < 0 ):
+            return None
+        if( child.evDef > constants.MAX_EV or child.evDef < 0 ):
+            return None
+        if( child.evSpA > constants.MAX_EV or child.evSpA < 0 ):
+            return None
+        if( child.evSpD > constants.MAX_EV or child.evSpD < 0 ):
+            return None
+        if( child.evSpe > constants.MAX_EV or child.evSpe < 0 ):
+            return None
 
         #Check IVs
 
