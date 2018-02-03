@@ -9,12 +9,30 @@ class pokemonTeamProblem:
     def initialiseIndividual(self):
         #TODO: Initialises all the Individuals to random integer in the range
         #TODO: What if I want it to be None
-        pokemon1 = self.initialisePokemonIndividual()
-        pokemon2 = self.initialisePokemonIndividual()
-        pokemon3 = self.initialisePokemonIndividual()
-        pokemon4 = self.initialisePokemonIndividual()
-        pokemon5 = self.initialisePokemonIndividual()
-        pokemon6 = self.initialisePokemonIndividual()
+        if( random.random() <= NO_TEAM_MEMBER_RATE ):
+            pokemon1 = None
+        else:
+            pokemon1 = self.initialisePokemonIndividual()
+        if( random.random() <= NO_TEAM_MEMBER_RATE ):
+            pokemon2 = None
+        else:
+            pokemon2 = self.initialisePokemonIndividual()
+        if( random.random() <= NO_TEAM_MEMBER_RATE ):
+            pokemon3 = None
+        else:
+            pokemon3 = self.initialisePokemonIndividual()
+        if( random.random() <= NO_TEAM_MEMBER_RATE ):
+            pokemon4 = None
+        else:
+            pokemon4 = self.initialisePokemonIndividual()
+        if( random.random() <= NO_TEAM_MEMBER_RATE ):
+            pokemon5 = None
+        else:
+            pokemon5 = self.initialisePokemonIndividual()
+        if( random.random() <= NO_TEAM_MEMBER_RATE ):
+            pokemon6 = None
+        else:
+            pokemon6 = self.initialisePokemonIndividual()
         return pokemonTeamIndividual(pokemon1, pokemon2, pokemon3,
                                         pokemon4, pokemon5, pokemon6)
         # return sumSquaresIndividual(random.randrange(-5, 5),random.randrange(-5, 5))

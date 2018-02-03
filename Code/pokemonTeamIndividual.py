@@ -15,10 +15,17 @@ class pokemonTeamIndividual:
         return self.teamShowdownFormat()
 
     def teamShowdownFormat(self):
-        s = str(self.pokemon1) + "\n"
-        s += str(self.pokemon2) + "\n"
-        s += str(self.pokemon3) + "\n"
-        s += str(self.pokemon4) + "\n"
-        s += str(self.pokemon5) + "\n"
-        s += str(self.pokemon6) + "\n"
+        s = ""
+        if( self.pokemon1 != None):
+            s += str(self.pokemon1) + "\n"
+        if( self.pokemon2 != None):
+            s += str(self.pokemon2) + "\n"
+        if( self.pokemon3 != None):
+            s += str(self.pokemon3) + "\n"
+        if( self.pokemon4 != None):
+            s += str(self.pokemon4) + "\n"
+        if( self.pokemon5 != None):
+            s += str(self.pokemon5) + "\n"
+        if( self.pokemon6 != None):
+            s += str(self.pokemon6) + "\n"
         return s
