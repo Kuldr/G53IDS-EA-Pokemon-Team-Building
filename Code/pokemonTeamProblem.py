@@ -25,10 +25,12 @@ class pokemonTeamProblem:
         #TODO Add the limits into constants file
 
         # Generates the default form and later on checks for other forms
+        formID = random.randrange(0, constants.MAX_FORMID)+1
 
+        # Write the item as teneray opperators like pokemon generation
         while True:
             # Generate an item Max Item ID is 918
-            itemID = random.randrange(0,918)+1
+            itemID = random.randrange(0, constants.MAX_ITEMID)+1
 
             # Check validiity of the item
             invalidItem = False
@@ -53,16 +55,16 @@ class pokemonTeamProblem:
         if( random.random() <= constants.NO_HELD_ITEM_RATE ):
             itemID = None
 
-        level = random.randrange(0, 100)+1
+        level = random.randrange(0, constants.MAX_LEVEL)+1
         shiny = random.choice([True, False]) #TODO: Shiny rate is way off and is it worth storing this value as it doesn't effect combat ??
-        happiness = random.randrange(0, 256)
-        natureID = random.randrange(0, 25)+1
-        ivHP = random.randrange(0, 32)
-        ivAtk = random.randrange(0, 32)
-        ivDef = random.randrange(0, 32)
-        ivSpA = random.randrange(0, 32)
-        ivSpD = random.randrange(0, 32)
-        ivSpe = random.randrange(0, 32)
+        happiness = random.randrange(0, constants.MAX_HAPPINESS)
+        natureID = random.randrange(0, constants.MAX_NATUREID)+1
+        ivHP = random.randrange(0, constants.MAX_IV)+1
+        ivAtk = random.randrange(0, constants.MAX_IV)+1
+        ivDef = random.randrange(0, constants.MAX_IV)+1
+        ivSpA = random.randrange(0, constants.MAX_IV)+1
+        ivSpD = random.randrange(0, constants.MAX_IV)+1
+        ivSpe = random.randrange(0, constants.MAX_IV)+1
 
         #Initialise EVs to 0
         evHP = 0
@@ -75,8 +77,8 @@ class pokemonTeamProblem:
         #TODO: DOES IT MATTER THAT THIS GIVES OUT ALL OF THE EVs
         #TODO: DOES IT MATTER THAT THE EV SPREAD WILL BE 85 for all stats
         #TODO: COULD GENERATE 4 AT A TIME AS THAT IS ALL THAT MATTERS (508)
-        for _ in range(0, 510):
         #TODO: NEED TO VALIDATE THAT YOU DON'T HAVE ANY STAT OVER 256
+        for _ in range(0, constants.MAX_EV_TOTAL):
             r = random.randrange(0, 6)
             if( r == 0):
                 evHP += 1
