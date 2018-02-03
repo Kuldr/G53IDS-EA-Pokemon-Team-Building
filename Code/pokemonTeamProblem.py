@@ -53,7 +53,7 @@ class pokemonTeamProblem:
         print("Item Generated") #DEBUG
 
         level = random.randrange(0, 100)+1
-        shiny = random.choice([True, False])
+        shiny = random.choice([True, False]) #TODO: Shiny rate is way off and is it worth storing this value as it doesn't effect combat ??
         happiness = random.randrange(0, 256)
         natureID = random.randrange(0, 25)+1
         ivHP = random.randrange(0, 32)
@@ -63,14 +63,6 @@ class pokemonTeamProblem:
         ivSpD = random.randrange(0, 32)
         ivSpe = random.randrange(0, 32)
 
-        # #TODO: EVs can add up to over 510
-        # evHP = random.randrange(0, 256)
-        # evAtk = random.randrange(0, 256)
-        # evDef = random.randrange(0, 256)
-        # evSpA = random.randrange(0, 256)
-        # evSpD = random.randrange(0, 256)
-        # evSpe = random.randrange(0, 256)
-
         #Initialise EVs to 0
         evHP = 0
         evAtk = 0
@@ -78,10 +70,10 @@ class pokemonTeamProblem:
         evSpA = 0
         evSpD = 0
         evSpe = 0
-
         # Randomly distribute EVs 1 by 1
         #TODO: DOES IT MATTER THAT THIS GIVES OUT ALL OF THE EVs
         #TODO: DOES IT MATTER THAT THE EV SPREAD WILL BE 85 for all stats
+        #TODO: COULD GENERATE 4 AT A TIME AS THAT IS ALL THAT MATTERS (508)
         for _ in range(0, 510):
             r = random.randrange(0, 6)
             if( r == 0):
@@ -119,7 +111,6 @@ class pokemonTeamProblem:
             else:
                 gender = pb.gender("male").id
 
-        # TODO: THIS CAN TECHNICALLY CREATE THE SAME MOVE TWICE
         moveIndex = random.randrange(0, len(p.moves))
         move1 = p.moves[moveIndex].move.id
         moveIndex = random.randrange(0, len(p.moves))
@@ -129,6 +120,16 @@ class pokemonTeamProblem:
         moveIndex = random.randrange(0, len(p.moves))
         move4 = p.moves[moveIndex].move.id
 
+        #Check Move validity
+        if( move1 == move2 or move1 == move3 or move1 == move4 ):
+            print("Duplicate Move") #DEBUG
+            move1 = None
+        if( move2 == move3 or move2 == move4 ):
+            print("Duplicate Move") #DEBUG
+            move2 = None
+        if( move3== move4 ):
+            print("Duplicate Move") #DEBUG
+            move3 = None
 
         return pokemonIndividual(formID, gender, itemID, ability, level, shiny,
                         happiness, natureID,
