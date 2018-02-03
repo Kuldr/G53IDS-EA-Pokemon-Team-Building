@@ -7,10 +7,9 @@ import pokebase as pb
 
 class pokemonIndividual:
 
-    #TODO: Hardcoded values deal with it
-    genderDictionary = {1: "(F) ",
-                        2: "(M) ",
-                        3: ""}
+    genderDictionary = {pb.gender("female").id: "(F) ",
+                        pb.gender("male").id: "(M) ",
+                        pb.gender("genderless").id: ""}
 
     def __init__(self, formID, gender, itemID, ability, level, shiny,
                     happiness, natureID,
