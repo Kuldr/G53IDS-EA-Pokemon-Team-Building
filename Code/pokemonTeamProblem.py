@@ -191,8 +191,12 @@ class pokemonTeamProblem:
         #         child.y *= random.uniform(-3.0, 3.0)
         # return child
 
+    #TODO: THIS IS NOT THE RIGHT SIGNATURE
+    def validation(self):
+        return None
+
     #TODO: THIS VALIDATES A POKEMON NOT A TEAM
-    def validation(self, child):
+    def validatePokemonIndividual(self, pokemonChild):
         #Validate the individuals by making them None if invalid in anyway
         # TODO: Possibly not the best approach
         # TODO: ADD IN ERROR PRINT OUT FOR WHAT FAILED
@@ -201,19 +205,17 @@ class pokemonTeamProblem:
         #Check formID
         if( False ):
             return None
-        p = pb.pokemon(child.formID) #Get the pokemon to reference
-
-
+        p = pb.pokemon(pokemonChild.formID) #Get the pokemon to reference
 
         #Check gender
         gr = p.species.gender_rate
-        if( gr == -1 and child.gender != pb.gender("genderless").id ):
+        if( gr == -1 and pokemonChild.gender != pb.gender("genderless").id ):
             return None #TODO: HAVEN'T TESTED WRITE UNIT TESTS
-        if( gr != -1 and child.gender == pb.gender("genderless").id ):
+        if( gr != -1 and pokemonChild.gender == pb.gender("genderless").id ):
             return None
-        if( gr == 0 and child.gender != pb.gender("male").id ):
+        if( gr == 0 and pokemonChild.gender != pb.gender("male").id ):
             return None #TODO: HAVEN'T TESTED WRITE UNIT TESTS
-        if( gr == 8 and child.gender != pb.gender("female").id ):
+        if( gr == 8 and pokemonChild.gender != pb.gender("female").id ):
             return None #TODO: HAVEN'T TESTED WRITE UNIT TESTS
 
         #Check itemID
@@ -221,60 +223,60 @@ class pokemonTeamProblem:
         #Check ability
         abilityValid = False
         for i in range(0, len(p.abilities)):
-            if( p.abilities[i].slot == child.ability ):
+            if( p.abilities[i].slot == pokemonChild.ability ):
                 abilityValid = True
         if( abilityValid == False ):
             return None
 
         #Check level
-        if( child.level > constants.MAX_LEVEL or child.level <= 0 ):
+        if( pokemonChild.level > constants.MAX_LEVEL or pokemonChild.level <= 0 ):
             return None
 
         #Check shiny
             #TODO: Can shiny be invalid
 
         #Check happiness
-        if( child.happiness > constants.MAX_HAPPINESS or child.happiness < 0 ):
+        if( pokemonChild.happiness > constants.MAX_HAPPINESS or pokemonChild.happiness < 0 ):
             return None
 
         #Check natureID
-        if( child.natureID > constants.MAX_NATUREID or child.natureID <= 0 ):
+        if( pokemonChild.natureID > constants.MAX_NATUREID or pokemonChild.natureID <= 0 ):
             return None
 
         #Check EVs
             #Check total
-        if( child.evHP + child.evAtk + child.evDef + child.evSpA + child.evSpD + child.evSpe > constants.MAX_EV_TOTAL ):
+        if( pokemonChild.evHP + pokemonChild.evAtk + pokemonChild.evDef + pokemonChild.evSpA + pokemonChild.evSpD + pokemonChild.evSpe > constants.MAX_EV_TOTAL ):
             return None
-        if( child.evHP > constants.MAX_EV or child.evHP < 0 ):
+        if( pokemonChild.evHP > constants.MAX_EV or pokemonChild.evHP < 0 ):
             return None
-        if( child.evAtk > constants.MAX_EV or child.evAtk < 0 ):
+        if( pokemonChild.evAtk > constants.MAX_EV or pokemonChild.evAtk < 0 ):
             return None
-        if( child.evDef > constants.MAX_EV or child.evDef < 0 ):
+        if( pokemonChild.evDef > constants.MAX_EV or pokemonChild.evDef < 0 ):
             return None
-        if( child.evSpA > constants.MAX_EV or child.evSpA < 0 ):
+        if( pokemonChild.evSpA > constants.MAX_EV or pokemonChild.evSpA < 0 ):
             return None
-        if( child.evSpD > constants.MAX_EV or child.evSpD < 0 ):
+        if( pokemonChild.evSpD > constants.MAX_EV or pokemonChild.evSpD < 0 ):
             return None
-        if( child.evSpe > constants.MAX_EV or child.evSpe < 0 ):
+        if( pokemonChild.evSpe > constants.MAX_EV or pokemonChild.evSpe < 0 ):
             return None
 
         #Check IVs
-        if( child.ivHP > constants.MAX_IV or child.ivHP < 0 ):
+        if( pokemonChild.ivHP > constants.MAX_IV or pokemonChild.ivHP < 0 ):
             return None
-        if( child.ivAtk > constants.MAX_IV or child.ivAtk < 0 ):
+        if( pokemonChild.ivAtk > constants.MAX_IV or pokemonChild.ivAtk < 0 ):
             return None
-        if( child.ivDef > constants.MAX_IV or child.ivDef < 0 ):
+        if( pokemonChild.ivDef > constants.MAX_IV or pokemonChild.ivDef < 0 ):
             return None
-        if( child.ivSpA > constants.MAX_IV or child.ivSpA < 0 ):
+        if( pokemonChild.ivSpA > constants.MAX_IV or pokemonChild.ivSpA < 0 ):
             return None
-        if( child.ivSpD > constants.MAX_IV or child.ivSpD < 0 ):
+        if( pokemonChild.ivSpD > constants.MAX_IV or pokemonChild.ivSpD < 0 ):
             return None
-        if( child.ivSpe > constants.MAX_IV or child.ivSpe < 0 ):
+        if( pokemonChild.ivSpe > constants.MAX_IV or pokemonChild.ivSpe < 0 ):
             return None
 
         #Check Moves
 
-        return child
+        return pokemonChild
 
     def populationReplacement(self, population, fitness, child, childFitness, populationSize):
         #Random Replacement but only if child is better than previous member
