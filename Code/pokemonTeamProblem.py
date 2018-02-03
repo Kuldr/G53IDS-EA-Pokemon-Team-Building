@@ -1,3 +1,4 @@
+import constants
 import random
 import pokebase as pb
 from pokemonTeamIndividual import pokemonTeamIndividual
@@ -48,6 +49,9 @@ class pokemonTeamProblem:
             if( invalidItem == False ):
                 break
         print("Item Generated") #DEBUG
+        # Chance to make the Pokemon have no held item
+        if( random.random() <= NO_HELD_ITEM_RATE ):
+            itemID = None
 
         level = random.randrange(0, 100)+1
         shiny = random.choice([True, False]) #TODO: Shiny rate is way off and is it worth storing this value as it doesn't effect combat ??
@@ -112,6 +116,9 @@ class pokemonTeamProblem:
             else:
                 gender = pb.gender("male").id
 
+        # Make move indexing some kind of list for generation and Validation
+        # This could also make it so that checking for dupes is easier
+
         moveIndex = random.randrange(0, len(p.moves))
         move1 = p.moves[moveIndex].move.id
         moveIndex = random.randrange(0, len(p.moves))
@@ -120,6 +127,16 @@ class pokemonTeamProblem:
         move3 = p.moves[moveIndex].move.id
         moveIndex = random.randrange(0, len(p.moves))
         move4 = p.moves[moveIndex].move.id
+
+        # Chance to make the no move
+        if( random.random() <= NO_MOVE_RATE ):
+            move1 = None
+        if( random.random() <= NO_MOVE_RATE ):
+            move2 = None
+        if( random.random() <= NO_MOVE_RATE ):
+            move3 = None
+        if( random.random() <= NO_MOVE_RATE ):
+            move4 = None            
 
         #Check Move validity
         if( move1 == move2 or move1 == move3 or move1 == move4 ):
