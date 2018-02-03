@@ -58,7 +58,20 @@ class pokemonTeamProblem:
         abilityIndex = random.randrange(0, len(p.abilities)) #Gives a random number to index the abilities
         ability = p.abilities[abilityIndex].slot #Gets the slot number for that ability index
 
-        gender = random.randrange(0,3)+1 #TODO: FIX THIS SO THAT YOU CAN ONLY GET CORRECT GENDERS BUT AINT TOO BOTHERED FOR NOW
+        #Randomly generates a gender but at the correct ratio
+        gr = p.species.gender_rate #Gender Rate is given as x, where x/8 gives the chance of being female unless x = -1 where then the pokemon is genderless
+        if( gr == -1 ):
+            gender = pb.gender("genderless").id
+        elif( gr == 0 ):
+            gender = pb.gender("male").id
+        elif( gr == 8 ):
+            gender = pb.gender("female").id
+        else:
+            grand = random.randrange(0,8)+1
+            if( grand <= gr ):
+                gender = pb.gender("female").id
+            else:
+                gender = pb.gender("male").id
 
         # TODO: THIS CAN TECHNICALLY CREATE THE SAME MOVE TWICE
         moveIndex = random.randrange(0, len(p.moves))
