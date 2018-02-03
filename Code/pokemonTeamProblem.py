@@ -206,6 +206,15 @@ class pokemonTeamProblem:
 
 
         #Check gender
+        gr = p.species.gender_rate
+        if( gr == -1 and child.gender != pb.gender("genderless").id ):
+            return None #TODO: HAVEN'T TESTED WRITE UNIT TESTS
+        if( gr != -1 and child.gender == pb.gender("genderless").id ):
+            return None
+        if( gr == 0 and child.gender != pb.gender("male").id ):
+            return None #TODO: HAVEN'T TESTED WRITE UNIT TESTS
+        if( gr == 8 and child.gender != pb.gender("female").id ):
+            return None #TODO: HAVEN'T TESTED WRITE UNIT TESTS
 
         #Check itemID
 
