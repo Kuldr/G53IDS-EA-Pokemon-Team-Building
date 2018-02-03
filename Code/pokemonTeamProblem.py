@@ -1,3 +1,5 @@
+#TODO: MAKE THINGS LIKE EVs IVs MOVES GENERATE OFF A LIST SYSTEM
+
 import constants
 import random
 import pokebase as pb
@@ -222,7 +224,6 @@ class pokemonTeamProblem:
             #Check total
         if( child.evHP + child.evAtk + child.evDef + child.evSpA + child.evSpD + child.evSpe > constants.MAX_EV_TOTAL ):
             return None
-        #TODO: CHECK LOWER BOUND
         if( child.evHP > constants.MAX_EV or child.evHP < 0 ):
             return None
         if( child.evAtk > constants.MAX_EV or child.evAtk < 0 ):
@@ -237,6 +238,18 @@ class pokemonTeamProblem:
             return None
 
         #Check IVs
+        if( child.ivHP > constants.MAX_IV or child.ivHP < 0 ):
+            return None
+        if( child.ivAtk > constants.MAX_IV or child.ivAtk < 0 ):
+            return None
+        if( child.ivDef > constants.MAX_IV or child.ivDef < 0 ):
+            return None
+        if( child.ivSpA > constants.MAX_IV or child.ivSpA < 0 ):
+            return None
+        if( child.ivSpD > constants.MAX_IV or child.ivSpD < 0 ):
+            return None
+        if( child.ivSpe > constants.MAX_IV or child.ivSpe < 0 ):
+            return None
 
         #Check Moves
 
