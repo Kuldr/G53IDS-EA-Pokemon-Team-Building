@@ -28,8 +28,6 @@ class pokemonTeamProblem:
         # 1-802 but that doesn't get forms
         # TODO: IF THE POKEMON HAS FORMS SELECT ONE AT RANDOM ??? HOW
 
-
-        #itemID = 213 #TODO What is the valid range ARRRRGGGGGGGHHHHHH
         while True:
             # Generate an item Max Item ID is 918
             itemID = random.randrange(0,918)+1
@@ -38,14 +36,21 @@ class pokemonTeamProblem:
             invalidItem = False
             #Check its an item in the database
             try:
-                pb.item(itemID)
+                item = pb.item(itemID)
+                # Check if item is holdable
+                holdableItem = False
+                for i in range(0, len(item.attributes)):
+                    if( item.attributes[i].id == pb.item_attribute("holdable").id ):
+                        holdableItem = True
+                if( holdableItem == False ):
+                    print("Item not holdable") #DEBUG
+                    invalidItem = True
             except ValueError:
-                print("Item not in database")
+                print("Item not in database") #DEBUG
                 invalidItem = True
-            # TODO: Only want holdable items
             if( invalidItem == False ):
                 break
-        print("Item Generated") # TODO: This is test code for now
+        print("Item Generated") #DEBUG
 
         level = random.randrange(0, 100)+1
         shiny = random.choice([True, False])
