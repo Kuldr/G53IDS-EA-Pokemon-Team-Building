@@ -37,19 +37,46 @@ class pokemonTeamProblem:
         shiny = random.choice([True, False])
         happiness = random.randrange(0, 256)
         natureID = random.randrange(0, 25)+1
-        #TODO: EVs can add up to over 510
-        evHP = random.randrange(0, 256)
-        evAtk = random.randrange(0, 256)
-        evDef = random.randrange(0, 256)
-        evSpA = random.randrange(0, 256)
-        evSpD = random.randrange(0, 256)
-        evSpe = random.randrange(0, 256)
         ivHP = random.randrange(0, 32)
         ivAtk = random.randrange(0, 32)
         ivDef = random.randrange(0, 32)
         ivSpA = random.randrange(0, 32)
         ivSpD = random.randrange(0, 32)
         ivSpe = random.randrange(0, 32)
+
+        # #TODO: EVs can add up to over 510
+        # evHP = random.randrange(0, 256)
+        # evAtk = random.randrange(0, 256)
+        # evDef = random.randrange(0, 256)
+        # evSpA = random.randrange(0, 256)
+        # evSpD = random.randrange(0, 256)
+        # evSpe = random.randrange(0, 256)
+
+        #Initialise EVs to 0
+        evHP = 0
+        evAtk = 0
+        evDef = 0
+        evSpA = 0
+        evSpD = 0
+        evSpe = 0
+
+        # Randomly distribute EVs 1 by 1
+        #TODO: DOES IT MATTER THAT THIS GIVES OUT ALL OF THE EVs
+        #TODO: DOES IT MATTER THAT THE EV SPREAD WILL BE 85 for all stats
+        for i in range(0, 510):
+            r = random.randrange(0, 6)
+            if( r == 0):
+                evHP += 1
+            elif( r == 1 ):
+                evAtk += 1
+            elif( r == 2 ):
+                evDef += 1
+            elif( r == 3 ):
+                evSpA += 1
+            elif( r == 4 ):
+                evSpD += 1
+            elif( r == 5 ):
+                evSpe += 1
 
         #Pokemon dependant info so references the pokemon to get relevant info
         formID = formID #Choose a new form if relevant #TODO
