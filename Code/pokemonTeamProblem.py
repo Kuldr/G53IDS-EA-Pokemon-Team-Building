@@ -30,8 +30,22 @@ class pokemonTeamProblem:
 
 
         #itemID = 213 #TODO What is the valid range ARRRRGGGGGGGHHHHHH
-        # Only want holdable items
-        itemID = random.randrange(0,918)+1
+        while True:
+            # Generate an item Max Item ID is 918
+            itemID = random.randrange(0,918)+1
+
+            # Check validiity of the item
+            invalidItem = False
+            #Check its an item in the database
+            try:
+                pb.item(itemID)
+            except ValueError:
+                print("Item not in database")
+                invalidItem = True
+            # TODO: Only want holdable items
+            if( invalidItem == False ):
+                break
+        print("Item Generated") # TODO: This is test code for now
 
         level = random.randrange(0, 100)+1
         shiny = random.choice([True, False])
