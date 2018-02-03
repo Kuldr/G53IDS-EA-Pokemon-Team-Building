@@ -4,6 +4,8 @@
 #Look into python properties for getters and setters and private variables, that is actually pretty cool :)
 #Look at the difference between str and repr
 
+#TODO: AT ANY POINT THERE COULD BE TOO MANY REQUESTS ??? WHAT DO
+
 #IMPORTS
 import random
 
