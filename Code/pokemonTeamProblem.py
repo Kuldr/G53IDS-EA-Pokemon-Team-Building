@@ -7,32 +7,14 @@ from pokemonIndividual import pokemonIndividual
 class pokemonTeamProblem:
 
     def initialiseIndividual(self):
-        #TODO: Initialises all the Individuals to random integer in the range
+        #TODO: Write top level comment
         #TODO: What if all members are none ???
-        if( random.random() <= NO_TEAM_MEMBER_RATE ):
-            pokemon1 = None
-        else:
-            pokemon1 = self.initialisePokemonIndividual()
-        if( random.random() <= NO_TEAM_MEMBER_RATE ):
-            pokemon2 = None
-        else:
-            pokemon2 = self.initialisePokemonIndividual()
-        if( random.random() <= NO_TEAM_MEMBER_RATE ):
-            pokemon3 = None
-        else:
-            pokemon3 = self.initialisePokemonIndividual()
-        if( random.random() <= NO_TEAM_MEMBER_RATE ):
-            pokemon4 = None
-        else:
-            pokemon4 = self.initialisePokemonIndividual()
-        if( random.random() <= NO_TEAM_MEMBER_RATE ):
-            pokemon5 = None
-        else:
-            pokemon5 = self.initialisePokemonIndividual()
-        if( random.random() <= NO_TEAM_MEMBER_RATE ):
-            pokemon6 = None
-        else:
-            pokemon6 = self.initialisePokemonIndividual()
+        pokemon1 = None if random.random() <= constants.NO_TEAM_MEMBER_RATE else self.initialisePokemonIndividual()
+        pokemon2 = None if random.random() <= constants.NO_TEAM_MEMBER_RATE else self.initialisePokemonIndividual()
+        pokemon3 = None if random.random() <= constants.NO_TEAM_MEMBER_RATE else self.initialisePokemonIndividual()
+        pokemon4 = None if random.random() <= constants.NO_TEAM_MEMBER_RATE else self.initialisePokemonIndividual()
+        pokemon5 = None if random.random() <= constants.NO_TEAM_MEMBER_RATE else self.initialisePokemonIndividual()
+        pokemon6 = None if random.random() <= constants.NO_TEAM_MEMBER_RATE else self.initialisePokemonIndividual()
         return pokemonTeamIndividual(pokemon1, pokemon2, pokemon3,
                                         pokemon4, pokemon5, pokemon6)
         # return sumSquaresIndividual(random.randrange(-5, 5),random.randrange(-5, 5))
@@ -68,7 +50,7 @@ class pokemonTeamProblem:
                 break
         print("Item Generated") #DEBUG
         # Chance to make the Pokemon have no held item
-        if( random.random() <= NO_HELD_ITEM_RATE ):
+        if( random.random() <= constants.NO_HELD_ITEM_RATE ):
             itemID = None
 
         level = random.randrange(0, 100)+1
@@ -110,9 +92,11 @@ class pokemonTeamProblem:
                 evSpe += 1
 
         #Pokemon dependant info so references the pokemon to get relevant info
-        formVarieties = pb.pokemon(formID).sepcies.varieties
+        formVarieties = pb.pokemon(formID).species.varieties
         formRand = random.randrange(0, len(formVarieties))
         formID = formVarieties[formRand].pokemon.id # Update the formID into new form
+        #TODO: CHECK IF FORM IS VALID IN BATTLE
+        # Mimikyu forms like disguised and totem come to mind
 
         p = pb.pokemon(formID) #Get the pokemon to reference
 
@@ -148,13 +132,13 @@ class pokemonTeamProblem:
 
         # Chance to make the no move
         # TODO: WHAT IF ALL MOVES ARE MADE NONE
-        if( random.random() <= NO_MOVE_RATE ):
+        if( random.random() <= constants.NO_MOVE_RATE ):
             move1 = None
-        if( random.random() <= NO_MOVE_RATE ):
+        if( random.random() <= constants.NO_MOVE_RATE ):
             move2 = None
-        if( random.random() <= NO_MOVE_RATE ):
+        if( random.random() <= constants.NO_MOVE_RATE ):
             move3 = None
-        if( random.random() <= NO_MOVE_RATE ):
+        if( random.random() <= constants.NO_MOVE_RATE ):
             move4 = None
 
         #Check Move validity

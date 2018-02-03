@@ -54,7 +54,7 @@ class pokemonIndividual:
     def showdownFormat(self):
         s = str(pb.pokemon(self.formID)) + " "
         s += self.genderDictionary[self.gender]
-        if( self.item != None):
+        if( self.itemID != None):
             s += "@ " + pb.item(self.itemID).name
         s += "\n"
         s += "Ability: " + self.getAbility().name + "\n"
