@@ -190,18 +190,39 @@ class pokemonTeamProblem:
         # return child
 
     def validation(self, child):
-        #Validate the individuals by moving them back into the valid range
+        #Validate the individuals by making them None if invalid in anyway
+        # TODO: Possibly not the best approach
 
-        return None
-        # if( child.x > 5 ):
-        #     child.x = 5
-        # if( child.y > 5 ):
-        #     child.y = 5
-        # if( child.x < -5 ):
-        #     child.x = -5
-        # if( child.y < -5 ):
-        #     child.y = -5
-        # return child
+        #Check formID
+
+        #Check gender
+
+        #Check itemID
+
+        #Check ability
+
+        #Check level
+        if( level > constants.MAX_LEVEL or level <= 0 ):
+            return None
+
+        #Check shiny
+            #TODO: Can shiny be invalid
+
+        #Check happiness
+        if( happiness > constants.MAX_HAPPINESS or happiness < 0 ):
+            return None
+
+        #Check natureID
+        if( natureID > constants.MAX_NATUREID or natureID <= 0 ):
+            return None
+
+        #Check EVs
+
+        #Check IVs
+
+        #Check Moves
+
+        return child
 
     def populationReplacement(self, population, fitness, child, childFitness, populationSize):
         #Random Replacement but only if child is better than previous member
