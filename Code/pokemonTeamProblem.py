@@ -222,7 +222,6 @@ class pokemonTeamProblem:
 
         return pokemonTeam
 
-    #TODO: THIS VALIDATES A POKEMON NOT A TEAM
     def validatePokemonIndividual(self, pokemonChild):
         #Validate the individuals by making them None if invalid in anyway
         # TODO: Possibly not the best approach
@@ -259,18 +258,18 @@ class pokemonTeamProblem:
             return None
 
         #Check level
-        if( pokemonChild.level > constants.MAX_LEVEL or pokemonChild.level <= 0 ):
+        if( pokemonChild.level > constants.MAX_LEVEL or pokemonChild.level < constants.MIN_LEVEL ):
             return None
 
         #Check shiny
             #Shiny can't be invalid
 
         #Check happiness
-        if( pokemonChild.happiness > constants.MAX_HAPPINESS or pokemonChild.happiness < 0 ):
+        if( pokemonChild.happiness > constants.MAX_HAPPINESS or pokemonChild.happiness < constants.MIN_HAPPINESS ):
             return None
 
         #Check natureID
-        if( pokemonChild.natureID > constants.MAX_NATUREID or pokemonChild.natureID <= 0 ):
+        if( pokemonChild.natureID > constants.MAX_NATUREID or pokemonChild.natureID < constants.MIN_NATUREID ):
             return None
 
         #Check EVs
@@ -280,13 +279,13 @@ class pokemonTeamProblem:
         # Create an array for all the EVs and itterate checks over it
         childEVs = [pokemonChild.evHP, pokemonChild.evAtk, pokemonChild.evDef, pokemonChild.evSpA, pokemonChild.evSpD, pokemonChild.evSpe]
         for i in range(0, len(childEVs)):
-            if( childEVs[i] > constants.MAX_EV or childEVs[i] < 0 ):
+            if( childEVs[i] > constants.MAX_EV or childEVs[i] < constants.MIN_EV ):
                 return None
 
         #Check IVs
         childIVs = [pokemonChild.ivHP, pokemonChild.ivAtk, pokemonChild.ivDef, pokemonChild.ivSpA, pokemonChild.ivSpD, pokemonChild.ivSpe]
         for i in range(0, len(childIVs)):
-            if( childIVs[i] > constants.MAX_IV or childIVs[i] < 0 ):
+            if( childIVs[i] > constants.MAX_IV or childIVs[i] < constants.MIN_IV ):
                 return None
 
         #Check Moves
