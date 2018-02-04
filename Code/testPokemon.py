@@ -29,8 +29,8 @@ ivSpe = 28
 #MOVES
 #TODO: Hidden Power it won't calculate the type :/
 move1 = 435 #"Discharge" #Convert to ids (None for no move)
-move2 = 245 #"Extreme Speed"
-move3 = 252 #"Fake Out"
+move2 = 527 #"electroweb"
+move3 = 528 #"Wild Charge"
 move4 = 237 #"Hidden Power" Actually HP Fire
 
 p = pokemonIndividual(formID, gender, itemID, ability, level, shiny,

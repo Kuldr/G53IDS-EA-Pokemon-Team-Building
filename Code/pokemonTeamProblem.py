@@ -246,6 +246,16 @@ class pokemonTeamProblem:
 
     def validateMoves(self, pc):
         #TODO: CHECK THAT THE POKEMON CAN HAVE THOSE MOVES
+        moves = [pc.move1, pc.move2, pc.move3, pc.move4]
+        p = pb.pokemon(pc.formID) #Get the pokemon to reference
+        for x in range(0, constants.MAX_MOVES):
+            if( moves[x] != None ):
+                inMoveList = False
+                for i in range(0, len(p.moves)):
+                    if( moves[x] == p.moves[i].move.id ):
+                        inMoveList = True
+                if( inMoveList == False ):
+                    return None
 
         # Check for no moves
         if( pc.move1 == None and pc.move2 == None and pc.move3 == None and pc.move4 == None):
