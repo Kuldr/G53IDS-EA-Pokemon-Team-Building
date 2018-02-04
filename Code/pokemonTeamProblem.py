@@ -121,7 +121,7 @@ class pokemonTeamProblem:
             move3 = None
 
         # Check for no moves
-        if( pc.move1 == None and pc.move2 == None and pc.move3 == None and pc.move4 == None):
+        if( move1 == None and move2 == None and move3 == None and move4 == None):
             move1 = p.moves[random.randrange(0, len(p.moves))].move.id
 
         return pokemonIndividual(formID, gender, itemID, ability, level, shiny,
@@ -166,15 +166,31 @@ class pokemonTeamProblem:
         #         child.y *= random.uniform(-3.0, 3.0)
         # return child
 
-    #TODO: THIS IS NOT THE RIGHT SIGNATURE
-    def validation(self):
-        return None
+    def validation(self, pokemonTeam):
+        # TODO: CHECK FOR DUPLICATE MEMEBERS
+        # TODO: THE REST OF THE GA ISN'T BUILT TO HANDLE NONE MEMBERS
+        pokemon = [pokemonTeam.pokemon1, pokemonTeam.pokemon2,
+                    pokemonTeam.pokemon3, pokemonTeam.pokemon4,
+                    pokemonTeam.pokemon5, pokemonTeam.pokemon6]
+
+        # Validate each individual pokemon
+        for i in range(0, len(pokemon)):
+            if( pokemon[i] != None ):
+                pokemon[i] = self.validatePokemonIndividual(pokemon[i])
+
+        pokemonTeam.pokemon1 = pokemon[0]
+        pokemonTeam.pokemon2 = pokemon[1]
+        pokemonTeam.pokemon3 = pokemon[2]
+        pokemonTeam.pokemon4 = pokemon[3]
+        pokemonTeam.pokemon5 = pokemon[4]
+        pokemonTeam.pokemon6 = pokemon[5]
+
+        return pokemonTeam
 
     #TODO: THIS VALIDATES A POKEMON NOT A TEAM
     def validatePokemonIndividual(self, pokemonChild):
         #Validate the individuals by making them None if invalid in anyway
         # TODO: Possibly not the best approach
-        # TODO: THE REST OF THE GA ISN'T BUILT TO HANDLE NONE MEMBERS
         # TODO: ADD IN ERROR PRINT OUT FOR WHAT FAILED
         # TODO: SEPERATE ERROR/DEBUG AND INTENTIONAL OUTPUT
         # TODO: DISREGARDS ILLEGAL LEVELS/SHINY/POKEMON ETC ETC
@@ -245,7 +261,6 @@ class pokemonTeamProblem:
         return pokemonChild
 
     def validateMoves(self, pc):
-        #TODO: CHECK THAT THE POKEMON CAN HAVE THOSE MOVES
         moves = [pc.move1, pc.move2, pc.move3, pc.move4]
         p = pb.pokemon(pc.formID) #Get the pokemon to reference
         for x in range(0, constants.MAX_MOVES):
