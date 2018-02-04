@@ -5,6 +5,7 @@ import random
 import pokebase as pb
 from pokemonTeamIndividual import pokemonTeamIndividual
 from pokemonIndividual import pokemonIndividual
+from pokemonTeamProblemHelperMethods import problemHelper
 
 class pokemonTeamProblem:
 
