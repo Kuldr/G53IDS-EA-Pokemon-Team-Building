@@ -27,32 +27,32 @@ class pokemonTeamProblem:
         #TODO Add the limits into constants file
 
         # Generates the default form and later on checks for other forms
-        formID = random.randrange(0, constants.MAX_FORMID)+1
+        formID = random.randrange(constants.MIN_FORMID, constants.MAX_FORMID+1)
 
         # Write the item as teneray opperators like pokemon generation
         itemID = None if random.random() <= constants.NO_HELD_ITEM_RATE else self.initialiseItem()
 
-        level = random.randrange(0, constants.MAX_LEVEL)+1
-        shiny = random.choice([True, False]) #TODO: Shiny rate is way off and is it worth storing this value as it doesn't effect combat ??
-        happiness = random.randrange(0, constants.MAX_HAPPINESS+1)
-        natureID = random.randrange(0, constants.MAX_NATUREID)+1
-        ivHP = random.randrange(0, constants.MAX_IV)+1
-        ivAtk = random.randrange(0, constants.MAX_IV)+1
-        ivDef = random.randrange(0, constants.MAX_IV)+1
-        ivSpA = random.randrange(0, constants.MAX_IV)+1
-        ivSpD = random.randrange(0, constants.MAX_IV)+1
-        ivSpe = random.randrange(0, constants.MAX_IV)+1
+        level = random.randrange(constants.MIN_LEVEL, constants.MAX_LEVEL+1)
+        shiny = random.choice([True, False])
+        happiness = random.randrange(constants.MIN_HAPPINESS, constants.MAX_HAPPINESS+1)
+        natureID = random.randrange(constants.MIN_NATUREID, constants.MAX_NATUREID+1)
+        ivHP = random.randrange(constants.MIN_IV, constants.MAX_IV+1)
+        ivAtk = random.randrange(constants.MIN_IV, constants.MAX_IV+1)
+        ivDef = random.randrange(constants.MIN_IV, constants.MAX_IV+1)
+        ivSpA = random.randrange(constants.MIN_IV, constants.MAX_IV+1)
+        ivSpD = random.randrange(constants.MIN_IV, constants.MAX_IV+1)
+        ivSpe = random.randrange(constants.MIN_IV, constants.MAX_IV+1)
 
         #Initialise EVs to 0
-        evHP = 0
-        evAtk = 0
-        evDef = 0
-        evSpA = 0
-        evSpD = 0
-        evSpe = 0
+        evHP = constants.MIN_EV
+        evAtk = constants.MIN_EV
+        evDef = constants.MIN_EV
+        evSpA = constants.MIN_EV
+        evSpD = constants.MIN_EV
+        evSpe = constants.MIN_EV
         # Randomly distribute EVs 1 by 1
         #TODO: DOES IT MATTER THAT THIS GIVES OUT ALL OF THE EVs
-        #TODO: DOES IT MATTER THAT THE EV SPREAD WILL BE 85 for all stats
+        #TODO: DOES IT MATTER THAT THE EV SPREAD WILL BE ~85 for all stats
         #TODO: COULD GENERATE 4 AT A TIME AS THAT IS ALL THAT MATTERS (508)
         #TODO: NEED TO VALIDATE THAT YOU DON'T HAVE ANY STAT OVER 256
         for _ in range(0, constants.MAX_EV_TOTAL):
@@ -75,6 +75,7 @@ class pokemonTeamProblem:
         formRand = random.randrange(0, len(formVarieties))
         formID = formVarieties[formRand].pokemon.id # Update the formID into new form
         #TODO: CHECK IF FORM IS VALID IN BATTLE
+        # pb.pokemon(formID).forms[0].is_battle.only
         # Mimikyu forms like disguised and totem come to mind
 
         p = pb.pokemon(formID) #Get the pokemon to reference
@@ -100,7 +101,6 @@ class pokemonTeamProblem:
         # Make move indexing some kind of list for generation and Validation
         # This could also make it so that checking for dupes is easier
 
-        #TODO: What if all moves are made None
         moves = []
         for i in range(0, constants.MAX_MOVES):
             moves.append(None if random.random() <= constants.NO_MOVE_RATE else p.moves[random.randrange(0, len(p.moves))].move.id)
@@ -131,9 +131,9 @@ class pokemonTeamProblem:
                         move1, move2, move3, move4)
 
     def initialiseItem(self):
-        itemID = random.randrange(0, constants.MAX_ITEMID)+1
+        itemID = random.randrange(constants.MIN_ITEMID, constants.MAX_ITEMID+1)
         while self.validateItemID(itemID) == None:
-            itemID = random.randrange(0, constants.MAX_ITEMID)+1
+            itemID = random.randrange(constants.MIN_ITEMID, constants.MAX_ITEMID+1)
         return itemID
 
 
@@ -151,6 +151,7 @@ class pokemonTeamProblem:
     def crossover(self, parent1, parent2):
         #Create a new individual where half the team memebers are from parent 1 and the other half are from parent 2
         #TODO: This is bad as each pokemon stays in the same team slot
+        #TODO: This also doesn't do any crossover on the individual pokemon
 
         p1 = parent1.pokemon1
         p2 = parent1.pokemon2
@@ -158,7 +159,7 @@ class pokemonTeamProblem:
         p4 = parent2.pokemon4
         p5 = parent1.pokemon5
         p6 = parent1.pokemon6
-        
+
         return pokemonTeamIndividual(p1, p2, p3, p4, p5, p6)
 
     def mutation(self, child, mutationRate):
