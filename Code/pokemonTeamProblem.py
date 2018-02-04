@@ -174,11 +174,39 @@ class pokemonTeamProblem:
         # return child
 
     def validation(self, pokemonTeam):
-        # TODO: CHECK FOR DUPLICATE MEMEBERS
         # TODO: THE REST OF THE GA ISN'T BUILT TO HANDLE NONE MEMBERS
         pokemon = [pokemonTeam.pokemon1, pokemonTeam.pokemon2,
                     pokemonTeam.pokemon3, pokemonTeam.pokemon4,
                     pokemonTeam.pokemon5, pokemonTeam.pokemon6]
+        pbPokemon = [pb.pokemon(pokemon[0].formID),
+                     pb.pokemon(pokemon[1].formID),
+                     pb.pokemon(pokemon[2].formID),
+                     pb.pokemon(pokemon[3].formID),
+                     pb.pokemon(pokemon[4].formID),
+                     pb.pokemon(pokemon[5].formID)]
+
+        # Check for memebers with duplicate species
+        # TODO: THIS IS HELLA UGLY
+        if( pbPokemon[0].species.id == pbPokemon[1].species.id or
+            pbPokemon[0].species.id == pbPokemon[2].species.id or
+            pbPokemon[0].species.id == pbPokemon[3].species.id or
+            pbPokemon[0].species.id == pbPokemon[4].species.id or
+            pbPokemon[0].species.id == pbPokemon[5].species.id):
+                pokemon[0] = None
+        if( pbPokemon[1].species.id == pbPokemon[2].species.id or
+            pbPokemon[1].species.id == pbPokemon[3].species.id or
+            pbPokemon[1].species.id == pbPokemon[4].species.id or
+            pbPokemon[1].species.id == pbPokemon[5].species.id):
+                pokemon[1] = None
+        if( pbPokemon[2].species.id == pbPokemon[3].species.id or
+            pbPokemon[2].species.id == pbPokemon[4].species.id or
+            pbPokemon[2].species.id == pbPokemon[5].species.id):
+                pokemon[2] = None
+        if( pbPokemon[3].species.id == pbPokemon[4].species.id or
+            pbPokemon[3].species.id == pbPokemon[5].species.id):
+                pokemon[3] = None
+        if( pbPokemon[4].species.id == pbPokemon[5].species.id):
+                pokemon[4] = None
 
         # Validate each individual pokemon
         for i in range(0, len(pokemon)):
