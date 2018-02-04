@@ -109,7 +109,7 @@ class pokemonTeamProblem:
         move3 = moves[2]
         move4 = moves[3]
 
-        #Check Move validity
+        #Check and remove move duplication
         if( move1 == move2 or move1 == move3 or move1 == move4 ):
             print("Duplicate Move") #DEBUG
             move1 = None
@@ -119,6 +119,10 @@ class pokemonTeamProblem:
         if( move3== move4 ):
             print("Duplicate Move") #DEBUG
             move3 = None
+
+        # Check for no moves
+        if( pc.move1 == None and pc.move2 == None and pc.move3 == None and pc.move4 == None):
+            move1 = p.moves[random.randrange(0, len(p.moves))].move.id
 
         return pokemonIndividual(formID, gender, itemID, ability, level, shiny,
                         happiness, natureID,
@@ -235,8 +239,27 @@ class pokemonTeamProblem:
                 return None
 
         #Check Moves
+        if( self.validateMoves(pokemonChild) == None ):
+            return None
 
         return pokemonChild
+
+    def validateMoves(self, pc):
+        #TODO: CHECK THAT THE POKEMON CAN HAVE THOSE MOVES
+
+        # Check for no moves
+        if( pc.move1 == None and pc.move2 == None and pc.move3 == None and pc.move4 == None):
+            return None
+
+        # Check for move duplication #TODO: CLEAN THIS MESS UP
+        if( pc.move1 != None and (pc.move1 == pc.move2 or pc.move1 == pc.move3 or pc.move1 == pc.move4) ):
+            return None
+        if( pc.move2 != None and (pc.move2 == pc.move3 or pc.move2 == pc.move4) ):
+            return None
+        if( pc.move3 != None and (pc.move3 == pc.move4) ):
+            return None
+
+        return pc
 
     def validateItemID(self, itemID):
         # Check validiity of the item

@@ -4,7 +4,7 @@ import testPokemon
 
 problem = pokemonTeamProblem()
 
-# Test Initialisation (NOTE NOT FULL ON TESTS)
+# # Test Initialisation (NOTE NOT FULL ON TESTS)
 # t = problem.initialiseIndividual()
 # print(str(t))
 
