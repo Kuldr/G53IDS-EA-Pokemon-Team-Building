@@ -149,10 +149,17 @@ class pokemonTeamProblem:
         return random.randrange(populationSize)
 
     def crossover(self, parent1, parent2):
-        #Create a new individual where the first element comes from the first parent and the second from the second parent
+        #Create a new individual where half the team memebers are from parent 1 and the other half are from parent 2
+        #TODO: This is bad as each pokemon stays in the same team slot
 
-        return None
-        #return sumSquaresIndividual(parent1.x, parent2.y)
+        p1 = parent1.pokemon1
+        p2 = parent1.pokemon2
+        p3 = parent1.pokemon3
+        p4 = parent2.pokemon4
+        p5 = parent1.pokemon5
+        p6 = parent1.pokemon6
+        
+        return pokemonTeamIndividual(p1, p2, p3, p4, p5, p6)
 
     def mutation(self, child, mutationRate):
         #Randomly mutate the individual based upon the mutation rate, then randomly mutate either variable by multipling by a real number in the range (-3, 3)
