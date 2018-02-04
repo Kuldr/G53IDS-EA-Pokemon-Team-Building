@@ -145,9 +145,8 @@ class pokemonTeamProblem:
 
     def selection(self, populationSize):
         #Randomly select any individual in the range
-
-        return None
-        #return random.randrange(populationSize)
+        #TODO: This can produce 2 of the same parents
+        return random.randrange(populationSize)
 
     def crossover(self, parent1, parent2):
         #Create a new individual where the first element comes from the first parent and the second from the second parent
@@ -314,9 +313,8 @@ class pokemonTeamProblem:
     def populationReplacement(self, population, fitness, child, childFitness, populationSize):
         #Random Replacement but only if child is better than previous member
 
-        return None
-        # indexToChange = random.randrange(populationSize)
-        # if( fitness[indexToChange] > childFitness ):
-        #     population[indexToChange] = child
-        #     fitness[indexToChange] = childFitness
-        # return population, fitness
+        indexToChange = random.randrange(populationSize)
+        if( fitness[indexToChange] > childFitness ):
+            population[indexToChange] = child
+            fitness[indexToChange] = childFitness
+        return population, fitness
