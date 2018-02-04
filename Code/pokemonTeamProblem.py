@@ -145,7 +145,6 @@ class pokemonTeamProblem:
 
     def selection(self, populationSize):
         #Randomly select any individual in the range
-        #TODO: This can produce 2 of the same parents
         return random.randrange(populationSize)
 
     def crossover(self, parent1, parent2):

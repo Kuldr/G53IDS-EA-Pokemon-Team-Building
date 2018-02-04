@@ -33,7 +33,9 @@ for x in range(0, constants.NUMBER_OF_GENERATIONS):
         #Selection Criteria for parents
         #Currently just random for simplictity
         indexParent1 = problem.selection(constants.POPULATION_SIZE)
-        indexParent2 = problem.selection(constants.POPULATION_SIZE)
+        indexParent2 = None
+        while indexParent1 != indexParent2:
+            indexParent2 = problem.selection(constants.POPULATION_SIZE)
 
         #Apply Crossover to generate offspring
         children.append(problem.crossover(population[indexParent1], population[indexParent2]))
