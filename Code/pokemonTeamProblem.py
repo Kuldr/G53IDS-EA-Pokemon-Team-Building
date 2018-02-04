@@ -100,25 +100,14 @@ class pokemonTeamProblem:
         # Make move indexing some kind of list for generation and Validation
         # This could also make it so that checking for dupes is easier
 
-        moveIndex = random.randrange(0, len(p.moves))
-        move1 = p.moves[moveIndex].move.id
-        moveIndex = random.randrange(0, len(p.moves))
-        move2 = p.moves[moveIndex].move.id
-        moveIndex = random.randrange(0, len(p.moves))
-        move3 = p.moves[moveIndex].move.id
-        moveIndex = random.randrange(0, len(p.moves))
-        move4 = p.moves[moveIndex].move.id
-
-        # Chance to make the no move
-        # TODO: WHAT IF ALL MOVES ARE MADE NONE
-        if( random.random() <= constants.NO_MOVE_RATE ):
-            move1 = None
-        if( random.random() <= constants.NO_MOVE_RATE ):
-            move2 = None
-        if( random.random() <= constants.NO_MOVE_RATE ):
-            move3 = None
-        if( random.random() <= constants.NO_MOVE_RATE ):
-            move4 = None
+        #TODO: What if all moves are made None
+        moves = []
+        for i in range(0, constants.MAX_MOVES):
+            moves.append(None if random.random() <= constants.NO_MOVE_RATE else p.moves[random.randrange(0, len(p.moves))].move.id)
+        move1 = moves[0]
+        move2 = moves[1]
+        move3 = moves[2]
+        move4 = moves[3]
 
         #Check Move validity
         if( move1 == move2 or move1 == move3 or move1 == move4 ):
