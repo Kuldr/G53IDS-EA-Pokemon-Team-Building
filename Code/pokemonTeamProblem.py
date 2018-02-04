@@ -248,32 +248,17 @@ class pokemonTeamProblem:
             #Check total
         if( pokemonChild.evHP + pokemonChild.evAtk + pokemonChild.evDef + pokemonChild.evSpA + pokemonChild.evSpD + pokemonChild.evSpe > constants.MAX_EV_TOTAL ):
             return None
-        if( pokemonChild.evHP > constants.MAX_EV or pokemonChild.evHP < 0 ):
-            return None
-        if( pokemonChild.evAtk > constants.MAX_EV or pokemonChild.evAtk < 0 ):
-            return None
-        if( pokemonChild.evDef > constants.MAX_EV or pokemonChild.evDef < 0 ):
-            return None
-        if( pokemonChild.evSpA > constants.MAX_EV or pokemonChild.evSpA < 0 ):
-            return None
-        if( pokemonChild.evSpD > constants.MAX_EV or pokemonChild.evSpD < 0 ):
-            return None
-        if( pokemonChild.evSpe > constants.MAX_EV or pokemonChild.evSpe < 0 ):
-            return None
+        # Create an array for all the EVs and itterate checks over it
+        childEVs = [pokemonChild.evHP, pokemonChild.evAtk, pokemonChild.evDef, pokemonChild.evSpA, pokemonChild.evSpD, pokemonChild.evSpe]
+        for i in range(0, len(childEVs)):
+            if( childEVs[i] > constants.MAX_EV or childEVs[i] < 0 ):
+                return None
 
         #Check IVs
-        if( pokemonChild.ivHP > constants.MAX_IV or pokemonChild.ivHP < 0 ):
-            return None
-        if( pokemonChild.ivAtk > constants.MAX_IV or pokemonChild.ivAtk < 0 ):
-            return None
-        if( pokemonChild.ivDef > constants.MAX_IV or pokemonChild.ivDef < 0 ):
-            return None
-        if( pokemonChild.ivSpA > constants.MAX_IV or pokemonChild.ivSpA < 0 ):
-            return None
-        if( pokemonChild.ivSpD > constants.MAX_IV or pokemonChild.ivSpD < 0 ):
-            return None
-        if( pokemonChild.ivSpe > constants.MAX_IV or pokemonChild.ivSpe < 0 ):
-            return None
+        childIVs = [pokemonChild.ivHP, pokemonChild.ivAtk, pokemonChild.ivDef, pokemonChild.ivSpA, pokemonChild.ivSpD, pokemonChild.ivSpe]
+        for i in range(0, len(childIVs)):
+            if( childIVs[i] > constants.MAX_IV or childIVs[i] < 0 ):
+                return None
 
         #Check Moves
 
