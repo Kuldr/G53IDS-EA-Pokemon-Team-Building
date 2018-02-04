@@ -31,7 +31,6 @@ for x in range(0, constants.NUMBER_OF_GENERATIONS):
     childrenFitness = []
     for i in range(0, constants.POPULATION_SIZE//2):
         #Selection Criteria for parents
-        #Currently just random for simplictity
         indexParent1 = problem.selection(constants.POPULATION_SIZE)
         indexParent2 = None
         while indexParent1 != indexParent2:
@@ -57,7 +56,6 @@ for x in range(0, constants.NUMBER_OF_GENERATIONS):
     print('\n Generation ' + str(x))
     for i in range(0, len(population)):
         print(population[i])
-
 
 #print out the best value
 bestIndex = 0

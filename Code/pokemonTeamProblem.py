@@ -55,6 +55,7 @@ class pokemonTeamProblem:
         #TODO: DOES IT MATTER THAT THE EV SPREAD WILL BE ~85 for all stats
         #TODO: COULD GENERATE 4 AT A TIME AS THAT IS ALL THAT MATTERS (508)
         #TODO: NEED TO VALIDATE THAT YOU DON'T HAVE ANY STAT OVER 256
+        #TODO: MAKE SUB METHOD SO MUTATION CAN ACCESS THIS
         for _ in range(0, constants.MAX_EV_TOTAL):
             r = random.randrange(0, 6)
             if( r == 0):
