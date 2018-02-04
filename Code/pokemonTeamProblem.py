@@ -30,32 +30,7 @@ class pokemonTeamProblem:
         formID = random.randrange(0, constants.MAX_FORMID)+1
 
         # Write the item as teneray opperators like pokemon generation
-        while True:
-            # Generate an item Max Item ID is 918
-            itemID = random.randrange(0, constants.MAX_ITEMID)+1
-
-            # Check validiity of the item
-            invalidItem = False
-            #Check its an item in the database
-            try:
-                item = pb.item(itemID)
-                # Check if item is holdable
-                holdableItem = False
-                for i in range(0, len(item.attributes)):
-                    if( item.attributes[i].id == pb.item_attribute("holdable").id ):
-                        holdableItem = True
-                if( holdableItem == False ):
-                    print("Item not holdable") #DEBUG
-                    invalidItem = True
-            except ValueError:
-                print("Item not in database") #DEBUG
-                invalidItem = True
-            if( invalidItem == False ):
-                break
-        print("Item Generated") #DEBUG
-        # Chance to make the Pokemon have no held item
-        if( random.random() <= constants.NO_HELD_ITEM_RATE ):
-            itemID = None
+        itemID = None if random.random() <= constants.NO_HELD_ITEM_RATE else self.initialiseItem()
 
         level = random.randrange(0, constants.MAX_LEVEL)+1
         shiny = random.choice([True, False]) #TODO: Shiny rate is way off and is it worth storing this value as it doesn't effect combat ??
@@ -162,6 +137,13 @@ class pokemonTeamProblem:
                         ivHP, ivAtk, ivDef, ivSpA, ivSpD, ivSpe,
                         move1, move2, move3, move4)
 
+    def initialiseItem(self):
+        itemID = random.randrange(0, constants.MAX_ITEMID)+1
+        while self.validateItemID(itemID) == None:
+            itemID = random.randrange(0, constants.MAX_ITEMID)+1
+        return itemID
+
+
     def objectiveValue(self, individual):
         #Simple calculation of objective value based on the problem
 
@@ -199,6 +181,7 @@ class pokemonTeamProblem:
     def validatePokemonIndividual(self, pokemonChild):
         #Validate the individuals by making them None if invalid in anyway
         # TODO: Possibly not the best approach
+        # TODO: THE REST OF THE GA ISN'T BUILT TO HANDLE NONE MEMBERS
         # TODO: ADD IN ERROR PRINT OUT FOR WHAT FAILED
         # TODO: SEPERATE ERROR/DEBUG AND INTENTIONAL OUTPUT
         # TODO: DISREGARDS ILLEGAL LEVELS/SHINY/POKEMON ETC ETC
@@ -220,6 +203,8 @@ class pokemonTeamProblem:
             return None #TODO: HAVEN'T TESTED WRITE UNIT TESTS
 
         #Check itemID
+        if( self.validateItemID(pokemonChild.itemID) == None ):
+            return None
 
         #Check ability
         abilityValid = False
@@ -263,6 +248,31 @@ class pokemonTeamProblem:
         #Check Moves
 
         return pokemonChild
+
+    def validateItemID(self, itemID):
+        # Check validiity of the item
+        invalidItem = False
+        #Check its an item in the database
+        try:
+            item = pb.item(itemID)
+            # Check if item is holdable
+            holdableItem = False
+            for i in range(0, len(item.attributes)):
+                if( item.attributes[i].id == pb.item_attribute("holdable").id ):
+                    holdableItem = True
+            if( holdableItem == False ):
+                print("Item not holdable") #DEBUG
+                invalidItem = True
+        except ValueError:
+            print("Item not in database") #DEBUG
+            invalidItem = True
+
+        if( invalidItem == False ):
+            print("Item Valid") #DEBUG
+            return itemID
+        else:
+            print("Item Invalid") #DEBUG
+            return None
 
     def populationReplacement(self, population, fitness, child, childFitness, populationSize):
         #Random Replacement but only if child is better than previous member
