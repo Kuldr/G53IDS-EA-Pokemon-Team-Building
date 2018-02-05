@@ -40,23 +40,11 @@ class problemHelper:
 
         p = pb.pokemon(formID) #Get the pokemon to reference
 
-        abilityIndex = random.randrange(0, len(p.abilities)) #Gives a random number to index the abilities
-        ability = p.abilities[abilityIndex].slot #Gets the slot number for that ability index
+        #Randomly generate an ability slot
+        ability = problemHelper.initialiseAbility(p)
 
         #Randomly generates a gender but at the correct ratio
-        gr = p.species.gender_rate #Gender Rate is given as x, where x/8 gives the chance of being female unless x = -1 where then the pokemon is genderless
-        if( gr == -1 ):
-            gender = pb.gender("genderless").id
-        elif( gr == 0 ):
-            gender = pb.gender("male").id
-        elif( gr == 8 ):
-            gender = pb.gender("female").id
-        else:
-            grand = random.randrange(0,8)+1
-            if( grand <= gr ):
-                gender = pb.gender("female").id
-            else:
-                gender = pb.gender("male").id
+        gender = problemHelper.initialiseGender(p)
 
         # TODO: ?? Make move indexing some kind of list for generation and Validation
         # This could also make it so that checking for dupes is easier
@@ -82,6 +70,11 @@ class problemHelper:
                                     evHP, evAtk, evDef, evSpA, evSpD, evSpe,
                                     ivHP, ivAtk, ivDef, ivSpA, ivSpD, ivSpe,
                                     move1, move2, move3, move4)
+
+    def initialiseAbility(pbPokemon):
+        abilityIndex = random.randrange(0, len(pbPokemon.abilities)) #Gives a random number to index the abilities
+        ability = pbPokemon.abilities[abilityIndex].slot #Gets the slot number for that ability index
+        return ability
 
     def initialiseGender(pbPokemon):
         gr = pbPokemon.species.gender_rate #Gender Rate is given as x, where x/8 gives the chance of being female unless x = -1 where then the pokemon is genderless
