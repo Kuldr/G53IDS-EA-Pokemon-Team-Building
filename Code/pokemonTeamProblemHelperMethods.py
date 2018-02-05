@@ -58,16 +58,9 @@ class problemHelper:
             else:
                 gender = pb.gender("male").id
 
-        # Make move indexing some kind of list for generation and Validation
+        # TODO: ?? Make move indexing some kind of list for generation and Validation
         # This could also make it so that checking for dupes is easier
-
-        moves = []
-        for i in range(0, constants.MAX_MOVES):
-            moves.append(None if random.random() <= constants.NO_MOVE_RATE else p.moves[random.randrange(0, len(p.moves))].move.id)
-        move1 = moves[0]
-        move2 = moves[1]
-        move3 = moves[2]
-        move4 = moves[3]
+        move1, move2, move3, move4 = problemHelper.initialiseMoves(p)
 
         #Check and remove move duplication
         if( move1 == move2 or move1 == move3 or move1 == move4 ):
@@ -89,6 +82,12 @@ class problemHelper:
                                     evHP, evAtk, evDef, evSpA, evSpD, evSpe,
                                     ivHP, ivAtk, ivDef, ivSpA, ivSpD, ivSpe,
                                     move1, move2, move3, move4)
+
+    def initialiseMoves(pbPokemon):
+        moves = []
+        for i in range(0, constants.NUMBER_OF_MOVES):
+            moves.append(None if random.random() <= constants.NO_MOVE_RATE else pbPokemon.moves[random.randrange(0, len(p.moves))].move.id)
+        return moves[0], moves[1], moves[2], moves[3]
 
     def initialiseIVs():
         IVs = []
@@ -185,7 +184,7 @@ class problemHelper:
     def validateMoves(pc):
         moves = [pc.move1, pc.move2, pc.move3, pc.move4]
         p = pb.pokemon(pc.formID) #Get the pokemon to reference
-        for x in range(0, constants.MAX_MOVES):
+        for x in range(0, constants.NUMBER_OF_MOVES):
             if( moves[x] != None ):
                 inMoveList = False
                 for i in range(0, len(p.moves)):
