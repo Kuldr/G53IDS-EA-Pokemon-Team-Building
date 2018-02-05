@@ -95,7 +95,7 @@ class problemHelper:
     def initialiseMoves(pbPokemon):
         moves = []
         for i in range(0, constants.NUMBER_OF_MOVES):
-            moves.append(None if random.random() <= constants.NO_MOVE_RATE else pbPokemon.moves[random.randrange(0, len(p.moves))].move.id)
+            moves.append(None if random.random() <= constants.NO_MOVE_RATE else pbPokemon.moves[random.randrange(0, len(pbPokemon.moves))].move.id)
         return moves[0], moves[1], moves[2], moves[3]
 
     def initialiseIVs():
