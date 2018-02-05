@@ -20,7 +20,6 @@ class pokemonTeamProblem:
         pokemon6 = None if random.random() <= constants.NO_TEAM_MEMBER_RATE else problemHelper.initialisePokemonIndividual()
         return pokemonTeamIndividual(pokemon1, pokemon2, pokemon3,
                                         pokemon4, pokemon5, pokemon6)
-        # return sumSquaresIndividual(random.randrange(-5, 5),random.randrange(-5, 5))
 
     def objectiveValue(self, individual):
         #Simple calculation of objective value based on the problem
@@ -147,34 +146,34 @@ class pokemonTeamProblem:
         pokemon = [pokemonTeam.pokemon1, pokemonTeam.pokemon2,
                     pokemonTeam.pokemon3, pokemonTeam.pokemon4,
                     pokemonTeam.pokemon5, pokemonTeam.pokemon6]
-        pbPokemon = [pb.pokemon(pokemon[0].formID),
-                     pb.pokemon(pokemon[1].formID),
-                     pb.pokemon(pokemon[2].formID),
-                     pb.pokemon(pokemon[3].formID),
-                     pb.pokemon(pokemon[4].formID),
-                     pb.pokemon(pokemon[5].formID)]
+        #TODO: WHAT IF NONE
+        speciesID = []
+        for i in range(0, len(pokemon)):
+            x = 1
+            if( pokemon[i] != None ):
+                speciesID.append(pb.pokemon(pokemon[i].formID).species.id)
 
         # Check for memebers with duplicate species
-        # TODO: THIS IS HELLA UGLY
-        if( pbPokemon[0].species.id == pbPokemon[1].species.id or
-            pbPokemon[0].species.id == pbPokemon[2].species.id or
-            pbPokemon[0].species.id == pbPokemon[3].species.id or
-            pbPokemon[0].species.id == pbPokemon[4].species.id or
-            pbPokemon[0].species.id == pbPokemon[5].species.id):
+        # TODO: THIS IS HELLA UGLY # MAYBE COULD BE DONE WITH A COUPLE OF FOR LOOPS
+        if( speciesID[0] == speciesID[1] or
+            speciesID[0] == speciesID[2] or
+            speciesID[0] == speciesID[3] or
+            speciesID[0] == speciesID[4] or
+            speciesID[0] == speciesID[5]):
                 pokemon[0] = None
-        if( pbPokemon[1].species.id == pbPokemon[2].species.id or
-            pbPokemon[1].species.id == pbPokemon[3].species.id or
-            pbPokemon[1].species.id == pbPokemon[4].species.id or
-            pbPokemon[1].species.id == pbPokemon[5].species.id):
+        if( speciesID[1] == speciesID[2] or
+            speciesID[1] == speciesID[3] or
+            speciesID[1] == speciesID[4] or
+            speciesID[1] == speciesID[5]):
                 pokemon[1] = None
-        if( pbPokemon[2].species.id == pbPokemon[3].species.id or
-            pbPokemon[2].species.id == pbPokemon[4].species.id or
-            pbPokemon[2].species.id == pbPokemon[5].species.id):
+        if( speciesID[2] == speciesID[3] or
+            speciesID[2] == speciesID[4] or
+            speciesID[2] == speciesID[5]):
                 pokemon[2] = None
-        if( pbPokemon[3].species.id == pbPokemon[4].species.id or
-            pbPokemon[3].species.id == pbPokemon[5].species.id):
+        if( speciesID[3] == speciesID[4] or
+            speciesID[3] == speciesID[5]):
                 pokemon[3] = None
-        if( pbPokemon[4].species.id == pbPokemon[5].species.id):
+        if( speciesID[4] == speciesID[5]):
                 pokemon[4] = None
 
         # Validate each individual pokemon
