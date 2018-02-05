@@ -83,6 +83,22 @@ class problemHelper:
                                     ivHP, ivAtk, ivDef, ivSpA, ivSpD, ivSpe,
                                     move1, move2, move3, move4)
 
+    def initialiseGender(pbPokemon):
+        gr = pbPokemon.species.gender_rate #Gender Rate is given as x, where x/8 gives the chance of being female unless x = -1 where then the pokemon is genderless
+        if( gr == -1 ):
+            gender = pb.gender("genderless").id
+        elif( gr == 0 ):
+            gender = pb.gender("male").id
+        elif( gr == 8 ):
+            gender = pb.gender("female").id
+        else:
+            grand = random.randrange(0,8)+1
+            if( grand <= gr ):
+                gender = pb.gender("female").id
+            else:
+                gender = pb.gender("male").id
+        return gender
+
     def initialiseMoves(pbPokemon):
         moves = []
         for i in range(0, constants.NUMBER_OF_MOVES):
