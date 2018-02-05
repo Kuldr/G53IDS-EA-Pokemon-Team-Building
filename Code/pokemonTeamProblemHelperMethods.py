@@ -29,12 +29,7 @@ class problemHelper:
         ivSpe = random.randrange(constants.MIN_IV, constants.MAX_IV+1)
 
         #Initialise EVs to Minumum ev value
-        evHP = constants.MIN_EV
-        evAtk = constants.MIN_EV
-        evDef = constants.MIN_EV
-        evSpA = constants.MIN_EV
-        evSpD = constants.MIN_EV
-        evSpe = constants.MIN_EV
+        EVs = [constants.MIN_EV]*constants.NUMBER_OF_STATS
         # Randomly distribute EVs 1 by 1
         #TODO: DOES IT MATTER THAT THIS GIVES OUT ALL OF THE EVs
         #TODO: DOES IT MATTER THAT THE EV SPREAD WILL BE ~85 for all stats
@@ -43,18 +38,13 @@ class problemHelper:
         #TODO: MAKE SUB METHOD SO MUTATION CAN ACCESS THIS
         for _ in range(0, constants.MAX_EV_TOTAL):
             r = random.randrange(0, 6)
-            if( r == 0):
-                evHP += 1
-            elif( r == 1 ):
-                evAtk += 1
-            elif( r == 2 ):
-                evDef += 1
-            elif( r == 3 ):
-                evSpA += 1
-            elif( r == 4 ):
-                evSpD += 1
-            elif( r == 5 ):
-                evSpe += 1
+            EVs[r] +=1
+        evHP = EVs[0]
+        evAtk = EVs[1]
+        evDef = EVs[2]
+        evSpA = EVs[3]
+        evSpD = EVs[4]
+        evSpe = EVs[5]
 
         #Pokemon dependant info so references the pokemon to get relevant info
         formVarieties = pb.pokemon(formID).species.varieties
