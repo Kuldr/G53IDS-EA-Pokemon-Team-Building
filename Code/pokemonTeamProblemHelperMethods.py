@@ -21,30 +21,14 @@ class problemHelper:
         shiny = random.choice([True, False])
         happiness = random.randrange(constants.MIN_HAPPINESS, constants.MAX_HAPPINESS+1)
         natureID = random.randrange(constants.MIN_NATUREID, constants.MAX_NATUREID+1)
-        ivHP = random.randrange(constants.MIN_IV, constants.MAX_IV+1)
-        ivAtk = random.randrange(constants.MIN_IV, constants.MAX_IV+1)
-        ivDef = random.randrange(constants.MIN_IV, constants.MAX_IV+1)
-        ivSpA = random.randrange(constants.MIN_IV, constants.MAX_IV+1)
-        ivSpD = random.randrange(constants.MIN_IV, constants.MAX_IV+1)
-        ivSpe = random.randrange(constants.MIN_IV, constants.MAX_IV+1)
+        ivHP, ivAtk, ivDef, ivSpA, ivSpD, ivSpe = problemHelper.initialiseIVs()
 
         #Initialise EVs to Minumum ev value
-        EVs = [constants.MIN_EV]*constants.NUMBER_OF_STATS
-        # Randomly distribute EVs 1 by 1
         #TODO: DOES IT MATTER THAT THIS GIVES OUT ALL OF THE EVs
         #TODO: DOES IT MATTER THAT THE EV SPREAD WILL BE ~85 for all stats
         #TODO: COULD GENERATE 4 AT A TIME AS THAT IS ALL THAT MATTERS (508)
         #TODO: NEED TO VALIDATE THAT YOU DON'T HAVE ANY STAT OVER 256
-        #TODO: MAKE SUB METHOD SO MUTATION CAN ACCESS THIS
-        for _ in range(0, constants.MAX_EV_TOTAL):
-            r = random.randrange(0, 6)
-            EVs[r] +=1
-        evHP = EVs[0]
-        evAtk = EVs[1]
-        evDef = EVs[2]
-        evSpA = EVs[3]
-        evSpD = EVs[4]
-        evSpe = EVs[5]
+        evHP, evAtk, evDef, evSpA, evSpD, evSpe = problemHelper.initialiesEVs()
 
         #Pokemon dependant info so references the pokemon to get relevant info
         formVarieties = pb.pokemon(formID).species.varieties
@@ -105,6 +89,20 @@ class problemHelper:
                                     evHP, evAtk, evDef, evSpA, evSpD, evSpe,
                                     ivHP, ivAtk, ivDef, ivSpA, ivSpD, ivSpe,
                                     move1, move2, move3, move4)
+
+    def initialiseIVs():
+        IVs = []
+        for i in range(0, constants.NUMBER_OF_STATS):
+            IVs.append(random.randrange(constants.MIN_IV, constants.MAX_IV+1))
+        return IVs[0], IVs[1], IVs[2], IVs[3], IVs[4], IVs[5]
+
+    def initialiesEVs():
+        # Randomly distribute EVs 1 by 1
+        EVs = [constants.MIN_EV]*constants.NUMBER_OF_STATS
+        for _ in range(0, constants.MAX_EV_TOTAL):
+            r = random.randrange(0, constants.NUMBER_OF_STATS)
+            EVs[r] +=1
+        return EVs[0], EVs[1], EVs[2], EVs[3], EVs[4], EVs[5]
 
     def initialiseItem():
         itemID = random.randrange(constants.MIN_ITEMID, constants.MAX_ITEMID+1)
