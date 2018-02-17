@@ -11,17 +11,31 @@ import random
 
 import constants
 from proofOfConcept.sumSquares import sumSquares
+from pokemonTeamProblem import pokemonTeamProblem
 
 #Set up
-random.seed()
-problem = sumSquares()
+random.seed(1522018)
+problem = pokemonTeamProblem()
 
-#Initialise and evaluate population
+#Print out the parameters
+print("-------------------- Global  Parameters --------------------")
+print("Number of Generations = " + str(constants.NUMBER_OF_GENERATIONS))
+print("Population Size       = " + str(constants.POPULATION_SIZE))
+print("Mutation Rate         = " + str(constants.MUTATION_RATE*100) + "%")
+print("------------------------------------------------------------" + "\n")
+
+#Initialise population
+print("----------------- Initialising  Population -----------------")
 population = []
-fitness = []
 for i in range(0, constants.POPULATION_SIZE):
     population.append(problem.initialiseIndividual())
-    fitness.append(problem.objectiveValue(population[i]))
+    print("Generated Individual")
+    print(population[i])
+#Evaluate population
+fitness = []
+for i in range(0, constants.POPULATION_SIZE):
+    problem.objectiveValuePop(population[i], population)
+    print("Evaulated individual")
 
 #Termination Criteria loop, runs for a set number of generations
 for x in range(0, constants.NUMBER_OF_GENERATIONS):
@@ -32,8 +46,8 @@ for x in range(0, constants.NUMBER_OF_GENERATIONS):
     for i in range(0, constants.POPULATION_SIZE//2):
         #Selection Criteria for parents
         indexParent1 = problem.selection(constants.POPULATION_SIZE)
-        indexParent2 = None
-        while indexParent1 != indexParent2:
+        indexParent2 = problem.selection(constants.POPULATION_SIZE)
+        while indexParent1 == indexParent2:
             indexParent2 = problem.selection(constants.POPULATION_SIZE)
 
         #Apply Crossover to generate offspring
@@ -46,7 +60,12 @@ for x in range(0, constants.NUMBER_OF_GENERATIONS):
         children[i] = problem.validation(children[i])
 
         #Evaluate fitness
-        childrenFitness.append(problem.objectiveValue(children[i]))
+        #childrenFitness.append(problem.objectiveValuePop(children[i], population))
+        ov = problem.objectiveValuePop(children[i], population)
+        print(ov)
+        childrenFitness.append(ov)
+
+        #childrenFitness.append(problem.objectiveValue(children[i]))
 
     #Population Replacement
     for i in range(0, len(children)):
@@ -54,8 +73,10 @@ for x in range(0, constants.NUMBER_OF_GENERATIONS):
 
     #Print out the population
     print('\n Generation ' + str(x))
-    for i in range(0, len(population)):
-        print(population[i])
+    # #Print entire population
+    # for i in range(0, len(population)):
+    #     print(population[i])
+
 
 #print out the best value
 bestIndex = 0

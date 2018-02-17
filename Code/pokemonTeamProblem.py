@@ -7,6 +7,8 @@ from pokemonTeamIndividual import pokemonTeamIndividual
 from pokemonIndividual import pokemonIndividual
 from pokemonTeamProblemHelperMethods import problemHelper
 
+import testPokemon
+
 class pokemonTeamProblem:
 
     def initialiseIndividual(self):
@@ -18,16 +20,52 @@ class pokemonTeamProblem:
         pokemon4 = None if random.random() <= constants.NO_TEAM_MEMBER_RATE else problemHelper.initialisePokemonIndividual()
         pokemon5 = None if random.random() <= constants.NO_TEAM_MEMBER_RATE else problemHelper.initialisePokemonIndividual()
         pokemon6 = None if random.random() <= constants.NO_TEAM_MEMBER_RATE else problemHelper.initialisePokemonIndividual()
+
         return pokemonTeamIndividual(pokemon1, pokemon2, pokemon3,
                                         pokemon4, pokemon5, pokemon6)
 
-    def objectiveValue(self, individual):
-        #Simple calculation of objective value based on the problem
+    def objectiveValuePop(self, individual, population):
+        # Returns the average score vs the population
+        score = 0
+        for i in range(0, len(population)):
+            score += problemHelper.teamVTeam(individual, population[i])
 
-        # Based off some type coverage STAB power phys/spec rating taking into account weaknesses and somehow need to factor speed
+        return score/len(population)
 
-        return None
-        #return individual.x**2 + individual.y**2
+    # def objectiveValue(self, individual):
+    #     #Simple calculation of objective value based on the problem
+    #
+    #     score = 0
+    #
+    #     pokemon = []
+    #     if( individual.pokemon1 != None ):
+    #         pokemon.append(individual.pokemon1)
+    #     if( individual.pokemon2 != None ):
+    #         pokemon.append(individual.pokemon2)
+    #     if( individual.pokemon3 != None ):
+    #         pokemon.append(individual.pokemon3)
+    #     if( individual.pokemon4 != None ):
+    #         pokemon.append(individual.pokemon4)
+    #     if( individual.pokemon5 != None ):
+    #         pokemon.append(individual.pokemon5)
+    #     if( individual.pokemon6 != None ):
+    #         pokemon.append(individual.pokemon6)
+    #
+    #     #Do checks to individual pokemon
+    #     for i in range(0, len(pokemon)):
+    #         #Item Scoring code - Gives points based upon
+    #         if( pokemon[i].itemID != None ):
+    #             attributes = pb.item(pokemon[i].itemID).attributes
+    #             holdableActive = False
+    #             for i in range(0, len(attributes)):
+    #                 if( attributes[i].id == pb.item_attribute("holdable-active").id ):
+    #                     holdableActive = True
+    #             if( holdableActive == True ):
+    #                 score += constants.ITEM_POINTS
+    #
+    #
+    #     return score
+    #     #return individual.x**2 + individual.y**2
 
     def selection(self, populationSize):
         #Randomly select any individual in the range
@@ -55,7 +93,7 @@ class pokemonTeamProblem:
 
         #TODO: ONLY WRITEN MUTATION ON INDIVIDUAL POKEMON NOT THE TEAM
 
-        NUMBER_OF_MUTATIONS = 24+1 #TODO: FIND A WAY TO AUTOMAGICALLY GENERATE THIS
+        NUMBER_OF_MUTATIONS = 24 #TODO: FIND A WAY TO AUTOMAGICALLY GENERATE THIS
         # MAYBE A LIST OF MUTATION FUNCTIONS THAT YOU RANDOMLY SELECT FROM
         # CAN YOU FIND OUT THE NUMBER OF METHODS IN ANOTHER CLASS
 
@@ -347,6 +385,7 @@ class pokemonTeamProblem:
 
         indexToChange = random.randrange(populationSize)
         if( fitness[indexToChange] > childFitness ):
+            print("Child Replaced")
             population[indexToChange] = child
             fitness[indexToChange] = childFitness
         return population, fitness

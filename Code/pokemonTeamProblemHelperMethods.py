@@ -1,5 +1,6 @@
 import constants
 import random
+import math
 import pokebase as pb
 from pokemonTeamIndividual import pokemonTeamIndividual
 from pokemonIndividual import pokemonIndividual
@@ -240,3 +241,189 @@ class problemHelper:
         else:
             print("Item Invalid") #DEBUG
             return None
+
+    def teamVTeam(team1, team2):
+        # Returns number of wins for team1 against team2
+        score = problemHelper.pokemonVTeam(team1.pokemon1, team2)
+        score += problemHelper.pokemonVTeam(team1.pokemon2, team2)
+        score += problemHelper.pokemonVTeam(team1.pokemon3, team2)
+        score += problemHelper.pokemonVTeam(team1.pokemon4, team2)
+        score += problemHelper.pokemonVTeam(team1.pokemon5, team2)
+        score += problemHelper.pokemonVTeam(team1.pokemon6, team2)
+        print("Team Score = " + str(score))
+        return score
+
+    def pokemonVTeam(pokemon1, team2):
+        # Returns number of wins for pokemon1 against team2
+        score = problemHelper.pokemonVPokemon(pokemon1, team2.pokemon1)
+        score += problemHelper.pokemonVPokemon(pokemon1, team2.pokemon2)
+        score += problemHelper.pokemonVPokemon(pokemon1, team2.pokemon3)
+        score += problemHelper.pokemonVPokemon(pokemon1, team2.pokemon4)
+        score += problemHelper.pokemonVPokemon(pokemon1, team2.pokemon5)
+        score += problemHelper.pokemonVPokemon(pokemon1, team2.pokemon6)
+        print("Pokemon Score = " + str(score))
+        return score
+
+    def pokemonVPokemon(pokemon1, pokemon2):
+        # Returns 1 if pokemon1 wins, 0 if they lose
+
+        #Check if either pokemon are none
+        if( pokemon1 == None ):
+            return 0
+        if( pokemon2 == None ):
+            return 1
+
+        #TODO What if a move is None
+        pokemon1Moves = [pokemon1.move1, pokemon1.move2, pokemon1.move3, pokemon1.move4]
+        pokemon2Moves = [pokemon2.move1, pokemon2.move2, pokemon2.move3, pokemon2.move4]
+        pokemon1MovePower = pokemon2MovePower = [0, 0, 0, 0]
+        # Get the base power for each move including STAB and Type Advantage
+        for i in range(0, len(pokemon1Moves)):
+            if( pokemon1Moves[i] != None ):
+                pokemon1MovePower[i] = problemHelper.pokemonMovePower(pokemon1Moves[i], pokemon1, pokemon2)
+            else:
+                pokemon1MovePower[i] = 0
+        for i in range(0, len(pokemon2Moves)):
+            if( pokemon2Moves[i] != None ):
+                pokemon2MovePower[i] = problemHelper.pokemonMovePower(pokemon2Moves[i], pokemon2, pokemon1)
+            else:
+                pokemon2MovePower[i] = 0
+        # Get the Stats for each pokemon
+        pokemon1Stats = problemHelper.pokemonStats(pokemon1)
+        pokemon2Stats = problemHelper.pokemonStats(pokemon2)
+        # Calculate the damage each move will do
+        pokemon1MoveDamage = pokemon2MoveDamage = [0, 0, 0, 0]
+        for i in range(0, len(pokemon1Moves)):
+            if( pokemon1Moves[i] != None ):
+                # Get the type of the move
+                damageClass = pb.move(pokemon1Moves[i]).damage_class.id
+                # If Physical attack
+                if( damageClass == pb.move_damage_class("physical").id ):
+                    pokemon1MoveDamage[i] = problemHelper.damageDealt(pokemon1.level, pokemon1MovePower[i], pokemon1Stats[1], pokemon2Stats[2], 1)
+                # If Special attack
+                elif( damageClass == pb.move_damage_class("special").id ):
+                    pokemon1MoveDamage[i] = problemHelper.damageDealt(pokemon1.level, pokemon1MovePower[i], pokemon1Stats[3], pokemon2Stats[4], 1)
+                # If Status Move
+                elif( damageClass == pb.move_damage_class("status").id ):
+                    pokemon1MoveDamage[i] = 0
+            else:
+                pokemon1MoveDamage[i] = 0
+        for i in range(0, len(pokemon2Moves)):
+            if( pokemon2Moves[i] != None ):
+                # Get the type of the move
+                damageClass = pb.move(pokemon2Moves[i]).damage_class.id
+                # If Physical attack
+                if( damageClass == pb.move_damage_class("physical").id ):
+                    pokemon2MoveDamage[i] = problemHelper.damageDealt(pokemon2.level, pokemon2MovePower[i], pokemon2Stats[1], pokemon1Stats[2], 1)
+                # If Special attack
+                elif( damageClass == pb.move_damage_class("special").id ):
+                    pokemon2MoveDamage[i] = problemHelper.damageDealt(pokemon2.level, pokemon2MovePower[i], pokemon2Stats[3], pokemon1Stats[4], 1)
+                # If Status Move
+                elif( damageClass == pb.move_damage_class("status").id ):
+                    pokemon2MoveDamage[i] = 0
+            else:
+                pokemon2MoveDamage[i] = 0
+
+        # TODO: Improve this
+        #If Pokemon 1 does more damage return true
+        if( max(pokemon1MoveDamage) >= max(pokemon2MoveDamage) ):
+            print("Pokemon 1 won")
+            return 1
+        else:
+            print("Pokemon 2 won")
+            return 0
+
+    def damageDealt(level, power, attack, defense, modifiers):
+        return (((((2 * level)/5)+2)*power*(attack/defense)/50)+2)*modifiers
+
+    def pokemonStats(pokemon):
+        #[hp, atk, defense, spa, spd, spe] = [0, 0, 0, 0, 0, 0]
+        # Get the pokemon base stats
+        baseStats = pb.pokemon(pokemon.formID).stats
+        natureModifiers = [1, 1, 1, 1, 1]
+        incStat = pb.nature(pokemon.natureID).increased_stat
+        decStat = pb.nature(pokemon.natureID).decreased_stat
+        if( incStat != None):
+            # TODO: Clean up by changing to a dictionary
+            if( incStat.id == pb.stat("attack").id ):
+                natureModifiers[0] = 1.1
+            elif( incStat.id == pb.stat("defense").id ):
+                natureModifiers[1] = 1.1
+            elif( incStat.id == pb.stat("special-attack").id ):
+                natureModifiers[2] = 1.1
+            elif( incStat.id == pb.stat("special-defense").id ):
+                natureModifiers[3] = 1.1
+            elif( incStat.id == pb.stat("speed").id ):
+                natureModifiers[4] = 1.1
+        if( decStat != None):
+            if( decStat.id == pb.stat("attack").id ):
+                natureModifiers[0] = 0.9
+            elif( decStat.id == pb.stat("defense").id ):
+                natureModifiers[1] = 0.9
+            elif( decStat.id == pb.stat("special-attack").id ):
+                natureModifiers[2] = 0.9
+            elif( decStat.id == pb.stat("special-defense").id ):
+                natureModifiers[3] = 0.9
+            elif( decStat.id == pb.stat("speed").id ):
+                natureModifiers[4] = 0.9
+        # Calculate each stat
+        hp = problemHelper.pokemonHP(baseStats[5].base_stat, pokemon.ivHP, pokemon.evHP, pokemon.level)
+        atk = problemHelper.pokemonStat(baseStats[4].base_stat, pokemon.ivAtk, pokemon.evAtk, pokemon.level, natureModifiers[0])
+        defense = problemHelper.pokemonStat(baseStats[3].base_stat, pokemon.ivDef, pokemon.evDef, pokemon.level, natureModifiers[1])
+        spa = problemHelper.pokemonStat(baseStats[2].base_stat, pokemon.ivSpA, pokemon.evSpA, pokemon.level, natureModifiers[2])
+        spd = problemHelper.pokemonStat(baseStats[1].base_stat, pokemon.ivSpD, pokemon.evSpD, pokemon.level, natureModifiers[3])
+        spe = problemHelper.pokemonStat(baseStats[0].base_stat, pokemon.ivSpe, pokemon.evSpe, pokemon.level, natureModifiers[4])
+        return [hp, atk, defense, spa, spd, spe]
+
+    def pokemonHP(base, iv, ev, level):
+        innerBracket = (2 * base + iv + math.floor(ev/4))
+        innerBracket *= level
+        floor = math.floor(innerBracket/100)
+        return floor + level + 10
+
+    def pokemonStat(base, iv, ev, level, natureModifier):
+        innerBracket = (2 * base + iv + math.floor(ev/4))
+        innerBracket *= level
+        floor = math.floor(innerBracket/100)
+        floor += 5
+        return math.floor(floor * natureModifier)
+
+    def pokemonMovePower(move, pokemonAtk, pokemonDef):
+        if( move == None ):
+            return 0
+        elif( pb.move(move).damage_class.id == pb.move_damage_class(1).id ):
+            return 0
+        else:
+            # Set the base power
+            moveBasePower = pb.move(move).power
+            # If the move has variable power its base power is None
+            if( moveBasePower == None ):
+                return 0
+            #Get Move Type
+            moveType = pb.move(move).type
+            # Apply STAB
+            pokemonAtkTypes = pb.pokemon(pokemonAtk.formID).types
+            for j in range(0, len(pokemonAtkTypes)):
+                if( moveType.id == pokemonAtkTypes[j].type.id ):
+                    moveBasePower *= 1.5
+            # Check for Weakness/Resistance against each type
+            pokemonDefTypes = pb.pokemon(pokemonDef.formID).types
+            for j in range(0, len(pokemonDefTypes)):
+                #Check Move effectivness against the opponent type
+                #No Effect
+                noDamageTo = moveType.damage_relations.no_damage_to
+                for k in range(0, len(noDamageTo)):
+                    if( noDamageTo[k]['name'] == pokemonDefTypes[j].type.name ):
+                        moveBasePower *= 0
+                #Half Damage
+                halfDamageTo = moveType.damage_relations.half_damage_to
+                for k in range(0, len(halfDamageTo)):
+                    if( halfDamageTo[k]['name'] == pokemonDefTypes[j].type.name ):
+                        moveBasePower *= 0.5
+                #Double Damage
+                doubleDamageTo = moveType.damage_relations.double_damage_to
+                for k in range(0, len(doubleDamageTo)):
+                    if( doubleDamageTo[k]['name'] == pokemonDefTypes[j].type.name ):
+                        moveBasePower *= 2
+            #Return the final base power
+            return moveBasePower

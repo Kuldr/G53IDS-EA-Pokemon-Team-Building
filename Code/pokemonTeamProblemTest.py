@@ -1,5 +1,6 @@
 from pokemonTeamProblem import pokemonTeamProblem
 from pokemonTeamIndividual import pokemonTeamIndividual
+from pokemonTeamProblemHelperMethods import problemHelper
 import testPokemon
 
 problem = pokemonTeamProblem()
@@ -15,9 +16,14 @@ problem = pokemonTeamProblem()
 # ans = problem.validation(t)
 # print(ans)
 
-# Test Mutation
+# # Test Mutation
+# p = testPokemon.p
+# t = pokemonTeamIndividual(p, None, None, None, None, None)
+# print(t)
+# t_ = problem.mutation(t, 1)
+# print(t_)
+
+# Test Objective Function
 p = testPokemon.p
 t = pokemonTeamIndividual(p, None, None, None, None, None)
-print(t)
-t_ = problem.mutation(t, 1)
-print(t_)
+print(problem.objectiveValuePop(p, [t, t]))
