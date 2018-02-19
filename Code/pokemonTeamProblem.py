@@ -28,9 +28,10 @@ class pokemonTeamProblem:
         # Returns the average score vs the population
         score = 0
         for i in range(0, len(population)):
-            score += problemHelper.teamVTeam(individual, population[i])
+            if( individual != population[i] ): #No point scoring against self
+                score += problemHelper.teamVTeam(individual, population[i])
 
-        return score/len(population)
+        return score/(len(population)-1)
 
     # def objectiveValue(self, individual):
     #     #Simple calculation of objective value based on the problem

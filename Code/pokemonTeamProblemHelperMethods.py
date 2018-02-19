@@ -276,7 +276,8 @@ class problemHelper:
         #TODO What if a move is None
         pokemon1Moves = [pokemon1.move1, pokemon1.move2, pokemon1.move3, pokemon1.move4]
         pokemon2Moves = [pokemon2.move1, pokemon2.move2, pokemon2.move3, pokemon2.move4]
-        pokemon1MovePower = pokemon2MovePower = [0, 0, 0, 0]
+        pokemon1MovePower = [0, 0, 0, 0]
+        pokemon2MovePower = [0, 0, 0, 0]
         # Get the base power for each move including STAB and Type Advantage
         for i in range(0, len(pokemon1Moves)):
             if( pokemon1Moves[i] != None ):
@@ -292,7 +293,8 @@ class problemHelper:
         pokemon1Stats = problemHelper.pokemonStats(pokemon1)
         pokemon2Stats = problemHelper.pokemonStats(pokemon2)
         # Calculate the damage each move will do
-        pokemon1MoveDamage = pokemon2MoveDamage = [0, 0, 0, 0]
+        pokemon1MoveDamage = [0, 0, 0, 0]
+        pokemon2MoveDamage = [0, 0, 0, 0]
         for i in range(0, len(pokemon1Moves)):
             if( pokemon1Moves[i] != None ):
                 # Get the type of the move
@@ -325,6 +327,10 @@ class problemHelper:
                 pokemon2MoveDamage[i] = 0
 
         # TODO: Improve this
+
+        print(pokemon1MoveDamage) #DEBUG
+        print(pokemon2MoveDamage) #DEBUG
+
         #If Pokemon 1 does more damage return true
         if( max(pokemon1MoveDamage) >= max(pokemon2MoveDamage) ):
             print("Pokemon 1 won")
