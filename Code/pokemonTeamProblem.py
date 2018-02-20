@@ -14,11 +14,17 @@ class pokemonTeamProblem:
     def initialiseIndividual(self):
         #TODO: Write top level comment
         #TODO: What if all members are none ???
+        print("\tInitialising Pokemon 1")
         pokemon1 = None if random.random() <= constants.NO_TEAM_MEMBER_RATE else problemHelper.initialisePokemonIndividual()
+        print("\tInitialising Pokemon 2")
         pokemon2 = None if random.random() <= constants.NO_TEAM_MEMBER_RATE else problemHelper.initialisePokemonIndividual()
+        print("\tInitialising Pokemon 3")
         pokemon3 = None if random.random() <= constants.NO_TEAM_MEMBER_RATE else problemHelper.initialisePokemonIndividual()
+        print("\tInitialising Pokemon 4")
         pokemon4 = None if random.random() <= constants.NO_TEAM_MEMBER_RATE else problemHelper.initialisePokemonIndividual()
+        print("\tInitialising Pokemon 5")
         pokemon5 = None if random.random() <= constants.NO_TEAM_MEMBER_RATE else problemHelper.initialisePokemonIndividual()
+        print("\tInitialising Pokemon 6")
         pokemon6 = None if random.random() <= constants.NO_TEAM_MEMBER_RATE else problemHelper.initialisePokemonIndividual()
 
         return pokemonTeamIndividual(pokemon1, pokemon2, pokemon3,
@@ -29,44 +35,9 @@ class pokemonTeamProblem:
         score = 0
         for i in range(0, len(population)):
             if( individual != population[i] ): #No point scoring against self
+                print("\tScoring VS Team " + str(i))
                 score += problemHelper.teamVTeam(individual, population[i])
-
         return score/(len(population)-1)
-
-    # def objectiveValue(self, individual):
-    #     #Simple calculation of objective value based on the problem
-    #
-    #     score = 0
-    #
-    #     pokemon = []
-    #     if( individual.pokemon1 != None ):
-    #         pokemon.append(individual.pokemon1)
-    #     if( individual.pokemon2 != None ):
-    #         pokemon.append(individual.pokemon2)
-    #     if( individual.pokemon3 != None ):
-    #         pokemon.append(individual.pokemon3)
-    #     if( individual.pokemon4 != None ):
-    #         pokemon.append(individual.pokemon4)
-    #     if( individual.pokemon5 != None ):
-    #         pokemon.append(individual.pokemon5)
-    #     if( individual.pokemon6 != None ):
-    #         pokemon.append(individual.pokemon6)
-    #
-    #     #Do checks to individual pokemon
-    #     for i in range(0, len(pokemon)):
-    #         #Item Scoring code - Gives points based upon
-    #         if( pokemon[i].itemID != None ):
-    #             attributes = pb.item(pokemon[i].itemID).attributes
-    #             holdableActive = False
-    #             for i in range(0, len(attributes)):
-    #                 if( attributes[i].id == pb.item_attribute("holdable-active").id ):
-    #                     holdableActive = True
-    #             if( holdableActive == True ):
-    #                 score += constants.ITEM_POINTS
-    #
-    #
-    #     return score
-    #     #return individual.x**2 + individual.y**2
 
     def selection(self, populationSize):
         #Randomly select any individual in the range
@@ -381,12 +352,12 @@ class pokemonTeamProblem:
 
         return pokemonTeam
 
-    def populationReplacement(self, population, fitness, child, childFitness, populationSize):
-        #Random Replacement but only if child is better than previous member
+    def populationReplacement(self, population, fitness, child, childFitness):
+        #Random Replacement but only if child is better or equal than previous member
 
-        indexToChange = random.randrange(populationSize)
-        if( fitness[indexToChange] > childFitness ):
-            print("Child Replaced")
+        indexToChange = random.randrange(0, len(population))
+        if( fitness[indexToChange] <= childFitness ):
+            print("\tChild Replaced")
             population[indexToChange] = child
             fitness[indexToChange] = childFitness
         return population, fitness

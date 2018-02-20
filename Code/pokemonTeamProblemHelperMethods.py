@@ -53,13 +53,13 @@ class problemHelper:
 
         #Check and remove move duplication
         if( move1 == move2 or move1 == move3 or move1 == move4 ):
-            print("Duplicate Move") #DEBUG
+            # print("Duplicate Move") #DEBUG
             move1 = None
         if( move2 == move3 or move2 == move4 ):
-            print("Duplicate Move") #DEBUG
+            # print("Duplicate Move") #DEBUG
             move2 = None
         if( move3== move4 ):
-            print("Duplicate Move") #DEBUG
+            # print("Duplicate Move") #DEBUG
             move3 = None
 
         # Check for no moves
@@ -229,28 +229,40 @@ class problemHelper:
                 if( item.attributes[i].id == pb.item_attribute("holdable").id ):
                     holdableItem = True
             if( holdableItem == False ):
-                print("Item not holdable") #DEBUG
+                # print("Item not holdable") #DEBUG
                 invalidItem = True
         except ValueError:
-            print("Item not in database") #DEBUG
+            # print("Item not in database") #DEBUG
             invalidItem = True
 
         if( invalidItem == False ):
-            print("Item Valid") #DEBUG
+            # print("Item Valid") #DEBUG
             return itemID
         else:
-            print("Item Invalid") #DEBUG
+            # print("Item Invalid") #DEBUG
             return None
 
     def teamVTeam(team1, team2):
         # Returns number of wins for team1 against team2
+        print("\t\tScoring Pokemon 1")
+        print("\t\t", end='', flush=True)
         score = problemHelper.pokemonVTeam(team1.pokemon1, team2)
+        print("\t\tScoring Pokemon 2")
+        print("\t\t", end='', flush=True)
         score += problemHelper.pokemonVTeam(team1.pokemon2, team2)
+        print("\t\tScoring Pokemon 3")
+        print("\t\t", end='', flush=True)
         score += problemHelper.pokemonVTeam(team1.pokemon3, team2)
+        print("\t\tScoring Pokemon 4")
+        print("\t\t", end='', flush=True)
         score += problemHelper.pokemonVTeam(team1.pokemon4, team2)
+        print("\t\tScoring Pokemon 5")
+        print("\t\t", end='', flush=True)
         score += problemHelper.pokemonVTeam(team1.pokemon5, team2)
+        print("\t\tScoring Pokemon 6")
+        print("\t\t", end='', flush=True)
         score += problemHelper.pokemonVTeam(team1.pokemon6, team2)
-        print("Team Score = " + str(score))
+        print("\tTeam Score = " + str(score))
         return score
 
     def pokemonVTeam(pokemon1, team2):
@@ -261,7 +273,7 @@ class problemHelper:
         score += problemHelper.pokemonVPokemon(pokemon1, team2.pokemon4)
         score += problemHelper.pokemonVPokemon(pokemon1, team2.pokemon5)
         score += problemHelper.pokemonVPokemon(pokemon1, team2.pokemon6)
-        print("Pokemon Score = " + str(score))
+        print("Score = " + str(score))
         return score
 
     def pokemonVPokemon(pokemon1, pokemon2):
@@ -328,15 +340,15 @@ class problemHelper:
 
         # TODO: Improve this
 
-        print(pokemon1MoveDamage) #DEBUG
-        print(pokemon2MoveDamage) #DEBUG
+        # print(pokemon1MoveDamage) #DEBUG
+        # print(pokemon2MoveDamage) #DEBUG
 
         #If Pokemon 1 does more damage return true
         if( max(pokemon1MoveDamage) >= max(pokemon2MoveDamage) ):
-            print("Pokemon 1 won")
+            print("Win,  ", end='', flush=True)
             return 1
         else:
-            print("Pokemon 2 won")
+            print("Loss, ", end='', flush=True)
             return 0
 
     def damageDealt(level, power, attack, defense, modifiers):

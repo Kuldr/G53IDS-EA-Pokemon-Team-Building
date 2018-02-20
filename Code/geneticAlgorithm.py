@@ -18,73 +18,87 @@ random.seed(1522018)
 problem = pokemonTeamProblem()
 
 #Print out the parameters
-print("-------------------- Global  Parameters --------------------")
+print("------------------------- Global  Parameters -------------------------")
 print("Number of Generations = " + str(constants.NUMBER_OF_GENERATIONS))
 print("Population Size       = " + str(constants.POPULATION_SIZE))
 print("Mutation Rate         = " + str(constants.MUTATION_RATE*100) + "%")
-print("------------------------------------------------------------" + "\n")
+print("----------------------------------------------------------------------" + "\n")
 
 #Initialise population
-print("----------------- Initialising  Population -----------------")
+print("---------------------- Initialising  Population ----------------------")
 population = []
 for i in range(0, constants.POPULATION_SIZE):
+    print("Generating individual - " + str(i))
     population.append(problem.initialiseIndividual())
-    print("Generated Individual")
-    print(population[i])
+print("----------------------------------------------------------------------" + "\n")
+
 #Evaluate population
+print("----------------------- Evaluating  Population -----------------------")
 fitness = []
 for i in range(0, constants.POPULATION_SIZE):
-    problem.objectiveValuePop(population[i], population)
-    print("Evaulated individual")
+    print("Evaluating individual - " + str(i))
+    fitness.append(problem.objectiveValuePop(population[i], population))
+    print("Evaulated individual Score = " + str(fitness[i]))
+print("----------------------------------------------------------------------" + "\n")
 
 #Termination Criteria loop, runs for a set number of generations
 for x in range(0, constants.NUMBER_OF_GENERATIONS):
     #Main GA loop
+    print("---------------------------- Generation " + str(x) + " ----------------------------")
+
     #Set Up
     children = []
     childrenFitness = []
     for i in range(0, constants.POPULATION_SIZE//2):
+        print("Creating Child " + str(i+1) + "/" + str((constants.POPULATION_SIZE//2)))
         #Selection Criteria for parents
         indexParent1 = problem.selection(constants.POPULATION_SIZE)
+        print("\tSelected Parent 1")
         indexParent2 = problem.selection(constants.POPULATION_SIZE)
         while indexParent1 == indexParent2:
             indexParent2 = problem.selection(constants.POPULATION_SIZE)
+        print("\tSelected Parent 2")
 
         #Apply Crossover to generate offspring
+        print("\tApplying Crossover")
         children.append(problem.crossover(population[indexParent1], population[indexParent2]))
 
         #Apply Mutation
+        print("\tApplying Mutation")
         children[i] = problem.mutation(children[i], constants.MUTATION_RATE)
 
         #Validation
+        print("\tValidating Child")
         children[i] = problem.validation(children[i])
 
         #Evaluate fitness
-        #childrenFitness.append(problem.objectiveValuePop(children[i], population))
+        print("\tEvaluating Child")
         ov = problem.objectiveValuePop(children[i], population)
-        print(ov)
+        print("\t\tChild Score = " + str(ov))
         childrenFitness.append(ov)
 
-        #childrenFitness.append(problem.objectiveValue(children[i]))
-
     #Population Replacement
+    print("Population Replacement")
     for i in range(0, len(children)):
-        population, fitness = problem.populationReplacement(population, fitness, children[i], childrenFitness[i], constants.POPULATION_SIZE)
+        population, fitness = problem.populationReplacement(population, fitness, children[i], childrenFitness[i])
 
-    #Print out the population
-    print('\n Generation ' + str(x))
-    # #Print entire population
-    # for i in range(0, len(population)):
-    #     print(population[i])
+    #Print out the fitness of the end population
+    print("\nFitness")
+    print("Average Fitness = " + str(sum(fitness)/len(fitness)))
+    print("Population Fitness = " + str(fitness))
 
+    print("----------------------------------------------------------------------" + "\n")
 
 #print out the best value
+#TODO: Sort Out printing this
 bestIndex = 0
 bestFitness = fitness[bestIndex]
 for i in range(1, constants.POPULATION_SIZE):
     if( fitness[i] < bestFitness ):
         bestIndex = i
         bestFitness = fitness[i]
-print('\n Best Result')
+print("\n")
+print("---------------------------Best  Individual---------------------------")
 print(population[bestIndex])
-print(bestFitness)
+print("Fitness = " + str(bestFitness))
+print("----------------------------------------------------------------------" + "\n")
