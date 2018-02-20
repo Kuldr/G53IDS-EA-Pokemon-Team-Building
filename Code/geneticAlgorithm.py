@@ -8,6 +8,7 @@
 
 #IMPORTS
 import random
+from datetime import datetime
 
 import constants
 from proofOfConcept.sumSquares import sumSquares
@@ -22,6 +23,7 @@ print("------------------------- Global  Parameters -------------------------")
 print("Number of Generations = " + str(constants.NUMBER_OF_GENERATIONS))
 print("Population Size       = " + str(constants.POPULATION_SIZE))
 print("Mutation Rate         = " + str(constants.MUTATION_RATE*100) + "%")
+print("Start Time            = " + str(datetime.now()))
 print("----------------------------------------------------------------------" + "\n")
 
 #Initialise population
@@ -88,6 +90,9 @@ for x in range(0, constants.NUMBER_OF_GENERATIONS):
     print("Population Fitness = " + str(fitness))
 
     print("----------------------------------------------------------------------" + "\n")
+
+#Print the end Time
+print("End Time = " + str(datetime.now()))
 
 #print out the best value
 #TODO: Sort Out printing this
