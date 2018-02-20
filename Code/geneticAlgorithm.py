@@ -99,7 +99,7 @@ print("End Time = " + str(datetime.now()))
 bestIndex = 0
 bestFitness = fitness[bestIndex]
 for i in range(1, constants.POPULATION_SIZE):
-    if( fitness[i] < bestFitness ):
+    if( fitness[i] > bestFitness ):
         bestIndex = i
         bestFitness = fitness[i]
 print("\n")
