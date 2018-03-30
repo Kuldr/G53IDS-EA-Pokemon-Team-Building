@@ -6,3 +6,5 @@ Code/proofOfConcept/\.DS_Store
 Code/\.DS_Store
 
 Code/output_OUTOFDATE\.txt
+
+Code/__pycache__/
