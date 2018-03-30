@@ -7,3 +7,5 @@ Documentation/~\$WorkPlan\.xlsx
 *.pyc
 
 Code/__pycache__/
+
+Code/output_OUTOFDATE\.txt
