@@ -8,3 +8,5 @@ Code/\.DS_Store
 Code/output_OUTOFDATE\.txt
 
 Code/__pycache__/
+
+\.DS_Store
