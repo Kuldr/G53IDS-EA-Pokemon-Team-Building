@@ -29,24 +29,24 @@ print("----------------------------------------------------------------------" +
 #Initialise population
 print("---------------------- Initialising  Population ----------------------")
 population = []
+fitness = []
 for i in range(0, constants.POPULATION_SIZE):
     print("Generating individual - " + str(i))
     population.append(problem.initialiseIndividual())
-print("----------------------------------------------------------------------" + "\n")
-
-#Evaluate population
-print("----------------------- Evaluating  Population -----------------------")
-fitness = []
-for i in range(0, constants.POPULATION_SIZE):
-    print("Evaluating individual - " + str(i))
-    fitness.append(problem.objectiveValuePop(population[i], population))
-    print("Evaulated individual Score = " + str(fitness[i]))
 print("----------------------------------------------------------------------" + "\n")
 
 #Termination Criteria loop, runs for a set number of generations
 for x in range(0, constants.NUMBER_OF_GENERATIONS):
     #Main GA loop
     print("---------------------------- Generation " + str(x) + " ----------------------------")
+
+    #Evaluate population
+    print("Evaluating Population")
+    fitness = []
+    for i in range(0, constants.POPULATION_SIZE):
+        print("\tEvaluating individual - " + str(i))
+        fitness.append(problem.objectiveValuePop(population[i], population))
+        print("\tEvaulated individual Score = " + str(fitness[i]))
 
     #Set Up
     children = []

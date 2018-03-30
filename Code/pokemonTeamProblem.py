@@ -35,7 +35,7 @@ class pokemonTeamProblem:
         score = 0
         for i in range(0, len(population)):
             if( individual != population[i] ): #No point scoring against self
-                print("\tScoring VS Team " + str(i))
+                print("\t\tScoring VS Team " + str(i))
                 score += problemHelper.teamVTeam(individual, population[i])
         return score/(len(population)-1)
 
