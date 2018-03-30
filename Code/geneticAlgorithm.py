@@ -75,7 +75,7 @@ for x in range(0, constants.NUMBER_OF_GENERATIONS):
 
         #Evaluate fitness
         print("\tEvaluating Child")
-        ov = problem.objectiveValuePop(children[i], population)
+        ov = problem.objectiveValueChild(children[i], population)
         print("\t\tChild Score = " + str(ov))
         childrenFitness.append(ov)
 
