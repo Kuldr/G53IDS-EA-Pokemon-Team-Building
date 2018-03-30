@@ -361,3 +361,9 @@ class pokemonTeamProblem:
             population[indexToChange] = child
             fitness[indexToChange] = childFitness
         return population, fitness
+
+    def localSearch(self, individual):
+        #Apply a local search step and then return the new and improved individual
+
+        #TODO CURENTLY DOES NOT APPLY ANY LOCAL SEARCH LEARNING
+        return individual
