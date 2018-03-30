@@ -33,11 +33,13 @@ class pokemonTeamProblem:
     def objectiveValuePop(self, individual, population):
         # Returns the average score vs the population
         score = 0
+        teams = 0
         for i in range(0, len(population)):
             if( individual != population[i] ): #No point scoring against self
                 print("\t\tScoring VS Team " + str(i))
                 score += problemHelper.teamVTeam(individual, population[i])
-        return score/(len(population)-1)
+                teams += 1
+        return score/teams)
 
     def selection(self, populationSize):
         #Randomly select any individual in the range
