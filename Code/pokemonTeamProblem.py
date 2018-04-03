@@ -39,7 +39,7 @@ class pokemonTeamProblem:
                 print("\t\tScoring VS Team " + str(i))
                 score += problemHelper.teamVTeam(individual, population[i])
                 teams += 1
-        return score/teams)
+        return score/teams
 
     def selection(self, populationSize):
         #Randomly select any individual in the range
