@@ -15,7 +15,7 @@ from proofOfConcept.sumSquares import sumSquares
 from pokemonTeamProblem import pokemonTeamProblem
 
 #Set up
-random.seed(1522018)
+#random.seed(1522018)
 problem = sumSquares()#pokemonTeamProblem()
 
 #Print out the parameters
@@ -89,8 +89,7 @@ for x in range(0, constants.NUMBER_OF_GENERATIONS):
     for i in range(0, constants.LOCAL_SEARCH_POPULATION):
         print("\tApplying Local Search " + str(i+1) + "/" + str((constants.LOCAL_SEARCH_POPULATION)))
         index = random.randrange(0, len(population))
-        population[index] = problem.localSearch(population[index])
-        fitness[index] = problem.objectiveValuePop(population[index], population)
+        population[index], fitness[index] = problem.localSearch(population[index])
 
     #Print out the fitness of the end population
     print("\nFitness")
@@ -107,7 +106,7 @@ print("End Time = " + str(datetime.now()))
 bestIndex = 0
 bestFitness = fitness[bestIndex]
 for i in range(1, constants.POPULATION_SIZE):
-    if( fitness[i] > bestFitness ):
+    if( problem.compareFitness(fitness[i], bestFitness) )
         bestIndex = i
         bestFitness = fitness[i]
 print("\n")

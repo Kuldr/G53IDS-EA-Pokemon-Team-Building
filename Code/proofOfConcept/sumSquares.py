@@ -3,6 +3,12 @@ from proofOfConcept.sumSquaresIndividual import sumSquaresIndividual
 
 class sumSquares:
 
+    def compareFitness(self, fitness1, fitness2):
+        if( fitness1 < fitness2 ):
+            return True
+        else:
+            return False
+
     def initialiseIndividual(self):
         #Initialises all the Individuals to random integer in the range
         return sumSquaresIndividual(random.randrange(-5, 5),random.randrange(-5, 5))
@@ -50,6 +56,34 @@ class sumSquares:
 
     def localSearch(self, individual):
         #Apply a local search step and then return the new and improved individual
+        population = []
+        fitness = []
+        population.append(sumSquaresIndividual(individual.x+0.5,
+                                                    individual.y+0.5))
+        population.append(sumSquaresIndividual(individual.x+0.5,
+                                                    individual.y))
+        population.append(sumSquaresIndividual(individual.x+0.5,
+                                                    individual.y-0.5))
+        population.append(sumSquaresIndividual(individual.x,
+                                                    individual.y+0.5))
+        population.append(sumSquaresIndividual(individual.x,
+                                                    individual.y))
+        population.append(sumSquaresIndividual(individual.x,
+                                                    individual.y-0.5))
+        population.append(sumSquaresIndividual(individual.x-0.5,
+                                                    individual.y+0.5))
+        population.append(sumSquaresIndividual(individual.x-0.5,
+                                                    individual.y))
+        population.append(sumSquaresIndividual(individual.x-0.5,
+                                                    individual.y-0.5))
+        for i in range(0, len(population)):
+            fitness.append(sumSquares.objectiveValuePop([], population[i], population))
 
+        bestIndex = 0
+        bestFitness = fitness[bestIndex]
+        for i in range(1, len(population)):
+            if( sumSquares.compareFitness([], fitness[i], bestFitness)):
+                bestIndex = i
+                bestFitness = fitness[i]
 
-        return individual
+        return population[bestIndex], fitness[bestIndex]
