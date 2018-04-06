@@ -7,7 +7,7 @@ class sumSquares:
         #Initialises all the Individuals to random integer in the range
         return sumSquaresIndividual(random.randrange(-5, 5),random.randrange(-5, 5))
 
-    def objectiveValue(self, individual):
+    def objectiveValuePop(self, individual, population):
         #Simple calculation of objective value based on the problem
         return individual.x**2 + individual.y**2
 
@@ -40,10 +40,16 @@ class sumSquares:
             child.y = -5
         return child
 
-    def populationReplacement(self, population, fitness, child, childFitness, populationSize):
+    def populationReplacement(self, population, fitness, child, childFitness):
         #Random Replacement but only if child is better than previous member
-        indexToChange = random.randrange(populationSize)
+        indexToChange = random.randrange(0, len(population))
         if( fitness[indexToChange] > childFitness ):
             population[indexToChange] = child
             fitness[indexToChange] = childFitness
         return population, fitness
+
+    def localSearch(self, individual):
+        #Apply a local search step and then return the new and improved individual
+
+        #TODO CURENTLY DOES NOT APPLY ANY LOCAL SEARCH LEARNING
+        return individual

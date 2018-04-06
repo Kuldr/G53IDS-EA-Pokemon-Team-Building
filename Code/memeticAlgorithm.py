@@ -16,7 +16,7 @@ from pokemonTeamProblem import pokemonTeamProblem
 
 #Set up
 random.seed(1522018)
-problem = pokemonTeamProblem()
+problem = sumSquares()#pokemonTeamProblem()
 
 #Print out the parameters
 print("------------------------- Global  Parameters -------------------------")
@@ -88,7 +88,7 @@ for x in range(0, constants.NUMBER_OF_GENERATIONS):
     print("Local Search")
     for i in range(0, constants.LOCAL_SEARCH_POPULATION):
         print("\tApplying Local Search " + str(i+1) + "/" + str((constants.LOCAL_SEARCH_POPULATION)))
-        index = random.randrange(populationSize)
+        index = random.randrange(0, len(population))
         population[index] = problem.localSearch(population[index])
 
     #Print out the fitness of the end population
