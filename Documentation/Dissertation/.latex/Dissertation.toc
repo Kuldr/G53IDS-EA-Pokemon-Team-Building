@@ -1,35 +1,24 @@
-\contentsline {section}{\numberline {1}Introduction}{2}
-\contentsline {subsection}{\numberline {1.1}Introduction}{2}
-\contentsline {subsection}{\numberline {1.2}Motivation}{2}
-\contentsline {subsection}{\numberline {1.3}Aims and Objectives}{2}
-\contentsline {section}{\numberline {2}Related Work}{3}
-\contentsline {subsection}{\numberline {2.1}AI and Game Playing}{3}
-\contentsline {subsection}{\numberline {2.2}Hearthstone Deck Building GA}{3}
-\contentsline {subsection}{\numberline {2.3}Genetic Algorithms}{4}
-\contentsline {section}{\numberline {3}Methodology}{4}
-\contentsline {subsection}{\numberline {3.1}Evolutionary Algorithms}{4}
-\contentsline {subsection}{\numberline {3.2}Object Orientated Design and Python}{5}
-\contentsline {subsection}{\numberline {3.3}Software Engineering Tools}{5}
-\contentsline {subparagraph}{Git}{6}
-\contentsline {subparagraph}{LaTeX}{6}
-\contentsline {subparagraph}{Atom}{6}
-\contentsline {section}{\numberline {4}Design and Implementation}{6}
-\contentsline {subsection}{\numberline {4.1}Representation}{6}
-\contentsline {subsection}{\numberline {4.2}Genetic Algorithm}{6}
-\contentsline {section}{\numberline {5}Progress}{7}
-\contentsline {subsection}{\numberline {5.1}Current Achievements}{7}
-\contentsline {subsection}{\numberline {5.2}Reflections on Work Plan}{7}
-\contentsline {section}{\numberline {6}Appendix}{9}
-\contentsline {subsection}{\numberline {6.1}Code}{9}
-\contentsline {subsubsection}{\numberline {6.1.1}geneticAlgorithm.py}{9}
-\contentsline {subsubsection}{\numberline {6.1.2}constants.py}{10}
-\contentsline {subsubsection}{\numberline {6.1.3}sumSquares.py}{10}
-\contentsline {subsubsection}{\numberline {6.1.4}sumSquaresIndividual.py}{11}
-\contentsline {subsection}{\numberline {6.2}Meeting Minutes}{11}
-\contentsline {subparagraph}{6th October}{11}
-\contentsline {subparagraph}{26th October}{11}
-\contentsline {subparagraph}{2nd November}{11}
-\contentsline {subparagraph}{21st November}{11}
-\contentsline {subparagraph}{28th November}{11}
-\contentsline {subsection}{\numberline {6.3}Work Plan}{12}
-\contentsline {subsection}{\numberline {6.4}References}{13}
+\contentsline {section}{\numberline {1}Abstract}{1}
+\contentsline {section}{\numberline {2}Introduction}{2}
+\contentsline {subsection}{\numberline {2.1}Introduction}{2}
+\contentsline {subsection}{\numberline {2.2}Motivation}{2}
+\contentsline {subsection}{\numberline {2.3}Aims and Objectives}{2}
+\contentsline {section}{\numberline {3}Related Work}{3}
+\contentsline {subsection}{\numberline {3.1}AI and Game Playing}{3}
+\contentsline {subsection}{\numberline {3.2}Hearthstone Deck Building GA}{3}
+\contentsline {subsection}{\numberline {3.3}Evolutionary Algorithms}{4}
+\contentsline {section}{\numberline {4}Description of the Work}{4}
+\contentsline {section}{\numberline {5}Methodology}{5}
+\contentsline {section}{\numberline {6}Design and Implementation}{5}
+\contentsline {section}{\numberline {7}Evaluation}{5}
+\contentsline {section}{\numberline {8}Summary and Reflections}{5}
+\contentsline {section}{\numberline {9}Appendix}{6}
+\contentsline {subsection}{\numberline {9.1}Code}{6}
+\contentsline {subsection}{\numberline {9.2}Meeting Minutes}{6}
+\contentsline {subparagraph}{6th October}{6}
+\contentsline {subparagraph}{26th October}{6}
+\contentsline {subparagraph}{2nd November}{6}
+\contentsline {subparagraph}{21st November}{6}
+\contentsline {subparagraph}{28th November}{6}
+\contentsline {subsection}{\numberline {9.3}Work Plan}{7}
+\contentsline {subsection}{\numberline {9.4}References}{8}
