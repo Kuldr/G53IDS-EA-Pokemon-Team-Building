@@ -394,12 +394,12 @@ class pokemonTeamProblem:
                                                 pokemon5Minus, pokemon6Minus))
 
         for i in range(0, len(population)):
-            fitness.append(sumSquares.objectiveValuePop([], population[i], population))
+            fitness.append(pokemonTeamProblem.objectiveValuePop([], population[i], population))
 
         bestIndex = 0
         bestFitness = fitness[bestIndex]
         for i in range(1, len(population)):
-            if( sumSquares.compareFitness([], fitness[i], bestFitness)):
+            if( pokemonTeamProblem.compareFitness([], fitness[i], bestFitness) ):
                 bestIndex = i
                 bestFitness = fitness[i]
 
