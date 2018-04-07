@@ -445,3 +445,13 @@ class problemHelper:
                         moveBasePower *= 2
             #Return the final base power
             return moveBasePower
+
+        def changeIVS(self, pokemon, ivChange):
+            pokemon.ivHP  += ivChange
+            pokemon.ivAtk += ivChange
+            pokemon.ivDef += ivChange
+            pokemon.ivSpA += ivChange
+            pokemon.ivSpD += ivChange
+            pokemon.ivSpe += ivChange
+
+            return pokemon       
