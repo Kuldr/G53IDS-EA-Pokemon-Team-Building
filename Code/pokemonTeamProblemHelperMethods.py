@@ -446,12 +446,48 @@ class problemHelper:
             #Return the final base power
             return moveBasePower
 
-    def changeIVS(self, pokemon, ivChange):
-        pokemon.ivHP  += ivChange
-        pokemon.ivAtk += ivChange
-        pokemon.ivDef += ivChange
-        pokemon.ivSpA += ivChange
-        pokemon.ivSpD += ivChange
-        pokemon.ivSpe += ivChange
+    def changeIVS(pokemon, ivChange):
+        #TODO: Make sure they don't go out of bounds
+        if( pokemon.ivHP + ivChange > constants.MAX_IV ):
+            pokemon.ivHP = constants.MAX_IV
+        elif( pokemon.ivHP + ivChange < constants.MIN_IV ):
+            pokemon.ivHP = constants.MIN_IV
+        else:
+            pokemon.ivHP  += ivChange
+
+        if( pokemon.ivAtk + ivChange > constants.MAX_IV ):
+            pokemon.ivAtk = constants.MAX_IV
+        elif( pokemon.ivAtk + ivChange < constants.MIN_IV ):
+            pokemon.ivAtk = constants.MIN_IV
+        else:
+            pokemon.ivAtk  += ivChange
+
+        if( pokemon.ivDef + ivChange > constants.MAX_IV ):
+            pokemon.ivDef = constants.MAX_IV
+        elif( pokemon.ivDef + ivChange < constants.MIN_IV ):
+            pokemon.ivDef = constants.MIN_IV
+        else:
+            pokemon.ivDef  += ivChange
+
+        if( pokemon.ivSpA + ivChange > constants.MAX_IV ):
+            pokemon.ivSpA = constants.MAX_IV
+        elif( pokemon.ivSpA + ivChange < constants.MIN_IV ):
+            pokemon.ivSpA = constants.MIN_IV
+        else:
+            pokemon.ivSpA  += ivChange
+
+        if( pokemon.ivSpD + ivChange > constants.MAX_IV ):
+            pokemon.ivSpD = constants.MAX_IV
+        elif( pokemon.ivSpD + ivChange < constants.MIN_IV ):
+            pokemon.ivSpD = constants.MIN_IV
+        else:
+            pokemon.ivSpD  += ivChange
+
+        if( pokemon.ivSpe + ivChange > constants.MAX_IV ):
+            pokemon.ivSpe = constants.MAX_IV
+        elif( pokemon.ivSpe + ivChange < constants.MIN_IV ):
+            pokemon.ivSpe = constants.MIN_IV
+        else:
+            pokemon.ivSpe += ivChange
 
         return pokemon
