@@ -76,6 +76,12 @@ for x in range(0, constants.NUMBER_OF_GENERATIONS):
         print("\tValidating Child")
         children[i] = problem.validation(children[i])
 
+        #Apply Local Search
+        print("\tApplying Local Search")
+        for j in range(0, constants.LOCAL_SEARCH_STEPS):
+            print("\t\tLocal Search Step " + str(j+1)  + "/" + str((constants.LOCAL_SEARCH_STEPS)))
+            children[i] = problem.localSearch(children[i])
+
         #Evaluate fitness
         print("\tEvaluating Child")
         ov = problem.objectiveValuePop(children[i], population)
@@ -86,14 +92,6 @@ for x in range(0, constants.NUMBER_OF_GENERATIONS):
     print("Population Replacement")
     for i in range(0, len(children)):
         population, fitness = problem.populationReplacement(population, fitness, children[i], childrenFitness[i])
-
-    #Local Search Step
-    print("Local Search")
-    for i in range(0, constants.LOCAL_SEARCH_POPULATION):
-        print("\tApplying Local Search " + str(i+1) + "/" + str((constants.LOCAL_SEARCH_POPULATION)))
-        index = random.randrange(0, len(population))
-        for _ in range(0, constants.LOCAL_SEARCH_STEPS):
-            population[index], fitness[index] = problem.localSearch(population[index])
 
     #Print out the fitness of the end population
     print("\nFitness")

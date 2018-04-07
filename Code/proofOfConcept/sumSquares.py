@@ -86,4 +86,4 @@ class sumSquares:
                 bestIndex = i
                 bestFitness = fitness[i]
 
-        return population[bestIndex], fitness[bestIndex]
+        return population[bestIndex]
