@@ -89,7 +89,8 @@ for x in range(0, constants.NUMBER_OF_GENERATIONS):
     for i in range(0, constants.LOCAL_SEARCH_POPULATION):
         print("\tApplying Local Search " + str(i+1) + "/" + str((constants.LOCAL_SEARCH_POPULATION)))
         index = random.randrange(0, len(population))
-        population[index], fitness[index] = problem.localSearch(population[index])
+        for _ in range(0, constants.LOCAL_SEARCH_STEPS):
+            population[index], fitness[index] = problem.localSearch(population[index])
 
     #Print out the fitness of the end population
     print("\nFitness")
