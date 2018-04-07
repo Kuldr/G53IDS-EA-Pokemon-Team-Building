@@ -25,7 +25,6 @@ print("Number of Generations = " + str(constants.NUMBER_OF_GENERATIONS))
 print("Population Size       = " + str(constants.POPULATION_SIZE))
 print("Mutation Rate         = " + str(constants.MUTATION_RATE*100) + "%")
 print("Local Search Steps    = " + str(constants.LOCAL_SEARCH_STEPS))
-print("Local Search Size     = " + str(constants.LOCAL_SEARCH_POPULATION))
 print("Start Time            = " + str(datetime.now()))
 print("----------------------------------------------------------------------" + "\n")
 
