@@ -447,7 +447,10 @@ class problemHelper:
             return moveBasePower
 
     def changeIVS(pokemon, ivChange):
-        #TODO: Make sure they don't go out of bounds
+        #Check the pokemn isn't null
+        if( pokemon == None ):
+            return pokemon
+
         if( pokemon.ivHP + ivChange > constants.MAX_IV ):
             pokemon.ivHP = constants.MAX_IV
         elif( pokemon.ivHP + ivChange < constants.MIN_IV ):
