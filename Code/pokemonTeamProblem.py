@@ -11,6 +11,12 @@ import testPokemon
 
 class pokemonTeamProblem:
 
+    def compareFitness(self, fitness1, fitness2):
+        if( fitness1 > fitness2 ):
+            return True
+        else:
+            return False
+
     def initialiseIndividual(self):
         #TODO: Write top level comment
         #TODO: What if all members are none ???
