@@ -75,7 +75,7 @@ for x in range(0, constants.NUMBER_OF_GENERATIONS):
 
         #Evaluate fitness
         print("\tEvaluating Child")
-        ov = problem.objectiveValueChild(children[i], population)
+        ov = problem.objectiveValuePop(children[i], population)
         print("\t\tChild Score = " + str(ov))
         childrenFitness.append(ov)
 
@@ -99,7 +99,7 @@ print("End Time = " + str(datetime.now()))
 bestIndex = 0
 bestFitness = fitness[bestIndex]
 for i in range(1, constants.POPULATION_SIZE):
-    if( fitness[i] > bestFitness ):
+    if( problem.compareFitness(fitness[i], bestFitness) ):
         bestIndex = i
         bestFitness = fitness[i]
 print("\n")
