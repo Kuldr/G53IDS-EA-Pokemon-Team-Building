@@ -4,7 +4,7 @@ from proofOfConcept.sumSquaresIndividual import sumSquaresIndividual
 class sumSquares:
 
     def compareFitness(self, fitness1, fitness2):
-        if( fitness1 < fitness2 ):
+        if( fitness1 <= fitness2 ):
             return True
         else:
             return False
@@ -49,7 +49,7 @@ class sumSquares:
     def populationReplacement(self, population, fitness, child, childFitness):
         #Random Replacement but only if child is better than previous member
         indexToChange = random.randrange(0, len(population))
-        if( fitness[indexToChange] > childFitness ):
+        if( pokemonTeamProblem.compareFitness([], childFitness, fitness[indexToChange]) ):
             population[indexToChange] = child
             fitness[indexToChange] = childFitness
         return population, fitness

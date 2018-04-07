@@ -12,7 +12,7 @@ import testPokemon
 class pokemonTeamProblem:
 
     def compareFitness(self, fitness1, fitness2):
-        if( fitness1 > fitness2 ):
+        if( fitness1 >= fitness2 ):
             return True
         else:
             return False
@@ -362,7 +362,7 @@ class pokemonTeamProblem:
         #Random Replacement but only if child is better or equal than previous member
 
         indexToChange = random.randrange(0, len(population))
-        if( fitness[indexToChange] <= childFitness ):
+        if( pokemonTeamProblem.compareFitness([], childFitness, fitness[indexToChange]) ):
             print("\tChild Replaced")
             population[indexToChange] = child
             fitness[indexToChange] = childFitness
