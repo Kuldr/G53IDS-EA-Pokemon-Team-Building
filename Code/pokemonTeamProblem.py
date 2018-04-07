@@ -311,11 +311,9 @@ class pokemonTeamProblem:
         return child
 
     def validation(self, pokemonTeam):
-        # TODO: THE REST OF THE GA ISN'T BUILT TO HANDLE NONE MEMBERS
         pokemon = [pokemonTeam.pokemon1, pokemonTeam.pokemon2,
                     pokemonTeam.pokemon3, pokemonTeam.pokemon4,
                     pokemonTeam.pokemon5, pokemonTeam.pokemon6]
-        #TODO: WHAT IF NONE
         speciesID = []
         for i in range(0, len(pokemon)):
             if( pokemon[i] != None ):
@@ -372,6 +370,16 @@ class pokemonTeamProblem:
 
     def localSearch(self, individual):
         #Apply a local search step and then return the new and improved individual
+        population = []
+        fitness = []
 
-        #TODO CURENTLY DOES NOT APPLY ANY LOCAL SEARCH LEARNING
-        return individual
+        #Do local search stuff here :)
+
+        bestIndex = 0
+        bestFitness = fitness[bestIndex]
+        for i in range(1, len(population)):
+            if( sumSquares.compareFitness([], fitness[i], bestFitness)):
+                bestIndex = i
+                bestFitness = fitness[i]
+
+        return population[bestIndex], fitness[bestIndex]

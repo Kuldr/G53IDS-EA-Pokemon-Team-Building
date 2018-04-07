@@ -15,8 +15,9 @@ from proofOfConcept.sumSquares import sumSquares
 from pokemonTeamProblem import pokemonTeamProblem
 
 #Set up
-#random.seed(1522018)
-problem = sumSquares()#pokemonTeamProblem()
+random.seed(1522018)
+#problem = sumSquares()
+problem = pokemonTeamProblem()
 
 #Print out the parameters
 print("------------------------- Global  Parameters -------------------------")
