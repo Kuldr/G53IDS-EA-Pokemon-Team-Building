@@ -4,8 +4,9 @@
 \usepackage{graphicx}
 \usepackage{listings}
 \lstset{language=Python}
-\usepackage[margin=2cm]{geometry}
+\usepackage[margin=2.5cm]{geometry}
 \graphicspath{ {images/} }
+\usepackage{afterpage}
 
 %Custom Commands
 \newcommand{\Pokemon}{Pok\'{e}mon}
@@ -13,12 +14,30 @@
 
 \begin{document}
 
+\pagenumbering{gobble}
+
+\begin{center}
+	\includegraphics[height=3cm]{UoNLogo.png}
+
+	\vfill
+	\Huge{\textbf{Benjamin Joshua Charlton}}
+	\vfill
+	\LARGE{	ID Number: 4262648 \\
+			Supervisor: Professor Robert John \\
+			Module Code: G53IDS
+			\vfill
+			2018/04
+			\vfill}
+	\afterpage{\null\newpage}
+\end{center}
+
+
 \begin{titlepage}
 	\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 	\center{}
 
     %Headings
-	\LARGE{University of Nottingham}\\[1.5cm]
+	\includegraphics[height=3cm]{UoNLogo.png}\\[0.5cm]
 	\Large{Computer Science with Artificial Intelligence MSci}\\[0.5cm]
 	\large{G53IDS - Individual Dissertation}\\[0.5cm]
 
@@ -26,6 +45,9 @@
 	\HRule{}\\[0.4cm]
 	{\huge\bfseries Applying Evolutionary Algorithms to \Pokemon{} Team Building}\\[0.4cm]
 	\HRule{}\\[1.5cm]
+
+	Submitted April 2018, in partial fulfilment of the conditions for the award of the degree Computer Science with Artificial Intelligence MSci
+	\vfill
 
     %Authors
 	\begin{minipage}{0.4\textwidth}
@@ -46,21 +68,41 @@
 		\end{flushright}
 	\end{minipage}
 
+
+	\vfill
+	School of Computer Science \\
+	University of Nottingham \\
+
+	\vfill
+	I hereby declare that this dissertation is all \\
+	my own work, except asa indicated in the text:
+	\\ [1cm]
+	Signature:\rule{6cm}{0.15mm}
+
     %Date
 	\vfill\vfill\vfill
 	{\large24\textsuperscript{th} April 2018} %TODO WHAT DATE
 	\vfill
 
+\afterpage{\null\newpage}
+\normalsize{}
 \end{titlepage}
 
-\section{Abstract}
+
+\section*{Abstract}
 \begin{itemize}
     \item Short overview of the entire project
 \end{itemize}
-
+\section*{Acknowledgements}
+\begin{itemize}
+    \item Both of these sections shouldn't be proper sections
+\end{itemize}
+\pagebreak
 
 %Contents Page
 \tableofcontents
+\setcounter{page}{1}
+\pagenumbering{arabic}
 \pagebreak
 
 %TODO WORK OUT ALL OF THE SECTIONS

@@ -1,24 +1,23 @@
-\contentsline {section}{\numberline {1}Abstract}{1}
-\contentsline {section}{\numberline {2}Introduction}{2}
-\contentsline {subsection}{\numberline {2.1}Introduction}{2}
-\contentsline {subsection}{\numberline {2.2}Motivation}{2}
-\contentsline {subsection}{\numberline {2.3}Aims and Objectives}{2}
-\contentsline {section}{\numberline {3}Related Work}{3}
-\contentsline {subsection}{\numberline {3.1}AI and Game Playing}{3}
-\contentsline {subsection}{\numberline {3.2}Hearthstone Deck Building GA}{3}
-\contentsline {subsection}{\numberline {3.3}Evolutionary Algorithms}{4}
-\contentsline {section}{\numberline {4}Description of the Work}{4}
-\contentsline {section}{\numberline {5}Methodology}{5}
-\contentsline {section}{\numberline {6}Design and Implementation}{5}
-\contentsline {section}{\numberline {7}Evaluation}{5}
-\contentsline {section}{\numberline {8}Summary and Reflections}{5}
-\contentsline {section}{\numberline {9}Appendix}{6}
-\contentsline {subsection}{\numberline {9.1}Code}{6}
-\contentsline {subsection}{\numberline {9.2}Meeting Minutes}{6}
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {subsection}{\numberline {1.1}Introduction}{2}
+\contentsline {subsection}{\numberline {1.2}Motivation}{2}
+\contentsline {subsection}{\numberline {1.3}Aims and Objectives}{2}
+\contentsline {section}{\numberline {2}Related Work}{3}
+\contentsline {subsection}{\numberline {2.1}AI and Game Playing}{3}
+\contentsline {subsection}{\numberline {2.2}Hearthstone Deck Building GA}{3}
+\contentsline {subsection}{\numberline {2.3}Evolutionary Algorithms}{4}
+\contentsline {section}{\numberline {3}Description of the Work}{5}
+\contentsline {section}{\numberline {4}Methodology}{5}
+\contentsline {section}{\numberline {5}Design and Implementation}{5}
+\contentsline {section}{\numberline {6}Evaluation}{5}
+\contentsline {section}{\numberline {7}Summary and Reflections}{5}
+\contentsline {section}{\numberline {8}Appendix}{6}
+\contentsline {subsection}{\numberline {8.1}Code}{6}
+\contentsline {subsection}{\numberline {8.2}Meeting Minutes}{6}
 \contentsline {subparagraph}{6th October}{6}
 \contentsline {subparagraph}{26th October}{6}
 \contentsline {subparagraph}{2nd November}{6}
 \contentsline {subparagraph}{21st November}{6}
 \contentsline {subparagraph}{28th November}{6}
-\contentsline {subsection}{\numberline {9.3}Work Plan}{7}
-\contentsline {subsection}{\numberline {9.4}References}{8}
+\contentsline {subsection}{\numberline {8.3}Work Plan}{7}
+\contentsline {subsection}{\numberline {8.4}References}{8}
