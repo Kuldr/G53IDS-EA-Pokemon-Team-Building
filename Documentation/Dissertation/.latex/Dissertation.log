@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  8 APR 2018 21:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  8 APR 2018 22:01
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -7,23 +7,6 @@ entering extended mode
 (./Dissertation.tex
 LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
-
-./Dissertation.tex:1: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1 B
-     rief\documentclass[a4paper]{article}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-Missing character: There is no B in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no f in font nullfont!
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/size10.clo
@@ -35,17 +18,12 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \c@subsubsection=\count82
 \c@paragraph=\count83
 \c@subparagraph=\count84
-
-Overfull \hbox (20.0pt too wide) in paragraph at lines 1--289
-[]
- []
-
 \c@figure=\count85
 \c@table=\count86
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-[1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count87
@@ -256,7 +234,7 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<images/UoNLogo.png, id=7, 588.2778pt x 237.5274pt>
+<images/UoNLogo.png, id=1, 588.2778pt x 237.5274pt>
 File: images/UoNLogo.png Graphic file (type png)
  <use images/UoNLogo.png>
 Package pdftex.def Info: images/UoNLogo.png used on input line 20.
@@ -264,7 +242,8 @@ Package pdftex.def Info: images/UoNLogo.png used on input line 20.
 
 [1
 
- <./images/UoNLogo.png>] [2]
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./image
+s/UoNLogo.png>] [2]
 File: images/UoNLogo.png Graphic file (type png)
  <use images/UoNLogo.png>
 Package pdftex.def Info: images/UoNLogo.png used on input line 40.
@@ -358,7 +337,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 323--326
 
  []
 
-[6] [7] <images/workPlan.png, id=56, 720.6925pt x 1718.42pt>
+[6] [7] <images/workPlan.png, id=52, 720.6925pt x 1718.42pt>
 File: images/workPlan.png Graphic file (type png)
 
 <use images/workPlan.png>
@@ -393,7 +372,7 @@ ux) )
 Here is how much of TeX's memory you used:
  3545 strings out of 493089
  51995 string characters out of 6134843
- 224699 words of memory out of 5000000
+ 224709 words of memory out of 5000000
  6985 multiletter control sequences out of 15000+600000
  10269 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -410,10 +389,10 @@ ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/lo
 cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/loc
 al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
 Output written on /Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.lat
-ex/Dissertation.pdf (15 pages, 261563 bytes).
+ex/Dissertation.pdf (14 pages, 261388 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
+ 99 PDF objects out of 1000 (max. 8388607)
+ 67 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
