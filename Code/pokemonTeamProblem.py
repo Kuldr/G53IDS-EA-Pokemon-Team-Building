@@ -56,12 +56,19 @@ class pokemonTeamProblem:
         #TODO: This is bad as each pokemon stays in the same team slot
         #TODO: This also doesn't do any crossover on the individual pokemon
 
-        p1 = parent1.pokemon1
-        p2 = parent1.pokemon2
-        p3 = parent1.pokemon3
-        p4 = parent2.pokemon4
-        p5 = parent1.pokemon5
-        p6 = parent1.pokemon6
+        #List of pokemon
+        pokemon = [parent1.pokemon1, parent1.pokemon2, parent1.pokemon3,
+                   parent1.pokemon4, parent1.pokemon5, parent1.pokemon6,
+                   parent2.pokemon1, parent2.pokemon2, parent2.pokemon3,
+                   parent2.pokemon4, parent2.pokemon5, parent2.pokemon6,]
+
+        #This could create duplicates but that will be  dealt with in validation at a later step            
+        p1 = pokemon[random.randrange(len(pokemon))]
+        p2 = pokemon[random.randrange(len(pokemon))]
+        p3 = pokemon[random.randrange(len(pokemon))]
+        p4 = pokemon[random.randrange(len(pokemon))]
+        p5 = pokemon[random.randrange(len(pokemon))]
+        p6 = pokemon[random.randrange(len(pokemon))]
 
         return pokemonTeamIndividual(p1, p2, p3, p4, p5, p6)
 
