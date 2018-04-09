@@ -62,7 +62,7 @@ class pokemonTeamProblem:
                    parent2.pokemon1, parent2.pokemon2, parent2.pokemon3,
                    parent2.pokemon4, parent2.pokemon5, parent2.pokemon6,]
 
-        #This could create duplicates but that will be  dealt with in validation at a later step            
+        #This could create duplicates but that will be  dealt with in validation at a later step
         p1 = pokemon[random.randrange(len(pokemon))]
         p2 = pokemon[random.randrange(len(pokemon))]
         p3 = pokemon[random.randrange(len(pokemon))]
@@ -381,21 +381,21 @@ class pokemonTeamProblem:
         fitness = []
 
         #Do local search stuff here :)
-        pokemon1Plus = problemHelper.changeIVS(individual.pokemon1, 3)
-        pokemon2Plus = problemHelper.changeIVS(individual.pokemon2, 3)
-        pokemon3Plus = problemHelper.changeIVS(individual.pokemon3, 3)
-        pokemon4Plus = problemHelper.changeIVS(individual.pokemon4, 3)
-        pokemon5Plus = problemHelper.changeIVS(individual.pokemon5, 3)
-        pokemon6Plus = problemHelper.changeIVS(individual.pokemon6, 3)
+        pokemon1Plus = problemHelper.changeIVS(individual.pokemon1, -3)
+        pokemon2Plus = problemHelper.changeIVS(individual.pokemon2, -3)
+        pokemon3Plus = problemHelper.changeIVS(individual.pokemon3, -3)
+        pokemon4Plus = problemHelper.changeIVS(individual.pokemon4, -3)
+        pokemon5Plus = problemHelper.changeIVS(individual.pokemon5, -3)
+        pokemon6Plus = problemHelper.changeIVS(individual.pokemon6, -3)
         population.append(pokemonTeamIndividual(pokemon1Plus, pokemon2Plus,
                                                 pokemon3Plus, pokemon4Plus,
                                                 pokemon5Plus, pokemon6Plus))
-        pokemon1Minus = problemHelper.changeIVS(individual.pokemon1, -3)
-        pokemon2Minus = problemHelper.changeIVS(individual.pokemon2, -3)
-        pokemon3Minus = problemHelper.changeIVS(individual.pokemon3, -3)
-        pokemon4Minus = problemHelper.changeIVS(individual.pokemon4, -3)
-        pokemon5Minus = problemHelper.changeIVS(individual.pokemon5, -3)
-        pokemon6Minus = problemHelper.changeIVS(individual.pokemon6, -3)
+        pokemon1Minus = problemHelper.changeIVS(individual.pokemon1, 3)
+        pokemon2Minus = problemHelper.changeIVS(individual.pokemon2, 3)
+        pokemon3Minus = problemHelper.changeIVS(individual.pokemon3, 3)
+        pokemon4Minus = problemHelper.changeIVS(individual.pokemon4, 3)
+        pokemon5Minus = problemHelper.changeIVS(individual.pokemon5, 3)
+        pokemon6Minus = problemHelper.changeIVS(individual.pokemon6, 3)
         population.append(pokemonTeamIndividual(pokemon1Minus, pokemon2Minus,
                                                 pokemon3Minus, pokemon4Minus,
                                                 pokemon5Minus, pokemon6Minus))
