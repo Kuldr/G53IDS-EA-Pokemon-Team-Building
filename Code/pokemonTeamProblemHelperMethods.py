@@ -10,7 +10,6 @@ class problemHelper:
     def initialisePokemonIndividual():
         #TODO: First made it to just make a pokemon not bothered about validation
         #TODO Need to make somethings be able to be None - This can be a variable in the constants file
-        #TODO Add the limits into constants file
 
         # Generates the default form and later on checks for other forms
         formID = random.randrange(constants.MIN_FORMID, constants.MAX_FORMID+1)
@@ -134,13 +133,13 @@ class problemHelper:
         #Check gender
         gr = p.species.gender_rate
         if( gr == -1 and pokemonChild.gender != pb.gender("genderless").id ):
-            return None #TODO: HAVEN'T TESTED WRITE UNIT TESTS
+            return None
         if( gr != -1 and pokemonChild.gender == pb.gender("genderless").id ):
             return None
         if( gr == 0 and pokemonChild.gender != pb.gender("male").id ):
-            return None #TODO: HAVEN'T TESTED WRITE UNIT TESTS
+            return None
         if( gr == 8 and pokemonChild.gender != pb.gender("female").id ):
-            return None #TODO: HAVEN'T TESTED WRITE UNIT TESTS
+            return None
 
         #Check itemID
         if( problemHelper.validateItemID(pokemonChild.itemID) == None ):
