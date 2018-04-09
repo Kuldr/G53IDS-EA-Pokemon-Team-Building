@@ -3,11 +3,17 @@ from proofOfConcept.sumSquaresIndividual import sumSquaresIndividual
 
 class sumSquares:
 
+    def compareFitness(self, fitness1, fitness2):
+        if( fitness1 <= fitness2 ):
+            return True
+        else:
+            return False
+
     def initialiseIndividual(self):
         #Initialises all the Individuals to random integer in the range
         return sumSquaresIndividual(random.randrange(-5, 5),random.randrange(-5, 5))
 
-    def objectiveValue(self, individual):
+    def objectiveValuePop(self, individual, population):
         #Simple calculation of objective value based on the problem
         return individual.x**2 + individual.y**2
 
@@ -40,10 +46,44 @@ class sumSquares:
             child.y = -5
         return child
 
-    def populationReplacement(self, population, fitness, child, childFitness, populationSize):
+    def populationReplacement(self, population, fitness, child, childFitness):
         #Random Replacement but only if child is better than previous member
-        indexToChange = random.randrange(populationSize)
-        if( fitness[indexToChange] > childFitness ):
+        indexToChange = random.randrange(0, len(population))
+        if( pokemonTeamProblem.compareFitness([], childFitness, fitness[indexToChange]) ):
             population[indexToChange] = child
             fitness[indexToChange] = childFitness
         return population, fitness
+
+    def localSearch(self, individual):
+        #Apply a local search step and then return the new and improved individual
+        population = []
+        fitness = []
+        population.append(sumSquaresIndividual(individual.x+0.5,
+                                                    individual.y+0.5))
+        population.append(sumSquaresIndividual(individual.x+0.5,
+                                                    individual.y))
+        population.append(sumSquaresIndividual(individual.x+0.5,
+                                                    individual.y-0.5))
+        population.append(sumSquaresIndividual(individual.x,
+                                                    individual.y+0.5))
+        population.append(sumSquaresIndividual(individual.x,
+                                                    individual.y))
+        population.append(sumSquaresIndividual(individual.x,
+                                                    individual.y-0.5))
+        population.append(sumSquaresIndividual(individual.x-0.5,
+                                                    individual.y+0.5))
+        population.append(sumSquaresIndividual(individual.x-0.5,
+                                                    individual.y))
+        population.append(sumSquaresIndividual(individual.x-0.5,
+                                                    individual.y-0.5))
+        for i in range(0, len(population)):
+            fitness.append(sumSquares.objectiveValuePop([], population[i], population))
+
+        bestIndex = 0
+        bestFitness = fitness[bestIndex]
+        for i in range(1, len(population)):
+            if( sumSquares.compareFitness([], fitness[i], bestFitness)):
+                bestIndex = i
+                bestFitness = fitness[i]
+
+        return population[bestIndex]

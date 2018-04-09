@@ -16,13 +16,20 @@ from pokemonTeamProblem import pokemonTeamProblem
 
 #Set up
 random.seed(1522018)
+#problem = sumSquares()
 problem = pokemonTeamProblem()
 
 #Print out the parameters
 print("------------------------- Global  Parameters -------------------------")
+if( constants.MA_MODE ):
+    print("Memetic Algortihm Mode")
+else:
+    print("Genetic Algorithm Mode")
 print("Number of Generations = " + str(constants.NUMBER_OF_GENERATIONS))
 print("Population Size       = " + str(constants.POPULATION_SIZE))
 print("Mutation Rate         = " + str(constants.MUTATION_RATE*100) + "%")
+if( constants.MA_MODE ):
+    print("Local Search Steps    = " + str(constants.LOCAL_SEARCH_STEPS))
 print("Start Time            = " + str(datetime.now()))
 print("----------------------------------------------------------------------" + "\n")
 
@@ -72,6 +79,13 @@ for x in range(0, constants.NUMBER_OF_GENERATIONS):
         #Validation
         print("\tValidating Child")
         children[i] = problem.validation(children[i])
+
+        #Apply Local Search (only if running in MA Mode)
+        if( constants.MA_MODE ):
+            print("\tApplying Local Search")
+            for j in range(0, constants.LOCAL_SEARCH_STEPS):
+                print("\t\tLocal Search Step " + str(j+1)  + "/" + str((constants.LOCAL_SEARCH_STEPS)))
+                children[i] = problem.localSearch(children[i])
 
         #Evaluate fitness
         print("\tEvaluating Child")

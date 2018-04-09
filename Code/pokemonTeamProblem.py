@@ -11,6 +11,12 @@ import testPokemon
 
 class pokemonTeamProblem:
 
+    def compareFitness(self, fitness1, fitness2):
+        if( fitness1 >= fitness2 ):
+            return True
+        else:
+            return False
+
     def initialiseIndividual(self):
         #TODO: Write top level comment
         #TODO: What if all members are none ???
@@ -50,12 +56,19 @@ class pokemonTeamProblem:
         #TODO: This is bad as each pokemon stays in the same team slot
         #TODO: This also doesn't do any crossover on the individual pokemon
 
-        p1 = parent1.pokemon1
-        p2 = parent1.pokemon2
-        p3 = parent1.pokemon3
-        p4 = parent2.pokemon4
-        p5 = parent1.pokemon5
-        p6 = parent1.pokemon6
+        #List of pokemon
+        pokemon = [parent1.pokemon1, parent1.pokemon2, parent1.pokemon3,
+                   parent1.pokemon4, parent1.pokemon5, parent1.pokemon6,
+                   parent2.pokemon1, parent2.pokemon2, parent2.pokemon3,
+                   parent2.pokemon4, parent2.pokemon5, parent2.pokemon6,]
+
+        #This could create duplicates but that will be  dealt with in validation at a later step            
+        p1 = pokemon[random.randrange(len(pokemon))]
+        p2 = pokemon[random.randrange(len(pokemon))]
+        p3 = pokemon[random.randrange(len(pokemon))]
+        p4 = pokemon[random.randrange(len(pokemon))]
+        p5 = pokemon[random.randrange(len(pokemon))]
+        p6 = pokemon[random.randrange(len(pokemon))]
 
         return pokemonTeamIndividual(p1, p2, p3, p4, p5, p6)
 
@@ -305,11 +318,9 @@ class pokemonTeamProblem:
         return child
 
     def validation(self, pokemonTeam):
-        # TODO: THE REST OF THE GA ISN'T BUILT TO HANDLE NONE MEMBERS
         pokemon = [pokemonTeam.pokemon1, pokemonTeam.pokemon2,
                     pokemonTeam.pokemon3, pokemonTeam.pokemon4,
                     pokemonTeam.pokemon5, pokemonTeam.pokemon6]
-        #TODO: WHAT IF NONE
         speciesID = []
         for i in range(0, len(pokemon)):
             if( pokemon[i] != None ):
@@ -358,8 +369,45 @@ class pokemonTeamProblem:
         #Random Replacement but only if child is better or equal than previous member
 
         indexToChange = random.randrange(0, len(population))
-        if( fitness[indexToChange] <= childFitness ):
+        if( pokemonTeamProblem.compareFitness([], childFitness, fitness[indexToChange]) ):
             print("\tChild Replaced")
             population[indexToChange] = child
             fitness[indexToChange] = childFitness
         return population, fitness
+
+    def localSearch(self, individual):
+        #Apply a local search step and then return the new and improved individual
+        population = []
+        fitness = []
+
+        #Do local search stuff here :)
+        pokemon1Plus = problemHelper.changeIVS(individual.pokemon1, 3)
+        pokemon2Plus = problemHelper.changeIVS(individual.pokemon2, 3)
+        pokemon3Plus = problemHelper.changeIVS(individual.pokemon3, 3)
+        pokemon4Plus = problemHelper.changeIVS(individual.pokemon4, 3)
+        pokemon5Plus = problemHelper.changeIVS(individual.pokemon5, 3)
+        pokemon6Plus = problemHelper.changeIVS(individual.pokemon6, 3)
+        population.append(pokemonTeamIndividual(pokemon1Plus, pokemon2Plus,
+                                                pokemon3Plus, pokemon4Plus,
+                                                pokemon5Plus, pokemon6Plus))
+        pokemon1Minus = problemHelper.changeIVS(individual.pokemon1, -3)
+        pokemon2Minus = problemHelper.changeIVS(individual.pokemon2, -3)
+        pokemon3Minus = problemHelper.changeIVS(individual.pokemon3, -3)
+        pokemon4Minus = problemHelper.changeIVS(individual.pokemon4, -3)
+        pokemon5Minus = problemHelper.changeIVS(individual.pokemon5, -3)
+        pokemon6Minus = problemHelper.changeIVS(individual.pokemon6, -3)
+        population.append(pokemonTeamIndividual(pokemon1Minus, pokemon2Minus,
+                                                pokemon3Minus, pokemon4Minus,
+                                                pokemon5Minus, pokemon6Minus))
+
+        for i in range(0, len(population)):
+            fitness.append(pokemonTeamProblem.objectiveValuePop([], population[i], population))
+
+        bestIndex = 0
+        bestFitness = fitness[bestIndex]
+        for i in range(1, len(population)):
+            if( pokemonTeamProblem.compareFitness([], fitness[i], bestFitness) ):
+                bestIndex = i
+                bestFitness = fitness[i]
+
+        return population[bestIndex]
