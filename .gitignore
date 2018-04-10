@@ -1,0 +1,13 @@
+
+
+Documentation/~\$WorkPlan\.xlsx
+
+*.DS_Store
+
+*.pyc
+
+Code/__pycache__/
+
+Code/output_OUTOFDATE\.txt
+
+Code/proofOfConcept/__pycache__/
