@@ -4,6 +4,7 @@ POPULATION_SIZE = 5
 MUTATION_RATE = 0.8
 
 #MA Constants
+MA_MODE = True
 LOCAL_SEARCH_STEPS = 0
 
 #POKEMON GA Specific Constants
