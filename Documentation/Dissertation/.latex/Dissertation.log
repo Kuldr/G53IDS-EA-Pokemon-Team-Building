@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  10 APR 2018 11:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  10 APR 2018 18:09
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -274,51 +274,46 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout3 = `Dissertation.toc'.
 
  [1]
-Underfull \hbox (badness 10000) in paragraph at lines 145--149
+Underfull \hbox (badness 10000) in paragraph at lines 150--154
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 170--173
+Underfull \hbox (badness 10000) in paragraph at lines 175--178
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--186
+Underfull \hbox (badness 10000) in paragraph at lines 188--191
 
  []
 
 
-Overfull \hbox (1.49283pt too wide) in paragraph at lines 197--200
+Overfull \hbox (1.49283pt too wide) in paragraph at lines 202--205
 \OT1/cmr/m/n/10 Garc^^S^^Pa-S^^Sanchez et al. tack-led a very sim-i-lar prob-le
 m us-ing a ge-netic al-go-rithm to ap-proach deck building[[]].
  []
 
 [3]
-Overfull \hbox (17.0901pt too wide) in paragraph at lines 201--204
+Overfull \hbox (17.0901pt too wide) in paragraph at lines 206--209
 []\OT1/cmr/m/n/10 An evo-lu-tion-ary al-go-rithm was used as `they com-monly pr
 o-duce very ef-fec-tive com-bi-na-tions of elements'[[]],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--208
+Underfull \hbox (badness 10000) in paragraph at lines 210--213
 
  []
 
 Missing character: There is no Â in font cmr10!
 Missing character: There is no § in font cmr10!
 [4] [5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 315--318
+Underfull \hbox (badness 10000) in paragraph at lines 320--323
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 319--324
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 325--329
+Underfull \hbox (badness 10000) in paragraph at lines 324--329
 
  []
 
@@ -328,12 +323,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 330--334
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--338
+Underfull \hbox (badness 10000) in paragraph at lines 335--339
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 339--342
+Underfull \hbox (badness 10000) in paragraph at lines 340--343
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 344--347
 
  []
 
@@ -341,7 +341,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 339--342
 File: images/workPlan.png Graphic file (type png)
 
 <use images/workPlan.png>
-Package pdftex.def Info: images/workPlan.png used on input line 367.
+Package pdftex.def Info: images/workPlan.png used on input line 372.
 (pdftex.def)             Requested size: 295.9367pt x 705.62843pt.
 
 Overfull \vbox (20.30367pt too high) has occurred while \output is active []
@@ -389,7 +389,7 @@ ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/lo
 cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/loc
 al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
 Output written on /Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.lat
-ex/Dissertation.pdf (15 pages, 262776 bytes).
+ex/Dissertation.pdf (15 pages, 263261 bytes).
 PDF statistics:
  102 PDF objects out of 1000 (max. 8388607)
  69 compressed objects within 1 object stream
