@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: .latex/Dissertation.aux
 The style file: plain.bst
 Database file #1: Dissertation.bib
-You've used 11 entries,
+You've used 12 entries,
             2118 wiz_defined-function locations,
-            574 strings with 6232 characters,
-and the built_in function-call counts, 3946 in all, are:
-= -- 380
-> -- 228
+            578 strings with 6282 characters,
+and the built_in function-call counts, 4156 in all, are:
+= -- 400
+> -- 235
 < -- 2
-+ -- 92
-- -- 80
-* -- 287
-:= -- 670
-add.period$ -- 35
-call.type$ -- 11
-change.case$ -- 71
++ -- 95
+- -- 82
+* -- 295
+:= -- 705
+add.period$ -- 38
+call.type$ -- 12
+change.case$ -- 75
 chr.to.int$ -- 0
-cite$ -- 11
-duplicate$ -- 124
-empty$ -- 286
-format.name$ -- 80
-if$ -- 811
+cite$ -- 12
+duplicate$ -- 131
+empty$ -- 308
+format.name$ -- 82
+if$ -- 857
 int.to.chr$ -- 0
-int.to.str$ -- 11
+int.to.str$ -- 12
 missing$ -- 7
-newline$ -- 58
-num.names$ -- 22
-pop$ -- 82
+newline$ -- 63
+num.names$ -- 24
+pop$ -- 90
 preamble$ -- 1
-purify$ -- 60
+purify$ -- 63
 quote$ -- 0
-skip$ -- 96
+skip$ -- 103
 stack$ -- 0
-substring$ -- 198
-swap$ -- 26
+substring$ -- 203
+swap$ -- 27
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 44
+type$ -- 48
 warning$ -- 0
-while$ -- 36
-width$ -- 13
-write$ -- 122
+while$ -- 38
+width$ -- 14
+write$ -- 132

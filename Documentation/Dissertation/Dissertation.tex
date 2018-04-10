@@ -157,7 +157,7 @@ These results will be then compared to human designed solutions to conclude if t
     This information will be used to help direct how best to approach the problem and design the system.
     \item Design an effective and efficient way to model and represent the problem in the evolutionary algorithm while still maintaining relevant data to the problem.
     This will also be used to form the output so will need to be readily be able to translate into a readable format for the user to understand.
-    \item Develop a Genetic and Memetic algorithm to tackle the problem from scratch, including conventional and unique methods for the various stages in the algorithms.
+    \item Develop a Genetic and Memetic algorithm to tackle the problem from scratch and the required methods for the various stages in the algorithms.
     Making sure that all of the elements of the code base are created in a fashion that allows for reusability and adaptation.
     For example both the Genetic and Memetic algorithm could share the methods like objective evaluation and selection.
     This will all be developed from scratch (bar the use of a few relevant APIs).
@@ -272,6 +272,93 @@ The project doesn't have many functional requirements
     \item Methodology for evaluating results
 	\item Expand current sections
 \end{itemize}
+\subsection{Evolutionary Algorithms}
+\begin{itemize}
+   \item Choice of GA and MA
+\end{itemize}
+\par
+The main AI technique behind this project is evolutionary algorithms, this technique has been chosen as it successful optimises problems with little expert knowledge as shown in the related works.
+There are a few different types of evolutionary algorithms, with genetic algorithms and memetic algorithms being focused on in this project.
+The reasoning for choosing these two types is that they are closely related and will allow for a lot of the code to be shared between them, in fact a memetic algorithm can be seen as an extension of a genetic algorithm.
+Another potential extension would be a multimeme memetic algorithm but the scope of the project does not allow time to develop this.
+\par
+The key advantage of evolutionary algorithms is that they can effectively explore the search landscape due to their population based search method, a critical feature in this problem as there are a a lot of possible combinations to search through.
+For example in a team of \Pokemon{} each team member on a team of 6 can be chosen from the 805 different species of \Pokemon{}.
+This gives the following number of possibilities:
+\begin{equation}
+{species \choose teamSize} = {807 \choose 6} = 3.765 \times 10^{14}\ (4sf) %376,545,899,656,927 to be exact
+\end{equation}
+\par
+Once you begin to factor the the other potential values it becomes a lot larger very quickly, a rough estimate for the number of possibilities is as follows:
+\begin{equation}
+{species \times IVs^{stats} \times EVs^{stats} \times levels \times happiness \times abilities \times genders \times items \times {moves \choose move slots} \choose teamSize}
+\end{equation}
+\begin{equation}
+    {807 \times 31^6 \times 256^6 \times 100 \times 256 \times 3 \times 2 \times 354 \times {728 \choose 4} \choose 6} = 5.893 \times 10^{261}\ (4sf)
+\end{equation} % 5892646138241710986407793497445852707778105080508958016801817373764061910688657477422986377898950796546392632127158482762259927547606249722743913164896701603448604234412592111287339200538369501817891667466913812521600691151442407389407976543054201078289530880000 exactly :P
+\par
+Although this is an astronomically large search space, a large proportion of these possibilities will be invalid solutions as if any of the team members aren't valid then the whole solution becomes invalid.
+By using a evolutionary algorithm this search space can be quickly explored and iterated upon.
+\par
+Another advantages of evolutionary algorithms is that they allow for the usage of both domain specific methods and more general methods, potential to be parallelised, ability to translate the solution to a human understandable result and the simplicity of the overall concept.
+\\ \par
+The issues with these techniques come from how to accurately represent the problem in a form that can be easily manipulated by the algorithm.
+This is rather complex on real world problems and requires careful thought and design to mitigate any issues later down the line.
+Another issue comes from need to score each solution, in this problem there is no real objective way to score a solution.
+Practically an EA also has the issue of run time, like most AI techniques they are very computationally expensive and having a longer run time will result in more optimal answers.
+\\ \par
+Evolutionary algorithms were chosen over other AI techniques not only due to the advantages above but as there are issues with other techniques when approaching this problem.
+\par
+As shown with the calculations above, brute force methods are unfeasible as the search space is far too large.
+Even if you effectively limited the search space by employing several powerful domain specific heuristics or pruning of the search space it would not limit it enough to allow for brute force methodologies.
+Brute force methods still suffer from the lack of an objective score for each solution to be able to return the best result.
+\par
+Many techniques such as Decision Trees and Support Vector Machines concentrate on classifying the result based upon an already labeled dataset that they learned form.
+To adapt the problem into a classification style problem would be impractical as mentioned earlier it would be hard even for human experts to say what is good and bad to classify a solution.
+Artificial Neural Networks also approach classification problems effectively and thus have similar issues to other classification problems
+Although human made solutions exist there is not a mass of solutions to learn from so these machine learning techniques aren't easily applicable.
+\par
+Mathematical optimisation techniques can't be effectively used to calculate an optimum as the objective value that you are trying to optimise is extremely difficult to calculate.
+Other AI optimisation techniques could be used to solve this problem, such as Local Search methods.
+The key draw back of the local search methods is defining a move operators for this problem, as it is such a high dimensionality problem and not all of the dimensions have obvious move operators.
+\subsection{Object Orientated Design and Python}
+The project will be coded in Python, a powerful Object Orientated programming language.
+Python was chosen due to its strong object orientated design features that will be rather suitable for coding of evolutionary algorithms.
+By following several object orientated design practices the project will be easily adaptable through out development, primarily allowing for the easy adaptation to the MA further in the project by reusing multiple classes.
+\par
+Python was also chosen as it is a very commonly used language, being the 3\textsuperscript{rd} most popular language on GitHub\cite{GitHut} as of the writing of this report.
+This popularity means that there is extensive resources on the language and it goes to show how powerful it is.
+Alongside its popularity comes many usable APIs, in particular this projects takes advantage of \Pokeapi{}, which has a python wrapper called pokebase. The use of this specific API and wrapper were critical to the project as it allowed easy access to the large amount of data the project needs to function.
+\subsection{Software Engineering Tools}
+\par
+To aid with the large scope of this project, a variety of software engineering tools are being used.
+This section will list some of the larger tools and processes that they provide.
+\subparagraph{Git}
+Git is a version control system the main draw of such a technology is to allow for easy restoring of code to a working state if a change breaks something.
+This is done by having a tree of `commits' within each are the changes to the files at that point, normally stored as line differences in the code files; at any point you can go back in the tree to a commit that needs to be reverted too.
+The tree structure can also branch to allow different modifications to be made, this feature is currently being used to allow for documentation and code to be written at the same time.
+It will useful later on with the adaptation from the GA to the MA, allowing a stable branch with working GA code in it and a MA branch that is modifying the same files.
+\par
+To use the Git system there are a few pieces of software being used.
+Although you can work on a local repository, it is highly recommended that a remote repository is used as a form of backup and allows for the code base to be worked upon from multiple devices so long as the remote repository is up to date.
+The project will be stored on the School of Computer Science GitLab server, leveraging the functionality of the remote repository while keeping the project private for the foreseeable future.
+\subparagraph{LaTeX}
+LaTeX is a software to help with documentation preparation, which has been used to create all of the documents thus far.
+A key reason to use this is that it stores the source files in a manner that allows for Git to effectively show the changes.
+This allows for the entirety of the project to leverage the Git repository rather just the code base.
+\par
+Referencing is a lot easier in LaTeX as during the compile it will automatically work out what the correct references are with easily human readable tags for each citation.
+Another feature of LaTeX is the use of images, by storing them in a separate folder and loading them in any changes that I make to the image will be replicated in the document.
+Although it has taken some time to get used to the nuances of LaTeX it is allowing for much more powerful and granular control of the documentation writing, while relieving stresses such as how parts are brought together.
+\subparagraph{Atom}
+Both the code and the documentation are being written in a text editor called Atom.
+The main use of Atom in this project is that it edit both the code and documentation simply by installing packages to recognise both languages.
+Additional packages have also been installed to allow for easy compilation and viewing of the LaTeX files and a project management system which will save the workspace for the various segments of the project.
+It also integrates well with Git showing which files and specific lines have been modified, allowing for easy management at a glance.
+\\ \par
+Together all of these tools help with the software engineering process by both encouraging good practice and streamlining some more complex processes.
+In the long term this will help with the project management of the project by helping keeping it organised and clear.
+
 
 \section{Design and Implementation}
 \begin{itemize}
