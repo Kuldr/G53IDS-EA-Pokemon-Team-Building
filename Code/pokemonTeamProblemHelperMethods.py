@@ -154,7 +154,9 @@ class problemHelper:
             return None
 
         #Check level
-        if( pokemonChild.level > constants.MAX_LEVEL or pokemonChild.level < constants.MIN_LEVEL ):
+        if( pokemonChild.level > constants.MAX_LEVEL):
+            return None
+        if( pokemonChild.level < constants.MIN_LEVEL ):  
             return None
 
         #Check shiny
