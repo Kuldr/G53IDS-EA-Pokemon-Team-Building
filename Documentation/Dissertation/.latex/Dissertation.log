@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  10 APR 2018 18:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  11 APR 2018 14:12
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -323,32 +323,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 354--358
  []
 
 [7] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 407--410
+Underfull \hbox (badness 10000) in paragraph at lines 442--445
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 411--416
+Underfull \hbox (badness 10000) in paragraph at lines 446--451
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 417--421
+Underfull \hbox (badness 10000) in paragraph at lines 452--456
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 422--426
+Underfull \hbox (badness 10000) in paragraph at lines 457--461
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 427--430
+Underfull \hbox (badness 10000) in paragraph at lines 462--465
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 431--434
+Underfull \hbox (badness 10000) in paragraph at lines 466--469
 
  []
 
@@ -356,7 +356,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 431--434
 File: images/workPlan.png Graphic file (type png)
 
 <use images/workPlan.png>
-Package pdftex.def Info: images/workPlan.png used on input line 459.
+Package pdftex.def Info: images/workPlan.png used on input line 494.
 (pdftex.def)             Requested size: 295.9367pt x 705.62843pt.
 
 Overfull \vbox (20.30367pt too high) has occurred while \output is active []
@@ -387,11 +387,11 @@ ux) )
 Here is how much of TeX's memory you used:
  3546 strings out of 493089
  52003 string characters out of 6134843
- 224709 words of memory out of 5000000
+ 225709 words of memory out of 5000000
  6986 multiletter control sequences out of 15000+600000
  10269 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,5n,40p,532b,274s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,10n,40p,532b,274s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.
 pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.p
 fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.p
@@ -408,7 +408,7 @@ xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/tex
 live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
 Output written on /Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.lat
-ex/Dissertation.pdf (17 pages, 309701 bytes).
+ex/Dissertation.pdf (17 pages, 313529 bytes).
 PDF statistics:
  124 PDF objects out of 1000 (max. 8388607)
  85 compressed objects within 1 object stream

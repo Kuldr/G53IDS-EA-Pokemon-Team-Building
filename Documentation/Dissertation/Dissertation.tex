@@ -358,6 +358,41 @@ It also integrates well with Git showing which files and specific lines have bee
 \\ \par
 Together all of these tools help with the software engineering process by both encouraging good practice and streamlining some more complex processes.
 In the long term this will help with the project management of the project by helping keeping it organised and clear.
+\subsection{Testing}
+\begin{itemize}
+	\item Should this be moved into the evaluation
+\end{itemize}
+\par
+The overall EA structure has been tested on a benchmark function to prove that it can be run successfully.
+This also shows that EA is adaptable and able to run on other problems.
+\par
+The benchmark function is used is the Sum of Squares, in this the objective value is the sum of the squares of all the elements (2 in this example) where each element can be in the range -5 to 5, as real values.
+The objective function can be calculated using the following equation:
+\begin{equation}
+    where\ n = 2\quad \sum_{i=1}^{n} x_i^2 = x_1^2 + x_2^2
+\end{equation}
+This objective value is to be minimised, giving a global maximum of every element being 0.
+In this case the following hyper parameters were used:
+\begin{equation}
+    generations = 50,\ populationSize = 10,\ mutationRate = 0.1,\ LocalSearchSteps = 5
+\end{equation}
+\begin{itemize}
+	\item Would more results be better
+\end{itemize}
+Running it 5 times gave the following results to 3 significant figures:
+\begin{center}
+    \begin{tabular}{ c c | c }
+        x\textsubscript{1} & x\textsubscript{2} & Objective Value \\
+        \hline
+        0 & 0 & 0 \\
+        0.866 & 0.240 & 0.807 \\
+        -0.014 & -0.126 & 0.016 \\
+        0.107 & 0.694 & 0.493 \\
+        0.000 & -0.011 & 0.000 \\
+    \end{tabular}
+\end{center}
+\par
+
 
 
 \section{Design and Implementation}
