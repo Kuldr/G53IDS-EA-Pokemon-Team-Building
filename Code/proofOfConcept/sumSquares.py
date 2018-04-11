@@ -49,7 +49,7 @@ class sumSquares:
     def populationReplacement(self, population, fitness, child, childFitness):
         #Random Replacement but only if child is better than previous member
         indexToChange = random.randrange(0, len(population))
-        if( pokemonTeamProblem.compareFitness([], childFitness, fitness[indexToChange]) ):
+        if( sumSquares.compareFitness([], childFitness, fitness[indexToChange]) ):
             population[indexToChange] = child
             fitness[indexToChange] = childFitness
         return population, fitness
@@ -58,24 +58,24 @@ class sumSquares:
         #Apply a local search step and then return the new and improved individual
         population = []
         fitness = []
-        population.append(sumSquaresIndividual(individual.x+0.5,
-                                                    individual.y+0.5))
-        population.append(sumSquaresIndividual(individual.x+0.5,
+        population.append(sumSquaresIndividual(individual.x+0.01,
+                                                    individual.y+0.01))
+        population.append(sumSquaresIndividual(individual.x+0.01,
                                                     individual.y))
-        population.append(sumSquaresIndividual(individual.x+0.5,
-                                                    individual.y-0.5))
+        population.append(sumSquaresIndividual(individual.x+0.01,
+                                                    individual.y-0.01))
         population.append(sumSquaresIndividual(individual.x,
-                                                    individual.y+0.5))
+                                                    individual.y+0.01))
         population.append(sumSquaresIndividual(individual.x,
                                                     individual.y))
         population.append(sumSquaresIndividual(individual.x,
-                                                    individual.y-0.5))
-        population.append(sumSquaresIndividual(individual.x-0.5,
-                                                    individual.y+0.5))
-        population.append(sumSquaresIndividual(individual.x-0.5,
+                                                    individual.y-0.01))
+        population.append(sumSquaresIndividual(individual.x-0.01,
+                                                    individual.y+0.01))
+        population.append(sumSquaresIndividual(individual.x-0.01,
                                                     individual.y))
-        population.append(sumSquaresIndividual(individual.x-0.5,
-                                                    individual.y-0.5))
+        population.append(sumSquaresIndividual(individual.x-0.01,
+                                                    individual.y-0.01))
         for i in range(0, len(population)):
             fitness.append(sumSquares.objectiveValuePop([], population[i], population))
 
