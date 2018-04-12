@@ -4,9 +4,10 @@
 \usepackage{graphicx}
 \usepackage{listings}
 \lstset{language=Python}
-\usepackage[margin=2.5cm]{geometry}
+\usepackage[margin=3cm]{geometry}
 \graphicspath{ {images/} }
 \usepackage{afterpage}
+\usepackage[]{algorithm2e}
 
 %Custom Commands
 \newcommand{\Pokemon}{Pok\'{e}mon}
@@ -250,9 +251,11 @@ Another method was Proportional Inheritance where `the average is weighted based
 	\item How is it meant to function
 	\item Brief list of functional requirements
 \end{itemize}
+\subsection{Goals of the project}
+
 \subsection{Functional Requirements}
 %TODO MAKE UP MORE FUNCTIONAL REQUIREMENTS
-The project doesn't have many functional requirements
+The project doesn't have many functional requirements due
 \begin{itemize}
 	\item Parameters of the EA should be able to be edited at minimum by editing a separate file. These settings should include:
 	\begin{itemize}
@@ -402,6 +405,53 @@ These results show that the overall outline of the EA does work and on simple we
    \item Problems encountered
    \item Design changes based upon implementation
 \end{itemize}
+\par
+\subsection{Evolutionary Algorithm}
+\par
+The main part of this project is the EA, this is the section that binds all of the other parts together into a useable form.
+The design of the algorithm is rather simple and has an out line as follows:
+\subsubsection{EA Algorithm}
+\begin{algorithm}[H]
+\SetAlgoLined{}
+\KwResult{Returns the best individual in the population}
+generate an initial population of individuals\;
+\For{Number of Generations}{
+	evaluate the current population\;
+	\For{Population Size / 2}{
+		Select 2 parents from the population\;
+		Create child via Crossover between selected parents\;
+		Apply Mutation to the child\;
+		Validate the child\;
+		\If{Memetic Algorithm Mode}{
+			\For{Number of Local Search Steps}{
+				Apply Local Search on child\;
+			}
+		}
+		Evaluate the child\;
+	}
+	Apply population replacement\;
+}
+Find highest rated individual in population\;
+\caption{Evolutionary Algorithm Structure}
+\end{algorithm}
+\subsubsection{EA Implementation}
+\par
+This algorithm is implemented in evolutionaryAlgorithm.py alongside some print statements to allow the user to see progress.
+The implementation mainly is relatively short as it abstracts the main processes to the problem classes.
+The population is stored in an array with each element of the array being an individual, this is created during the initialisation stages.
+The fitness is stored in an equally large array and the corresponding index of the population array refers to the fitness of that individual in the fitness array.
+\par
+To facilitate the requirement of being adaptable to a benchmark function, an instance of the problem is set during the initialisation.
+The problems share the key methods including initialising an individual.
+As python is dynamically typed language these initialisation methods can return a new individual to be dynamically added to the population array.
+The representation of the individuals is also handled in a different class.
+\par
+Variables that are used in the EA (population size, number of local search steps) are stored in the file constants.py to facilitate the requirement of being able to edit settings.
+Due to the functionality of python these values aren't truly constants but they are never manipulated without changing the file.
+\subsubsection{EA problems}
+
+\subsection{Representation}
+
 
 \section{Evaluation}
 \begin{itemize}
