@@ -8,6 +8,7 @@
 \graphicspath{ {images/} }
 \usepackage{afterpage}
 \usepackage[]{algorithm2e}
+\usepackage{float}
 
 %Custom Commands
 \newcommand{\Pokemon}{Pok\'{e}mon}
@@ -451,7 +452,71 @@ Due to the functionality of python these values aren't truly constants but they 
 \subsubsection{EA problems}
 
 \subsection{Representation}
-\subsubsection{subsubsection name}
+In any evolutionary algorithm the representation of the individuals is a key consideration in both design and implementation.
+\subsubsection{Representation Design}
+\par
+The overall design of the representation is high level for several reasons.
+The first is that it allows for a simpler design through out other parts of the EA, validating individuals would be easier as you can directly access the variables you need.
+Another reason to keep the representation high level is to aid in the displaying of results to the user.
+\par
+To come up with the design for the representation, relevant data to store was chosen by looking into what data is need to create the teams in game.
+The primary resource used was \Pokemon{} Showdown, `a battle simulator for \Pokemon{} battles'\cite{showdown}.
+This is a community created tool to allow players of the \Pokemon{} games to play online against other players.
+Another important feature of the simulator is its team builder, a tool in which a player can create a team with aids such as filtering of choices and simple sliders.
+Once created a player can share their team using the export feature which gives a short readable plain-text description of the team, this is both easily readable by human players and can be imported into Showdown to allow other players to use the team.
+Although this can't be imported into the \Pokemon{} games, players can quickly test the teams in the simulator before going through the longer process of building the teams in game.
+The format of the import/export text of \Pokemon{} Showdown is a popular way of sharing teams in the \Pokemon{} community so it was chosen as the target output for the representation.
+This would also allow for the solutions to be brought into \Pokemon{} Showdown for testing.
+\par
+A \Pokemon{} team is comprised of 1-6 \Pokemon{} and each \Pokemon{} has the same characteristics because of this a team can be represented as up to 6 \Pokemon{}.
+This is reflected in the Showdown format as a team is simply 6 \Pokemon{} displayed one after each other separated by empty lines.
+As can be seen in the figure below the information about a single \Pokemon{} is quite a lot.
+This example is from an expert designed team.
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=3.5cm]{showdownTeamBuilder.png}
+	\caption{\Pokemon{} Showdown team builder graphical UI}
+\end{figure}
+\par
+The same \Pokemon{} shown in the figure has the following import text:
+\begin{center}
+	\begin{lstlisting}
+	Eevee (F) @ Eevium Z
+	Ability: Adaptability
+	Level: 100
+	Shiny: Yes
+	Happiness: 255
+	EVs: 252 HP / 44 SpD / 212 Spe
+	Jolly Nature
+	IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+	- Last Resort
+	- Baton Pass
+	- Protect
+	- Helping Hand
+	\end{lstlisting}
+\end{center}
+\par
+To encode this information each characteristic will be stored in a separate gene.
+This allows for the easy extraction of the individuals into a printable format as shown above.
+The list of these characteristics is as follows:
+%TODO Can you make this span 2 columns
+\begin{itemize}
+	\item \Pokemon{} Species
+	\item Gender
+	\item Held Item
+	\item Ability
+	\item Level
+	\item Shiny
+	\item Happiness
+	\item Nature
+	\item EVs (Seperate values for Hit Points, Attack, Defense, Special Attack, Special Defense, Speed)
+	\item IVs (Seperate values for Hit Points, Attack, Defense, Special Attack, Special Defense, Speed)
+	\item Moves (4 Seperate moves)
+\end{itemize}
+\subsubsection{Representation Implementation}
+
+\subsubsection{Representation Problems}
+
 
 
 

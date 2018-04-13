@@ -54,6 +54,8 @@ INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/tools/xspace.sty
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/tools/xspace.sty
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/relsize/relsize.sty
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/relsize/relsize.sty
+INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
 INPUT /Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.latex/Dissertation.aux
 INPUT /Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.latex/Dissertation.aux
 OUTPUT /Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.latex/Dissertation.aux
@@ -111,6 +113,9 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 OUTPUT /Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.latex/Dissertation.toc
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT images/showdownTeamBuilder.png
+INPUT ./images/showdownTeamBuilder.png
+INPUT ./images/showdownTeamBuilder.png
 INPUT images/workPlan.png
 INPUT ./images/workPlan.png
 INPUT ./images/workPlan.png
