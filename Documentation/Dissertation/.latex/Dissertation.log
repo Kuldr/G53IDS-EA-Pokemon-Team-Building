@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  13 APR 2018 19:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  15 APR 2018 15:54
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -7,6 +7,26 @@ entering extended mode
 (./Dissertation.tex
 LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+
+./Dissertation.tex:1: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 S
+     eparate\documentclass[a4paper]{article}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no S in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/size10.clo
@@ -18,12 +38,17 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \c@subsubsection=\count82
 \c@paragraph=\count83
 \c@subparagraph=\count84
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--289
+[]
+ []
+
 \c@figure=\count85
 \c@table=\count86
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-)
+[1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
 (/usr/local/texlive/2015/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count87
@@ -186,34 +211,83 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks19
 \@floatcapt=\box39
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2015/03/31 v1.8m multicolumn formatting (FMi)
+\c@tracingmulticols=\count105
+\mult@box=\box40
+\multicol@leftmargin=\dimen123
+\c@unbalance=\count106
+\c@collectmore=\count107
+\doublecol@number=\count108
+\multicoltolerance=\count109
+\multicolpretolerance=\count110
+\full@width=\dimen124
+\page@free=\dimen125
+\premulticols=\dimen126
+\postmulticols=\dimen127
+\multicolsep=\skip59
+\multicolbaselineskip=\skip60
+\partial@page=\box41
+\last@line=\box42
+\maxbalancingoverflow=\dimen128
+\mult@rightbox=\box43
+\mult@grightbox=\box44
+\mult@gfirstbox=\box45
+\mult@firstbox=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\@tempa=\box52
+\@tempa=\box53
+\@tempa=\box54
+\@tempa=\box55
+\@tempa=\box56
+\@tempa=\box57
+\@tempa=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\c@columnbadness=\count111
+\c@finalcolumnbadness=\count112
+\last@try=\dimen129
+\multicolovershoot=\dimen130
+\multicolundershoot=\dimen131
+\mult@nat@firstbox=\box64
+\colbreak@box=\box65
+\mc@col@check@num=\count113
+)
 (/Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.latex/Dissertation.a
 ux)
 \openout1 = `Dissertation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
  (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count105
-\scratchdimen=\dimen123
-\scratchbox=\box40
-\nofMPsegments=\count106
-\nofMParguments=\count107
+\scratchcounter=\count114
+\scratchdimen=\dimen132
+\scratchbox=\box66
+\nofMPsegments=\count115
+\nofMParguments=\count116
 \everyMPshowfont=\toks20
-\MPscratchCnt=\count108
-\MPscratchDim=\dimen124
-\MPnumerator=\count109
-\makeMPintoPDFobject=\count110
+\MPscratchCnt=\count117
+\MPscratchDim=\dimen133
+\MPnumerator=\count118
+\makeMPintoPDFobject=\count119
 \everyMPtoPDFconversion=\toks21
 ) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -259,7 +333,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count111
+\c@lstlisting=\count120
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -295,34 +369,33 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<images/UoNLogo.png, id=1, 588.2778pt x 237.5274pt>
+<images/UoNLogo.png, id=7, 588.2778pt x 237.5274pt>
 File: images/UoNLogo.png Graphic file (type png)
  <use images/UoNLogo.png>
-Package pdftex.def Info: images/UoNLogo.png used on input line 22.
+Package pdftex.def Info: images/UoNLogo.png used on input line 23.
 (pdftex.def)             Requested size: 211.40283pt x 85.35826pt.
 
 [1
 
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./image
-s/UoNLogo.png>] [2]
+ <./images/UoNLogo.png>] [2]
 File: images/UoNLogo.png Graphic file (type png)
  <use images/UoNLogo.png>
-Package pdftex.def Info: images/UoNLogo.png used on input line 42.
+Package pdftex.def Info: images/UoNLogo.png used on input line 43.
 (pdftex.def)             Requested size: 211.40283pt x 85.35826pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 63.
+(Font)              <12> on input line 64.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 63.
+(Font)              <8> on input line 64.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 63.
+(Font)              <6> on input line 64.
  [1] [2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 96.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 97.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 96.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 97.
  [1]
 (/Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.latex/Dissertation.t
 oc
@@ -335,91 +408,91 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout3 = `Dissertation.toc'.
 
  [1]
-Underfull \hbox (badness 10000) in paragraph at lines 152--156
+Underfull \hbox (badness 10000) in paragraph at lines 153--157
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 177--180
+Underfull \hbox (badness 10000) in paragraph at lines 178--181
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--193
+Underfull \hbox (badness 10000) in paragraph at lines 191--194
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 212--215
+Underfull \hbox (badness 10000) in paragraph at lines 213--216
 
  []
 
 Missing character: There is no Â in font cmr10!
 Missing character: There is no § in font cmr10!
 [4] [5]
-Overfull \hbox (4.53146pt too wide) detected at line 298
+Overfull \hbox (4.53146pt too wide) detected at line 299
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 306--307
+Underfull \hbox (badness 10000) in paragraph at lines 307--308
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 308--312
+Underfull \hbox (badness 10000) in paragraph at lines 309--313
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 357--361
+Underfull \hbox (badness 10000) in paragraph at lines 358--362
 
  []
 
 [7] [8] [9]
-<images/showdownTeamBuilder.png, id=64, 1598.97375pt x 392.46625pt>
+<images/showdownTeamBuilder.png, id=67, 1598.97375pt x 392.46625pt>
 File: images/showdownTeamBuilder.png Graphic file (type png)
 
 <use images/showdownTeamBuilder.png>
-Package pdftex.def Info: images/showdownTeamBuilder.png used on input line 477.
+Package pdftex.def Info: images/showdownTeamBuilder.png used on input line 478.
 
 (pdftex.def)             Requested size: 405.72005pt x 99.58464pt.
  [10 <./images/showdownTeamBuilder.png>]
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 557--560
+Underfull \hbox (badness 10000) in paragraph at lines 584--587
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 561--566
+Underfull \hbox (badness 10000) in paragraph at lines 588--593
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 567--571
+Underfull \hbox (badness 10000) in paragraph at lines 594--598
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 572--576
+Underfull \hbox (badness 10000) in paragraph at lines 599--603
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 577--580
+Underfull \hbox (badness 10000) in paragraph at lines 604--607
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 581--584
+Underfull \hbox (badness 10000) in paragraph at lines 608--611
 
  []
 
-[12] [13] <images/workPlan.png, id=78, 720.6925pt x 1718.42pt>
+[12] [13] <images/workPlan.png, id=82, 720.6925pt x 1718.42pt>
 File: images/workPlan.png Graphic file (type png)
 
 <use images/workPlan.png>
-Package pdftex.def Info: images/workPlan.png used on input line 609.
+Package pdftex.def Info: images/workPlan.png used on input line 636.
 (pdftex.def)             Requested size: 295.9367pt x 705.62843pt.
 
 Overfull \vbox (48.75642pt too high) has occurred while \output is active []
@@ -461,10 +534,10 @@ Underfull \hbox (badness 8075) in paragraph at lines 62--68
 (/Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.latex/Dissertation.a
 ux) ) 
 Here is how much of TeX's memory you used:
- 5178 strings out of 493089
- 74252 string characters out of 6134843
- 271602 words of memory out of 5000000
- 8600 multiletter control sequences out of 15000+600000
+ 5290 strings out of 493089
+ 75947 string characters out of 6134843
+ 283021 words of memory out of 5000000
+ 8709 multiletter control sequences out of 15000+600000
  10269 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,18n,40p,532b,1065s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -484,10 +557,10 @@ xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/tex
 live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
 Output written on /Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.lat
-ex/Dissertation.pdf (20 pages, 518006 bytes).
+ex/Dissertation.pdf (21 pages, 519859 bytes).
 PDF statistics:
- 136 PDF objects out of 1000 (max. 8388607)
- 92 compressed objects within 1 object stream
+ 139 PDF objects out of 1000 (max. 8388607)
+ 94 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

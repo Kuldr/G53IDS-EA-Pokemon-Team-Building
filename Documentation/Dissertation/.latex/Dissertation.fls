@@ -8,6 +8,8 @@ INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/size10.clo
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/size10.clo
+OUTPUT /Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.latex/Dissertation.pdf
+INPUT /usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/lipsum/lipsum.sty
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/lipsum/lipsum.sty
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/url/url.sty
@@ -56,6 +58,8 @@ INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/relsize/relsize.sty
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/relsize/relsize.sty
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/tools/multicol.sty
+INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/tools/multicol.sty
 INPUT /Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.latex/Dissertation.aux
 INPUT /Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.latex/Dissertation.aux
 OUTPUT /Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.latex/Dissertation.aux
@@ -81,13 +85,11 @@ INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT images/UoNLogo.png
 INPUT ./images/UoNLogo.png
-OUTPUT /Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.latex/Dissertation.pdf
 INPUT ./images/UoNLogo.png
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
-INPUT /usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT images/UoNLogo.png
 INPUT ./images/UoNLogo.png
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
