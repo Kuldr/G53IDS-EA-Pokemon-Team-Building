@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  15 APR 2018 15:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  16 APR 2018 10:59
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -459,32 +459,32 @@ Package pdftex.def Info: images/showdownTeamBuilder.png used on input line 478.
 (pdftex.def)             Requested size: 405.72005pt x 99.58464pt.
  [10 <./images/showdownTeamBuilder.png>]
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 584--587
+Underfull \hbox (badness 10000) in paragraph at lines 587--590
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 588--593
+Underfull \hbox (badness 10000) in paragraph at lines 591--596
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 594--598
+Underfull \hbox (badness 10000) in paragraph at lines 597--601
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 599--603
+Underfull \hbox (badness 10000) in paragraph at lines 602--606
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 604--607
+Underfull \hbox (badness 10000) in paragraph at lines 607--610
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 608--611
+Underfull \hbox (badness 10000) in paragraph at lines 611--614
 
  []
 
@@ -492,7 +492,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 608--611
 File: images/workPlan.png Graphic file (type png)
 
 <use images/workPlan.png>
-Package pdftex.def Info: images/workPlan.png used on input line 636.
+Package pdftex.def Info: images/workPlan.png used on input line 639.
 (pdftex.def)             Requested size: 295.9367pt x 705.62843pt.
 
 Overfull \vbox (48.75642pt too high) has occurred while \output is active []
@@ -536,7 +536,7 @@ ux) )
 Here is how much of TeX's memory you used:
  5290 strings out of 493089
  75947 string characters out of 6134843
- 283021 words of memory out of 5000000
+ 282021 words of memory out of 5000000
  8709 multiletter control sequences out of 15000+600000
  10269 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -557,7 +557,7 @@ xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/tex
 live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
 Output written on /Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.lat
-ex/Dissertation.pdf (21 pages, 519859 bytes).
+ex/Dissertation.pdf (21 pages, 519947 bytes).
 PDF statistics:
  139 PDF objects out of 1000 (max. 8388607)
  94 compressed objects within 1 object stream
