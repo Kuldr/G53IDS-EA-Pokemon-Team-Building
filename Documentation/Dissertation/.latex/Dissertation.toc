@@ -2,46 +2,52 @@
 \contentsline {subsection}{\numberline {1.1}Introduction}{2}
 \contentsline {subsection}{\numberline {1.2}Motivation}{2}
 \contentsline {subsection}{\numberline {1.3}Aims and Objectives}{2}
-\contentsline {section}{\numberline {2}Related Work}{3}
-\contentsline {subsection}{\numberline {2.1}AI and Game Playing}{3}
-\contentsline {subsection}{\numberline {2.2}Hearthstone Deck Building GA}{4}
-\contentsline {subsection}{\numberline {2.3}Evolutionary Algorithms}{5}
-\contentsline {section}{\numberline {3}Description of the Work}{5}
-\contentsline {subsection}{\numberline {3.1}Goals of the project}{5}
-\contentsline {subsection}{\numberline {3.2}Functional Requirements}{5}
-\contentsline {section}{\numberline {4}Methodology}{6}
-\contentsline {subsection}{\numberline {4.1}Evolutionary Algorithms}{6}
-\contentsline {subsection}{\numberline {4.2}Object Orientated Design and Python}{7}
-\contentsline {subsection}{\numberline {4.3}Software Engineering Tools}{7}
-\contentsline {subparagraph}{Git}{7}
-\contentsline {subparagraph}{LaTeX}{7}
-\contentsline {subparagraph}{Atom}{8}
-\contentsline {subsection}{\numberline {4.4}Testing}{8}
-\contentsline {section}{\numberline {5}Design and Implementation}{8}
-\contentsline {subsection}{\numberline {5.1}Evolutionary Algorithm}{8}
-\contentsline {subsubsection}{\numberline {5.1.1}EA Algorithm}{9}
-\contentsline {subsubsection}{\numberline {5.1.2}EA Implementation}{9}
-\contentsline {subsubsection}{\numberline {5.1.3}EA problems}{9}
-\contentsline {subsection}{\numberline {5.2}Representation}{9}
-\contentsline {subsubsection}{\numberline {5.2.1}Representation Design}{9}
-\contentsline {subsubsection}{\numberline {5.2.2}Representation Implementation}{11}
-\contentsline {subsubsection}{\numberline {5.2.3}Representation Problems}{11}
-\contentsline {section}{\numberline {6}Evaluation}{11}
-\contentsline {section}{\numberline {7}Summary and Reflections}{11}
-\contentsline {subsection}{\numberline {7.1}Reflections on Work Plan}{11}
-\contentsline {subsection}{\numberline {7.2}Self Reflection}{11}
-\contentsline {section}{\numberline {8}Appendix}{12}
-\contentsline {subsection}{\numberline {8.1}Code}{12}
-\contentsline {subsection}{\numberline {8.2}Meeting Minutes}{12}
-\contentsline {subparagraph}{6th October}{12}
-\contentsline {subparagraph}{26th October}{12}
-\contentsline {subparagraph}{2nd November}{12}
-\contentsline {subparagraph}{21st November}{12}
-\contentsline {subparagraph}{28th November}{12}
-\contentsline {subparagraph}{15th December}{12}
-\contentsline {subparagraph}{7th February}{13}
-\contentsline {subparagraph}{15th February}{13}
-\contentsline {subparagraph}{9th March}{13}
-\contentsline {subparagraph}{6th April}{13}
-\contentsline {subsection}{\numberline {8.3}Work Plan}{14}
-\contentsline {subsection}{\numberline {8.4}References}{15}
+\contentsline {subsection}{\numberline {1.4}What is Pok\'{e}mon{}}{3}
+\contentsline {subsubsection}{\numberline {1.4.1}Pok\'{e}mon{} Fanchise History}{3}
+\contentsline {subsubsection}{\numberline {1.4.2}Pok\'{e}mon{} Core Gameplay}{3}
+\contentsline {subsubsection}{\numberline {1.4.3}Pok\'{e}mon{} Battles}{4}
+\contentsline {subsection}{\numberline {1.5}What are Evolutionary Algorithms}{4}
+\contentsline {section}{\numberline {2}Related Work}{4}
+\contentsline {subsection}{\numberline {2.1}AI and Game Playing}{4}
+\contentsline {subsection}{\numberline {2.2}Hearthstone Deck Building GA}{5}
+\contentsline {subsection}{\numberline {2.3}Evolutionary Algorithms}{6}
+\contentsline {section}{\numberline {3}Description of the Work}{6}
+\contentsline {subsection}{\numberline {3.1}Functional Requirements}{6}
+\contentsline {section}{\numberline {4}Methodology}{7}
+\contentsline {subsection}{\numberline {4.1}Evolutionary Algorithms}{7}
+\contentsline {subsection}{\numberline {4.2}Object Orientated Design and Python}{8}
+\contentsline {subsection}{\numberline {4.3}Software Engineering Tools}{8}
+\contentsline {subparagraph}{Git}{8}
+\contentsline {subparagraph}{LaTeX}{9}
+\contentsline {subparagraph}{Atom}{9}
+\contentsline {subsection}{\numberline {4.4}Testing}{9}
+\contentsline {section}{\numberline {5}Design and Implementation}{10}
+\contentsline {subsection}{\numberline {5.1}Evolutionary Algorithm}{10}
+\contentsline {subsubsection}{\numberline {5.1.1}EA Algorithm}{10}
+\contentsline {subsubsection}{\numberline {5.1.2}EA Implementation}{10}
+\contentsline {subsubsection}{\numberline {5.1.3}EA problems}{11}
+\contentsline {subsection}{\numberline {5.2}Representation}{11}
+\contentsline {subsubsection}{\numberline {5.2.1}Representation Design}{11}
+\contentsline {subsubsection}{\numberline {5.2.2}Representation Implementation}{12}
+\contentsline {subsubsection}{\numberline {5.2.3}Representation Translation}{12}
+\contentsline {subsubsection}{\numberline {5.2.4}Representation Problems}{12}
+\contentsline {subsection}{\numberline {5.3}EA methods}{12}
+\contentsline {section}{\numberline {6}Evaluation}{12}
+\contentsline {section}{\numberline {7}Summary and Reflections}{12}
+\contentsline {subsection}{\numberline {7.1}Reflections on Work Plan}{13}
+\contentsline {subsection}{\numberline {7.2}Self Reflection}{13}
+\contentsline {section}{\numberline {8}Appendix}{14}
+\contentsline {subsection}{\numberline {8.1}Code}{14}
+\contentsline {subsection}{\numberline {8.2}Meeting Minutes}{14}
+\contentsline {subparagraph}{6th October}{14}
+\contentsline {subparagraph}{26th October}{14}
+\contentsline {subparagraph}{2nd November}{14}
+\contentsline {subparagraph}{21st November}{14}
+\contentsline {subparagraph}{28th November}{14}
+\contentsline {subparagraph}{15th December}{14}
+\contentsline {subparagraph}{7th February}{15}
+\contentsline {subparagraph}{15th February}{15}
+\contentsline {subparagraph}{9th March}{15}
+\contentsline {subparagraph}{6th April}{15}
+\contentsline {subsection}{\numberline {8.3}Work Plan}{16}
+\contentsline {subsection}{\numberline {8.4}References}{17}

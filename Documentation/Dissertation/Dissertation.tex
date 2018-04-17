@@ -1,4 +1,4 @@
-Separate\documentclass[a4paper]{article}
+\documentclass[a4paper]{article}
 \usepackage{lipsum}
 \usepackage{url}
 \usepackage{graphicx}
@@ -10,6 +10,7 @@ Separate\documentclass[a4paper]{article}
 \usepackage[]{algorithm2e}
 \usepackage{float}
 \usepackage{multicol}
+\usepackage{CJKutf8}
 
 %Custom Commands
 \newcommand{\Pokemon}{Pok\'{e}mon}
@@ -169,6 +170,61 @@ These results will be then compared to human designed solutions to conclude if t
     If solutions are viable enough they can be input into the game and used in some real world settings such as battling with other players, rather than being graded by a score.
 \end{enumerate}
 
+\subsection{What is \Pokemon{}}
+\begin{itemize}
+	\item Find references to back stuff up
+	\item Is wikipedia ok?
+\end{itemize}
+\subsubsection{\Pokemon{} Fanchise History}
+\par
+\Pokemon{} was first created by video game designer Satoshi Tajiri with the first games in the series coming out in February 27, 1996 in Japan for the Nintendo Game Boy.
+The name \Pokemon{} comes from a romanised contraction of the words `Pocket' and `Monsters' (\begin{CJK}{UTF8}{min}ポケットモンスタ\end{CJK} - \textbf{Poke}tto \textbf{Mon}sut\={a}) due to the portable nature of the Game Boy, being able to take the games with you in your pocket.
+The initial concept of the game stems from creators Satoshi childhood hobby of insect collecting.
+When they first saw the Game Boy, in particular the link cable technology to wire 2 systems together for multiplayer, they imagined insects being transferred between two players by them crawling along the cable.
+This formed to create the idea of there being several \Pokemon{} to catch and trade between players.
+\par
+The first games in the series were developed by Game Freak and published by Nintendo, initially only releasing to the Japanese audience.
+\Pokemon{}: Red and Green came out as two separate games that differed slightly in the available \Pokemon{} to encourage players to socialise and interact to complete the games.
+After the hit success selling over 10 million units across the 2 games it was clear that \Pokemon{} was going to be a huge success and began to franchise out, including rebuilding the games from the ground up to sell to the worldwide audience.
+The worldwide release saw combined sales of over 9 million units showing to the world that \Pokemon{} was going to be a smash hit worldwide for years to come.
+\par
+22 years later the \Pokemon{} franchise has spanned into a cultural hit being recognisable by many people throughout the world.
+Alongside the 31 main series games, there are almost 100 spin off games, over 1000 episodes of the anime, 21 movies, a trading card game, and several toys being sold around the world in their \Pokemon{} Center stores.
+The franchise is now managed by The \Pokemon{} Company, which is owned equally by Nintendo, Game Freak and Creatures Inc.
+\subsubsection{\Pokemon{} Core Gameplay}
+\par
+The core series games are role playing games following the adventures of a up and coming \Pokemon{} trainer.
+The games start by the local \Pokemon{} Professor offering the main character their very first \Pokemon{} to begin their journey, in exchange they ask that they take a Pok\'{e}dex to fill out on the journey.
+The Pok\'{e}dex is a encyclopaedia for all \Pokemon{} but only fills out once the player has seen and caught the \Pokemon{} in question.
+\par
+The second goal for the player is to tackle the \Pokemon{} league and become the league champion.
+To achieve this title the player has to travel from town to town besting the local gym leaders in a \Pokemon{} battle.
+The player will face many other battles through out the games as well facing non player characters such as hikers, park rangers and even evil gangs.
+The players can also challenge other players to \Pokemon{} battles to test their might against each other.
+\par
+At the highest levels players face off in the \Pokemon{} Video Game Championships or VGC for short.
+VGC is a yearly season where players can go to tournaments to earn points by battling other distinguished trainers.
+If players earn enough points they are invited to the World Championships to try and find the best player in the world.
+
+\subsubsection{\Pokemon{} Battles}
+\par
+\Pokemon{} battles are a main point in the series and preparing for these battles is the focus of the project.
+\par
+\Pokemon{} battles are turn based fights between 2 trainers, each with a team of up to six \Pokemon{}.
+To win a battle you must faint all of your opponents \Pokemon{} by reducing their Hit Points (HP) to zero.
+This is done by selecting a move to attack your opponent with each turn, or players can also use items or switch to another \Pokemon{}.
+The amount of damage you deal is based upon a few factors including the \Pokemon{}'s base stats, power of the move, type effectiveness and even stat boosts.
+The strategy comes from using your available \Pokemon{} in the best way possible to beat your opponent.
+\par
+When the trainer enters the battle they can't alter their team in anyway for this reason you need a team that works well together and can successfully counter several strategies.
+A good team has several strong \Pokemon{} on it rather than relying on a select few.
+The team members are also their to cover the weaknesses of other team members.
+A strong trainer knows what makes up a good team and can select strong \Pokemon{} that together also make a strong team.
+
+\subsection{What are Evolutionary Algorithms}
+
+
+
 \section{Related Work}
 \begin{itemize}
    \item Investigate more works to talk about here (gaming and more general)
@@ -232,7 +288,7 @@ The evaluation also required the expert knowledge of the meta decks to be tested
 The most significant flaw with this style of evaluation is that it relies on the ability of another AI to pilot the deck.
 It was suggested that it may overfit `with regards to the AI capabilities and playing style' even going as far as pointing out that it `can use some decks (and some playing styles) better than others'\cite{hearthstoneAI}.
 \subsection{Evolutionary Algorithms}
-Evolutionary Algorithms have been shown to be a strong way to find near optimal solutions to complex problems. Zitzler and Thiele spoke about their merits in their case study suggesting that "Many real-world problems involve simultaneous optimization"\cite{EACaseStudy}. They pointed out that the often some factors would conflict and the EA were strong at finding a balance between them. It was concluded that "All multiobjective EA's clearly outperformed a pure random search"\cite{EACaseStudy}.§
+Evolutionary Algorithms have been shown to be a strong way to find near optimal solutions to complex problems. Zitzler and Thiele spoke about their merits in their case study suggesting that `Many real-world problems involve simultaneous optimization'\cite{EACaseStudy}. They pointed out that the often some factors would conflict and the EA were strong at finding a balance between them. It was concluded that `All multiobjective EA's clearly outperformed a pure random search'\cite{EACaseStudy}.§
 \par
 Maumita Bhattacharya spoke about differing approaches to the problem of computationally expensive fitness evaluation\cite{expensiveOptimisation}.
 Several of the techniques described approximated the fitness of each individual while only periodically calculating a more accurate value.
@@ -253,8 +309,12 @@ Another method was Proportional Inheritance where `the average is weighted based
 	\item How is it meant to function
 	\item Brief list of functional requirements
 \end{itemize}
-\subsection{Goals of the project}
-
+\par
+The objective of this project is to develop an EA that evolves a population of \Pokemon{} teams.
+This is to show that such a system could be used to aid human players in quickly evaluating the large amount of possibilities or to assist another form of AI to eventually play these games at an expert level.
+\par
+The project should function by the user setting the parameters and then setting it running via a command prompt.
+This could be potentially wrapped in some form of user interface in the future but won't be developed during this project to allow for focus on the EA.
 \subsection{Functional Requirements}
 %TODO MAKE UP MORE FUNCTIONAL REQUIREMENTS
 The project doesn't have many functional requirements due
@@ -545,7 +605,12 @@ The largest constraint on the combinations is whether it is `legal' in game, for
     \end{tabular} \\
 	\** Not all IDs in this range are associated with something
 \end{center}
+\subsubsection{Representation Translation}
+
 \subsubsection{Representation Problems}
+
+\subsection{EA methods}
+
 
 \section{Evaluation}
 \begin{itemize}
