@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  17 APR 2018 23:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  18 APR 2018 13:28
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -769,90 +769,90 @@ File: c70min.fd 2015/04/18 4.8.4
 (/usr/local/texlive/2015/texmf-dist/tex/latex/cjk/contrib/wadalab/c70min.fdx
 File: c70min.fdx 2015/04/18 4.8.4
 )
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 234--237
+[3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 268--271
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 247--250
+Underfull \hbox (badness 10000) in paragraph at lines 281--284
 
  []
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 269--272
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 303--306
 
  []
 
-[5] [6]
-Overfull \hbox (4.53146pt too wide) detected at line 359
+[6] [7]
+Overfull \hbox (4.53146pt too wide) detected at line 393
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 367--368
+Underfull \hbox (badness 10000) in paragraph at lines 401--402
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 369--373
+Underfull \hbox (badness 10000) in paragraph at lines 403--407
 
  []
 
-[7] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 418--422
+[8] [9]
+Underfull \hbox (badness 10000) in paragraph at lines 452--456
 
  []
 
-[9] [10] <images/showdownTeamBuilder.png, id=69, 1598.97375pt x 392.46625pt>
+[10] [11] <images/showdownTeamBuilder.png, id=72, 1598.97375pt x 392.46625pt>
 File: images/showdownTeamBuilder.png Graphic file (type png)
 
 <use images/showdownTeamBuilder.png>
-Package pdftex.def Info: images/showdownTeamBuilder.png used on input line 538.
+Package pdftex.def Info: images/showdownTeamBuilder.png used on input line 572.
 
 (pdftex.def)             Requested size: 405.72005pt x 99.58464pt.
- [11 <./images/showdownTeamBuilder.png>]
-[12] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 652--655
+ [12 <./images/showdownTeamBuilder.png>]
+[13] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 686--689
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 656--661
+Underfull \hbox (badness 10000) in paragraph at lines 690--695
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 662--666
+Underfull \hbox (badness 10000) in paragraph at lines 696--700
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 667--671
+Underfull \hbox (badness 10000) in paragraph at lines 701--705
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 672--675
+Underfull \hbox (badness 10000) in paragraph at lines 706--709
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 676--679
+Underfull \hbox (badness 10000) in paragraph at lines 710--713
 
  []
 
-[14] [15] <images/workPlan.png, id=87, 720.6925pt x 1718.42pt>
+[15] [16] <images/workPlan.png, id=90, 720.6925pt x 1718.42pt>
 File: images/workPlan.png Graphic file (type png)
 
 <use images/workPlan.png>
-Package pdftex.def Info: images/workPlan.png used on input line 704.
+Package pdftex.def Info: images/workPlan.png used on input line 738.
 (pdftex.def)             Requested size: 295.9367pt x 705.62843pt.
 
 Overfull \vbox (48.75642pt too high) has occurred while \output is active []
 
 
-[16 <./images/workPlan.png>]
+[17 <./images/workPlan.png>]
 (/Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.latex/Dissertation.b
 bl
 Underfull \hbox (badness 10000) in paragraph at lines 35--40
@@ -878,7 +878,7 @@ Underfull \hbox (badness 6808) in paragraph at lines 62--68
  . theverge . com / 2017 / 8 / 11 / 16137388 /
  []
 
-) [17]
+) [18]
 (/Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.latex/Dissertation.a
 ux) ) 
 Here is how much of TeX's memory you used:
@@ -906,10 +906,10 @@ live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/wadalab/dmj/dmjkata.pfb>
 Output written on /Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.lat
-ex/Dissertation.pdf (22 pages, 530354 bytes).
+ex/Dissertation.pdf (23 pages, 533831 bytes).
 PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
- 99 compressed objects within 1 object stream
+ 151 PDF objects out of 1000 (max. 8388607)
+ 101 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  20 words of extra memory for PDF output out of 10000 (max. 10000000)
 

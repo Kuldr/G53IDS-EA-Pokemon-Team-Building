@@ -222,8 +222,42 @@ The team members are also their to cover the weaknesses of other team members.
 A strong trainer knows what makes up a good team and can select strong \Pokemon{} that together also make a strong team.
 
 \subsection{What are Evolutionary Algorithms}
-
-
+Evolutionary Algorithms are a set of artificial intelligence methods used for optimisation problems.
+As the name suggests EAs are based upon the biological process of evolution.
+\subsubsection{Natural Evolution}
+Biological Evolution as percieved today was first layed out in Charles Darwin's Book `On the Origin of Species' in 1859.
+In biological evolution individuals are encoded by genetic material referred to as genes.
+The population is made up of all of the individuals that are alive, and a single generation can be described as all of the individuals that were born around the same time.
+What has been seen in nature is that over several generations the population as a whole adapts to become better suited to the environment.
+Due to the shorter life span and therefore quicker turnover of generations, it is easier to see this effect in bacteria.
+Since the introduction of antibiotics it has been seen that some bacteria have evolved to become resistant to these antibiotics evolving to overcome a new threat in the environment.
+\par
+This process of evolution happens due to several mechanics at play.
+Selection is the idea that the population inherently selects the stronger individuals in the population to pass on the genetic material to the next generation.
+The main way this happens is that weaker individuals will die before they have the chance to reproduce removing their genetic material from the gene pool, or stronger individuals will survive for longer creating more offspring.
+Crossover occurs during reproduction, often involving 2 individuals sharing their genes to create a child which has a mix of both of the two parents genes.
+Presuming both parents were strong individuals the child may inherit the parts of each parent that made them strong creating a stronger child.
+The final element of natural evolution is mutation, due to random processes it is possible that part of a individuals genome may mutate.
+This mutation could end up being beneficial for the individual making them stronger and eventually reproducing adding the mutation to the general gene pool.
+\par
+Genetic evolution is only part of what happens in nature, in 1976 in the book `The Selfish Gene' Richard Dawkins proposed the idea of memetics.
+A meme would be analogous to a gene but represent the passing on of information between individuals.
+An example of a meme could be the idea of a tool and how to use it.
+This information is reproduced as it is passed upon between individuals, selection comes in the form of whether individuals think that it is relevant to pass onwards and sometimes ideas mutate as individuals adapt them.
+\subsubsection{Genetic Algorithms}
+Genetic algorithms take the idea of biological evolution and apply it to optimisation problems.
+In this analogy a solution to the problem is an individual and the genetic material encodes this solution in some way.
+The population is a set of individuals with each generation being more rigidly defined in which all of the processes happen in one go to a set number of children.
+Before crossover between parents can happen the process of natural selection is simulated by selecting the parents in some form, often based upon their fitness.
+The fitness of an individual is determined by an objective function rather than the ability of the individual to survive in the environment.
+The children are created by applying a crossover method between the selected parents to simulate the passing on of the parents genetic material, afterwards a random mutation may occur to the child.
+Unlike in the real world solutions don't have a life span.
+To simulate this change over and removal of older individuals a population replacement method occurs.
+\subsubsection{Memetic Algorithms}
+Memetic Algorithms are a subtle adaptation of genetic algorithms.
+By adding in the idea of some information sharing between the generations as within the theory of memetics.
+This manifests itself as a local search step within the evolution process.
+This local search step can be seen as taking a child and training them to become stronger.
 
 \section{Related Work}
 \begin{itemize}
