@@ -36,22 +36,25 @@
 \contentsline {subsubsection}{\numberline {5.2.4}Representation Problems}{14}
 \contentsline {subsection}{\numberline {5.3}EA methods}{14}
 \contentsline {section}{\numberline {6}Evaluation}{14}
-\contentsline {section}{\numberline {7}Summary and Reflections}{14}
-\contentsline {subsection}{\numberline {7.1}Reflections on Work Plan}{14}
-\contentsline {subsection}{\numberline {7.2}Self Reflection}{14}
-\contentsline {section}{\numberline {8}Appendix}{15}
-\contentsline {subsection}{\numberline {8.1}Code}{15}
-\contentsline {subsection}{\numberline {8.2}Meeting Minutes}{15}
-\contentsline {subparagraph}{6th October}{15}
-\contentsline {subparagraph}{26th October}{15}
-\contentsline {subparagraph}{2nd November}{15}
-\contentsline {subparagraph}{21st November}{15}
-\contentsline {subparagraph}{28th November}{15}
-\contentsline {subparagraph}{15th December}{15}
-\contentsline {subparagraph}{7th February}{16}
-\contentsline {subparagraph}{15th February}{16}
-\contentsline {subparagraph}{9th March}{16}
-\contentsline {subparagraph}{6th April}{16}
-\contentsline {subparagraph}{16th April}{16}
-\contentsline {subsection}{\numberline {8.3}Work Plan}{17}
-\contentsline {subsection}{\numberline {8.4}References}{18}
+\contentsline {subsection}{\numberline {6.1}Software Performance}{14}
+\contentsline {subsection}{\numberline {6.2}EA Performance}{14}
+\contentsline {subsubsection}{\numberline {6.2.1}Expert Remarks}{14}
+\contentsline {section}{\numberline {7}Summary and Reflections}{15}
+\contentsline {subsection}{\numberline {7.1}Reflections on Work Plan}{15}
+\contentsline {subsection}{\numberline {7.2}Self Reflection}{15}
+\contentsline {section}{\numberline {8}Appendix}{16}
+\contentsline {subsection}{\numberline {8.1}Code}{16}
+\contentsline {subsection}{\numberline {8.2}Meeting Minutes}{16}
+\contentsline {subparagraph}{6th October}{16}
+\contentsline {subparagraph}{26th October}{16}
+\contentsline {subparagraph}{2nd November}{16}
+\contentsline {subparagraph}{21st November}{16}
+\contentsline {subparagraph}{28th November}{16}
+\contentsline {subparagraph}{15th December}{16}
+\contentsline {subparagraph}{7th February}{17}
+\contentsline {subparagraph}{15th February}{17}
+\contentsline {subparagraph}{9th March}{17}
+\contentsline {subparagraph}{6th April}{17}
+\contentsline {subparagraph}{16th April}{17}
+\contentsline {subsection}{\numberline {8.3}Work Plan}{18}
+\contentsline {subsection}{\numberline {8.4}References}{19}
