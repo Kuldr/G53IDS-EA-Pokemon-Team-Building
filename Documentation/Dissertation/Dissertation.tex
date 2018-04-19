@@ -640,6 +640,17 @@ The largest constraint on the combinations is whether it is `legal' in game, for
 	\** Not all IDs in this range are associated with something
 \end{center}
 \subsubsection{Representation Translation}
+\par
+Despite having a fairly high level representation their is some need to translate the encoded representation into a useable format.
+The first example of this is when printing the end result to the user, as a series of ID values aren't particularly helpful.
+In particular the functional requirements state that the end result should be printed out in `Showdown Format' to the user.
+Not only does this mean that IDs have to be converted into string names, they also have to be in a certain format.
+By using the \Pokeapi{} system translating these values into the required strings was easy enough as you can simply request the name associated with the ID\@.
+\par
+During validation and evaluation there is a need to check certain combinations of values.
+For example during validation, a \Pokemon{} may have a valid species ID and gender ID but certain \Pokemon{} maybe limited to certain genders which has to be checked.
+Some values also have associated meaning that is required for some of the calculations in the evaluation. Due to the way that the data is stored the ID values can be used with \Pokeapi{} as a database lookup.
+This allows for the minimal amount of data to be stored in the representation.
 
 \subsubsection{Representation Problems}
 
