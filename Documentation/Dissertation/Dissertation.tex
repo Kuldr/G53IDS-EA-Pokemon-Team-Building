@@ -92,8 +92,11 @@
 \normalsize{}
 \end{titlepage}
 
+\setcounter{page}{1}
+\pagenumbering{roman}
 
 \section*{Abstract}
+\addcontentsline{toc}{section}{Abstract}
 \begin{itemize}
     \item Short overview of the entire project
 \end{itemize}
@@ -103,16 +106,17 @@ As AI game playing moves towards more complicated games the idea of how to tackl
 The focus of this project is the team building aspect of the \Pokemon{} games and how it can be tackled using an evolutionary algorithm.
 \vfill
 \section*{Acknowledgements}
+\addcontentsline{toc}{section}{Acknowledgements}
 \begin{itemize}
-    \item Both of these sections shouldn't be proper sections
+    \item TODO
 \end{itemize}
 \pagebreak
 
 %Contents Page
 \tableofcontents
+\pagebreak
 \setcounter{page}{1}
 \pagenumbering{arabic}
-\pagebreak
 
 %TODO WORK OUT ALL OF THE SECTIONS
 \section{Introduction}
@@ -341,14 +345,13 @@ Another method was Proportional Inheritance where `the average is weighted based
 \begin{itemize}
     \item What the project is meant to achieve
 	\item How is it meant to function
-	\item Brief list of functional requirements
 \end{itemize}
 \par
 The objective of this project is to develop an EA that evolves a population of \Pokemon{} teams.
 This is to show that such a system could be used to aid human players in quickly evaluating the large amount of possibilities or to assist another form of AI to eventually play these games at an expert level.
 \par
 The project should function by the user setting the parameters and then setting it running via a command prompt.
-This could be potentially wrapped in some form of user interface in the future but won't be developed during this project to allow for focus on the EA.
+This could be potentially wrapped in some form of user interface in the future but won't be developed during this project to allow for focus on the EA\@.
 \subsection{Functional Requirements}
 %TODO MAKE UP MORE FUNCTIONAL REQUIREMENTS
 The project doesn't have many functional requirements due
@@ -371,9 +374,6 @@ The project doesn't have many functional requirements due
 	\item Expand current sections
 \end{itemize}
 \subsection{Evolutionary Algorithms}
-\begin{itemize}
-   \item Choice of GA and MA
-\end{itemize}
 \par
 The main AI technique behind this project is evolutionary algorithms, this technique has been chosen as it successful optimises problems with little expert knowledge as shown in the related works.
 There are a few different types of evolutionary algorithms, with genetic algorithms and memetic algorithms being focused on in this project.
@@ -399,6 +399,11 @@ Although this is an astronomically large search space, a large proportion of the
 By using a evolutionary algorithm this search space can be quickly explored and iterated upon.
 \par
 Another advantages of evolutionary algorithms is that they allow for the usage of both domain specific methods and more general methods, potential to be parallelised, ability to translate the solution to a human understandable result and the simplicity of the overall concept.
+\\ \par
+After the idea that a GA could be used to tackle the solution, extending it to a MA isn't much harder.
+This was one of the primary reasons to develop the project in such a way that it could be used as a MA\@.
+Another reason for adapting the project to an MA was that great success can be found with certain local search methods.
+Some interesting domain specific search operators could be defined to allow for experts to shape the development of the population with heuristics used without hampering the wide exploration that the GA produces across solution space.
 \\ \par
 The issues with these techniques come from how to accurately represent the problem in a form that can be easily manipulated by the algorithm.
 This is rather complex on real world problems and requires careful thought and design to mitigate any issues later down the line.
@@ -628,11 +633,11 @@ The largest constraint on the combinations is whether it is `legal' in game, for
         \hline
         \Pokemon{} Species & Integer ID & 1-10147* & pb.pokemon(ID) \\
 		Gender & Integer ID & 1-3 & pb.gender(ID) \\
-		Happiness & Integer Value & 0-255 & N/A \\
 		Item & Integer ID & 1-918* & pb.item(ID) \\
 		Ability & Integer ID & 1-3 & NOT SURE \\
 		Level & Integer Value & 1-100 & N/A \\
 		Shiny & Boolean Value & {True, False} & N/A \\
+		Happiness & Integer Value & 0-255 & N/A \\
 		Nature & Integer ID & 1-25 & pb.nature(ID) \\
 		EVs & Integer Value & 0-255 & N/A \\
 		IVs & Integer Value & 0-31 & N/A \\
@@ -730,7 +735,26 @@ Items can play a large role in the battles but a limited amount of them are usef
 As the search space of abilities is so small per \Pokemon{} it is hard to determine whether the solutions have evolved those outcomes or not.
 Although it is clear that not all of them are optimal and some even have no use in battle.
 \subsection{Project Limitations}
-
+\subsubsection{\Pokeapi{}}
+\par
+A major limitation of the project is it reliance on the \Pokeapi{} system.
+The api uses HTML requests to send the data to the user and therefore the host will have hosting fees.
+As \Pokeapi{} is free to use and maintains its costs via donations, it sets counter measures to ensure that users don't abuse the api.
+As with many APIs this is set as a rate limit, a set number of times a client can use the API within a time frame.
+\par
+A few times during development this limit was hit, blocking the IP address of the client computer requesting the information.
+This resulted in a temporary pause on the development happening at the time as the examples couldn't be ran.
+Fortunately this was only a temporary ban and it was lifted after a few hours each time.
+\par
+Although this limit wasn't hit when running several instances of the final code, it could theoretically be reached with larger population sizes or more instances running at once.
+In its current form the program will crash if this limit is reached.
+This could be tackled by error handling but it would still end up pausing the program for a significant time while the limit is reached.
+\\ \par
+Another limitation of using
+\begin{itemize}
+	\item Constant internet connection
+	\item Unavailable data
+\end{itemize}
 
 \section{Summary and Reflections}
 \begin{itemize}
@@ -771,6 +795,13 @@ Another issue with this API is that over the course of the project a new \Pokemo
 \Pokeapi{} hasn't been updated to include these updates, meaning that the EA isn't running with all the available data.
 This is a minor issue with the latest updates as they don't have major changes and solutions generated will still be valid.
 This is something to consider if the project was taken further as it would rely on these systems.
+\subsection{Further Considerations}
+\par
+\begin{itemize}
+	\item Smaller search space
+	\item more conventional representation binary
+	\item software optimisations
+\end{itemize}
 
 \pagebreak
 \section{Appendix}
