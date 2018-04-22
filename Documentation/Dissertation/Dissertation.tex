@@ -532,7 +532,7 @@ generate an initial population of individuals\;
 	}
 	Apply population replacement\;
 }
-Find highest rated individual in population\;
+Find best rated individual in population\;
 \caption{Evolutionary Algorithm Structure}
 \end{algorithm}
 \subsubsection{EA Implementation}
@@ -550,6 +550,12 @@ The representation of the individuals is also handled in a different class.
 Variables that are used in the EA (population size, number of local search steps) are stored in the file constants.py to facilitate the requirement of being able to edit settings.
 Due to the functionality of python these values aren't truly constants but they are never manipulated without changing the file.
 \subsubsection{EA problems}
+\par
+A major problem was hit during this section of the project that was not identified until much later on in the process.
+The bug came from the final section where it found the best rated individual in the population.
+As the system was initially tested on the sum of squares benchmark problem the algorithm to find the bast rated individual was the lowest scoring one.
+The opposite was true for the \Pokemon{} problem as a higher score was better, but the algorithm wasn't changed initially meaning the worst rated individual ended up being printed to the user.
+This was a simple fix by having each algorithm have a comparison function used to compare the fitness of two individuals.
 
 \subsection{Representation}
 In any evolutionary algorithm the representation of the individuals is a key consideration in both design and implementation.
@@ -571,7 +577,7 @@ This would also allow for the solutions to be brought into \Pokemon{} Showdown f
 A \Pokemon{} team is comprised of 1-6 \Pokemon{} and each \Pokemon{} has the same characteristics because of this a team can be represented as up to 6 \Pokemon{}.
 This is reflected in the Showdown format as a team is simply 6 \Pokemon{} displayed one after each other separated by empty lines.
 As can be seen in the figure below the information about a single \Pokemon{} is quite a lot.
-This example is from an expert designed team.
+This example is a single \Pokemon{} from an expert designed team.
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=3.5cm]{showdownTeamBuilder.png}
@@ -596,11 +602,11 @@ The same \Pokemon{} shown in the figure has the following import text:
 	\end{lstlisting}
 \end{center}
 \par
-To encode this information each characteristic will be stored in a separate gene.
+To encode this information each characteristic will be stored in a separate gene as a \Pokemon{} and a team will comprise of six \Pokemon{}.
 This allows for the easy extraction of the individuals into a printable format as shown above.
 The list of these characteristics is as follows:
 %TODO Can you make this span 2 columns
-\begin{multicols}{2}
+\begin{multicols}{3}
 	\begin{itemize}
 		\item \Pokemon{} Species
 		\item Gender
@@ -610,8 +616,8 @@ The list of these characteristics is as follows:
 		\item Shiny
 		\item Happiness
 		\item Nature
-		\item EVs (Separate values for HP, Atk, Def, SpA, SpD, Spe)
-		\item IVs (Seperate values for HP, Atk, Def, SpA, SpD, Spe)
+		\item EVs (x6 for HP, Atk, Def, SpA, SpD, Spe)
+		\item IVs (x6 for HP, Atk, Def, SpA, SpD, Spe)
 		\item Moves (4 Seperate moves)
 	\end{itemize}
 \end{multicols}
@@ -634,7 +640,7 @@ The largest constraint on the combinations is whether it is `legal' in game, for
         \Pokemon{} Species & Integer ID & 1-10147* & pb.pokemon(ID) \\
 		Gender & Integer ID & 1-3 & pb.gender(ID) \\
 		Item & Integer ID & 1-918* & pb.item(ID) \\
-		Ability & Integer ID & 1-3 & NOT SURE \\
+		Ability Slot & Integer ID & 1-3 & Shown in code appendix \\
 		Level & Integer Value & 1-100 & N/A \\
 		Shiny & Boolean Value & {True, False} & N/A \\
 		Happiness & Integer Value & 0-255 & N/A \\
@@ -761,7 +767,6 @@ This is a minor issue with the latest updates as they don't have major changes a
 There is no guarantee that \Pokeapi{} will continue to be updated in the future which could leave the project out of date in the future.
 If it was updated though there is no native way to collect the minimum and maximum ID values, these would have to be found again and added to the constants file.
 
-
 \section{Summary and Reflections}
 \begin{itemize}
 	\item Project Management \begin{itemize}
@@ -795,12 +800,10 @@ As the algorithm progresses there are only incremental changes meaning the cache
 Even though the data is stored on disk, it can still take a long time to access this all when required.
 Improvements to this could help improve the speed of the run time allowing for more generations to be ran in the same time span.
 \par
-The reliance on an external API has hindered the project slightly.
-As mentioned earlier there is a limiting factor of how often you can access the web server, meaning that larger runs with out the data cached could stop early.
-
-POKEAPI MAKE THIS MAKE SENSE
-
-This is something to consider if the project was taken further as it would rely on these systems.
+The reliance on an external API has brought a lot of insight to the project.
+There are many limiting factors to using such an API, particularly one that is maintained by freelance developers who have no obligation to update the API\@.
+As stated in the project limitations this is the main source of technical limitations to the project but the time saved in development offsets these concerns.
+The use of APIs particularly \Pokeapi{} is something to consider if the project was taken further as it would rely on these systems heavily.
 \subsection{Further Considerations}
 \par
 \begin{itemize}
@@ -811,12 +814,14 @@ This is something to consider if the project was taken further as it would rely 
 
 \pagebreak
 \section{Appendix}
-\subsection{Code} %TODO FORMAT AND WORK OUT WHAT CODE TO ADD
+\subsection{Code}
+%TODO FORMAT AND WORK OUT WHAT CODE TO ADD
 %The code is set in these files to allow for them to stay as the snapshot they were
 \begin{itemize}
 	\item Add in the Code here with the various subsections
 \end{itemize}
-
+\subsubsection{\Pokemon{} abilities via \Pokeapi{}}
+\lstinputlisting[language=Python, firstline=6, lastline=14]{codeForReport/pokebaseAbilities.py}
 
 \subsection{Meeting Minutes}
 \begin{itemize}

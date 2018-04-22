@@ -149,6 +149,9 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT images/showdownTeamBuilder.png
 INPUT ./images/showdownTeamBuilder.png
 INPUT ./images/showdownTeamBuilder.png
+INPUT codeForReport/pokebaseAbilities.py
+INPUT codeForReport/pokebaseAbilities.py
+INPUT codeForReport/pokebaseAbilities.py
 INPUT images/workPlan.png
 INPUT ./images/workPlan.png
 INPUT ./images/workPlan.png
