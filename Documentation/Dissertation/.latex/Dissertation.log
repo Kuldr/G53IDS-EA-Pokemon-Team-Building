@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  22 APR 2018 19:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  22 APR 2018 20:04
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -822,48 +822,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 621--622
 []\OT1/cmr/m/n/10 Moves (4 Seper-ate
  []
 
-[12] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 755--758
+[12] [13] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 763--766
 
  []
 
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 759--763
+
+Underfull \hbox (badness 10000) in paragraph at lines 767--771
 
  []
 
 [15] [16] (./codeForReport/pokebaseAbilities.py)
-Underfull \hbox (badness 10000) in paragraph at lines 832--835
+Underfull \hbox (badness 10000) in paragraph at lines 840--843
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 836--841
+Underfull \hbox (badness 10000) in paragraph at lines 844--849
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 842--846
+Underfull \hbox (badness 10000) in paragraph at lines 850--854
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 847--851
+Underfull \hbox (badness 10000) in paragraph at lines 855--859
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 852--855
+Underfull \hbox (badness 10000) in paragraph at lines 860--863
 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 856--859
+Underfull \hbox (badness 10000) in paragraph at lines 864--867
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 881--884
+Underfull \hbox (badness 10000) in paragraph at lines 889--892
 
  []
 
@@ -871,7 +871,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 881--884
 File: images/workPlan.png Graphic file (type png)
 
 <use images/workPlan.png>
-Package pdftex.def Info: images/workPlan.png used on input line 888.
+Package pdftex.def Info: images/workPlan.png used on input line 896.
 (pdftex.def)             Requested size: 295.9367pt x 705.62843pt.
 
 Overfull \vbox (48.75642pt too high) has occurred while \output is active []
@@ -909,7 +909,7 @@ ux) )
 Here is how much of TeX's memory you used:
  7348 strings out of 493089
  97874 string characters out of 6134843
- 299979 words of memory out of 5000000
+ 300979 words of memory out of 5000000
  10676 multiletter control sequences out of 15000+600000
  10943 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -931,7 +931,7 @@ live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/wadalab/dmj/dmjkata.pfb>
 Output written on /Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.lat
-ex/Dissertation.pdf (27 pages, 551289 bytes).
+ex/Dissertation.pdf (27 pages, 551799 bytes).
 PDF statistics:
  164 PDF objects out of 1000 (max. 8388607)
  110 compressed objects within 2 object streams

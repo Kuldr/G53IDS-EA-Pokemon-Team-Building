@@ -631,23 +631,29 @@ Not all possible combinations of this representation are valid for a variety of 
 Many of the IDs aren't associated with anything such as there are no values for \Pokemon{} Species 803-10000.
 The EVs have individual values for the separate statistics of the \Pokemon{} but in the \Pokemon{} games the total sum of all of the EVs can't surpass 510.
 The largest constraint on the combinations is whether it is `legal' in game, for example not all \Pokemon{} can learn all of the moves that are listed.
-
+\par
+In the \Pokemon{} games it is possible some things to be left blank.
+This happens in 3 cases, Number of \Pokemon{} on a team, held items, and Number of moves.
+A \Pokemon{} team can be made up of 1-6 members, so the representation allows for this by having 6 slots that can store \Pokemon{} objects.
+Any \Pokemon{} can have a held item although this isn't required.
+A \Pokemon{} also has 1-4 moves so the representation has 4 move slots that each store an individual move id.
+Any of these can be listed as None which refers to their being no object stored there.
 % TODO: Sort this out and work it all
 \begin{center}
-    \begin{tabular}{ c | c c c }
-        Characteristic & Stored As & Valid Range & Associated \Pokeapi{} Call \\
+    \begin{tabular}{ c | c c c c }
+        Characteristic & Stored As & Valid Range & Associated \Pokeapi{} Call & Can be Null \\
         \hline
-        \Pokemon{} Species & Integer ID & 1-10147* & pb.pokemon(ID) \\
-		Gender & Integer ID & 1-3 & pb.gender(ID) \\
-		Item & Integer ID & 1-918* & pb.item(ID) \\
-		Ability Slot & Integer ID & 1-3 & Shown in code appendix \\
-		Level & Integer Value & 1-100 & N/A \\
-		Shiny & Boolean Value & {True, False} & N/A \\
-		Happiness & Integer Value & 0-255 & N/A \\
-		Nature & Integer ID & 1-25 & pb.nature(ID) \\
-		EVs & Integer Value & 0-255 & N/A \\
-		IVs & Integer Value & 0-31 & N/A \\
-		Moves & Integer ID & TODO & pb.move(ID) \\
+        \Pokemon{} Species & Integer ID & 1-10147* & pb.pokemon(ID) & No \\
+		Gender & Integer ID & 1-3 & pb.gender(ID) & No \\
+		Item & Integer ID & 1-918* & pb.item(ID) & Yes \\
+		Ability Slot & Integer ID & 1-3 & Shown in code appendix & No \\
+		Level & Integer Value & 1-100 & N/A & No \\
+		Shiny & Boolean Value & {True, False} & N/A & No \\
+		Happiness & Integer Value & 0-255 & N/A & No \\
+		Nature & Integer ID & 1-25 & pb.nature(ID) & No \\
+		EVs & Integer Value & 0-255 & N/A & No \\
+		IVs & Integer Value & 0-31 & N/A & No \\
+		Moves & Integer ID & 1-718 & pb.move(ID) & Yes \\
     \end{tabular} \\
 	\** Not all IDs in this range are associated with something
 \end{center}
@@ -663,9 +669,11 @@ During validation and evaluation there is a need to check certain combinations o
 For example during validation, a \Pokemon{} may have a valid species ID and gender ID but certain \Pokemon{} maybe limited to certain genders which has to be checked.
 Some values also have associated meaning that is required for some of the calculations in the evaluation. Due to the way that the data is stored the ID values can be used with \Pokeapi{} as a database lookup.
 This allows for the minimal amount of data to be stored in the representation.
-
 \subsubsection{Representation Problems}
-
+\begin{itemize}
+	\item Hard to find ID ranges, began with trial and error, ended looking deep into the source code
+	\item None values
+\end{itemize}
 \subsection{EA methods}
 
 
