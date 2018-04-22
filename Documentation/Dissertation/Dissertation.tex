@@ -750,11 +750,17 @@ Although this limit wasn't hit when running several instances of the final code,
 In its current form the program will crash if this limit is reached.
 This could be tackled by error handling but it would still end up pausing the program for a significant time while the limit is reached.
 \\ \par
-Another limitation of using
-\begin{itemize}
-	\item Constant internet connection
-	\item Unavailable data
-\end{itemize}
+Another limitation of this API is it reliance on an internet service to function.
+This is not a major limitation of the project as due to the run times it is unlikely people would require it to run in a mobile environment.
+On top of not being able to function with out an internet connection, the API implementation is not built to handle short drops in connectivity crashing the program due to the error.
+Although this is unlikely to happen it is a limitation that can cause issues.
+\\ \par
+Another issue with this API is that over the course of the project a new \Pokemon{} game was released, introducing new \Pokemon{} and moves.
+\Pokeapi{} hasn't been updated to include these updates, meaning that the EA isn't running with all the available data.
+This is a minor issue with the latest updates as they don't have major changes and solutions generated will still be valid.
+There is no guarantee that \Pokeapi{} will continue to be updated in the future which could leave the project out of date in the future.
+If it was updated though there is no native way to collect the minimum and maximum ID values, these would have to be found again and added to the constants file.
+
 
 \section{Summary and Reflections}
 \begin{itemize}
@@ -791,9 +797,9 @@ Improvements to this could help improve the speed of the run time allowing for m
 \par
 The reliance on an external API has hindered the project slightly.
 As mentioned earlier there is a limiting factor of how often you can access the web server, meaning that larger runs with out the data cached could stop early.
-Another issue with this API is that over the course of the project a new \Pokemon{} game was released, introducing new \Pokemon{} and moves.
-\Pokeapi{} hasn't been updated to include these updates, meaning that the EA isn't running with all the available data.
-This is a minor issue with the latest updates as they don't have major changes and solutions generated will still be valid.
+
+POKEAPI MAKE THIS MAKE SENSE
+
 This is something to consider if the project was taken further as it would rely on these systems.
 \subsection{Further Considerations}
 \par
