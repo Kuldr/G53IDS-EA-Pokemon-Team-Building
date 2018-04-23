@@ -782,9 +782,22 @@ This may generate duplicates but that is taken care of in validation.
 \end{itemize}
 \subsubsection{Validation}
 \par
-\begin{itemize}
-	\item TODO
-\end{itemize}
+Validation attempts to check if an individual is this is critical as it is possible for crossover/mutation to create an invalid individual.
+This part of the algorithm heavily relies upon expert knowledge to know what can be invalid and how to check for it.
+Some of the checks are done to determine whether the team would be able to be created in the games, were as other checks are to abide by common rulesets for competitive battling.
+\par
+The first check is to make sure none of the \Pokemon{} on the team are the same species, as this is banned in many rulesets.
+If duplication is found the \Pokemon{} team member is set to None.
+\\ \par
+After the team structure as a whole has been validated, each member of the team has to also be validated.
+The resulting checks happen to all of the team members and if anyone of the team is invalid that member is set to None.
+\par
+The gender of the \Pokemon{} is checked against its gender ratio through \Pokeapi{}, as some \Pokemon{} can only be a certain gender.
+The held item is checked to see if it is both in the database and if it is a holdable item.
+The ability slot is checked to see if a \Pokemon{} has a ability in that slot.
+Levels, happiness, IVs, and natureID of the \Pokemon{} are all checked by seeing if they are in a valid range.
+The EVs are checked by seeing if the total is within a valid range and whether each EV is within the valid range.
+Moves are checked to see if they can be learnt by the \Pokemon{}, Moves are also checked to see if there are no moves listed and if there are any duplicates.
 \subsubsection{Population Replacement}
 \par
 Population Replacement happens by randomly selecting individual from the population and comparing it to the child.
@@ -871,9 +884,23 @@ Items can play a large role in the battles but a limited amount of them are usef
 As the search space of abilities is so small per \Pokemon{} it is hard to determine whether the solutions have evolved those outcomes or not.
 Although it is clear that not all of them are optimal and some even have no use in battle.
 \subsection{Project Limitations}
-\begin{itemize}
-	\item accuracy of the evaluation
-\end{itemize}
+\subsubsection{Fitness evaluation}
+\par
+As there isn't an objective way to evaluate the individuals an approximation has to be made.
+As with any approximation compromises have been made which limit the system.
+Ultimately these result in the fitness function not accurately modelling the actual problem.
+\par
+Many assumptions are currently made about the the moves used.
+There is the assumption that moves have no side effects and only deal damage to the opponent, which is grossly incorrect in fact there is a whole category of moves which only produce these side effects.
+This will mean that moves are only rated for the damage and not the utility.
+Another assumption is that a move can be used unconditionally, which while mostly true does not hold for some moves.
+These moves are substantially higher powered than other moves but are balanced by these conditions, for example Hyper Beam causes the user to miss a turn after being used.
+By not evaluating these conditions it rates solutions with this higher than they should be.
+\par
+The fitness evaluation also doesn't take into account some team synergies but rather grades the team based upon the contributions of each member.
+Theoretically there could be a team where one member is only there for a small case where it covers another team member, this would be a successful strategy as it gives better coverage across different opponents.
+This team would be effective in practice as when not needed the other team member will carry the more niche members to victory but when required the other members will counter the opponent.
+In the evaluation this comes would score poorly as each team member is equally weighted, being biased towards teams with all rounders rather than strong specialists.
 \subsubsection{\Pokeapi{}}
 \par
 A major limitation of the project is it reliance on the \Pokeapi{} system.
