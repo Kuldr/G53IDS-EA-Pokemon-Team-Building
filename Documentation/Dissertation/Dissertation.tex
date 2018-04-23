@@ -816,11 +816,14 @@ It then returns the better of the new individuals.
 	\item Evaluation of software performance
 \end{itemize}
 \subsection{Software Performance}
+The performance of the software to run efficiently is hard to empirically state, although this serves to be some comments on the matter.
 The evaluation part of the program takes a while to run due to the way it ranks the population.
-Due to the frequent database lookups it results in slow
-\begin{itemize}
-	\item TODO Finish this
-\end{itemize}
+Firstly the frequent database lookups are rather slow and this can be seen as the program runs as each win/lose takes a while to print to the screen.
+On slower systems will low disk speeds such as a raspberry pi this can easily be confused with the system being unresponsive.
+Secondly the exponential nature of comparing each individual in the population means there is a lot of time spent in the evaluation process on the whole.
+\par
+Even on the relatively small runs used for evaluation purposes the run time was around 48 hours.
+AI applications don't need to be snappy and responsive like user facing applications but for the quality of results found this implementation took a considerable amount of time.
 \subsection{EA Performance}
 In this section the performance of the EA to generate a solution is being evaluated.
 The solutions will be analysed by an expert to see how the solutions appear in theory, the better solutions will be compared against random results and real world scenarios of increasing difficulty to try and properly assess them.

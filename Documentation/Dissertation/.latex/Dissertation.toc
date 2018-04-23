@@ -52,14 +52,14 @@
 \contentsline {subsubsection}{\numberline {6.2.1}Expert Remarks}{16}
 \contentsline {subsection}{\numberline {6.3}Project Limitations}{17}
 \contentsline {subsubsection}{\numberline {6.3.1}Fitness evaluation}{17}
-\contentsline {subsubsection}{\numberline {6.3.2}Pok\'{e}api{}}{17}
+\contentsline {subsubsection}{\numberline {6.3.2}Pok\'{e}api{}}{18}
 \contentsline {section}{\numberline {7}Summary and Reflections}{18}
 \contentsline {subsection}{\numberline {7.1}Reflections on Work Plan}{18}
 \contentsline {subsection}{\numberline {7.2}Self Reflection}{18}
 \contentsline {subsection}{\numberline {7.3}Project Appraisal}{18}
 \contentsline {subsection}{\numberline {7.4}Further Considerations}{19}
 \contentsline {subsubsection}{\numberline {7.4.1}Reducing the Search Space}{19}
-\contentsline {subsubsection}{\numberline {7.4.2}Software Optimisation - Threading}{19}
+\contentsline {subsubsection}{\numberline {7.4.2}Software Optimisation - Threading}{20}
 \contentsline {section}{\numberline {8}Appendix}{21}
 \contentsline {subsection}{\numberline {8.1}Code}{21}
 \contentsline {subsubsection}{\numberline {8.1.1}Pok\'{e}mon{} abilities via Pok\'{e}api{}}{21}
