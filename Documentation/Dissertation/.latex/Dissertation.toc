@@ -38,31 +38,39 @@
 \contentsline {subsubsection}{\numberline {5.2.3}Representation Translation}{13}
 \contentsline {subsubsection}{\numberline {5.2.4}Representation Problems}{13}
 \contentsline {subsection}{\numberline {5.3}EA methods}{13}
-\contentsline {section}{\numberline {6}Evaluation}{13}
-\contentsline {subsection}{\numberline {6.1}Software Performance}{13}
-\contentsline {subsection}{\numberline {6.2}EA Performance}{14}
-\contentsline {subsubsection}{\numberline {6.2.1}Expert Remarks}{14}
-\contentsline {subsection}{\numberline {6.3}Project Limitations}{15}
-\contentsline {subsubsection}{\numberline {6.3.1}Pok\'{e}api{}}{15}
-\contentsline {section}{\numberline {7}Summary and Reflections}{15}
-\contentsline {subsection}{\numberline {7.1}Reflections on Work Plan}{16}
-\contentsline {subsection}{\numberline {7.2}Self Reflection}{16}
-\contentsline {subsection}{\numberline {7.3}Project Appraisal}{16}
-\contentsline {subsection}{\numberline {7.4}Further Considerations}{16}
-\contentsline {section}{\numberline {8}Appendix}{18}
-\contentsline {subsection}{\numberline {8.1}Code}{18}
-\contentsline {subsubsection}{\numberline {8.1.1}Pok\'{e}mon{} abilities via Pok\'{e}api{}}{18}
-\contentsline {subsection}{\numberline {8.2}Meeting Minutes}{18}
-\contentsline {subparagraph}{6th October}{18}
-\contentsline {subparagraph}{26th October}{18}
-\contentsline {subparagraph}{2nd November}{18}
-\contentsline {subparagraph}{21st November}{18}
-\contentsline {subparagraph}{28th November}{19}
-\contentsline {subparagraph}{15th December}{19}
-\contentsline {subparagraph}{7th February}{19}
-\contentsline {subparagraph}{15th February}{19}
-\contentsline {subparagraph}{9th March}{19}
-\contentsline {subparagraph}{6th April}{19}
-\contentsline {subparagraph}{16th April}{19}
-\contentsline {subsection}{\numberline {8.3}Work Plan}{20}
-\contentsline {subsection}{\numberline {8.4}References}{21}
+\contentsline {subsubsection}{\numberline {5.3.1}Initialising Individuals}{13}
+\contentsline {subsubsection}{\numberline {5.3.2}Fitness Evaluation}{14}
+\contentsline {subsubsection}{\numberline {5.3.3}Parent Selection}{15}
+\contentsline {subsubsection}{\numberline {5.3.4}Crossover}{15}
+\contentsline {subsubsection}{\numberline {5.3.5}Mutation}{15}
+\contentsline {subsubsection}{\numberline {5.3.6}Validation}{15}
+\contentsline {subsubsection}{\numberline {5.3.7}Population Replacement}{15}
+\contentsline {subsubsection}{\numberline {5.3.8}Local Search Method}{15}
+\contentsline {section}{\numberline {6}Evaluation}{15}
+\contentsline {subsection}{\numberline {6.1}Software Performance}{15}
+\contentsline {subsection}{\numberline {6.2}EA Performance}{15}
+\contentsline {subsubsection}{\numberline {6.2.1}Expert Remarks}{16}
+\contentsline {subsection}{\numberline {6.3}Project Limitations}{17}
+\contentsline {subsubsection}{\numberline {6.3.1}Pok\'{e}api{}}{17}
+\contentsline {section}{\numberline {7}Summary and Reflections}{17}
+\contentsline {subsection}{\numberline {7.1}Reflections on Work Plan}{18}
+\contentsline {subsection}{\numberline {7.2}Self Reflection}{18}
+\contentsline {subsection}{\numberline {7.3}Project Appraisal}{18}
+\contentsline {subsection}{\numberline {7.4}Further Considerations}{18}
+\contentsline {section}{\numberline {8}Appendix}{20}
+\contentsline {subsection}{\numberline {8.1}Code}{20}
+\contentsline {subsubsection}{\numberline {8.1.1}Pok\'{e}mon{} abilities via Pok\'{e}api{}}{20}
+\contentsline {subsection}{\numberline {8.2}Meeting Minutes}{20}
+\contentsline {subparagraph}{6th October}{20}
+\contentsline {subparagraph}{26th October}{20}
+\contentsline {subparagraph}{2nd November}{20}
+\contentsline {subparagraph}{21st November}{20}
+\contentsline {subparagraph}{28th November}{21}
+\contentsline {subparagraph}{15th December}{21}
+\contentsline {subparagraph}{7th February}{21}
+\contentsline {subparagraph}{15th February}{21}
+\contentsline {subparagraph}{9th March}{21}
+\contentsline {subparagraph}{6th April}{21}
+\contentsline {subparagraph}{16th April}{21}
+\contentsline {subsection}{\numberline {8.3}Work Plan}{22}
+\contentsline {subsection}{\numberline {8.4}References}{23}

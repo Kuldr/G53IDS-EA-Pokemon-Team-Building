@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  23 APR 2018 16:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  23 APR 2018 18:38
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -748,7 +748,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout3 = `Dissertation.toc'.
 
  [3]
-Underfull \hbox (badness 10000) in paragraph at lines 170--174
+Underfull \hbox (badness 10000) in paragraph at lines 171--175
 
  []
 
@@ -761,7 +761,7 @@ File: UTF8.enc 2015/04/18 4.8.4
 (/usr/local/texlive/2015/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-LaTeX Font Info:    Try loading font information for C70+min on input line 197.
+LaTeX Font Info:    Try loading font information for C70+min on input line 198.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/cjk/contrib/wadalab/c70min.fd
@@ -771,42 +771,42 @@ File: c70min.fd 2015/04/18 4.8.4
 File: c70min.fdx 2015/04/18 4.8.4
 )
 [2] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 284--287
+Underfull \hbox (badness 10000) in paragraph at lines 285--288
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 297--300
+Underfull \hbox (badness 10000) in paragraph at lines 298--301
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 319--322
+Underfull \hbox (badness 10000) in paragraph at lines 320--323
 
  []
 
 [5] [6]
-Overfull \hbox (4.53146pt too wide) detected at line 405
+Overfull \hbox (4.53146pt too wide) detected at line 406
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 413--414
+Underfull \hbox (badness 10000) in paragraph at lines 414--415
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 415--419
+Underfull \hbox (badness 10000) in paragraph at lines 416--420
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 420--424
+Underfull \hbox (badness 10000) in paragraph at lines 421--425
 
  []
 
 [7] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 469--473
+Underfull \hbox (badness 10000) in paragraph at lines 470--474
 
  []
 
@@ -814,90 +814,90 @@ Underfull \hbox (badness 10000) in paragraph at lines 469--473
 File: images/showdownTeamBuilder.png Graphic file (type png)
 
 <use images/showdownTeamBuilder.png>
-Package pdftex.def Info: images/showdownTeamBuilder.png used on input line 595.
+Package pdftex.def Info: images/showdownTeamBuilder.png used on input line 596.
 
 (pdftex.def)             Requested size: 405.72005pt x 99.58464pt.
  [11 <./images/showdownTeamBuilder.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 633--634
+Underfull \hbox (badness 10000) in paragraph at lines 634--635
 []\OT1/cmr/m/n/10 Moves (4 Seper-ate
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 690--695
+Underfull \hbox (badness 10000) in paragraph at lines 691--696
 
  []
 
-[13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 790--793
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 794--798
-
- []
-
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 838--842
-
- []
-
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 873--876
+[13] [14] [15] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 888--891
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 877--883
+Underfull \hbox (badness 10000) in paragraph at lines 892--896
 
  []
 
-[17] (./codeForReport/pokebaseAbilities.py)
-Underfull \hbox (badness 10000) in paragraph at lines 907--910
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 911--916
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 917--921
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 922--926
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 927--930
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 936--940
 
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 931--934
+Underfull \hbox (badness 10000) in paragraph at lines 971--974
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 956--959
+Underfull \hbox (badness 10000) in paragraph at lines 975--981
 
  []
 
-[19] <images/workPlan.png, id=106, 720.6925pt x 1718.42pt>
+[19] (./codeForReport/pokebaseAbilities.py)
+Underfull \hbox (badness 10000) in paragraph at lines 1005--1008
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1009--1014
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1019
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1020--1024
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1025--1028
+
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 1029--1032
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1054--1057
+
+ []
+
+[21] <images/workPlan.png, id=112, 720.6925pt x 1718.42pt>
 File: images/workPlan.png Graphic file (type png)
 
 <use images/workPlan.png>
-Package pdftex.def Info: images/workPlan.png used on input line 963.
+Package pdftex.def Info: images/workPlan.png used on input line 1061.
 (pdftex.def)             Requested size: 295.9367pt x 705.62843pt.
 
 Overfull \vbox (48.75642pt too high) has occurred while \output is active []
 
 
-[20 <./images/workPlan.png>]
+[22 <./images/workPlan.png>]
 (/Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.latex/Dissertation.b
 bl
 Underfull \hbox (badness 10000) in paragraph at lines 39--44
@@ -923,7 +923,7 @@ Underfull \hbox (badness 6808) in paragraph at lines 66--72
  . theverge . com / 2017 / 8 / 11 / 16137388 /
  []
 
-) [21]
+) [23]
 (/Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.latex/Dissertation.a
 ux) ) 
 Here is how much of TeX's memory you used:
@@ -951,10 +951,10 @@ live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/wadalab/dmj/dmjkata.pfb>
 Output written on /Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.lat
-ex/Dissertation.pdf (28 pages, 557172 bytes).
+ex/Dissertation.pdf (30 pages, 562390 bytes).
 PDF statistics:
- 167 PDF objects out of 1000 (max. 8388607)
- 112 compressed objects within 2 object streams
+ 173 PDF objects out of 1000 (max. 8388607)
+ 116 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  20 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -120,6 +120,7 @@ The focus of this project is the team building aspect of the \Pokemon{} games an
 	\item Clean and commit code ready for submission
 	\item Folder
 	\item Video
+	\item Acknowledgements
 \end{itemize}
 
 \pagebreak
@@ -698,8 +699,102 @@ At several stages the project would have to check whether a value was None to av
 Occasionally this would result in a major bug that would crash the program as these checks weren't performed.
 All of these bugs were found in the end but it was a common occurrence and only arose due to the design of the representation.
 \subsection{EA methods}
-
-
+\par
+For the EA to run there are several methods that need to be implemented.
+Within each part of this section a method used by the EA will be explained at a high level explaining its function and how it approaches it.
+\subsubsection{Initialising Individuals}
+\par
+Initialising individuals in the population is done via random selection of each gene in the individual.
+This is done in a manner to make sure that the individuals generated are valid.
+Values that can be stored as None have a random rate (that can be found in the constants file) to appear as None.
+\par
+Due to the symmetric nature of have 6 \Pokemon{} the method uses a helper method that generates an individual \Pokemon{}.
+For each \Pokemon{} that is generated the following structure is followed.
+\begin{algorithm}[H]
+\SetAlgoLined{}
+\KwResult{Returns a randomly initialised individual}
+\For{Each member of the team (6)}{
+	\eIf{random value $\le$ No Team Member \% Chance}{
+		Set \Pokemon{} slot to None\;
+	}{
+		\eIf{random value $\le$ No Item \% Chance}{
+			Set itemID to None\;
+		}{
+			Randomly set itemID from range\;
+		}
+		Randomly set level from range\;
+		Randomly set shiny from range\;
+		Randomly set happiness from range\;
+		Randomly set nature from range\;
+		\For{Each IV (6)}{
+			Randomly set IV from range\;
+		}
+		\For{Max EV Total}{
+			Randomly $+1$ too a EV\;
+		}
+		\BlankLine{}
+		Randomly select a species from range\;
+		Get a list of all the varying forms of the species\;
+		Randomly choose a form from the list and set the formID\;
+		\BlankLine{}
+		Get a list of all the abilities the \Pokemon{} can have\;
+		Randomly choose an ability slot from the list and set the ability\;
+		\BlankLine{}
+		Get a list of all the genders the \Pokemon{} can have\;
+		Randomly choose an gender from the list and set the gender\;
+		\BlankLine{}
+		Get a list of all the moves the \Pokemon{} can have\;
+		Randomly choose 4 moves from the list\;
+		Remove duplicate moves\;
+		Set the moves chosen\;
+	}
+}
+\caption{Initialisation of Individuals}
+\center{\textbf{Note} This is rearranged from the actual implementation for clarity of reading}
+\end{algorithm}
+\subsubsection{Fitness Evaluation}
+\par
+Creation of a objective fitness evaluation function is difficult with this problem.
+To evaluate the population a score was given to each individual compared to the rest of the population.
+This can more easily be achieved by approximating how well the two teams being compared at any time would perform against each other in a \Pokemon{} Battle.
+\par
+For each member of the population the individual is compared against, a score is given based upon how many members of the team win against members of the other team.
+This compares each team member to every member of another team.
+The final score is an average of all these scores against every team in the population.
+\par
+A win between 2 \Pokemon{} is determined by comparing the potential damage done by each of the \Pokemon{}'s moves.
+The \Pokemon{} that deals the highest damage is said to be the winner.
+Either a team member is set to None then they automatically lose.
+\par
+More accurate simulations of battles could be used to produce a fitness function weren't used for simplicity.
+\subsubsection{Parent Selection}
+\par
+Parent Selection happens by randomly selecting any individual in the population.
+\subsubsection{Crossover}
+\par
+Crossover only happens at the level of the \Pokemon{} in a team as crossing over other characteristics per \Pokemon{} like move set would almost certainly make the individual invalid.
+This happens by generating a list of all the \Pokemon{} from 2 parents and then randomly selecting 6 of them.
+This may generate duplicates but that is taken care of in validation.
+\subsubsection{Mutation}
+\par
+\begin{itemize}
+	\item TODO
+\end{itemize}
+\subsubsection{Validation}
+\par
+\begin{itemize}
+	\item TODO
+\end{itemize}
+\subsubsection{Population Replacement}
+\par
+Population Replacement happens by randomly selecting individual from the population and comparing it to the child.
+If the child has a better fitness value than the random individual the child will replace the individual.
+This happens for each child created each generation.
+\subsubsection{Local Search Method}
+\par
+The local search method applies to all of the \Pokemon{} IVs, changing them by $\pm 3$.
+The two new individuals are then compared to each other using the fitness function.
+It then returns the better of the new individuals.
 \section{Evaluation}
 \begin{itemize}
 	\item Explain what is being evaluated
@@ -776,6 +871,9 @@ Items can play a large role in the battles but a limited amount of them are usef
 As the search space of abilities is so small per \Pokemon{} it is hard to determine whether the solutions have evolved those outcomes or not.
 Although it is clear that not all of them are optimal and some even have no use in battle.
 \subsection{Project Limitations}
+\begin{itemize}
+	\item accuracy of the evaluation
+\end{itemize}
 \subsubsection{\Pokeapi{}}
 \par
 A major limitation of the project is it reliance on the \Pokeapi{} system.
