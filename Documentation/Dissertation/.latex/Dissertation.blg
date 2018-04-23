@@ -5,47 +5,45 @@ The style file: plain.bst
 Database file #1: Dissertation.bib
 Warning--to sort, need author or key in showdown
 Warning--to sort, need author or key in PokeapiGitHub
-Warning--empty author in PokeapiGitHub
-Warning--empty journal in PokeapiGitHub
 You've used 14 entries,
             2118 wiz_defined-function locations,
-            586 strings with 6434 characters,
+            586 strings with 6436 characters,
 and the built_in function-call counts, 4486 in all, are:
-= -- 431
+= -- 432
 > -- 237
 < -- 2
 + -- 97
 - -- 82
-* -- 316
-:= -- 744
+* -- 311
+:= -- 741
 add.period$ -- 42
 call.type$ -- 14
 change.case$ -- 81
 chr.to.int$ -- 0
-cite$ -- 18
-duplicate$ -- 148
-empty$ -- 349
+cite$ -- 16
+duplicate$ -- 145
+empty$ -- 354
 format.name$ -- 82
-if$ -- 933
+if$ -- 939
 int.to.chr$ -- 0
 int.to.str$ -- 14
-missing$ -- 8
+missing$ -- 7
 newline$ -- 71
 num.names$ -- 24
-pop$ -- 104
+pop$ -- 106
 preamble$ -- 1
 purify$ -- 67
 quote$ -- 0
 skip$ -- 117
 stack$ -- 0
 substring$ -- 213
-swap$ -- 28
+swap$ -- 29
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 56
-warning$ -- 4
+warning$ -- 2
 while$ -- 38
 width$ -- 16
-write$ -- 147
-(There were 4 warnings)
+write$ -- 148
+(There were 2 warnings)
