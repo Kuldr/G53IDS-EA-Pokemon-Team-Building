@@ -119,6 +119,7 @@ The focus of this project is the team building aspect of the \Pokemon{} games an
 	\item Find and read and reference the book
 	\item Clean and commit code ready for submission
 	\item Folder
+	\item Video
 \end{itemize}
 
 \pagebreak
@@ -817,12 +818,12 @@ If it was updated though there is no native way to collect the minimum and maxim
 \subsection{Project Appraisal}
 \par
 The project seems to show that there maybe potential in the area of pregame decision making.
-This project is a highly novel application of evolutionary algorithms and shows some shortcomings of the methods as well as some potential.
+This highly novel application of evolutionary algorithms and shows some shortcomings of the methods as well as some potential.
 \par
 Evaluation of a population is extremely difficult when there is no clear metric to rank individuals by.
 The use of grading relative to the population is possible but takes exponential time with respect to the population size if every individual is rated against every other individual like in the project.
 This was by far the biggest time sync when running the project.
-Other methods objective functions could be looked into in the future.
+Other methods for objective functions could be looked into in the future.
 Having an expert create a grading system could be beneficial but could limit the EAs potential to find novel solutions, as shown with AlphaGoZero.
 A similar problem arrises if you evaluate the solutions against known good solutions as you may be overfitting to the known solutions.
 A way this could be overcome would be evaluating an individual against a subset of the population, whether $x$ random individuals or with a tournament bracket.
@@ -838,12 +839,52 @@ The reliance on an external API has brought a lot of insight to the project.
 There are many limiting factors to using such an API, particularly one that is maintained by freelance developers who have no obligation to update the API\@.
 As stated in the project limitations this is the main source of technical limitations to the project but the time saved in development offsets these concerns.
 The use of APIs particularly \Pokeapi{} is something to consider if the project was taken further as it would rely on these systems heavily.
+\\ \par
+\begin{itemize}
+	\item Pros of the project
+\end{itemize}
 \subsection{Further Considerations}
 \par
+If the project was to be expanded further there are many avenues that could be explored, as well as several improvements to make.
+\par
 \begin{itemize}
-	\item Smaller search space
+	\item Split this up maybe?
+	\item maybe even into subsections
+\end{itemize}
+Like with most AI systems reducing the search space helps tremendously in the effectiveness of the system.
+This increase could be used to run a larger population, run for more generations or produce an output significantly faster.
+In section 4.1 the size of the search space was given an rough estimate of $5.893 \times 10^{261}\ (4sf)$ this could greatly be reduced for this problem.
+A large part of this large search space is that a team is comprised of 6 \Pokemon{}, if the EA was set up to instead optimise a single \Pokemon{} the search space drastically reduces.
+Another reduction would come from removing characteristics that don't effect the performance of the \Pokemon{} in battle.
+Many games have these cosmetic features that the AI wouldn't need to optimise as they provide no functional difference.
+This could be take further by not trying to evaluate characteristics that relate to fringe cases that have easy to understand heuristics that players use.
+In \Pokemon{} the effects of happiness and gender are limited to very specific moves which human players already know how to optimise.
+Potentially further reductions could come by implementing expert knowledge to limit certain values in the system to a known good range / sets.
+For example rather than allowing any item to be chosen a preselected set of items could be created by an expert or from a list of commonly used items.
+This could be expanded even further by limiting characteristics such as EVs and IVs of a \Pokemon{} to extreme values which are seen as optimal depending on the case.
+\par
+If the search space was reduced, by optimising a singular \Pokemon{} and removing characteristics that only are required for certain cases, it could be estimated by the following equation.
+\begin{equation}
+	species \times IVs^{stats} \times EVs^{stats} \times levels \times abilities \times items \times {moves \choose move slots}
+\end{equation}
+\begin{equation}
+    807 \times 31^6 \times 256^6 \times 100 \times 3 \times 354 \times {728 \choose 4} = 2.485 \times 10^{41}\ (4sf)
+	%248506173464134517007469655446058434560000 exactly
+\end{equation}
+This shows a decrease of $10^{220}$ which is a significant decrease.
+Further advantages to this would be that there is less factors to be validated which would speed up the program as well.
+\\ \par
+Software optimisations could be made to speed up the program as a whole.
+The main way this could be done would be to take advantage of the multicore or multithreaded processors that are abundant nowadays.
+EAs have large potential for threading as many parts can happen in parallel due to the population based search methods.
+Initialisation and Evaluation could all happen in parallel rather than sequentially, and the creation of children could also be done in parallel.
+The reason for not doing this was \Pokeapi{} couldn't handle multiple calls at the same time and would require careful design to avoid crashes.
+Alongside this more conventional methods of optimisation could take place to make sure the system runs more efficiently.
+\\ \par
+\begin{itemize}
 	\item more conventional representation binary
-	\item software optimisations
+	\item tighter integration with testing for evaluation
+	\item Improvements to evaluation and fitness via relative ranking of individuals.
 \end{itemize}
 
 \pagebreak
