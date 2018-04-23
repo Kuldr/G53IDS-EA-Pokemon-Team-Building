@@ -4,45 +4,48 @@ The top-level auxiliary file: .latex/Dissertation.aux
 The style file: plain.bst
 Database file #1: Dissertation.bib
 Warning--to sort, need author or key in showdown
-You've used 13 entries,
+Warning--to sort, need author or key in PokeapiGitHub
+Warning--empty author in PokeapiGitHub
+Warning--empty journal in PokeapiGitHub
+You've used 14 entries,
             2118 wiz_defined-function locations,
-            581 strings with 6340 characters,
-and the built_in function-call counts, 4321 in all, are:
-= -- 416
-> -- 236
+            586 strings with 6434 characters,
+and the built_in function-call counts, 4486 in all, are:
+= -- 431
+> -- 237
 < -- 2
-+ -- 96
++ -- 97
 - -- 82
-* -- 303
-:= -- 723
-add.period$ -- 40
-call.type$ -- 13
-change.case$ -- 78
+* -- 316
+:= -- 744
+add.period$ -- 42
+call.type$ -- 14
+change.case$ -- 81
 chr.to.int$ -- 0
-cite$ -- 14
-duplicate$ -- 138
-empty$ -- 331
+cite$ -- 18
+duplicate$ -- 148
+empty$ -- 349
 format.name$ -- 82
-if$ -- 898
+if$ -- 933
 int.to.chr$ -- 0
-int.to.str$ -- 13
-missing$ -- 7
-newline$ -- 67
+int.to.str$ -- 14
+missing$ -- 8
+newline$ -- 71
 num.names$ -- 24
-pop$ -- 98
+pop$ -- 104
 preamble$ -- 1
-purify$ -- 65
+purify$ -- 67
 quote$ -- 0
-skip$ -- 110
+skip$ -- 117
 stack$ -- 0
-substring$ -- 208
+substring$ -- 213
 swap$ -- 28
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 52
-warning$ -- 1
+type$ -- 56
+warning$ -- 4
 while$ -- 38
-width$ -- 15
-write$ -- 140
-(There was 1 warning)
+width$ -- 16
+write$ -- 147
+(There were 4 warnings)

@@ -670,10 +670,21 @@ For example during validation, a \Pokemon{} may have a valid species ID and gend
 Some values also have associated meaning that is required for some of the calculations in the evaluation. Due to the way that the data is stored the ID values can be used with \Pokeapi{} as a database lookup.
 This allows for the minimal amount of data to be stored in the representation.
 \subsubsection{Representation Problems}
-\begin{itemize}
-	\item Hard to find ID ranges, began with trial and error, ended looking deep into the source code
-	\item None values
-\end{itemize}
+\par
+Most of the representation is built to use ID values for a the connected \Pokeapi{} database.
+For both initialisation and validation a range of ID values needed to be known to initialise to and validate against.
+Within \Pokeapi{} there is no default way to access these ranges so it took time to find out what they were.
+\par
+For some of the smaller ranges it was possible to find it out through trial and error, often knowing the size of the range and only correcting for off by one errors.
+This method was not viable for larger ranges where the size wasn't known and there was potential that some ID values weren't going to be used.
+This also an issue of maintainability as whenever \Pokeapi{} updates these ranges would have to be recalculated.
+The end solution was to look on \Pokeapi{}'s GitHub repository and read the backend data directly to find out these values\cite{PokeapiGitHub}.
+This isn't a favourable solution as it still relies on looking up the new values when \Pokeapi{} is updated.
+\\ \par
+The representation design brought up issues during implementation due to the some things being able to be represented by None objects.
+At several stages the project would have to check whether a value was None to avoid crashing when referencing it.
+Occasionally this would result in a major bug that would crash the program as these checks weren't performed.
+All of these bugs were found in the end but it was a common occurrence and only arose due to the design of the representation.
 \subsection{EA methods}
 
 
