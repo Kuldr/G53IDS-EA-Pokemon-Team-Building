@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  24 APR 2018 10:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  24 APR 2018 10:49
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -780,37 +780,35 @@ File: images/UoNLogo.png Graphic file (type png)
 Package pdftex.def Info: images/UoNLogo.png used on input line 45.
 (pdftex.def)             Requested size: 211.40283pt x 85.35826pt.
  [1] [2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 102.
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--113
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 124.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 102.
-
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
-
- []
-
-[1]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 124.
+ [1]
 (/Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.latex/Dissertation.t
 oc [2])
 \tf@toc=\write3
 \openout3 = `Dissertation.toc'.
 
  [3]
-Underfull \hbox (badness 10000) in paragraph at lines 174--178
+Underfull \hbox (badness 10000) in paragraph at lines 171--175
 
  []
 
@@ -823,7 +821,7 @@ File: UTF8.enc 2015/04/18 4.8.4
 (/usr/local/texlive/2015/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-LaTeX Font Info:    Try loading font information for C70+min on input line 197.
+LaTeX Font Info:    Try loading font information for C70+min on input line 194.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/cjk/contrib/wadalab/c70min.fd
@@ -833,22 +831,22 @@ File: c70min.fd 2015/04/18 4.8.4
 File: c70min.fdx 2015/04/18 4.8.4
 )
 [2] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 282--285
+Underfull \hbox (badness 10000) in paragraph at lines 279--282
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--298
+Underfull \hbox (badness 10000) in paragraph at lines 292--295
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 317--320
+Underfull \hbox (badness 10000) in paragraph at lines 314--317
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 340--344
+Underfull \hbox (badness 10000) in paragraph at lines 337--341
 
  []
 
@@ -856,30 +854,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 340--344
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 396.
+(amsmath)                 on input line 393.
 
 
-Overfull \hbox (4.53146pt too wide) detected at line 402
+Overfull \hbox (4.53146pt too wide) detected at line 399
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 410--411
+Underfull \hbox (badness 10000) in paragraph at lines 407--408
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 412--416
+Underfull \hbox (badness 10000) in paragraph at lines 409--413
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 417--421
+Underfull \hbox (badness 10000) in paragraph at lines 414--418
 
  []
 
 [7] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 466--470
+Underfull \hbox (badness 10000) in paragraph at lines 463--467
 
  []
 
@@ -887,46 +885,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 466--470
 File: images/showdownTeamBuilder.png Graphic file (type png)
 
 <use images/showdownTeamBuilder.png>
-Package pdftex.def Info: images/showdownTeamBuilder.png used on input line 578.
+Package pdftex.def Info: images/showdownTeamBuilder.png used on input line 575.
 
 (pdftex.def)             Requested size: 405.72005pt x 99.58464pt.
  [11 <./images/showdownTeamBuilder.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 616--617
+Underfull \hbox (badness 10000) in paragraph at lines 613--614
 []\OT1/cmr/m/n/10 Moves (4 Seper-ate
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 673--678
+Underfull \hbox (badness 10000) in paragraph at lines 670--675
 
  []
 
 [13] [14] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 817--819
+Underfull \hbox (badness 10000) in paragraph at lines 814--816
 
  []
 
 [16] [17] [18]
-Underfull \hbox (badness 10000) in paragraph at lines 947--950
+Underfull \hbox (badness 10000) in paragraph at lines 944--947
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 951--955
+Underfull \hbox (badness 10000) in paragraph at lines 948--952
 
  []
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 978--981
+Underfull \hbox (badness 10000) in paragraph at lines 975--978
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 987--991
+Underfull \hbox (badness 10000) in paragraph at lines 984--988
 
  []
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 1035--1039
+Underfull \hbox (badness 10000) in paragraph at lines 1032--1036
 
  []
 
@@ -961,21 +959,21 @@ Underfull \hbox (badness 6808) in paragraph at lines 79--85
 File: images/workPlan-1.png Graphic file (type png)
 
 <use images/workPlan-1.png>
-Package pdftex.def Info: images/workPlan-1.png used on input line 1168.
+Package pdftex.def Info: images/workPlan-1.png used on input line 1165.
 (pdftex.def)             Requested size: 426.79134pt x 357.05876pt.
 
 <images/workPlan-2.png, id=130, 855.195pt x 604.1772pt>
 File: images/workPlan-2.png Graphic file (type png)
 
 <use images/workPlan-2.png>
-Package pdftex.def Info: images/workPlan-2.png used on input line 1169.
+Package pdftex.def Info: images/workPlan-2.png used on input line 1166.
 (pdftex.def)             Requested size: 426.79134pt x 301.51628pt.
 
 <images/workPlan-3.png, id=131, 855.195pt x 665.3658pt>
 File: images/workPlan-3.png Graphic file (type png)
 
 <use images/workPlan-3.png>
-Package pdftex.def Info: images/workPlan-3.png used on input line 1170.
+Package pdftex.def Info: images/workPlan-3.png used on input line 1167.
 (pdftex.def)             Requested size: 426.79134pt x 332.05261pt.
 
 Overfull \vbox (2.70303pt too high) has occurred while \output is active []
@@ -1010,7 +1008,7 @@ live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/wadalab/dmj/dmjkata.pfb>
 Output written on /Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.lat
-ex/Dissertation.pdf (35 pages, 972872 bytes).
+ex/Dissertation.pdf (35 pages, 972845 bytes).
 PDF statistics:
  193 PDF objects out of 1000 (max. 8388607)
  127 compressed objects within 2 object streams
