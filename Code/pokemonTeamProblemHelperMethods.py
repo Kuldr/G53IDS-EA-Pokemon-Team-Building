@@ -8,13 +8,9 @@ from pokemonIndividual import pokemonIndividual
 class problemHelper:
 
     def initialisePokemonIndividual():
-        #TODO: First made it to just make a pokemon not bothered about validation
-        #TODO Need to make somethings be able to be None - This can be a variable in the constants file
-
         # Generates the default form and later on checks for other forms
         formID = random.randrange(constants.MIN_FORMID, constants.MAX_FORMID+1)
 
-        # Write the item as teneray opperators like pokemon generation
         itemID = None if random.random() <= constants.NO_HELD_ITEM_RATE else problemHelper.initialiseItem()
 
         level = random.randrange(constants.MIN_LEVEL, constants.MAX_LEVEL+1)
@@ -24,19 +20,12 @@ class problemHelper:
         ivHP, ivAtk, ivDef, ivSpA, ivSpD, ivSpe = problemHelper.initialiseIVs()
 
         #Initialise EVs to Minumum ev value
-        #TODO: DOES IT MATTER THAT THIS GIVES OUT ALL OF THE EVs
-        #TODO: DOES IT MATTER THAT THE EV SPREAD WILL BE ~85 for all stats
-        #TODO: COULD GENERATE 4 AT A TIME AS THAT IS ALL THAT MATTERS (508)
-        #TODO: NEED TO VALIDATE THAT YOU DON'T HAVE ANY STAT OVER 256
         evHP, evAtk, evDef, evSpA, evSpD, evSpe = problemHelper.initialiesEVs()
 
         #Pokemon dependant info so references the pokemon to get relevant info
         formVarieties = pb.pokemon(formID).species.varieties
         formRand = random.randrange(0, len(formVarieties))
         formID = formVarieties[formRand].pokemon.id # Update the formID into new form
-        #TODO: CHECK IF FORM IS VALID IN BATTLE
-        # pb.pokemon(formID).forms[0].is_battle.only
-        # Mimikyu forms like disguised and totem come to mind
 
         p = pb.pokemon(formID) #Get the pokemon to reference
 
@@ -46,8 +35,6 @@ class problemHelper:
         #Randomly generates a gender but at the correct ratio
         gender = problemHelper.initialiseGender(p)
 
-        # TODO: ?? Make move indexing some kind of list for generation and Validation
-        # This could also make it so that checking for dupes is easier
         move1, move2, move3, move4 = problemHelper.initialiseMoves(p)
 
         #Check and remove move duplication
@@ -120,10 +107,6 @@ class problemHelper:
 
     def validatePokemonIndividual(pokemonChild):
         #Validate the individuals by making them None if invalid in anyway
-        # TODO: Possibly not the best approach
-        # TODO: ADD IN ERROR PRINT OUT FOR WHAT FAILED
-        # TODO: SEPERATE ERROR/DEBUG AND INTENTIONAL OUTPUT
-        # TODO: DISREGARDS ILLEGAL LEVELS/SHINY/POKEMON ETC ETC
 
         #Check formID
         if( False ):
@@ -156,7 +139,7 @@ class problemHelper:
         #Check level
         if( pokemonChild.level > constants.MAX_LEVEL):
             return None
-        if( pokemonChild.level < constants.MIN_LEVEL ):  
+        if( pokemonChild.level < constants.MIN_LEVEL ):
             return None
 
         #Check shiny
@@ -230,17 +213,13 @@ class problemHelper:
                 if( item.attributes[i].id == pb.item_attribute("holdable").id ):
                     holdableItem = True
             if( holdableItem == False ):
-                # print("Item not holdable") #DEBUG
                 invalidItem = True
         except ValueError:
-            # print("Item not in database") #DEBUG
             invalidItem = True
 
         if( invalidItem == False ):
-            # print("Item Valid") #DEBUG
             return itemID
         else:
-            # print("Item Invalid") #DEBUG
             return None
 
     def teamVTeam(team1, team2):
@@ -286,7 +265,6 @@ class problemHelper:
         if( pokemon2 == None ):
             return 1
 
-        #TODO What if a move is None
         pokemon1Moves = [pokemon1.move1, pokemon1.move2, pokemon1.move3, pokemon1.move4]
         pokemon2Moves = [pokemon2.move1, pokemon2.move2, pokemon2.move3, pokemon2.move4]
         pokemon1MovePower = [0, 0, 0, 0]
@@ -338,11 +316,6 @@ class problemHelper:
                     pokemon2MoveDamage[i] = 0
             else:
                 pokemon2MoveDamage[i] = 0
-
-        # TODO: Improve this
-
-        # print(pokemon1MoveDamage) #DEBUG
-        # print(pokemon2MoveDamage) #DEBUG
 
         #If Pokemon 1 does more damage return true
         if( max(pokemon1MoveDamage) >= max(pokemon2MoveDamage) ):
