@@ -1082,11 +1082,24 @@ EAs have large potential for threading as many parts can happen in parallel due 
 Initialisation and Evaluation could all happen in parallel rather than sequentially, and the creation of children could also be done in parallel.
 The reason for not doing this was \Pokeapi{} couldn't handle multiple calls at the same time and would require careful design to avoid crashes.
 Alongside this more conventional methods of optimisation could take place to make sure the system runs more efficiently.
-\\ \par
-\begin{itemize}
-	\item more conventional representation binary
-	\item Improvements to evaluation and fitness via relative ranking of individuals.
-\end{itemize}
+\subsubsection{Improvements to Fitness Evaluation}
+\par
+Major research and improvements can be made into evaluating individuals of a population relative to each other.
+Many conventional EA algorithms use the fitness evaluation to apply population replacement and parent selection.
+Some of these methods such as roulette wheel selection already chooses individuals based upon their relative fitness to each other.
+If these methods are already not using the raw fitness value of more concrete problems and showing strong results there could be potential that an objective value doesn't have to be given to an individual.
+\par
+Comparative fitness makes sense for evaluating game based solutions, where the individuals in the population can play against each other.
+With larger populations and more complex games, comparing the population by simulating a game between all individuals will be a monumental task and result in extremely long run times as seen in this project.
+\par
+There is potential to see whether individuals can be accurately ranked by comparison to only a subset of the population to reduce run times.
+Creation of a tournament bracket could be used and integrated within tournament selection as a potential way to reduce the number of comparisons.
+Another candidate could be to compare all individuals to a random subset of the population each generation, changing the random subset each generation.
+This random subset could be comprised of a proportion of the initial population or a fixed amount.
+\par
+Another improvement could be made with better approximations of the game when comparing 2 individuals.
+The more accurate the end result can be predicted the better the EA will be at creating solutions to the problem.
+The best case would be to simulate the games between the individuals but this brings up the issues of needing a separate AI to play the games for both individuals.
 
 \pagebreak
 \section{Appendix}

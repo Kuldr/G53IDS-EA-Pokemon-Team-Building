@@ -61,6 +61,7 @@
 \contentsline {subsection}{\numberline {7.4}Further Considerations}{21}
 \contentsline {subsubsection}{\numberline {7.4.1}Reducing the Search Space}{21}
 \contentsline {subsubsection}{\numberline {7.4.2}Software Optimisation - Threading}{22}
+\contentsline {subsubsection}{\numberline {7.4.3}Improvements to Fitness Evaluation}{22}
 \contentsline {section}{\numberline {8}Appendix}{23}
 \contentsline {subsection}{\numberline {8.1}Code}{23}
 \contentsline {subsubsection}{\numberline {8.1.1}Pok\'{e}mon{} abilities via Pok\'{e}api{}}{23}
