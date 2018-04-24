@@ -1,13 +1,9 @@
-#TODO: MAKE THINGS LIKE EVs IVs MOVES GENERATE OFF A LIST SYSTEM
-
 import constants
 import random
 import pokebase as pb
 from pokemonTeamIndividual import pokemonTeamIndividual
 from pokemonIndividual import pokemonIndividual
 from pokemonTeamProblemHelperMethods import problemHelper
-
-import testPokemon
 
 class pokemonTeamProblem:
 
@@ -18,8 +14,7 @@ class pokemonTeamProblem:
             return False
 
     def initialiseIndividual(self):
-        #TODO: Write top level comment
-        #TODO: What if all members are none ???
+        # Initialises an individual by creating a team of 6 pokemon
         print("\tInitialising Pokemon 1")
         pokemon1 = None if random.random() <= constants.NO_TEAM_MEMBER_RATE else problemHelper.initialisePokemonIndividual()
         print("\tInitialising Pokemon 2")
@@ -52,9 +47,7 @@ class pokemonTeamProblem:
         return random.randrange(populationSize)
 
     def crossover(self, parent1, parent2):
-        #Create a new individual where half the team memebers are from parent 1 and the other half are from parent 2
-        #TODO: This is bad as each pokemon stays in the same team slot
-        #TODO: This also doesn't do any crossover on the individual pokemon
+        #Create a new individual where ~half the team memebers are from parent 1 and the other ~half are from parent 2
 
         #List of pokemon
         pokemon = [parent1.pokemon1, parent1.pokemon2, parent1.pokemon3,
@@ -73,16 +66,8 @@ class pokemonTeamProblem:
         return pokemonTeamIndividual(p1, p2, p3, p4, p5, p6)
 
     def mutation(self, child, mutationRate):
-        #Randomly mutate the individual based upon the mutation rate, then randomly mutate either variable by multipling by a real number in the range (-3, 3)
-
-        # Mutation doesn't care for validation this will happen afterwards and if it is invalid sorted out in validation
-        # Although where validation can be controlled it is
-
-        #TODO: ONLY WRITEN MUTATION ON INDIVIDUAL POKEMON NOT THE TEAM
-
-        NUMBER_OF_MUTATIONS = 24 #TODO: FIND A WAY TO AUTOMAGICALLY GENERATE THIS
-        # MAYBE A LIST OF MUTATION FUNCTIONS THAT YOU RANDOMLY SELECT FROM
-        # CAN YOU FIND OUT THE NUMBER OF METHODS IN ANOTHER CLASS
+        #Randomly mutate the individual based upon the mutation rate, then select a pokemon in the team and randomly mutate it in some way
+        NUMBER_OF_MUTATIONS = 25
 
         if( random.random() <= mutationRate ):
             # Select a random team member to mutate
@@ -93,8 +78,7 @@ class pokemonTeamProblem:
             if( toMutate == None ):
                 return child
 
-            # Tested all mutations up to 24
-            randMutate = random.randrange(0, NUMBER_OF_MUTATIONS+1)
+            randMutate = random.randrange(0, NUMBER_OF_MUTATIONS)
             if( randMutate == 0 ):
                 # Ruin and recreate a random pokemon
                 toMutate = problemHelper.initialisePokemonIndividual()
@@ -300,8 +284,6 @@ class pokemonTeamProblem:
                     toMutate.move3 = None
                 elif( r == 3 ):
                     toMutate.move4 = None
-            # Pokemon Form - change form, evolve, devolve
-            # Set nature to a nuetral one
 
             if( randPokeIndex == 0 ):
                 child.pokemon1 = toMutate
@@ -329,7 +311,6 @@ class pokemonTeamProblem:
                 speciesID.append(None)
 
         # Check for memebers with duplicate species
-        # TODO: THIS IS HELLA UGLY # MAYBE COULD BE DONE WITH A COUPLE OF FOR LOOPS
         if( speciesID[0] == speciesID[1] or
             speciesID[0] == speciesID[2] or
             speciesID[0] == speciesID[3] or

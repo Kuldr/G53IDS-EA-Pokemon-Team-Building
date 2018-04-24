@@ -7,7 +7,7 @@ from proofOfConcept.sumSquares import sumSquares
 from pokemonTeamProblem import pokemonTeamProblem
 
 #Set up
-#random.seed(1522018) #Seed can be used to help with testing
+random.seed(1522018) #Seed can be used to help with testing
 #problem = sumSquares() #Change the problem to run on the benchmark function
 problem = pokemonTeamProblem()
 
