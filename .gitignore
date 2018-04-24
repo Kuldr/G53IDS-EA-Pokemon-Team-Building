@@ -1,4 +1,4 @@
-
+.gitignore
 
 Documentation/~\$WorkPlan\.xlsx
 
@@ -9,5 +9,17 @@ Documentation/~\$WorkPlan\.xlsx
 Code/__pycache__/
 
 Code/output_OUTOFDATE\.txt
+
+Documentation/~\$WorkPlan\.xlsx
+
+Code/proofOfConcept/\.DS_Store
+
+Code/\.DS_Store
+
+Code/output_OUTOFDATE\.txt
+
+Code/__pycache__/
+
+\.DS_Store
 
 Code/proofOfConcept/__pycache__/
