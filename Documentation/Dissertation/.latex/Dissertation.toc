@@ -1,6 +1,5 @@
 \contentsline {section}{Abstract}{i}
 \contentsline {section}{Acknowledgements}{i}
-\contentsline {section}{TODO List}{i}
 \contentsline {section}{\numberline {1}Introduction}{1}
 \contentsline {subsection}{\numberline {1.1}Introduction}{1}
 \contentsline {subsection}{\numberline {1.2}Motivation}{1}

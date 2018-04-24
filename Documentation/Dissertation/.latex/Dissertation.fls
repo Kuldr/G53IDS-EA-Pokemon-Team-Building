@@ -139,8 +139,6 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
-INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.latex/Dissertation.toc
 INPUT /Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.latex/Dissertation.toc
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
@@ -161,6 +159,8 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/wadalab/dmj/dmjsy.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/wadalab/dmj/dmjhira.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/wadalab/dmj/dmjkata.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 INPUT images/showdownTeamBuilder.png
 INPUT ./images/showdownTeamBuilder.png
 INPUT ./images/showdownTeamBuilder.png
