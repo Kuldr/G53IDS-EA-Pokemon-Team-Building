@@ -125,7 +125,6 @@ Special thank you to my younger siblings whom out of everybody understood the le
 \addcontentsline{toc}{section}{TODO List}
 \begin{itemize}
     \item Finish each section with a summary and tell the reader what comes next
-	\item Find and read and reference the book
 	\item Clean and commit code ready for submission
 	\item Folder
 	\item Video
@@ -192,10 +191,6 @@ These results will be then compared to human designed solutions to conclude if t
 \end{enumerate}
 
 \subsection{What is \Pokemon{}}
-\begin{itemize}
-	\item Find references to back stuff up
-	\item Is wikipedia ok?
-\end{itemize}
 \subsubsection{\Pokemon{} Fanchise History}
 \par
 \Pokemon{} was first created by video game designer Satoshi Tajiri with the first games in the series coming out in February 27, 1996 in Japan for the Nintendo Game Boy.
@@ -283,10 +278,6 @@ This manifests itself as a local search step within the evolution process.
 This local search step can be seen as taking a child and training them to become stronger.
 
 \section{Related Work}
-\begin{itemize}
-   \item Investigate more works to talk about here (gaming and more general)
-   \item GAs, MAs and other EAs
-\end{itemize}
 \subsection{AI and Game Playing}
 Many AI approaches to games tackle the aspect of playing the matches and the decision making process to choose the best action.
 Lots of research and development has happened in these areas with many effective techniques being discovered.
@@ -345,6 +336,12 @@ The evaluation also required the expert knowledge of the meta decks to be tested
 The most significant flaw with this style of evaluation is that it relies on the ability of another AI to pilot the deck.
 It was suggested that it may overfit `with regards to the AI capabilities and playing style' even going as far as pointing out that it `can use some decks (and some playing styles) better than others'\cite{hearthstoneAI}.
 \subsection{Evolutionary Algorithms}
+\par
+In 1975 Holland published a book that would pioneer evolutionary algorithms; `Adaptation in Natural and Artificial Systems'\cite{Holland}.
+In the introduction, Holland sets the idea that computers could be built `by specifying ``\emph{what} is to be done'' rather that ``\emph{how} to do it''\,'\cite{Holland}.
+Holland notes how both evolution and optimisation problems share many features describing how there are structures that carry the information, applying operators and how the end result has some performance measure attached to it.
+The work goes on to create computer systems to emulate genetic evolution and show that the performance is rather staggering.
+\\ \par
 Evolutionary Algorithms have been shown to be a strong way to find near optimal solutions to complex problems. Zitzler and Thiele spoke about their merits in their case study suggesting that `Many real-world problems involve simultaneous optimization'\cite{EACaseStudy}. They pointed out that the often some factors would conflict and the EA were strong at finding a balance between them. It was concluded that `All multiobjective EA's clearly outperformed a pure random search'\cite{EACaseStudy}.
 \par
 Maumita Bhattacharya spoke about differing approaches to the problem of computationally expensive fitness evaluation\cite{expensiveOptimisation}.
@@ -850,12 +847,6 @@ This could be more tackled with unit tests but the schedule didn't have time for
 Many methods have well defined solutions to them but required to have a certain representation of the individuals, such as binary representation.
 By not being able to use these methods some difficulties were encountered as novel solutions had to be created and tested.
 \section{Evaluation}
-\begin{itemize}
-	\item Explain what is being evaluated
-	\item How the EA was tested
-	\item Statistical evaluation of performance
-	\item Evaluation of software performance
-\end{itemize}
 \subsection{Software Performance}
 The performance of the software to run efficiently is hard to empirically state, although this serves to be some comments on the matter.
 The evaluation part of the program takes a while to run due to the way it ranks the population.

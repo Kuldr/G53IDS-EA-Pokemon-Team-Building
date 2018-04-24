@@ -58,7 +58,7 @@
 \contentsline {subsection}{\numberline {7.1}Self Reflection}{20}
 \contentsline {subsection}{\numberline {7.2}Reflections on Work Plan}{20}
 \contentsline {subsection}{\numberline {7.3}Project Appraisal}{21}
-\contentsline {subsection}{\numberline {7.4}Further Considerations}{22}
+\contentsline {subsection}{\numberline {7.4}Further Considerations}{21}
 \contentsline {subsubsection}{\numberline {7.4.1}Reducing the Search Space}{22}
 \contentsline {subsubsection}{\numberline {7.4.2}Software Optimisation - Threading}{22}
 \contentsline {subsubsection}{\numberline {7.4.3}Improvements to Fitness Evaluation}{22}
