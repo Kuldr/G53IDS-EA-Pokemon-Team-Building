@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  24 APR 2018 09:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  24 APR 2018 10:19
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -911,46 +911,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 960--964
  []
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 983--986
+Underfull \hbox (badness 10000) in paragraph at lines 987--990
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 992--996
+Underfull \hbox (badness 10000) in paragraph at lines 996--1000
 
  []
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 1040--1044
+Underfull \hbox (badness 10000) in paragraph at lines 1044--1048
 
  []
 
-[21] [22] (./codeForReport/pokebaseAbilities.py) [23] [24]
-<images/workPlan-1.png, id=122, 855.195pt x 715.473pt>
-File: images/workPlan-1.png Graphic file (type png)
-
-<use images/workPlan-1.png>
-Package pdftex.def Info: images/workPlan-1.png used on input line 1173.
-(pdftex.def)             Requested size: 426.79134pt x 357.05876pt.
-
-<images/workPlan-2.png, id=123, 855.195pt x 604.1772pt>
-File: images/workPlan-2.png Graphic file (type png)
-
-<use images/workPlan-2.png>
-Package pdftex.def Info: images/workPlan-2.png used on input line 1174.
-(pdftex.def)             Requested size: 426.79134pt x 301.51628pt.
-
-<images/workPlan-3.png, id=124, 855.195pt x 665.3658pt>
-File: images/workPlan-3.png Graphic file (type png)
-
-<use images/workPlan-3.png>
-Package pdftex.def Info: images/workPlan-3.png used on input line 1175.
-(pdftex.def)             Requested size: 426.79134pt x 332.05261pt.
-
-Overfull \vbox (2.70303pt too high) has occurred while \output is active []
-
-
-[25 <./images/workPlan-1.png> <./images/workPlan-2.png>]
+[21] [22] [23]
 (/Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.latex/Dissertation.b
 bl
 Underfull \hbox (badness 10000) in paragraph at lines 45--50
@@ -964,7 +939,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--50
  com / 2013 / 7 / 20 / 4539528 /
  []
 
-[26 <./images/workPlan-3.png>]
+
 Underfull \hbox (badness 3354) in paragraph at lines 72--78
 []\OT1/cmr/m/n/10 T.C. Sot-tek.  The world's best dota 2 play-ers just got de-s
 troyed by a killer
@@ -976,13 +951,39 @@ Underfull \hbox (badness 6808) in paragraph at lines 72--78
  . theverge . com / 2017 / 8 / 11 / 16137388 /
  []
 
-) [27]
+) [24] (./codeForReport/pokebaseAbilities.py) [25] [26]
+<images/workPlan-1.png, id=129, 855.195pt x 715.473pt>
+File: images/workPlan-1.png Graphic file (type png)
+
+<use images/workPlan-1.png>
+Package pdftex.def Info: images/workPlan-1.png used on input line 1179.
+(pdftex.def)             Requested size: 426.79134pt x 357.05876pt.
+
+<images/workPlan-2.png, id=130, 855.195pt x 604.1772pt>
+File: images/workPlan-2.png Graphic file (type png)
+
+<use images/workPlan-2.png>
+Package pdftex.def Info: images/workPlan-2.png used on input line 1180.
+(pdftex.def)             Requested size: 426.79134pt x 301.51628pt.
+
+<images/workPlan-3.png, id=131, 855.195pt x 665.3658pt>
+File: images/workPlan-3.png Graphic file (type png)
+
+<use images/workPlan-3.png>
+Package pdftex.def Info: images/workPlan-3.png used on input line 1181.
+(pdftex.def)             Requested size: 426.79134pt x 332.05261pt.
+
+Overfull \vbox (2.70303pt too high) has occurred while \output is active []
+
+
+[27 <./images/workPlan-1.png> <./images/workPlan-2.png>] [28 <./images/workPlan
+-3.png>]
 (/Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.latex/Dissertation.a
 ux) ) 
 Here is how much of TeX's memory you used:
  7957 strings out of 493089
  104958 string characters out of 6134843
- 309269 words of memory out of 5000000
+ 308269 words of memory out of 5000000
  11265 multiletter control sequences out of 15000+600000
  12071 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1004,10 +1005,10 @@ live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/wadalab/dmj/dmjkata.pfb>
 Output written on /Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.lat
-ex/Dissertation.pdf (34 pages, 970765 bytes).
+ex/Dissertation.pdf (35 pages, 971694 bytes).
 PDF statistics:
- 190 PDF objects out of 1000 (max. 8388607)
- 125 compressed objects within 2 object streams
+ 193 PDF objects out of 1000 (max. 8388607)
+ 127 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  30 words of extra memory for PDF output out of 10000 (max. 10000000)
 

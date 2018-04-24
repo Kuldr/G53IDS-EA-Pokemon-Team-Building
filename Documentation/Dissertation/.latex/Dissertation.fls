@@ -164,6 +164,9 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT images/showdownTeamBuilder.png
 INPUT ./images/showdownTeamBuilder.png
 INPUT ./images/showdownTeamBuilder.png
+INPUT /Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.latex/Dissertation.bbl
+INPUT /Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.latex/Dissertation.bbl
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT codeForReport/pokebaseAbilities.py
 INPUT codeForReport/pokebaseAbilities.py
 INPUT codeForReport/pokebaseAbilities.py
@@ -176,9 +179,6 @@ INPUT ./images/workPlan-2.png
 INPUT images/workPlan-3.png
 INPUT ./images/workPlan-3.png
 INPUT ./images/workPlan-3.png
-INPUT /Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.latex/Dissertation.bbl
-INPUT /Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.latex/Dissertation.bbl
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT /Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.latex/Dissertation.aux
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb

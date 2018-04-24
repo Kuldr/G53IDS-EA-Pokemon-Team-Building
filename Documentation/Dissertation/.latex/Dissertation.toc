@@ -55,27 +55,27 @@
 \contentsline {subsubsection}{\numberline {6.3.1}Fitness evaluation}{19}
 \contentsline {subsubsection}{\numberline {6.3.2}Pok\'{e}api{}}{19}
 \contentsline {section}{\numberline {7}Summary and Reflections}{20}
-\contentsline {subsection}{\numberline {7.1}Reflections on Work Plan}{20}
-\contentsline {subsection}{\numberline {7.2}Self Reflection}{21}
+\contentsline {subsection}{\numberline {7.1}Self Reflection}{20}
+\contentsline {subsection}{\numberline {7.2}Reflections on Work Plan}{20}
 \contentsline {subsection}{\numberline {7.3}Project Appraisal}{21}
-\contentsline {subsection}{\numberline {7.4}Further Considerations}{21}
-\contentsline {subsubsection}{\numberline {7.4.1}Reducing the Search Space}{21}
+\contentsline {subsection}{\numberline {7.4}Further Considerations}{22}
+\contentsline {subsubsection}{\numberline {7.4.1}Reducing the Search Space}{22}
 \contentsline {subsubsection}{\numberline {7.4.2}Software Optimisation - Threading}{22}
 \contentsline {subsubsection}{\numberline {7.4.3}Improvements to Fitness Evaluation}{22}
-\contentsline {section}{\numberline {8}Appendix}{23}
-\contentsline {subsection}{\numberline {8.1}Code}{23}
-\contentsline {subsubsection}{\numberline {8.1.1}Pok\'{e}mon{} abilities via Pok\'{e}api{}}{23}
-\contentsline {subsection}{\numberline {8.2}Meeting Minutes}{23}
-\contentsline {subparagraph}{6th October}{23}
-\contentsline {subparagraph}{26th October}{23}
-\contentsline {subparagraph}{2nd November}{23}
-\contentsline {subparagraph}{21st November}{23}
-\contentsline {subparagraph}{28th November}{23}
-\contentsline {subparagraph}{15th December}{23}
-\contentsline {subparagraph}{7th February}{24}
-\contentsline {subparagraph}{15th February}{24}
-\contentsline {subparagraph}{9th March}{24}
-\contentsline {subparagraph}{6th April}{24}
-\contentsline {subparagraph}{16th April}{24}
-\contentsline {subsection}{\numberline {8.3}Work Plan}{25}
-\contentsline {subsection}{\numberline {8.4}References}{26}
+\contentsline {section}{\numberline {8}Appendix}{24}
+\contentsline {subsection}{References}{24}
+\contentsline {subsection}{\numberline {8.1}Code}{25}
+\contentsline {subsubsection}{\numberline {8.1.1}Pok\'{e}mon{} abilities via Pok\'{e}api{}}{25}
+\contentsline {subsection}{\numberline {8.2}Meeting Minutes}{25}
+\contentsline {subparagraph}{6th October}{25}
+\contentsline {subparagraph}{26th October}{25}
+\contentsline {subparagraph}{2nd November}{25}
+\contentsline {subparagraph}{21st November}{25}
+\contentsline {subparagraph}{28th November}{25}
+\contentsline {subparagraph}{15th December}{25}
+\contentsline {subparagraph}{7th February}{26}
+\contentsline {subparagraph}{15th February}{26}
+\contentsline {subparagraph}{9th March}{26}
+\contentsline {subparagraph}{6th April}{26}
+\contentsline {subparagraph}{16th April}{26}
+\contentsline {subsection}{\numberline {8.3}Work Plan}{27}
