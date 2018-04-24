@@ -1,7 +1,3 @@
-#TODO: ACCESS OF VARIABLES; DO YOU MAKE SURE YOU CAN'T GET THINGS LIKE LEVEL OVER 100 ??
-#TODO: WRITE BETTER COMMENTS
-#TODO: MOVE THE CACHE INTO THE GIT FOLDER BUT GIT IGNORE IT
-
 import pokebase as pb
 
 class pokemonIndividual:
@@ -69,7 +65,7 @@ class pokemonIndividual:
         s += str(self.evSpD) + " SpD / "
         s += str(self.evSpe) + " Spe\n"
         s += pb.nature(self.natureID).name.title() + " Nature\n"
-        #TODO title to make nature capitalised so showdown accepts it
+        #Title to make nature capitalised so showdown accepts it
         s += "IVs: "
         s += str(self.ivHP) + " HP / "
         s += str(self.ivAtk) + " Atk / "
@@ -87,59 +83,3 @@ class pokemonIndividual:
         if( self.move4 != None ):
             s += "- " + pb.move(self.move4).name + "\n"
         return s
-
-# Previously created strings for the showdownFormat
-#     def strFormName(self):
-#         return str(pb.pokemon(self.formID)) + " "
-#
-#     def strGender(self):
-#         dictionary = {Gender.MALE: "(M) ", Gender.FEMALE: "(F) ", Gender.GENDERLESS: ""}
-#         return dictionary[self.gender]
-#
-#     def strItem(self):
-#         return pb.item(self.itemID).name
-#
-#     def strAbility(self, ability):
-#         return ability.name
-#
-#     def strLevel(self):
-#         return str(self.level)
-#
-#     def strShiny(self):
-#         if( self.shiny == True ):
-#             return "Shiny: Yes\n"
-#         else:
-#             return ""
-#
-#     def strHappiness(self):
-#         return str(self.happiness)
-#
-#     def strEvs(self):
-#         s = "EVs: "
-#         s = s + str(self.evHP) + " HP / "
-#         s = s + str(self.evAtk) + " Atk / "
-#         s = s + str(self.evDef) + " Def / "
-#         s = s + str(self.evSpA) + " SpA / "
-#         s = s + str(self.evSpD) + " SpD / "
-#         s = s + str(self.evSpe) + " Spe\n"
-#         return s
-#
-#     def strNature(self):
-#         return self.nature + " Nature\n"
-#
-#     def strIVs(self):
-#         s = "IVs: "
-#         s = s + str(self.ivHP) + " HP / "
-#         s = s + str(self.ivAtk) + " Atk / "
-#         s = s + str(self.ivDef) + " Def / "
-#         s = s + str(self.ivSpA) + " SpA / "
-#         s = s + str(self.ivSpD) + " SpD / "
-#         s = s + str(self.ivSpe) + " Spe\n"
-#         return s
-#
-#     def strMoves(self):
-#         s = "- " + self.move1 + "\n"
-#         s = s + "- " + self.move2 + "\n"
-#         s = s + "- " + self.move3 + "\n"
-#         s = s + "- " + self.move4
-#         return s
