@@ -122,8 +122,6 @@ Special thank you to my younger siblings whom out of everybody understood the le
 \addcontentsline{toc}{section}{TODO List}
 \begin{itemize}
     \item Finish each section with a summary and tell the reader what comes next
-	\item Clean and commit code ready for submission
-	\item Folder
 \end{itemize}
 
 \pagebreak
@@ -135,6 +133,8 @@ Special thank you to my younger siblings whom out of everybody understood the le
 \pagenumbering{arabic}
 
 \section{Introduction}
+In this section relevant background information will be provided on the project including.
+Reasoning behind the motivating factors for the project will be laid out alongside the aims that the project as a whole attempts to tackle.
 \subsection{Introduction}
 \par
 Video games are an ever growing field of interest for many people.
@@ -274,6 +274,10 @@ This manifests itself as a local search step within the evolution process.
 This local search step can be seen as taking a child and training them to become stronger.
 
 \section{Related Work}
+This section provides a review of previous works relating to the problem.
+A history of AI game playing success are shown to give an idea of the relevance of this project.
+During research a paper documenting the use of a GA to tackle a similar problem was shown for Hearthstone deck building.
+Further research was conducted into evolutionary algorithms in general with a focus on parts of the system that may prove tricky.
 \subsection{AI and Game Playing}
 Many AI approaches to games tackle the aspect of playing the matches and the decision making process to choose the best action.
 Lots of research and development has happened in these areas with many effective techniques being discovered.
@@ -354,12 +358,16 @@ Averaged Inheritance simply said `a child is assigned the average fitness of its
 Another method was Proportional Inheritance where `the average is weighted based on the amount of genetic material taken from each parent', while slightly more expensive it takes into account of none symmetric crossover schemes such as one point crossover where the genetic material is not equal from each parent.
 
 \section{Description of the Work}
-\par
+This section describes the work needed to develop the program.
+Although limited functional requirements are given that the project will be evaluated against if successful.
+\\ \par
 The objective of this project is to develop an EA that evolves a population of \Pokemon{} teams.
 This is to show that such a system could be used to aid human players in quickly evaluating the large amount of possibilities or to assist another form of AI to eventually play these games at an expert level.
 \par
 The project should function by the user setting the parameters and then setting it running via a command prompt.
 This could be potentially wrapped in some form of user interface in the future but won't be developed during this project to allow for focus on the EA\@.
+\par
+The project will be developed entirely from scratch allowing for a high degree of control over the all the parts in the system.
 \subsection{Functional Requirements}
 %TODO MAKE UP MORE FUNCTIONAL REQUIREMENTS
 The project doesn't have many functional requirements due
@@ -378,6 +386,9 @@ The project doesn't have many functional requirements due
 \end{itemize}
 
 \section{Methodology}
+In this section the methods used to create the system are described in detail showing the pros and cons of some of the ideas.
+A summary of the design practices and tools used are given alongside reasoning for these choices.
+Testing of the system took place and the methods and results of those tests are also provided.
 \subsection{Evolutionary Algorithms}
 \par
 The main AI technique behind this project is evolutionary algorithms, this technique has been chosen as it successful optimises problems with little expert knowledge as shown in the related works.
@@ -497,6 +508,9 @@ Running it 5 times gave the following results to 3 significant figures:
 These results show that the overall outline of the EA does work and on simple well defined problems it can successfully find an acceptable result.
 
 \section{Design and Implementation}
+The following sections discusses the high level design and the lower level implementation of the major parts of the project.
+Where relevant algorithms have been detailed and discussed in more detail.
+Reasoning behind any choices is also given.
 \par
 \subsection{Evolutionary Algorithm}
 \par
@@ -843,6 +857,8 @@ This could be more tackled with unit tests but the schedule didn't have time for
 Many methods have well defined solutions to them but required to have a certain representation of the individuals, such as binary representation.
 By not being able to use these methods some difficulties were encountered as novel solutions had to be created and tested.
 \section{Evaluation}
+Evaluation of both the solutions that the project provided as well as the performance if the system as a whole is provided in this section.
+After discussing how well the system performs limitations of the system is discussed.
 \subsection{Software Performance}
 The performance of the software to run efficiently is hard to empirically state, although this serves to be some comments on the matter.
 The evaluation part of the program takes a while to run due to the way it ranks the population.
@@ -956,6 +972,8 @@ There is no guarantee that \Pokeapi{} will continue to be updated in the future 
 If it was updated though there is no native way to collect the minimum and maximum ID values, these would have to be found again and added to the constants file.
 
 \section{Summary and Reflections}
+In this final section reflections on the project including a personal reflection is documented.
+If the project was to be taken further or a similar undertaking was to take place, some further considerations are listed to aid such an endeavour. 
 \subsection{Self Reflection}
 \par
 Personally I have never attempted a project on this scale before and completing it has brought me many insights into my ability and how to manage a large project and develop novel solutions to problems.
