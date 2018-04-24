@@ -1,0 +1,98 @@
+\begin{thebibliography}{10}
+
+\bibitem{showdown}
+Pokemon showdown.
+\newblock \url{https://pokemonshowdown.com/}, December 2017.
+
+\bibitem{bulbapediaDamageCalcs}
+Bulbapedia damage calculations.
+\newblock
+  \url{https://bulbapedia.bulbagarden.net/wiki/Damage#Damage_calculation/},
+  April 2018.
+
+\bibitem{PokeapiGitHub}
+Pokeapi github repository.
+\newblock \url{https://github.com/PokeAPI/pokeapi/}, April 2018.
+
+\bibitem{expensiveOptimisation}
+Maumita Bhattacharya.
+\newblock Evolutionary approaches to expensive optimisation.
+\newblock {\em arXiv preprint arXiv:1303.2745}, 2013.
+
+\bibitem{deepBlue}
+Murray Campbell, A~Joseph Hoane, and Feng-hsiung Hsu.
+\newblock Deep blue.
+\newblock {\em Artificial intelligence}, 134(1-2):57--83, 2002.
+
+\bibitem{teamEarnings}
+Esports Earnings.
+\newblock Highest overall team earnings.
+\newblock \url{https://www.esportsearnings.com/teams}, October 2017.
+
+\bibitem{eSportsPrize}
+Esports Earnings.
+\newblock Largest overall prize pools in esports.
+\newblock \url{https://www.esportsearnings.com/tournaments}, October 2017.
+
+\bibitem{hearthstoneAI}
+Pablo Garc{\'\i}a-S{\'a}nchez, Alberto Tonda, Giovanni Squillero, Antonio Mora,
+  and Juan~J Merelo.
+\newblock Evolutionary deckbuilding in hearthstone.
+\newblock In {\em Computational Intelligence and Games (CIG), 2016 IEEE
+  Conference on}, pages 1--8. IEEE, 2016.
+
+\bibitem{Holland}
+1929 Holland, John H. (John~Henry).
+\newblock {\em Adaptation in natural and artificial systems : an introductory
+  analysis with applications to biology, control, and artificial intelligence /
+  John H. Holland.}
+\newblock Complex adaptive systems. Cambridge, Mass, 1992.
+
+\bibitem{worldsOverview}
+Griffin McElroy.
+\newblock Becoming the very best: The pokemon world championships.
+\newblock
+  \url{https://www.polygon.com/2013/7/20/4539528/becoming-the-very-best-the-pokemon-world-championships},
+  July 2013.
+
+\bibitem{alphaGo}
+David Silver, Aja Huang, Chris~J Maddison, Arthur Guez, Laurent Sifre, George
+  Van Den~Driessche, Julian Schrittwieser, Ioannis Antonoglou, Veda
+  Panneershelvam, Marc Lanctot, et~al.
+\newblock Mastering the game of go with deep neural networks and tree search.
+\newblock {\em Nature}, 529(7587):484--489, 2016.
+
+\bibitem{alphaGoZero}
+David Silver, Julian Schrittwieser, Karen Simonyan, Ioannis Antonoglou, Aja
+  Huang, Arthur Guez, Thomas Hubert, Lucas Baker, Matthew Lai, Adrian Bolton,
+  et~al.
+\newblock Mastering the game of go without human knowledge.
+\newblock {\em Nature}, 550(7676):354--359, 2017.
+
+\bibitem{fitnessInheritance}
+Robert~E. Smith, B.~A. Dike, and S.~A. Stegmann.
+\newblock Fitness inheritance in genetic algorithms.
+\newblock In {\em Proceedings of the 1995 ACM Symposium on Applied Computing},
+  SAC '95, pages 345--350, New York, NY, USA, 1995. ACM.
+
+\bibitem{openAI}
+T.C. Sottek.
+\newblock The world’s best dota 2 players just got destroyed by a killer ai
+  from elon musk’s startup.
+\newblock
+  \url{https://www.theverge.com/2017/8/11/16137388/dota-2-dendi-open-ai-elon-musk},
+  August 2017.
+
+\bibitem{GitHut}
+Carlo Zapponi.
+\newblock Githut.
+\newblock \url{http://githut.info/}, December 2017.
+
+\bibitem{EACaseStudy}
+Eckart Zitzler and Lothar Thiele.
+\newblock Multiobjective evolutionary algorithms: a comparative case study and
+  the strength pareto approach.
+\newblock {\em IEEE transactions on Evolutionary Computation}, 3(4):257--271,
+  1999.
+
+\end{thebibliography}
