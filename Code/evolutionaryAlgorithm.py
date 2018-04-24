@@ -1,11 +1,3 @@
-#TODO: create a class for the individual and for the methods that it needs (getters/setters, objective value, etc)
-#Abstract the various stages and make sure
-#Create classes for each instance of the stages including initalising values such as mutation rate
-#Look into python properties for getters and setters and private variables, that is actually pretty cool :)
-#Look at the difference between str and repr
-
-#TODO: AT ANY POINT THERE COULD BE TOO MANY REQUESTS ??? WHAT DO
-
 #IMPORTS
 import random
 from datetime import datetime
@@ -15,8 +7,8 @@ from proofOfConcept.sumSquares import sumSquares
 from pokemonTeamProblem import pokemonTeamProblem
 
 #Set up
-random.seed(1522018)
-#problem = sumSquares()
+#random.seed(1522018) #Seed can be used to help with testing
+#problem = sumSquares() #Change the problem to run on the benchmark function
 problem = pokemonTeamProblem()
 
 #Print out the parameters
@@ -109,7 +101,6 @@ for x in range(0, constants.NUMBER_OF_GENERATIONS):
 print("End Time = " + str(datetime.now()))
 
 #print out the best value
-#TODO: Sort Out printing this
 bestIndex = 0
 bestFitness = fitness[bestIndex]
 for i in range(1, constants.POPULATION_SIZE):
