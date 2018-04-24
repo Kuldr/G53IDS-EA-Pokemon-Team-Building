@@ -4,6 +4,12 @@
 Pokemon showdown.
 \newblock \url{https://pokemonshowdown.com/}, December 2017.
 
+\bibitem{bulbapediaDamageCalcs}
+Bulbapedia damage calculations.
+\newblock
+  \url{https://bulbapedia.bulbagarden.net/wiki/Damage#Damage_calculation/},
+  April 2018.
+
 \bibitem{PokeapiGitHub}
 Pokeapi github repository.
 \newblock \url{https://github.com/PokeAPI/pokeapi/}, April 2018.

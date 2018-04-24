@@ -5,45 +5,46 @@ The style file: plain.bst
 Database file #1: Dissertation.bib
 Warning--to sort, need author or key in showdown
 Warning--to sort, need author or key in PokeapiGitHub
-You've used 14 entries,
+Warning--to sort, need author or key in bulbapediaDamageCalcs
+You've used 15 entries,
             2118 wiz_defined-function locations,
-            586 strings with 6436 characters,
-and the built_in function-call counts, 4486 in all, are:
-= -- 432
-> -- 237
+            590 strings with 6580 characters,
+and the built_in function-call counts, 4651 in all, are:
+= -- 448
+> -- 238
 < -- 2
-+ -- 97
++ -- 98
 - -- 82
-* -- 311
-:= -- 741
-add.period$ -- 42
-call.type$ -- 14
-change.case$ -- 81
+* -- 319
+:= -- 759
+add.period$ -- 44
+call.type$ -- 15
+change.case$ -- 84
 chr.to.int$ -- 0
-cite$ -- 16
-duplicate$ -- 145
-empty$ -- 354
+cite$ -- 18
+duplicate$ -- 152
+empty$ -- 377
 format.name$ -- 82
-if$ -- 939
+if$ -- 980
 int.to.chr$ -- 0
-int.to.str$ -- 14
+int.to.str$ -- 15
 missing$ -- 7
-newline$ -- 71
+newline$ -- 75
 num.names$ -- 24
-pop$ -- 106
+pop$ -- 114
 preamble$ -- 1
-purify$ -- 67
+purify$ -- 69
 quote$ -- 0
-skip$ -- 117
+skip$ -- 124
 stack$ -- 0
-substring$ -- 213
-swap$ -- 29
+substring$ -- 218
+swap$ -- 30
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 56
-warning$ -- 2
+type$ -- 60
+warning$ -- 3
 while$ -- 38
-width$ -- 16
-write$ -- 148
-(There were 2 warnings)
+width$ -- 17
+write$ -- 156
+(There were 3 warnings)

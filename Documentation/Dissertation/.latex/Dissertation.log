@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  24 APR 2018 01:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  24 APR 2018 08:53
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -534,99 +534,157 @@ LaTeX Info: Redefining \selectfont on input line 755.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 ))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip61
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks22
+\ex@=\dimen132
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen133
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count114
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count115
+\leftroot@=\count116
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count117
+\DOTSCASE@=\count118
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box67
+\strutbox@=\box68
+\big@size=\dimen134
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count119
+\c@MaxMatrixCols=\count120
+\dotsspace@=\muskip11
+\c@parentequation=\count121
+\dspbrk@lvl=\count122
+\tag@help=\toks23
+\row@=\count123
+\column@=\count124
+\maxfields@=\count125
+\andhelp@=\toks24
+\eqnshift@=\dimen135
+\alignsep@=\dimen136
+\tagshift@=\dimen137
+\tagwidth@=\dimen138
+\totwidth@=\dimen139
+\lineht@=\dimen140
+\@envbody=\toks25
+\multlinegap=\skip62
+\multlinetaggap=\skip63
+\mathdisplay@stack=\toks26
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
 (/Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.latex/Dissertation.a
 ux)
 \openout1 = `Dissertation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
  (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count114
-\scratchdimen=\dimen132
-\scratchbox=\box67
-\nofMPsegments=\count115
-\nofMParguments=\count116
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count117
-\MPscratchDim=\dimen133
-\MPnumerator=\count118
-\makeMPintoPDFobject=\count119
-\everyMPtoPDFconversion=\toks23
+\scratchcounter=\count126
+\scratchdimen=\dimen141
+\scratchbox=\box69
+\nofMPsegments=\count127
+\nofMParguments=\count128
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count129
+\MPscratchDim=\dimen142
+\MPnumerator=\count130
+\makeMPintoPDFobject=\count131
+\everyMPtoPDFconversion=\toks28
 ) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -671,7 +729,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count120
+\c@lstlisting=\count132
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -710,7 +768,7 @@ e
 <images/UoNLogo.png, id=1, 588.2778pt x 237.5274pt>
 File: images/UoNLogo.png Graphic file (type png)
  <use images/UoNLogo.png>
-Package pdftex.def Info: images/UoNLogo.png used on input line 24.
+Package pdftex.def Info: images/UoNLogo.png used on input line 25.
 (pdftex.def)             Requested size: 211.40283pt x 85.35826pt.
 
 [1
@@ -719,51 +777,40 @@ Package pdftex.def Info: images/UoNLogo.png used on input line 24.
 s/UoNLogo.png>] [2]
 File: images/UoNLogo.png Graphic file (type png)
  <use images/UoNLogo.png>
-Package pdftex.def Info: images/UoNLogo.png used on input line 44.
+Package pdftex.def Info: images/UoNLogo.png used on input line 45.
 (pdftex.def)             Requested size: 211.40283pt x 85.35826pt.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 65.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 65.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 65.
  [1] [2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 101.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 102.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 101.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 102.
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 114--115
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
 
 [1]
 (/Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.latex/Dissertation.t
-oc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 5.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 5.
- [2])
+oc [2])
 \tf@toc=\write3
 \openout3 = `Dissertation.toc'.
 
  [3]
-Underfull \hbox (badness 10000) in paragraph at lines 178--182
+Underfull \hbox (badness 10000) in paragraph at lines 175--179
 
  []
 
@@ -776,7 +823,7 @@ File: UTF8.enc 2015/04/18 4.8.4
 (/usr/local/texlive/2015/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-LaTeX Font Info:    Try loading font information for C70+min on input line 205.
+LaTeX Font Info:    Try loading font information for C70+min on input line 202.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/cjk/contrib/wadalab/c70min.fd
@@ -786,42 +833,48 @@ File: c70min.fd 2015/04/18 4.8.4
 File: c70min.fdx 2015/04/18 4.8.4
 )
 [2] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 292--295
+Underfull \hbox (badness 10000) in paragraph at lines 291--294
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 305--308
+Underfull \hbox (badness 10000) in paragraph at lines 304--307
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 327--330
+Underfull \hbox (badness 10000) in paragraph at lines 326--329
 
  []
 
 [5] [6]
-Overfull \hbox (4.53146pt too wide) detected at line 413
+
+Package amsmath Warning: Foreign command \atopwithdelims;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 399.
+
+
+Overfull \hbox (4.53146pt too wide) detected at line 405
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--422
+Underfull \hbox (badness 10000) in paragraph at lines 413--414
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 423--427
+Underfull \hbox (badness 10000) in paragraph at lines 415--419
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 428--432
+Underfull \hbox (badness 10000) in paragraph at lines 420--424
 
  []
 
 [7] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 477--481
+Underfull \hbox (badness 10000) in paragraph at lines 469--473
 
  []
 
@@ -829,92 +882,102 @@ Underfull \hbox (badness 10000) in paragraph at lines 477--481
 File: images/showdownTeamBuilder.png Graphic file (type png)
 
 <use images/showdownTeamBuilder.png>
-Package pdftex.def Info: images/showdownTeamBuilder.png used on input line 603.
+Package pdftex.def Info: images/showdownTeamBuilder.png used on input line 581.
 
 (pdftex.def)             Requested size: 405.72005pt x 99.58464pt.
  [11 <./images/showdownTeamBuilder.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 641--642
+Underfull \hbox (badness 10000) in paragraph at lines 619--620
 []\OT1/cmr/m/n/10 Moves (4 Seper-ate
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 698--703
+Underfull \hbox (badness 10000) in paragraph at lines 676--681
 
  []
 
-[13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 830--832
+[13] [14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 820--822
 
  []
 
-[15] [16] [17]
-Underfull \hbox (badness 10000) in paragraph at lines 959--962
+[16] [17] [18]
+Underfull \hbox (badness 10000) in paragraph at lines 956--959
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 963--967
-
- []
-
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 1007--1011
+Underfull \hbox (badness 10000) in paragraph at lines 960--964
 
  []
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 1045--1051
+Underfull \hbox (badness 10000) in paragraph at lines 984--987
 
  []
 
-[20] (./codeForReport/pokebaseAbilities.py) [21] [22]
-<images/workPlan.png, id=115, 720.6925pt x 1718.42pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 993--997
+
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 1040--1044
+
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 1079--1085
+
+ []
+
+[22] (./codeForReport/pokebaseAbilities.py) [23] [24]
+<images/workPlan.png, id=122, 720.6925pt x 1718.42pt>
 File: images/workPlan.png Graphic file (type png)
 
 <use images/workPlan.png>
-Package pdftex.def Info: images/workPlan.png used on input line 1126.
+Package pdftex.def Info: images/workPlan.png used on input line 1160.
 (pdftex.def)             Requested size: 295.9367pt x 705.62843pt.
 
 Overfull \vbox (48.75642pt too high) has occurred while \output is active []
 
 
-[23 <./images/workPlan.png>]
+[25 <./images/workPlan.png>]
 (/Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.latex/Dissertation.b
 bl
-Underfull \hbox (badness 10000) in paragraph at lines 39--44
+Underfull \hbox (badness 10000) in paragraph at lines 45--50
 []\OT1/cmr/m/n/10 Griffin McEl-roy.  Be-com-ing the very best: The poke-mon wor
 ld
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--44
+Underfull \hbox (badness 10000) in paragraph at lines 45--50
 \OT1/cmr/m/n/10 cham-pi-onships.  $\OT1/cmtt/m/n/10 https : / / www . polygon .
  com / 2013 / 7 / 20 / 4539528 /
  []
 
 
-Underfull \hbox (badness 3354) in paragraph at lines 66--72
+Underfull \hbox (badness 3354) in paragraph at lines 72--78
 []\OT1/cmr/m/n/10 T.C. Sot-tek.  The world's best dota 2 play-ers just got de-s
 troyed by a killer
  []
 
 
-Underfull \hbox (badness 6808) in paragraph at lines 66--72
+Underfull \hbox (badness 6808) in paragraph at lines 72--78
 \OT1/cmr/m/n/10 ai from elon musk's startup.  $\OT1/cmtt/m/n/10 https : / / www
  . theverge . com / 2017 / 8 / 11 / 16137388 /
  []
 
-) [24]
+) [26]
 (/Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.latex/Dissertation.a
 ux) ) 
 Here is how much of TeX's memory you used:
- 7349 strings out of 493089
- 97889 string characters out of 6134843
- 300983 words of memory out of 5000000
- 10677 multiletter control sequences out of 15000+600000
- 10943 words of font info for 40 fonts, out of 8000000 for 9000
+ 7947 strings out of 493089
+ 104714 string characters out of 6134843
+ 309269 words of memory out of 5000000
+ 11257 multiletter control sequences out of 15000+600000
+ 12071 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,18n,40p,534b,1734s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,18n,40p,530b,1190s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.
 pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.p
 fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.p
@@ -932,10 +995,10 @@ live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/wadalab/dmj/dmjkata.pfb>
 Output written on /Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.lat
-ex/Dissertation.pdf (31 pages, 568424 bytes).
+ex/Dissertation.pdf (33 pages, 575823 bytes).
 PDF statistics:
- 177 PDF objects out of 1000 (max. 8388607)
- 119 compressed objects within 2 object streams
+ 183 PDF objects out of 1000 (max. 8388607)
+ 123 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  20 words of extra memory for PDF output out of 10000 (max. 10000000)
 

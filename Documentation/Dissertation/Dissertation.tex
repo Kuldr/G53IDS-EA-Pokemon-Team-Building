@@ -11,6 +11,7 @@
 \usepackage{float}
 \usepackage{multicol}
 \usepackage{CJKutf8}
+\usepackage{amsmath}
 
 %Custom Commands
 \newcommand{\Pokemon}{Pok\'{e}mon}
@@ -138,11 +139,7 @@ Special thank you to my younger siblings whom out of everybody understood the le
 \setcounter{page}{1}
 \pagenumbering{arabic}
 
-%TODO WORK OUT ALL OF THE SECTIONS
 \section{Introduction}
-\begin{itemize}
-	\item What can be done to improve this section
-\end{itemize}
 \subsection{Introduction}
 \par
 Video games are an ever growing field of interest for many people.
@@ -270,6 +267,8 @@ An example of a meme could be the idea of a tool and how to use it.
 This information is reproduced as it is passed upon between individuals, selection comes in the form of whether individuals think that it is relevant to pass onwards and sometimes ideas mutate as individuals adapt them.
 \subsubsection{Genetic Algorithms}
 Genetic algorithms take the idea of biological evolution and apply it to optimisation problems.
+This idea first pioneered by John Henry Holland in 1975 when he noted the similarities between natural and artificial systems to adapt to solve problems.
+\par
 In this analogy a solution to the problem is an individual and the genetic material encodes this solution in some way.
 The population is a set of individuals with each generation being more rigidly defined in which all of the processes happen in one go to a set number of children.
 Before crossover between parents can happen the process of natural selection is simulated by selecting the parents in some form, often based upon their fitness.
@@ -346,7 +345,7 @@ The evaluation also required the expert knowledge of the meta decks to be tested
 The most significant flaw with this style of evaluation is that it relies on the ability of another AI to pilot the deck.
 It was suggested that it may overfit `with regards to the AI capabilities and playing style' even going as far as pointing out that it `can use some decks (and some playing styles) better than others'\cite{hearthstoneAI}.
 \subsection{Evolutionary Algorithms}
-Evolutionary Algorithms have been shown to be a strong way to find near optimal solutions to complex problems. Zitzler and Thiele spoke about their merits in their case study suggesting that `Many real-world problems involve simultaneous optimization'\cite{EACaseStudy}. They pointed out that the often some factors would conflict and the EA were strong at finding a balance between them. It was concluded that `All multiobjective EA's clearly outperformed a pure random search'\cite{EACaseStudy}.§
+Evolutionary Algorithms have been shown to be a strong way to find near optimal solutions to complex problems. Zitzler and Thiele spoke about their merits in their case study suggesting that `Many real-world problems involve simultaneous optimization'\cite{EACaseStudy}. They pointed out that the often some factors would conflict and the EA were strong at finding a balance between them. It was concluded that `All multiobjective EA's clearly outperformed a pure random search'\cite{EACaseStudy}.
 \par
 Maumita Bhattacharya spoke about differing approaches to the problem of computationally expensive fitness evaluation\cite{expensiveOptimisation}.
 Several of the techniques described approximated the fitness of each individual while only periodically calculating a more accurate value.
@@ -362,10 +361,6 @@ Averaged Inheritance simply said `a child is assigned the average fitness of its
 Another method was Proportional Inheritance where `the average is weighted based on the amount of genetic material taken from each parent', while slightly more expensive it takes into account of none symmetric crossover schemes such as one point crossover where the genetic material is not equal from each parent.
 
 \section{Description of the Work}
-\begin{itemize}
-    \item What the project is meant to achieve
-	\item How is it meant to function
-\end{itemize}
 \par
 The objective of this project is to develop an EA that evolves a population of \Pokemon{} teams.
 This is to show that such a system could be used to aid human players in quickly evaluating the large amount of possibilities or to assist another form of AI to eventually play these games at an expert level.
@@ -390,9 +385,6 @@ The project doesn't have many functional requirements due
 \end{itemize}
 
 \section{Methodology}
-\begin{itemize}
-	\item Expand current sections
-\end{itemize}
 \subsection{Evolutionary Algorithms}
 \par
 The main AI technique behind this project is evolutionary algorithms, this technique has been chosen as it successful optimises problems with little expert knowledge as shown in the related works.
@@ -482,9 +474,6 @@ It also integrates well with Git showing which files and specific lines have bee
 Together all of these tools help with the software engineering process by both encouraging good practice and streamlining some more complex processes.
 In the long term this will help with the project management of the project by helping keeping it organised and clear.
 \subsection{Testing}
-\begin{itemize}
-	\item Should this be moved into the evaluation
-\end{itemize}
 \par
 The overall EA structure has been tested on a benchmark function to prove that it can be run successfully.
 This also shows that EA is adaptable and able to run on other problems.
@@ -499,9 +488,6 @@ In this case the following hyper parameters were used:
 \begin{equation}
     generations = 50,\ populationSize = 10,\ mutationRate = 0.1,\ LocalSearchSteps = 5
 \end{equation}
-\begin{itemize}
-	\item Would more results be better
-\end{itemize}
 Running it 5 times gave the following results to 3 significant figures:
 \begin{center}
     \begin{tabular}{ c c | c }
@@ -518,14 +504,6 @@ Running it 5 times gave the following results to 3 significant figures:
 These results show that the overall outline of the EA does work and on simple well defined problems it can successfully find an acceptable result.
 
 \section{Design and Implementation}
-\begin{itemize}
-   \item Description of the designs
-   \item How it addresses the problem
-   \item Why it is designed that way
-   \item Languages/platforms chosen
-   \item Problems encountered
-   \item Design changes based upon implementation
-\end{itemize}
 \par
 \subsection{Evolutionary Algorithm}
 \par
@@ -772,8 +750,20 @@ The final score is an average of all these scores against every team in the popu
 A win between 2 \Pokemon{} is determined by comparing the potential damage done by each of the \Pokemon{}'s moves.
 The \Pokemon{} that deals the highest damage is said to be the winner.
 Either a team member is set to None then they automatically lose.
+The calculations to find this information was taken from the \Pokemon{} games and are shown below\cite{bulbapediaDamageCalcs}.
+\begin{gather}
+	Damage = \left( \dfrac {\left( \dfrac {2\times Level}{5}+2\right) \times Power \times A/D}{50}+2\right) \times Modifier
+	\\
+	where\ \text{A is the relevant attack stat of the attacking \Pokemon{}}
+	\\ \text{D is the relevant defense stat of the defending \Pokemon{}}
+\end{gather}
 \par
-More accurate simulations of battles could be used to produce a fitness function weren't used for simplicity.
+There are 2 modifiers calculated which are to do with the \Pokemon{}'s types.
+If the attacking \Pokemon{} shares a type with the move it is using it gets a Same Type Attack Bonus (STAB) of $\times 1.5$.
+Type Effectiveness of the move type on the defending \Pokemon{} is the other modifier.
+If the defending \Pokemon{} is weak to the move, a $\times 2$ modifier is applied.
+If it resists the move then the modifier is $\times \frac{1}{2}$, and if the \Pokemon{} is immune the modifier is $\times 0$.
+For \Pokemon{} with two types, type effectiveness is calculated for both types and is multiplied together.
 \subsubsection{Parent Selection}
 \par
 Parent Selection happens by randomly selecting any individual in the population.
@@ -849,6 +839,16 @@ This happens for each child created each generation.
 The local search method applies to all of the \Pokemon{} IVs, changing them by $\pm 3$.
 The two new individuals are then compared to each other using the fitness function.
 It then returns the better of the new individuals.
+\subsubsection{EA Methods Problems}
+Many of the methods required for the EA were simple to implement and could be directly copied from the proven benchmark function.
+Unfortunately not all methods were as easy to write.
+Fitness evaluation was a particular issue as not only was it difficult to come up with a successful way of approximating the problem research into the calculations used in game needed to be found and translated into usable code.
+\par
+Testing all of these methods was also an issue as there are many code paths to follow and some may not be obvious until after several iterations of the program.
+This could be more tackled with unit tests but the schedule didn't have time for these to be written unfortunately.
+\par
+Many methods have well defined solutions to them but required to have a certain representation of the individuals, such as binary representation.
+By not being able to use these methods some difficulties were encountered as novel solutions had to be created and tested.
 \section{Evaluation}
 \begin{itemize}
 	\item Explain what is being evaluated
@@ -869,9 +869,6 @@ AI applications don't need to be snappy and responsive like user facing applicat
 In this section the performance of the EA to generate a solution is being evaluated.
 The solutions will be analysed by an expert to see how the solutions appear in theory, the better solutions will be compared against random results and real world scenarios of increasing difficulty to try and properly assess them.
 There were 2 sets of runs were performed to get answers one running in GA mode another in MA mode, with a total of 11 solutions being generated.
-\begin{itemize}
-	\item Do I need to include the settings here
-\end{itemize}
 \subsubsection{Expert Remarks}
 The solutions generated by the EAs are on the whole subpar, but evidence of some strong ideas can be seen in the results.
 Only one of the generated solutions did not contain a full team of six \Pokemon{}, there is no penalty to having more team members as it is more bodies that the foe has to beat and it gives you a wider variety of counters to your opponents tactics.
@@ -983,6 +980,42 @@ If it was updated though there is no native way to collect the minimum and maxim
 	\end{itemize}
 \end{itemize}
 \subsection{Reflections on Work Plan}
+\par
+Through out project management has been a key consideration, both to allow clear progress to be seen and to get updates on how to move forward.
+To aid with the management of the project, tasks have been reconsidered to make progress easier or to give time to tackle arising problems.
+To both show and predict progress a work plan was created and has been updated to add in new tasks or extend others.
+\\ \par
+To aid with project management and accountability frequent meetings have taken place.
+These have often discussed upcoming tasks in relation to the work plan and what work has taken place.
+For each meeting a short set of minutes was created and emailed to attendees, allowing for all parties to know what was discussed and what was to happen before the next meeting.
+All of the minutes can be found in the appendix.
+\par
+As set out in the project proposal, a work plan has been followed to both show and predict progress.
+This has been updated to show many changes such as new tasks or extensions, these updates can be found in the appendix.
+The highlighted task indicate changes such as extensions, moving to accommodate delays, or a new task entirely.
+I have outlined the major changes to the work plan in the paragraphs below discussing the reasoning behind these changes and any risks and outcomes of these changes.
+\\ \par
+As a significant amount of the interim report could be written earlier on, it was decided to start work on it earlier; also the amount of work needed for the interim report was underestimated in my initial estimations.
+To facilitate these changes the time spent on the work plan was extended by starting 3 weeks earlier.
+This was also to combat that the week of the interim report due date there was a lot of deadlines, by starting earlier this mitigated the risk that there would be less time in the final week.
+\par
+Something that wasn't initially planed for was the running a benchmark function on the outline of the GA\@.
+This task was added after a discussion that it would provide proof that the outline was working correctly without the need of the rest of the project to be implemented.
+This also helped create a general idea of how the other parts of the GA would work on a technical level such as how the individual genes/values would be encoded and accessed.
+To allow for this and any required modifications 2 weeks were scheduled, although this took time from other aspects it allowed for confidence and testing of the GA structure.
+This also brought up potential issues for later down the line that have already been tackled on a smaller problem.
+\par
+When researching representation it was found that the data import methods would be more closely tied to the underlying representation than initially realised.
+Through the use of \Pokeapi{} a higher level representation was achieved with ease of use in collecting the data.
+Research into representation was extended and split to allow more time to focus on how to integrate \Pokeapi{} into the project.
+By spending more time on the underlying representation and how the data is accessed other tasks are being pushed back but this will allow for the project to be more adaptable in the future.
+\par
+Some of the tasks have took longer than initially planed.
+The majority of this can be attributed to an unfamiliarity with python, a shortcoming that was reduced been overcome as the project progressed.
+Other shortcomings have been with other work loads and how they have been balanced; this was a constant struggle with some weeks seeing little development of the project due to deadlines in other modules and other weeks making more progress than scheduled due to a lack of other work.
+\par
+A minor change to the initial work plan is the allocation of time for the creation and finalising of a presentation or demonstration.
+This wasn't initially outlined previously as the date for the presentation or demonstration hadn't been set.
 \subsection{Self Reflection}
 \subsection{Project Appraisal}
 \par
@@ -1009,6 +1042,7 @@ There are many limiting factors to using such an API, particularly one that is m
 As stated in the project limitations this is the main source of technical limitations to the project but the time saved in development offsets these concerns.
 The use of APIs particularly \Pokeapi{} is something to consider if the project was taken further as it would rely on these systems heavily.
 \\ \par
+The project has shown some positive results as well,
 \begin{itemize}
 	\item Pros of the project
 \end{itemize}

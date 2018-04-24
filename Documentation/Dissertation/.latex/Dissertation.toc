@@ -27,15 +27,15 @@
 \contentsline {subparagraph}{LaTeX}{9}
 \contentsline {subparagraph}{Atom}{9}
 \contentsline {subsection}{\numberline {4.4}Testing}{9}
-\contentsline {section}{\numberline {5}Design and Implementation}{10}
-\contentsline {subsection}{\numberline {5.1}Evolutionary Algorithm}{10}
+\contentsline {section}{\numberline {5}Design and Implementation}{9}
+\contentsline {subsection}{\numberline {5.1}Evolutionary Algorithm}{9}
 \contentsline {subsubsection}{\numberline {5.1.1}EA Algorithm}{10}
 \contentsline {subsubsection}{\numberline {5.1.2}EA Implementation}{10}
-\contentsline {subsubsection}{\numberline {5.1.3}EA problems}{11}
-\contentsline {subsection}{\numberline {5.2}Representation}{11}
+\contentsline {subsubsection}{\numberline {5.1.3}EA problems}{10}
+\contentsline {subsection}{\numberline {5.2}Representation}{10}
 \contentsline {subsubsection}{\numberline {5.2.1}Representation Design}{11}
 \contentsline {subsubsection}{\numberline {5.2.2}Representation Implementation}{12}
-\contentsline {subsubsection}{\numberline {5.2.3}Representation Translation}{13}
+\contentsline {subsubsection}{\numberline {5.2.3}Representation Translation}{12}
 \contentsline {subsubsection}{\numberline {5.2.4}Representation Problems}{13}
 \contentsline {subsection}{\numberline {5.3}EA methods}{13}
 \contentsline {subsubsection}{\numberline {5.3.1}Initialising Individuals}{13}
@@ -43,37 +43,38 @@
 \contentsline {subsubsection}{\numberline {5.3.3}Parent Selection}{15}
 \contentsline {subsubsection}{\numberline {5.3.4}Crossover}{15}
 \contentsline {subsubsection}{\numberline {5.3.5}Mutation}{15}
-\contentsline {subsubsection}{\numberline {5.3.6}Validation}{15}
+\contentsline {subsubsection}{\numberline {5.3.6}Validation}{16}
 \contentsline {subsubsection}{\numberline {5.3.7}Population Replacement}{16}
-\contentsline {subsubsection}{\numberline {5.3.8}Local Search Method}{16}
-\contentsline {section}{\numberline {6}Evaluation}{16}
-\contentsline {subsection}{\numberline {6.1}Software Performance}{16}
-\contentsline {subsection}{\numberline {6.2}EA Performance}{16}
+\contentsline {subsubsection}{\numberline {5.3.8}Local Search Method}{17}
+\contentsline {subsubsection}{\numberline {5.3.9}EA Methods Problems}{17}
+\contentsline {section}{\numberline {6}Evaluation}{17}
+\contentsline {subsection}{\numberline {6.1}Software Performance}{17}
+\contentsline {subsection}{\numberline {6.2}EA Performance}{17}
 \contentsline {subsubsection}{\numberline {6.2.1}Expert Remarks}{17}
-\contentsline {subsection}{\numberline {6.3}Project Limitations}{18}
-\contentsline {subsubsection}{\numberline {6.3.1}Fitness evaluation}{18}
-\contentsline {subsubsection}{\numberline {6.3.2}Pok\'{e}api{}}{18}
-\contentsline {section}{\numberline {7}Summary and Reflections}{19}
-\contentsline {subsection}{\numberline {7.1}Reflections on Work Plan}{19}
-\contentsline {subsection}{\numberline {7.2}Self Reflection}{19}
-\contentsline {subsection}{\numberline {7.3}Project Appraisal}{19}
-\contentsline {subsection}{\numberline {7.4}Further Considerations}{20}
-\contentsline {subsubsection}{\numberline {7.4.1}Reducing the Search Space}{20}
-\contentsline {subsubsection}{\numberline {7.4.2}Software Optimisation - Threading}{20}
-\contentsline {section}{\numberline {8}Appendix}{21}
-\contentsline {subsection}{\numberline {8.1}Code}{21}
-\contentsline {subsubsection}{\numberline {8.1.1}Pok\'{e}mon{} abilities via Pok\'{e}api{}}{21}
-\contentsline {subsection}{\numberline {8.2}Meeting Minutes}{21}
-\contentsline {subparagraph}{6th October}{21}
-\contentsline {subparagraph}{26th October}{21}
-\contentsline {subparagraph}{2nd November}{21}
-\contentsline {subparagraph}{21st November}{21}
-\contentsline {subparagraph}{28th November}{21}
-\contentsline {subparagraph}{15th December}{21}
-\contentsline {subparagraph}{7th February}{22}
-\contentsline {subparagraph}{15th February}{22}
-\contentsline {subparagraph}{9th March}{22}
-\contentsline {subparagraph}{6th April}{22}
-\contentsline {subparagraph}{16th April}{22}
-\contentsline {subsection}{\numberline {8.3}Work Plan}{23}
-\contentsline {subsection}{\numberline {8.4}References}{24}
+\contentsline {subsection}{\numberline {6.3}Project Limitations}{19}
+\contentsline {subsubsection}{\numberline {6.3.1}Fitness evaluation}{19}
+\contentsline {subsubsection}{\numberline {6.3.2}Pok\'{e}api{}}{19}
+\contentsline {section}{\numberline {7}Summary and Reflections}{20}
+\contentsline {subsection}{\numberline {7.1}Reflections on Work Plan}{20}
+\contentsline {subsection}{\numberline {7.2}Self Reflection}{21}
+\contentsline {subsection}{\numberline {7.3}Project Appraisal}{21}
+\contentsline {subsection}{\numberline {7.4}Further Considerations}{21}
+\contentsline {subsubsection}{\numberline {7.4.1}Reducing the Search Space}{21}
+\contentsline {subsubsection}{\numberline {7.4.2}Software Optimisation - Threading}{22}
+\contentsline {section}{\numberline {8}Appendix}{23}
+\contentsline {subsection}{\numberline {8.1}Code}{23}
+\contentsline {subsubsection}{\numberline {8.1.1}Pok\'{e}mon{} abilities via Pok\'{e}api{}}{23}
+\contentsline {subsection}{\numberline {8.2}Meeting Minutes}{23}
+\contentsline {subparagraph}{6th October}{23}
+\contentsline {subparagraph}{26th October}{23}
+\contentsline {subparagraph}{2nd November}{23}
+\contentsline {subparagraph}{21st November}{23}
+\contentsline {subparagraph}{28th November}{23}
+\contentsline {subparagraph}{15th December}{23}
+\contentsline {subparagraph}{7th February}{24}
+\contentsline {subparagraph}{15th February}{24}
+\contentsline {subparagraph}{9th March}{24}
+\contentsline {subparagraph}{6th April}{24}
+\contentsline {subparagraph}{16th April}{24}
+\contentsline {subsection}{\numberline {8.3}Work Plan}{25}
+\contentsline {subsection}{\numberline {8.4}References}{26}
