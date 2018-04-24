@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  24 APR 2018 10:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  24 APR 2018 10:25
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -956,21 +956,21 @@ Underfull \hbox (badness 6808) in paragraph at lines 72--78
 File: images/workPlan-1.png Graphic file (type png)
 
 <use images/workPlan-1.png>
-Package pdftex.def Info: images/workPlan-1.png used on input line 1179.
+Package pdftex.def Info: images/workPlan-1.png used on input line 1177.
 (pdftex.def)             Requested size: 426.79134pt x 357.05876pt.
 
 <images/workPlan-2.png, id=130, 855.195pt x 604.1772pt>
 File: images/workPlan-2.png Graphic file (type png)
 
 <use images/workPlan-2.png>
-Package pdftex.def Info: images/workPlan-2.png used on input line 1180.
+Package pdftex.def Info: images/workPlan-2.png used on input line 1178.
 (pdftex.def)             Requested size: 426.79134pt x 301.51628pt.
 
 <images/workPlan-3.png, id=131, 855.195pt x 665.3658pt>
 File: images/workPlan-3.png Graphic file (type png)
 
 <use images/workPlan-3.png>
-Package pdftex.def Info: images/workPlan-3.png used on input line 1181.
+Package pdftex.def Info: images/workPlan-3.png used on input line 1179.
 (pdftex.def)             Requested size: 426.79134pt x 332.05261pt.
 
 Overfull \vbox (2.70303pt too high) has occurred while \output is active []
@@ -1005,7 +1005,7 @@ live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/wadalab/dmj/dmjkata.pfb>
 Output written on /Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.lat
-ex/Dissertation.pdf (35 pages, 971694 bytes).
+ex/Dissertation.pdf (35 pages, 971824 bytes).
 PDF statistics:
  193 PDF objects out of 1000 (max. 8388607)
  127 compressed objects within 2 object streams
