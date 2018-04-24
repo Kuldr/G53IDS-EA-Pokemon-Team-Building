@@ -777,9 +777,43 @@ This happens by generating a list of all the \Pokemon{} from 2 parents and then 
 This may generate duplicates but that is taken care of in validation.
 \subsubsection{Mutation}
 \par
-\begin{itemize}
-	\item TODO
-\end{itemize}
+The mutation happens randomly at a \% chance that is controlled in the settings.
+If it is randomly chosen that a child should be mutated one of the \Pokemon{} that make up the team is randomly chosen to have a mutation apply.
+\par
+There is currently 25 different possible mutation that can occur with a variety of outcomes.
+\begin{center}
+    \begin{tabular}{ c | c }
+        Characteristic to Mutate & Mutation \\
+        \hline
+		\Pokemon{} & Reinitialise the \Pokemon{} \\
+		Gender & Reinitialise \\
+		Ability & Reinitialise \\
+		Level & Reinitialise \\
+		Level & Increase by a random amount \\
+		Level & Decrease by a random amount \\
+		Shiny & Reinitialise \\
+		Happiness & Reinitialise \\
+		Happiness & Increase by a random amount \\
+		Happiness & Decrease by a random amount \\
+		Nature & Reinitialise \\
+		Nature & Select nature with same +ive boost \\
+		Nature & Select nature with same -ive boost \\
+		EVs & Reinitialise \\
+		EVs & Swap a pair of EVs \\
+		EVs & Decrease and Increase a pair by the same amount \\
+		IVs & Reinitialise \\
+		IVs & Swap a pair of IVs \\
+		IVs & Increase one IV by a random amount \\
+		IVs & Decrease one IV by a random amount \\
+		Item & Reinitialise \\
+		Item & Set to None \\
+		Moves & Reinitialise all moves \\
+		Moves & Reinitialise one move \\
+		Moves & Set a single move to None \\
+    \end{tabular}
+\end{center}
+\par
+At any time only one of these mutations happen and once mutated the child is returned.
 \subsubsection{Validation}
 \par
 Validation attempts to check if an individual is this is critical as it is possible for crossover/mutation to create an invalid individual.

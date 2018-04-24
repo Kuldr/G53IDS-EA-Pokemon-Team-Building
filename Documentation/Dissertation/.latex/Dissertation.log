@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  24 APR 2018 00:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.4)  24 APR 2018 01:05
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -828,36 +828,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 691--696
  []
 
 [13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 789--791
+Underfull \hbox (badness 10000) in paragraph at lines 823--825
 
  []
 
 [15] [16] [17]
-Underfull \hbox (badness 10000) in paragraph at lines 918--921
+Underfull \hbox (badness 10000) in paragraph at lines 952--955
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 922--926
+Underfull \hbox (badness 10000) in paragraph at lines 956--960
 
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 966--970
+Underfull \hbox (badness 10000) in paragraph at lines 1000--1004
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1004--1010
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 1038--1044
 
  []
 
-[19] [20] (./codeForReport/pokebaseAbilities.py) [21] [22]
+[20] (./codeForReport/pokebaseAbilities.py) [21] [22]
 <images/workPlan.png, id=115, 720.6925pt x 1718.42pt>
 File: images/workPlan.png Graphic file (type png)
 
 <use images/workPlan.png>
-Package pdftex.def Info: images/workPlan.png used on input line 1085.
+Package pdftex.def Info: images/workPlan.png used on input line 1119.
 (pdftex.def)             Requested size: 295.9367pt x 705.62843pt.
 
 Overfull \vbox (48.75642pt too high) has occurred while \output is active []
@@ -917,7 +917,7 @@ live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/wadalab/dmj/dmjkata.pfb>
 Output written on /Users/Leafeon/Desktop/G53IDS/Documentation/Dissertation/.lat
-ex/Dissertation.pdf (31 pages, 565980 bytes).
+ex/Dissertation.pdf (31 pages, 567199 bytes).
 PDF statistics:
  177 PDF objects out of 1000 (max. 8388607)
  119 compressed objects within 2 object streams
